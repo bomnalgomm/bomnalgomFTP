@@ -1,0 +1,247 @@
+@charset "utf-8";
+@media all and (max-width:1000px){
+	/* 윤리경영이란  */
+	.ethm02 .tit {position: relative; margin-bottom:20px; }
+	.ethm02 ul {background:none}
+	.ethm02 ul li {float:none;display:inline-block;vertical-align:top;}
+	.ethm02 ul li.t1, .ethm02 ul li.t2, .ethm02 ul li.t3, .ethm02 ul li.t4 {margin:0px 10px;}
+	.ethm03 {background:url(/homepage/default/img/Humetro/ethm_bg01.gif) no-repeat center bottom; background-size:contain; }
+	.ethm03 ul {overflow:hidden; width:100%; background:url(/homepage/default/img/Humetro/ethm_bg03.gif) repeat-x 0 center; }
+	
+	.ethm04 {background:url(/homepage/default/img/Humetro/ethm_bg01.gif) no-repeat center bottom; background-size:contain; }
+	.ethm04 ul {overflow:hidden; width:100%; background:url(/homepage/default/img/Humetro/ethm_bg03.gif) repeat-x 0 center; }
+	
+	.ethm05 {background:url(/homepage/default/img/Humetro/ethm_bg01.gif) no-repeat center bottom; background-size:contain; }
+	.ethm05 ul li {width:50%; margin:5px 0px;}
+	.ethm05 ul {overflow:hidden; width:100%;  }
+	/* 사회공헌황동  */
+	.volun { margin-left:3%}
+	.volun li {width:30%; margin-left:3%;}
+
+}	
+@media all and (max-width:860px){
+	/* 운임안내 */
+	.price-wrap .price-list .ticket {min-height:280px;}
+	.price-wrap .price-list .ticket h5 {float:none;width:96%;padding-bottom:10px;margin-bottom:10px;height:auto;border-bottom:1px dashed #d9d9d9;border-right:0;}
+	.price-wrap .price-list .ticket h5 span {display:inline;}
+	.price-wrap .price-list .ticket img {float:none;}
+	.price-wrap .price-list .etc {padding:30px 15px 25px;}
+	.price-wrap .price-list .etc span {margin-top:-17px;}
+	/* 도시철도 에티켓 */
+	.eti-list {text-align:center;}
+	.eti-list li {float:none;width:29%;display:inline-block;*display:inline;*zoom:1;vertical-align:top;margin:0 1.5% 45px;}
+	.eti-list li.n01, .eti-list li.n05 {margin-left:1.5%;}
+	/* 교통약자배려 */
+	.line-facil li {width:30%;margin-bottom:20px;}
+	.line-facil li:first-child {margin-left:2.2%;}	
+	/* 인사말씀 */
+	.greeting .greet_top {background-size:40%;}
+	/* 캐릭터 */
+	.photo-wrap .vis-img-wrap {width:100%;}
+	.photo-wrap .ctrl-nums {padding-top:230px; margin-left:-2.5%;}
+	.photo-wrap .ctrl-nums a {width:20%; height:auto;margin-left:2.5%;}
+	/* 비젼체계 */
+	.vision03_wrap {background:none;height:auto;}
+	/* 연혁 */
+	.his-list .himg {width:100%;margin-right:0px;text-align:center; vertical-align:top; margin-bottom:20px}
+	/* 휴메트로 봉사단  */
+	.corp_da li {width:47%; margin-left:3%; float:left;margin-bottom:20px }
+	.corp_da li.t3 {margin-left:0%; }
+	.emerg-wrap .emerg-vod, .emerg-wrap .emerg-cap, .emerg-use .emerg-img {float:none;width:100%;}
+	.emerg-use {margin-top:25px;}
+	.emerg-use .use-txt, .emerg-use .use-txt.full {float:none;width:95%;min-height:auto;}
+}
+
+@media all and (max-width:760px){
+	.lost-guide .img {float:none;width:100%;margin:0 0 10px 20px;}
+	.lost-guide dl {float:none;width:100%;margin-left:10px;}
+	.corr-wrap .txt {width:60%;}
+	.report-wrap .report-cont {float:none;width:100%;margin:0 0 30px;}
+	/* 공익신고 */
+	.public-box a {margin-bottom:5px;}
+	.relation-wrap .relation-list li {width:30%;margin:10px 1.5%;}	
+	/* 도시철도건설 */
+	.subway-info .thum {float:none;width:auto;margin-bottom:30px;}
+	.subway-info .subway-cont {float:none;width:100%;}
+	/* 유실물추가 */
+	.lost-guide .lost-cont  {float:none;width:100%;margin-left:10px;}	
+	
+	/* 이미지 확대보기 */
+	.img-zoom a.zoomin {position:absolute;top:0px;right:0px;display:block;padding:10px;text-align:center;background:url(../img/Common/ico_zoomin.png) no-repeat center center;background-color: rgba(7,34,64,0.5); background-size:15px; width:30px; height:30px;}
+	
+}
+
+@media all and (max-width:680px){
+	.pg-type-board .div-conts {padding-left:0;padding-right:0;}
+	.price-wrap .price-list {width:100%;float:none;margin:0 0 20px;}
+	.price-wrap .price-list .ticket {min-height:auto;}
+	.price-wrap .price-list .ticket h5 {float:left;width:28%;height:80px;margin-right:2%;padding:5px 0 2px 11px;border-right:1px dashed #d9d9d9;border-bottom:0;margin-right:8%}
+	.price-wrap .price-list .ticket h5 span {display:block;}
+	.price-wrap .price-list .ticket img {float:left;}
+	.price-wrap .price-list .etc span {margin-top:0}	
+	/* 도시철도 에티켓 */
+	.eti-list li {width:45%;}
+	/* 단체승차권 이용안내 */
+	.charge-wrap .charge-list li {float:none;margin-bottom:5px;}
+	.charge-wrap .charge-list .sec {display:block;padding:35px 0 0 0;background:url(/homepage/default/img/Customer/arr_bg02.gif) no-repeat center 10px;}
+	/* 이용안내 */
+	.cont-info.lost {background-size:45%;padding:25px;}
+	/* 제안안내 */
+	.suggest-wrap .cont-info {background-size:35%;}
+	.suggest-wrap .txt {width:100%;}
+	.corr-wrap .cont-info {background-size:45%;padding:25px;}
+	/* 공익신고 */	
+	.public-box .btns {margin:20px 0 0 215px;}
+	.public-box p {margin:30px 0 0 30px;width:90%;}
+	.exper-wrap .cont-info {background-size:35%;padding:25px;}
+	.safety-edu-wrap .cont-info {background-size:30%;padding:25px;}
+	.culture-wrap .cont-info {background-size:35%;padding:25px;}
+	.ssam-box {background-size:15%;padding-left:20px;} 
+	.ssam-box .tit {margin:9% 0 0 20%;font-size:1.7em;}
+	.ssam-box .txt {margin-top:50px;}
+	.relation-wrap .relation-list li {width:46%;margin:10px 2%;}
+	.smpp-wrap .smpp-img {float:none;width:100%;margin-bottom:40px;text-align:center;}
+	.smpp-wrap .smpp-step {float:left;width:100%;margin-left:0;}
+	.info-sign .cont-info {background-size:35%;padding:25px;}
+	.info-sign .cont-info p {width:100%;}
+	.conn-path .cont-info {background-size:35%;padding:25px;}
+	.volun-wrap .cont-info {background-size:35%;padding:25px;} 
+	/* 문화관광 */
+	.ssam-wrap .img {float:none;width:auto;margin:0 0 30px 0}
+	.ssam-wrap .ssam-info {float:none;width:100%;}	
+	/* 전동차소개 */
+	.subway-cabin {background:none;}
+	.subway-cabin .cabin-info {float:none;width:100%;background:#dedede;overflow:hidden;}
+	.subway-cabin .cabin-info li {float:left;width:50%;}
+	.subway-cabin .thum {float:none;width:100%;}
+	.subway-cabin .thum img {width:100% !important;}	
+	.soffice-info .thum {float:none;width:100%;margin-bottom:30px;}
+	.soffice-info .soffice-cont {float:none;width:100%;}
+	/* 설비 */
+	.power-wrap .img, .power-wrap.sec .cont {float:none;width:100%;margin:0 0 20px;}
+	.power-wrap .cont, .power-wrap.sec .img {float:none;width:100%;margin:0;}
+	/* 인사말씀 */
+	.greeting .greet_top {background-size:200px; background-position:left 120px;}
+	.greeting .t1 {padding-top:240px}
+	.greeting .t2 {padding-right:0px}
+	/* 설립목적 */
+	.purp { width:80%;}
+	/* 공사이미지 - CI, BI, 캐릭터, 로고송 */
+	.logo_wrap .lbox {width:100%; margin-left:0;}
+	.logo_wrap .lbox.first {margin-right:0; margin-bottom:30px;}
+	/* 사가로고송 */
+	.saga_top {padding:30px 10px;}
+	.saga_top .song {width:100%}
+	.saga_top .song embed {width:100% }
+	.saga_top .btns {width:100%; padding-top:10px}
+	.saga_txt li {float:left; width:100%; padding:2% 3%; font-size:14px;}
+	/* 비젼체계 */
+	.vision03_box {width:100%; display:block; margin:0; margin-bottom:10px; min-height:initial}
+	.vision03_wrap {padding:0} 
+	/* 연혁 */
+	.his-list dl {width:100%;}
+	.his-list dt {width:100%; float:left; }
+	.his-list dd {widht:100%;float:left;}
+	/* 윤리헌장 */
+	.ethc01 .cont-info {background-size:35%;pa;dding:25px;}
+	.ethc01 .cont-info .txt {width:100%;}
+	.ethc02 { padding:60px 40px; }
+	/* 휴메트로 봉사단  */
+	.corp_gae li {width:45%;}
+	.corp_em .e1 {width:100%;}
+	.corp_em .e2 {width:100%;}
+	/* 사회공헌황동  */
+	.volun { margin-left:0%}
+	.volun li {width:100%; margin-left:0%;}
+	/* 공사인재상  */
+	.reso .ico {position: relative; margin:0 auto;}
+	.reso li {padding-left:0px;  text-align:center}
+	.reso .tit-s {padding-top:20px; }
+	/* 모바일-RSS  */
+	.qrcode .phone {display:none}
+	.qrcode .qr_l {width:40%; margin-right:0px; padding-top:0px }
+	.qrcode .qr_r {width:40%; float:right; text-align:center}
+	.qrcode {margin:20px 0px}
+	.dqrcode li {width:47%; padding-top:35%}
+	.dqrcode li.t3 {margin-left:0%; margin-top:3%}
+	/* 휴메트로 부산시티투어 */
+	.cityt_list li {width:37%; padding:3%; margin:0 4%; border:1px solid #ddd}
+	.cityt_qr li {float:left; width:43%; margin-left:7%; }
+	.cityt_qr li .pimg {padding:20px;}
+	.cityt_qr li .tit {background:#9097a0; text-align:center; color: #FFF; padding:10px 0;}
+	/* 사이트맵 */
+	.sitemn_wrap .sitemn_box {width:47%}
+	/* 교통약자배려시설 */
+	.line-facil01 li .num {font-size:20px}
+	.line-facil01 .total {float:none; width:100%;}
+	.line-facil01 li {width:25%;}
+	.volu-step li {float:none;width:100%;margin:0;}	
+	.soffice-info .thum img, .power-wrap.sec .img img, .power-wrap .img img  {width:100% !important;}
+}	
+
+
+@media all and (max-width:480px){
+	/* 이용안내 */
+	.lost-wrap {background:url(/homepage/default/img/Guide/lost_top_sbg.gif) no-repeat right 50px;}
+	.lost-guide dl dt {width:100%;margin:0;}
+	.lost-guide dl dd {width:100%;background:none;} 
+	.corr-wrap {background-size:40%;}
+	/* 공익신고 */
+	.public-box {background-position:95% 50px}
+	.public-box .btns {margin:20px 0 0 20px}	
+	.safety-cs .cs-cont, .safety-cs .cs-cont:first-child {float:none;width:100%;margin:0 0 20px;}
+	.culture-wrap {background-position:right center;}
+	.sign-list .sign-tab li {width:50%;}
+	/* 도시철도건설 */
+	.subway-cabin .cabin-info li {float:none;width:100%;} 
+	.soffice-info .soffice-cont li .txt {float:left;width:67%;}
+	.facil-wrap {margin-bottom:20px;}
+	.facil-list, .facil-list:first-child {float:none;width:100%;margin-bottom:30px;}
+	/* 윤리경영이란  */
+	.ethm02 {padding-bottom:40px}
+	.ethm03 {padding-bottom:40px}
+	.ethm04 {padding-bottom:40px}
+	.ethm05 {padding-bottom:40px}
+	.ethm02 h6 { border-radius:20px;width:100%; padding:20px 0px; height:auto }
+	.ethm03 h6 { border-radius:20px;width:100%; padding:20px 0px; height:auto }
+	.ethm04 h6 { border-radius:20px;width:100%; padding:20px 0px; height:auto }
+	.ethm05 h6 { border-radius:20px;width:100%; padding:20px 0px; height:auto }
+    .ethm03 ul li {width:100%; margin:5px 0px; display:block}
+    .ethm04 ul li {width:100%; margin:5px 0px; display:block}
+    .ethm05 ul li {width:100%; margin:5px 0px; display:block}
+    /* 휴메트로 봉사단  */
+	.corp_da li {width:100%; margin-left:0%;  }
+	/* 모바일-RSS  */
+	.qrcode .qr_l {width:100%;}
+	.qrcode .qr_r {width:100%; padding-top:15px}
+
+	.dqrcode li {width:100%; padding-top:60%; margin:0;  background-size:60%}
+	.dqrcode li.t2 {margin-left:0%; margin-top:3%}
+	.dqrcode li.t3 {margin-left:0%; margin-top:3%}
+	/* 사이트맵 */
+	.sitemn_wrap .sitemn_box {width:100%; margin:0 0 30px 0;}
+	.emerg-use .emerg-img li {float:none;width:100%;margin-left:0;}
+}
+@media all and (max-width:411px){
+	/* 도시철도 에티켓 */
+	.eti-list li {width:95%;margin-bottom:20px}
+	/* 단체승차권 이용안내 */
+	.charge-wrap .charge-list h4 {float:none;}
+	.charge-wrap .charge-list .charge-cont {margin:10px 0 0 25px;float:none;}	
+	.info-box.btn-pub a {width:62%;}
+	.report-wrap .report-cont a {margin-bottom:5px;}
+	/* 인사말씀 */
+	.greeting .greet_top {background-position:left 160px;}
+	.greeting .tit {width:80%}
+	.greeting .t1 {padding-top:240px}
+	/* 윤리경영이란  */
+	.ethm02 ul li {background:url(/homepage/default/img/Humetro/pattern_02.gif) repeat; width:100%; margin:0 0 10px 0; height:auto; padding:0px; }		
+	.ethm02 ul li.t1 {padding:0px; margin:0 0 10px 0; height:auto; }
+	.ethm02 ul li.t2 {margin:0 0 10px 0;}
+	.ethm02 ul li.t3 {margin:0 0 10px 0;}
+	.ethm02 ul li.t4 {margin:0 0 10px 0;}
+	.ethm02 ul li span {background:#fff; display:block; margin:10px; padding:10px}
+	.ethc02 span {width:30px; height:30px; background-size:contain}
+	.ethc02 { padding:20px 20px; }
+
+}

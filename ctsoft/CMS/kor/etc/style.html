@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>부산항만공사 컨텐츠 스타일 가이드</title>
+<link type="text/css" rel="stylesheet" href="../../_Css/common.css" />
+<style type="text/css">
+.content-wrap {width:760px;margin:0 auto;}
+.content-wrap h1 {font-size:30px;font-weight:bold;color:#222;line-height:100%;margin:20px 0;}
+
+h2 {font-size:18px;color:#000;padding-bottom:10px;}
+h3 {font-size:16px;color:#222;padding:10px 0}
+
+</style>
+<script type="text/javascript" src="../../_Js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="../../_Js/common.js"></script>
+<script type="text/javascript" src="../../_Js/jquery.sticky.js"></script>
+
+</head>
+<body>
+<div class="content-wrap">
+	<h1>부산항만공사 컨텐츠 스타일 가이드</h1>
+
+	<h2>01. 탭메뉴</h2>
+	<h3>탭스타일 :  c-tab1</h3>
+	<p class="mg10f">최상단 1차탭메뉴 한줄용 : 1~최대 5개까지의 full 형태의 탭메뉴</p>
+	<div class="c-tab1">
+		<ul>
+			<li><a href="#">탭메뉴1-1</a></li>
+			<li><a href="#">탭메뉴1-2</a></li>
+			<li><a href="#">탭메뉴1-3</a></li>
+			<li><a href="#">탭메뉴1-4</a></li>
+			<li><a href="#" class="over">탭메뉴1-5</a></li>
+		</ul>
+	</div>
+
+	<div class="sgap"></div>
+
+	<h3>탭스타일 : c-tab2</h3>
+	<p class="mg10f">최상단 1차탭메뉴 멀티용 : 한줄에 4개씩 구성되며 남는 공간은 회색으로 비어둠</p>
+	<div class="c-tab2">
+		<ul>
+			<li><a href="#" class="first over">탭메뉴1-1</a></li>
+			<li><a href="#">탭메뉴1-2</a></li>
+			<li><a href="#">탭메뉴1-3</a></li>
+			<li><a href="#">탭메뉴1-4</a></li>
+			<li><a href="#" class="first">탭메뉴1-5</a></li>
+			<li><a href="#">탭메뉴1-5</a></li>
+			<li><a href="#">탭메뉴1-5</a></li>
+			<li><a href="#">탭메뉴1-5</a></li>
+			<li><a href="#" class="first">탭메뉴1-5</a></li>
+			<li><a href="#">탭메뉴1-5</a></li>
+			<li><a href="#">탭메뉴1-5</a></li>
+		</ul>
+	</div>
+
+	<div class="sgap"></div>
+
+	<h3>탭스타일 : b-tab1</h3>
+	<p class="mg10f">최상단 1차탭메뉴 멀티용 : 게시판전용 스크립트 탭 게시판</p>
+	<div class="c-tab1">
+		<ul>
+			<li><a href="#" class="first over">탭메뉴1-1</a></li>
+			<li><a href="#">탭메뉴1-2</a></li>
+			<li><a href="#">탭메뉴1-3</a></li>
+			<li><a href="#">탭메뉴1-4</a></li>
+			<li><a href="#">탭메뉴1-5</a></li>
+		</ul>
+	</div>
+
+	<div class="sgap"></div>
+
+	<h3>탭스타일 : c-tab4</h3>
+	<p class="mg10f">2차탭메뉴 : 탭메뉴의 위치가 컨텐츠 중간일 경우 탑으로 올라가는 버튼 제공</p>
+	<div class="c-tab4" id="sticker">
+		<ul>
+			<li><a href="#" class="over">탭메뉴1-1</a></li>
+			<li><a href="#">탭메뉴1-2</a></li>
+			<li><a href="#">탭메뉴1-3</a></li>
+			<li><a href="#">탭메뉴1-4</a></li>
+			<li><a href="#">탭메뉴1-5</a></li>
+		</ul>
+		<a href="#" class="btn-top"><span>본문상단 바로가기</span></a>
+
+	</div>
+
+	<div class="gap"></div>
+
+	<h2>02. 타이틀</h2>
+	<h4 class="c-tit01">타이틀 스타일 1 : c-tit01</h4>
+	<h5 class="c-tit02">타이틀 스타일 2 : c-tit02</h5>
+	<h6 class="c-tit03">타이틀 스타일 3 : c-tit03</h6>
+
+	<div class="sgap"></div>
+
+	<h3>리스트 타이틀</h3>
+	<ul class="c-list01">
+		<li>리스트 스타일 1</li>
+	</ul>
+	<ul class="c-list02">
+		<li>리스트 스타일 1</li>
+	</ul>
+	<div class="gap"></div>
+
+	<h2>03. 버튼</h2>
+	<h3>컨텐츠 버튼</h3>
+	<a href="#" class="c-btn"><span>기본버튼</span></a><input type="submit" class="c-btn" value="input 태그" /><button class="c-btn">button 태그</button><a href="#" class="c-btn"><span class="down">다운버튼</span></a><a href="#" class="c-btn"><span class="link">링크버튼</span></a><a href="#" class="c-btn"><span class="win">새창버튼</span></a><br /><br />
+	<a href="#" class="cp-btn"><span>컬러버튼</span></a><input type="submit" class="cp-btn" value="input 태그" /><button class="cp-btn">button 태그</button><br /><br />
+	<a href="#" class="cg-btn"><span>그레이버튼</span></a><input type="submit" class="cg-btn" value="input 태그" /><button class="cg-btn">button 태그</button><br /><br />
+	
+
+	<div class="sgap"></div>
+
+	<h3>작은컨텐츠 버튼</h3>
+	<a href="#" class="sw-btn"><span>기본버튼</span></a><input type="submit" class="sw-btn" value="input 태그" /><button class="sw-btn">button 태그</button><a href="#" class="sg-btn"><span>그레이버튼</span></a><input type="submit" class="sg-btn" value="input 태그" /><button class="sg-btn">button 태그</button><a href="#" class="sp-btn"><span>그레이버튼</span></a><input type="submit" class="sp-btn" value="input 태그" /><button class="sp-btn">button 태그</button>
+
+	<div class="sgap"></div>
+
+	<h3>프로그램버튼</h3>
+	<a href="#" class="p-btn"><span>컬러버튼</span></a><a href="#" class="g-btn"><span>그레이버튼</span></a><a href="#" class="w-btn"><span>화이트버튼</span></a>
+
+	<div class="sgap"></div>
+
+	<h3>빅프로그램 버튼</h3>
+	<a href="#" class="bp-btn"><span>빅컬러버튼</span></a><input type="submit" class="bp-btn" value="input 태그" /><button class="bp-btn">button 태그</button><br /><br /><a href="#" class="bg-btn"><span>빅그레이버튼</span></a><a href="#" class="bw-btn">빅화이트버튼</a>
+
+	<div class="gap"></div>
+
+	<h2>04 테이블</h2>
+	<h3>일반컨텐츠 테이블 : tbl-type01</h3>
+	<table class="tbl-type01">
+	<caption><span class="blind">캡션</span></caption>
+	<colgroup>
+	<col style="width:30%" />
+	<col style="width:*" />
+	</colgroup>
+	<tbody>
+		<tr>
+			<th scope="row">구분</th>
+			<td class="l">내용1-1</td>
+		</tr>
+	</tbody>
+	</table>
+
+	<div class="sgap"></div>
+
+	<table class="tbl-type01">
+	<caption></caption>
+	<colgroup>
+	<col style="width:30%" />
+	<col style="width:*" />
+	<col style="width:*" />
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="col">구분</th>
+			<th scope="col">제목1-1</th>
+			<th scope="col">제목1-2</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th scope="row">왼제목1-1</th>
+			<td>내용1-1</td>
+			<td>내용1-2</td>
+		</tr>
+	</tbody>
+	</table>
+
+	<div class="sgap"></div>
+
+	<h3>컬러컨텐츠 테이블 : tbl-type02</h3>
+	<table class="tbl-type02">
+	<caption></caption>
+	<colgroup>
+	<col style="width:30%" />
+	<col style="width:*" />
+	<col style="width:*" />
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="col">구분</th>
+			<th scope="col">제목1-1</th>
+			<th scope="col">제목1-2</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th scope="row">왼제목1-1</th>
+			<td>내용1-1</td>
+			<td>내용1-2</td>
+		</tr>
+	</tbody>
+	</table>
+
+	<div class="sgap"></div>
+
+	<h3>통계형컨텐츠 테이블 : tbl-type03</h3>
+	<table class="tbl-type03">
+	<caption></caption>
+	<colgroup>
+	<col style="width:30%" />
+	<col style="width:*" />
+	<col style="width:*" />
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="col">구분</th>
+			<th scope="col">제목1-1</th>
+			<th scope="col">제목1-2</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th scope="row">왼제목1-1</th>
+			<td>내용1-1</td>
+			<td>내용1-2</td>
+		</tr>
+	</tbody>
+	</table>
+
+	<div class="gap"></div>
+
+	<h2>05 안내문 : info-box</h2>
+	<div class="info-box">
+		<p class="info-tit">안내문 제목 : .info-tit</p>
+		<ul class="c-list02">
+			<li>여러줄로 안내해야 할 내용은 제공하는 부분입니다. - 01</li>
+			<li>여러줄로 안내해야 할 내용은 제공하는 부분입니다. - 02</li>
+			<li>여러줄로 안내해야 할 내용은 제공하는 부분입니다. - 03</li>
+		</ul>
+	</div>
+	<p class="info-ex">주의사항 및 알아두셔야 할 내용을 한줄로 제공하는 부분입니다. : info-ex</p>
+
+	<div style="height:1000px;"></div>
+
+</div>
+</body>
+</html>

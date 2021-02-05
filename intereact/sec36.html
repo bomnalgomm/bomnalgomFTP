@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title>section 35 .offset().top</title>
+<link rel="stylesheet" href="./_Css/style.css" />
+<style type="text/css">
+div {width:200px;height:200px;background:blue;margin-top:300px;}
+</style>
+</head>
+<body>
+	<div></div>
+
+	<pre>
+	.offset().top
+	화면상에서 특정 요소의 y축 위치 알아내기
+	.scrollTop()은 브라우저, .offset().top 은 브라우저가 아닌 특정 요소
+	</pre>
+
+
+	<script type="text/javascript" src="./_Js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		var ab = $("div").offset().top; // 변수 ab에 div의 문서 내 세로 위치 값을 저장
+		alert(ab); // 해당 위치 값을 경고 창으로 출력
+	});
+	</script>
+</body>
+</html>

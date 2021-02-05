@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ko">
+ <head>
+  <title>롤링배너</title>
+  <meta name="Generator" content="EditPlus">
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <link rel="stylesheet" type="text/css" href="/share/css/common.css" />  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+   <script defer src="/share/js/jquery.flexslider.js"></script>
+	
+  <style type="text/css">
+.blueberry { margin: 0 auto;  width:800px; padding:0;}
+.blueberry .slides {
+	display: block;
+	position: relative;
+	width:800px;
+margin:0; padding:0;
+}
+.blueberry .slides li {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	border:1px solid red;
+	margin:0; padding:0
+}
+.blueberry .slides li img {
+	display: block;
+	max-width: none;
+	padding:0; margin:0;
+}
+.blueberry .slides li.active { display: block; position: relative; }
+.blueberry .crop li img { width: auto; }
+
+.blueberry .pager {
+	height: 40px;
+	text-align: center;
+}
+.blueberry .pager li { display: inline-block; }
+.blueberry .pager li a,
+.blueberry .pager li a span {
+	display: block;
+	height: 4px;
+	width: 4px;
+}
+.blueberry .pager li a {
+	padding: 18px 8px;
+}
+.blueberry .pager li a span {
+	overflow: hidden;
+	background: #c0c0c0;
+	text-indent: -9999px;
+}
+.blueberry .pager li.active a span { background: #404040; }
+
+
+</style>
+<script>
+$(window).load(function() {
+	$('.blueberry').blueberry();
+});
+</script>
+
+ </head>
+
+ <body>
+ <div id="wrap">
+    <div class="blueberry">
+      <ul class="slides">
+        <li><img src="images/01.jpg" /></li>
+        <li><img src="images/02.jpg" /></li>
+      </ul>
+    </div>
+
+
+ </div>
+  
+ </body>
+</html>

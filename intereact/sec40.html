@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title>section 40 mousewheel.js</title>
+<link rel="stylesheet" href="./_Css/style.css" />
+<style type="text/css">
+div {width:600px;height:400px;background:#888;margin:50px auto;}
+div p {font-size:40px;color:#fff;}
+</style>
+</head>
+<body>
+	<div>
+		<p></p>
+	</div>
+
+	<pre>
+	mousewheel 이벤트를 사용하려면 jquery.mousewheel.min.js 파일이 있어야함
+	</pre>
+
+
+	<script type="text/javascript" src="./_Js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="./_Js/jquery.mousewheel.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$("div").on("mousewheel", function(event, delta){
+			if (delta > 0) { 
+					// 마우스 휠을 올렸을 때 실행할 구문
+					$(this).css({"background-color":"red"});
+					$("p").text("마우스 휠을 올렸습니다.");
+			} else if (delta < 0) {
+					// 마우스 휠을 내렸을 때 실행할 구문
+					$(this).css({"background-color":"blue"});
+					$("p").text("마우스 휠을 내렸습니다.");
+			}
+		});
+	});
+	</script>
+</body>
+</html>

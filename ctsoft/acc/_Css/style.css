@@ -1,0 +1,119 @@
+@import url("/_Css/common.css");
+
+/* RESET 
+html,body,div,span,obect,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,
+dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,
+hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;background:transparent}
+ol{list-style:decimal}
+pre{display:inline-block}
+a{margin:0;padding:0;vertical-align:baseline;background:transparent}
+ins{color:#000;text-decoration:none}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{table-layout:fixed;border-collapse:collapse;border-spacing:0;empty-cells:show;width:100%}
+table caption{text-align:left}
+input,select{margin:0;padding:0;vertical-align:middle}
+button{margin:0;padding:0;border:0;background-color:transparent;cursor:pointer}
+button:active{position:relative;top:0;left:0}
+button img{vertical-align:middle;}
+a{color:#333;text-decoration:none}
+*/
+
+
+
+body { color:#333; font-size:12px;}
+a {text-decoration:none;color:#333}
+a:hover, a:visited, a:focus {text-decoration:underline; font-weight:bold;}
+ul, li {margin:0; padding:0}
+li {list-style:none;}
+body h1 {width:1px; height:1px; overflow:hidden; position:absolute;}
+.vdpn {width:1px; height:1px; overflow:hidden; position:absolute;}
+/* xmp {background:#f6fdf6; padding:0px 0 15px 20px; border:1px solid #ddd; font-family:verdana;font-size:0.9em; letter-spacing:0.3px; width:98%; display:block;} */	
+.gap {clear:both; height:30px;}
+.sgap {clear:both; height:15px;}
+.pad20l {padding-left:20px;}
+label {margin-right:10px; font-weight:bold;}
+input {border:1px solid #ccc; height:18px; line-height:18px;}
+mark {font-style:normal;}
+
+h2 {font-size:17px; color:##31497a; background:url("../_Img/icon_tit01.jpg") no-repeat 0 4px;padding-left:20px;  margin:5px 0 15px;}
+h3 {background:url(/_Img/Common/blt01.gif) no-repeat 0 3px; color:#9E2F2F; font-size:16px; padding-left:20px; margin:7px 0 15px;}
+h4 {color:#0746b9; background:url("/_Img/Common/blt02.gif") no-repeat 0 5px; padding-left:15px; margin:5px 0 10px 7px; font-size:13px;}
+h5 {font-size:11px; margin:5px 0 10px 10px;background:url("/_Img/Common/blt04.gif") no-repeat 0 7px; padding-left:10px;}
+
+
+.cred {color:#9E2F2F;}
+.pad10t {padding-top:10px;}
+
+/* 컨텐츠 테이블 스타일 - tbl-type 으로 시작  */
+.tbl-type01 {border-collapse: collapse; border-spacing: 0px; border:1px solid #bfbfbf; width: 100%; background:#fff; border-top:2px solid #444;}
+.tbl-type01 th {background: rgb(245, 245, 245); padding: 10px 10px 10px 10px; text-align: center; line-height: 110%; border:1px solid rgb(218, 218, 218) ;}
+.tbl-type01 td {padding: 10px 10px 10px 10px; text-align: center; border:1px solid  rgb(218, 218, 218);}
+.tbl-type01 .left,.tbl-type01 .l {}/*여백 재설정이 필요할 경우*/
+.tbl-type01 caption {visibility:hidden; width:1px; height:1px; overflow:hidden;font-size:0; line-height:0;}
+
+
+/* 레이아웃 */
+#header {position:fixed; width:100%;background:#2f629e; z-index:9999; top:0; left:0;}
+#contain {position:relative; width:1000px; margin:30px auto; font-size:1em;}
+.cont_wrap {margin-left:20px;}
+#container {margin:70px auto 0; width:98%;}
+
+
+
+
+/* 메뉴 */
+#menu {width:980px; margin:0 auto; padding:20px 0;  text-align:center; letter-spacing:-1px; font-size:14px}
+#menu li {display:inline-block; *display:inline; *zoom:1; margin-right:30px;}
+#menu li a {color:#fff;}
+/* #menu li a:hover, #menu li a:focus {letter-spacing:-2px; background:#666; color:#fff; font-weight:bold; padding:2px} */
+
+
+
+
+/* 테이블 */
+table.tbl_basic {border-collapse:collapse; border-top:2px solid #284980; width:100%}
+table caption {visibility:hidden; width:1px; height:1px; overflow:hidden;}
+.tbl_basic thead th {background:#edf4f7; padding:5px 0; border-left:1px solid #ccc; border-right:1px solid #ccc; border-bottom:1px solid #ccc;}
+.tbl_basic tbody th {background:#f8f8f8; padding:5px 0; border-left:1px solid #ccc; border-right:1px solid #ccc; border-bottom:1px solid #ccc;}
+.tbl_basic tbody td {padding:5px; border-left:1px solid #ccc; border-right:1px solid #ccc; border-bottom:1px solid #ccc;}
+
+
+/* 컨텐츠 */
+#contain > p {margin-left:20px;}
+#contain strong {color:#C00000}
+#contain ul {margin:0 0 15px 12px;}
+#contain li {background:url("/_Img/Common/blt04.gif") no-repeat 0 7px; padding-left:10px;}
+.m_button, .m_button .txt, .m_button .txt_n {background: url("../_Img/btn_bg01.gif") no-repeat 0 0;display: inline-block;    font-size: 13px;    height: 31px;    line-height: 29px;}	
+.m_button {padding-left: 15px;position: relative;}
+.m_button .txt {background-position: right 0;font-weight: bold;padding-left: 20px;padding-right: 15px;}
+.i_jpg {background:url(http://www.bexco.co.kr/_Img/Common/icon/ico_jpg.gif) no-repeat 0 0; padding-left:25px;}
+.b_ico {display: block; font-size: 0;height: 16px; left: 15px; line-height: 0; position: absolute;text-indent: -1000em; top: 7px; width: 16px;}
+
+.wrap {border:1px solid #ddd; background:#f9f9f9; padding:20px; line-height:180%;}
+
+.line_top {border-bottom:1px dashed #ccc; height:20px;}
+.line_top span {float:right;}
+
+
+
+/* 인식의 용이성 */
+/* 리스트 스타일 */
+.sec ul {margin-left:10px; line-height:170%;}
+.sec li {background:url(/_Img/Common/blt03.gif) no-repeat 0 7px; padding-left:10px; font-size:12px; font-weight:bold; color:#2f629e;}
+
+#c01.sec {margin-top:0;}
+.sec {border-bottom:1px dashed #ccc; margin-top:30px;}
+.sec p {margin-left:20px;}
+.contents {margin:15px 0 15px; background:#f2f2f2; padding:15px 10px 15px; border:1px solid #ddd;}
+.ex-cont {margin-left:20px;}
+
+
+
+
+
+/* 이해의 용이성 */
+a.info {position:relative;z-index:24;background-color:#ccc;color:#000;text-decoration:none}
+a.info:hover, a.info:focus, a.info:active {z-index:25;background-color:#ff0}
+a.info span {position: absolute;width: 0;overflow: hidden;}
+a.info:hover span, a.info:focus span, a.info:active span {display:block;position:absolute;top:1em; left:1em; width:12em;border:1px solid #0cf;background-color:#cff;color:#000;text-align: center}

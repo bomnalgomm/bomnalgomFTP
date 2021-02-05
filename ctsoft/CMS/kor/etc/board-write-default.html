@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>부산항만공사 일반게시판 스타일 가이드</title>
+<link rel="stylesheet" href="../../_Css/common.css" />
+<style type="text/css">
+.content-wrap {width:760px;margin:0 auto;}
+.content-wrap h1 {font-size:30px;font-weight:bold;color:#222;line-height:100%;margin:20px 0;}
+</style>
+</head>
+<body>
+<div class="content-wrap">
+	<h1>일반게시판 글쓰기 스타일</h1>
+
+	<!-- board-wrap -->
+	<div id="board-wrap">
+		<!-- board-write-tbl  / label for 값과 textarea id값 매칭 -->
+		<table class="board-write-tbl">
+		<caption><span class="blind">글쓰기 폼</span></caption>
+		<colgroup>
+		<col style="width:18%" />
+		<col style="width:82%" />
+		</colgroup>
+		<tbody>
+		<tr>
+			<th scope="row"><label for="s01">제목1-1</label></th>
+			<td class="l"><input type="checkbox" name="checkbox" id="chk01"><label for="chk01" class="mg30r">체크형1</label><input type="checkbox" name="checkbox" id="chk02"><label for="chk02" class="mg30r">체크형2</label><input type="checkbox" name="checkbox" id="chk03"><label for="chk03">체크형3</label></td>
+		</tr>
+		<tr>
+			<th scope="row"><label for="s02">제목1-2</label></th>
+			<td class="l"><input type="text" id="s02" name="" class="text w98p" /></td>
+		</tr>
+		<tr>
+			<th scope="row"><label for="srch">제목1-3</label></th>
+			<td class="l">
+				<select id="srch" name="search">
+				<option value="b_subject">제목</option>
+				<option value="b_content">내용</option>
+				<option value="b_subject|b_content">제목+내용</option>
+				<option value="reg_name">작성자</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row"><label for="">제목1-4</label></th>
+			<td class="l"><input type="text" class="text w90 mg5r">~ <input type="text" class="text w90 mg5r"></td>
+		</tr>
+		<tr>
+			<td class="l" colspan="2">
+			<!-- 에디터 프로그램 삽입 영역 -->
+			<textarea name="" cols="50" rows="10" class="textarea w98p"></textarea>
+			<!-- 에디터 프로그램 삽입 영역 //-->
+			</td>
+		</tr>
+		</tbody>
+		</table>
+		<!-- board-write-tbl //-->
+
+		<!-- board-list-btns -->
+		<div class="board-list-btns">
+			<input type="submit" class="p-btn" value="저장" /> <a href="#" class="g-btn">취소</a> <a href="#" class="w-btn">목록</a>
+		</div>
+		<!-- board-list-btns //-->
+	</div>
+	<!-- board-wrap //-->
+</div>
+</body>
+</html>

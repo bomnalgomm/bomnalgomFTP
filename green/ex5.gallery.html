@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>150825 수업</title>
+<link href="css/base.css" rel="stylesheet" />
+<style type="text/css">
+#wrap {position:relative;width:500px;margin:50px auto;}
+.main {position:relative;margin-bottom:10px;width:500px;height:374px;}
+.main p {position:absolute;top:0;left:0;}
+.main img {width:100%;}
+.list {width:440px;margin:0 auto;overflow:hidden;}
+.list ul {float:left;}
+.list li {float:left;margin:0 5px;}
+.list li img {width:100px;}
+.btn-prev, .btn-next {position:absolute;top:405px;border:0;width:30px;height:30px;text-align:center;padding:6px 0;background:#33f;color:#fff;border-radius:15px;font-size:11px;cursor:pointer;}
+.btn-prev {left:0;}
+.btn-next {right:0;}
+</style>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+$(function() {//실행문 시작
+	var inner = $(".list .inner");
+	var ul = inner.find("ul");
+	var li = ul.find("li");
+	var ulSize = ul.size();
+	var liSize = li.size(); // 셀렉터의 갯수를 저장함
+	var liW = li.outerWidth(true); // 마진을 포함한 가로공간값을 저장함
+	var ulW = ul.width();
+
+	// .inner의 너비값 구함
+	// .inner의 너비값 = li태그 가로공간 * li태그 갯수	
+	inner.css({width:liSize*liW});	
+	// ul의 막내를 list의 제일 앞쪽으로 가져다 놓고 inner의 마진값을 다시 설정해 1번 이미지의 위치를 재설정함
+	ul.last().prependTo(inner);
+	inner.css({marginLeft:ulW*-1});
+	
+	// li를 클릭 > main p img의 src값이 변경. 내가 클릭한 대상의 안쪽에 포함된 img태그의 src값으로 변경
+	/* li.on({
+		click : function(){
+			var tg = $(this).find("img").attr("src");
+			$(".main p img").attr("src", tg);
+			return false;			
+		}
+	}); */
+	
+	li.on({
+		click:function(){
+			var tg = $(this).find("img").attr("src"); // 내가 클릭한 이미지의 경로값 저장 
+			$(".main").prepend("<p><img src='" + tg + "' /></p>"); // .main에 새로운 p태그를 추가시켜 내가 클릭한 이미지를 담아 놓음
+			// 기존의 p태그의 작성순서가 뒤쪽으로 배치되어지고 있기 때문에 last()명령을 사용해 대상을 선택하고 페이드효과를 사용해 보이지않게 처리함, 이때 기존의 p태그가 완전히 삭제되도록 콜백함수를 적용시켜 놓음
+			$(".main p").last().stop().fadeOut(300,function(){
+				$(this).remove(); // 태그자체를 삭제
+			});
+			return false;
+		}
+	}); // 썸네일 클릭 마지막
+	
+	// .btn-prev 버튼 클릭한다면
+	$(".btn-prev").on("click",function(){
+		// inner의 margin값이 변경되도록 작성
+		// inner의 새로운 margin-left 값 = 현재 inner의 margin 값 + ulW
+		var current = inner.css("margin-left"); // css()명령으로 수집된 자료는 무조건 문자로 인식됨
+		var innerML = parseInt(current); // parseInt()명령으로 문자로 인식되는 자료를 숫자로 전환시켜줌
+		var next = innerML + ulW;
+		inner.stop().animate({marginLeft:next},500,function(){
+			var ul = $(inner).find("ul");
+			ul.last().prependTo(inner);
+			inner.css({marginLeft:ulW*-1});
+		});
+	}); // btn-prev.click() 마지막
+	
+	// .btn-next 버튼 클릭한다면
+	$(".btn-next").on("click",function(){
+		var current = inner.css("margin-left");
+		var innerML = parseInt(current);
+		var next = innerML - ulW;
+		inner.stop().animate({marginLeft:next},500,function(){
+				var ul = inner.find("ul");
+				ul.first().appendTo(inner);
+				inner.css({marginLeft:ulW*-1});
+		});
+		return false;
+	}); // btn-next.click() 마지막
+	
+	
+	
+	
+});//실행문 끝
+</script>
+</head>
+
+<body>
+	<section id="wrap">
+    	<div class="main">
+        	<p><img src="img/m01.jpg" alt="" /></p>
+        </div>
+        <div class="list">
+        	<div class="inner">
+           		<ul>
+                	<li><a href="#"><img src="img/m01.jpg" alt="" /></a></li>
+                	<li><a href="#"><img src="img/m02.jpg" alt="" /></a></li>
+                	<li><a href="#"><img src="img/m03.jpg" alt="" /></a></li>                                        
+                	<li><a href="#"><img src="img/m04.jpg" alt="" /></a></li>                    
+                </ul>
+           		<ul>
+                	<li><a href="#"><img src="img/m05.jpg" alt="" /></a></li>
+                	<li><a href="#"><img src="img/m06.jpg" alt="" /></a></li>
+                	<li><a href="#"><img src="img/m07.jpg" alt="" /></a></li>                                        
+                	<li><a href="#"><img src="img/m08.jpg" alt="" /></a></li>                    
+                </ul>
+           		<ul>
+                	<li><a href="#"><img src="img/m09.jpg" alt="" /></a></li>
+                	<li><a href="#"><img src="img/m10.jpg" alt="" /></a></li>
+                	<li><a href="#"><img src="img/m11.jpg" alt="" /></a></li>                                        
+                	<li><a href="#"><img src="img/m12.jpg" alt="" /></a></li>                    
+                </ul>
+           		<ul>
+                	<li><a href="#"><img src="img/m13.jpg" alt="" /></a></li>
+                	<li><a href="#"><img src="img/m14.jpg" alt="" /></a></li>
+                	<li><a href="#"><img src="img/m15.jpg" alt="" /></a></li>                                        
+                	<li><a href="#"><img src="img/m16.jpg" alt="" /></a></li>                    
+                </ul>    
+           		<ul>
+                	<li><a href="#"><img src="img/m17.jpg" alt="" /></a></li>
+                	<li><a href="#"><img src="img/m18.jpg" alt="" /></a></li>
+                	<li><a href="#"><img src="img/m19.jpg" alt="" /></a></li>                                        
+                	<li><a href="#"><img src="img/m20.jpg" alt="" /></a></li>                    
+                </ul>                                                
+            </div>
+        </div>
+        <button class="btn-prev"><span>이전</span></button>
+        <button class="btn-next"><span>다음</span></button>        
+    </section>
+</body>
+</html>

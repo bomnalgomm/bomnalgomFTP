@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+* {margin:0;padding:0;}
+#box_a {height:400px;background:#f1779e;float:left;width:30%}
+#box_b{height:400px;background:#fcb354;width:50%;float:left;}
+#box_c{height:400px;background:#24bbaf;width:20%;float:right;}
+
+@media screen and (max-width:1024px) {
+#box_b{float:none;width:auto;}
+#box_c{float:none;clear:both;width:auto;}
+}
+
+@media screen and (max-width:800px) {
+#box_a{float:none;width:auto;}
+}

@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="css/base.css" rel="stylesheet">
+<style>
+.wrap{width:200px; height:150px; margin:50px; position:relative; background:#3CF; overflow:hidden;}
+.wrap li{position:absolute; top:100%; left:0;}
+.wrap li.L1{top:0;}
+</style>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script>
+$(function(){ // 실행틀 시작
+	// 최초로 출력되고 있는 이미지 틀의 인덱스값을 저장시킨 변수를 만듬.
+	var current = 0;
+	// 각각의 이미지를 담고있는 틀을 저장시킨 변수를 만듬.
+	var banner = $(".wrap li")
+	
+	// setInterval()명령을 사용해서 current변수에 저장된 값이 하나씩 커지도록 명령. 이때 이미지가 총 3장이 있고 마지막 이미지의 인덱스값은 2가 됨. 그래서 current에 저장되어질 값이 3이 된다면 해당변수값에 대한 자료는 찾을 수 없기 때문에 이미지 롤링이 제대로 구현될 수 없음. 그렇다면 조건문을 사용해 current변수에 저장될 값이 3이 되는 순간 current변수의 값을 강제로 0이되도록 만들어줌.
+	setInterval(function(){
+		// prev변수를 만들어 현재 출력되어지고 있는 이미지틀을 지정함.
+		var prev = banner.eq(current);
+		// prev변수의 대상은 현재 위치에서 위쪽으로 올라가도록 명령
+		prev.css({top:0}).stop().animate({top:"-100%"},500);
+		current ++;   // current변수가 가지고 있는 값에 1을 더함
+		// if조건문을 사용해 current변수의 범위를 제한시킴
+		if(current == 3){
+			current = 0;
+		}
+		// next변수를 만들어 다음으로 출력되어져야하는 이미지틀을 지정함.
+		var next = banner.eq(current);
+		next.css({top:"100%"}).stop().animate({top:0},500)
+		
+	},3000) // setInterval()명령 끝
+		
+}) // 실행틀 끝
+</script>
+</head>
+
+<body>
+<section class="wrap">
+	<ul>
+   	<li class="L1"><img src="img/m01.jpg"></li>
+      <li class="L2"><img src="img/m05.jpg"></li>
+      <li class="L3"><img src="img/m08.jpg"></li>
+   </ul>
+</section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

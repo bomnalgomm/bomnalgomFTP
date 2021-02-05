@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>3. 기본명령</title>
+<style type="text/css">
+* {margin:0;padding:0;}
+ul {list-style:none;}
+textarea {width:90%;height:200px;margin:30px 0 10px;}
+body>div {border:5px solid #333;padding:20px;}
+.d5 .inner {background:#ccc;padding:10px 0;}
+.d5 p {background:#099;margin:5px;}
+.d6 .txt {margin-bottom:15px;}
+.d6 .box {background:#CCC;padding:10px;}
+.d6 .box h1 {font-size:12px;font-weight:normal;background:#C9C;margin:5px;}
+.d7 .p1 {color:#f30;}
+.d61 .txt {margin-bottom:15px;}
+.d61 .box {background:#CCC;padding:10px;}
+.d61 .box h1 {font-size:12px;font-weight:normal;background:#C9C;margin:5px;}
+.d10 .red {color:#c00;}
+.d11 .case {width:100px;height:100px;}
+.d11 .case ul {list-style:none;}
+.d11 .case li {width:100px;height:100px;float:left;}
+.d11 .case li:nth-child(odd) {background:#39f;}
+.d11 .case li:nth-child(even) {background:#f90;}
+.d12 {*zoom:1;}
+.d12:after {display:block;content:"";clear:both;}
+.d12 ul {float:left;margin-right:30px;}
+.d12 .u1 .on {color:#f66;}
+
+</style>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {//실행틀의 시작
+	// .d1을 선택해 태그안의 텍스트내용을 "변경 후"로 바꿈
+	$(".d1").text("변경 후");
+	// .d2의 a태그를 h1태그가 감싸는 형태로 바꿈
+	$(".d2").html("<h1><a href='#'>링크텍스트</a></h1>");
+	// .d3 .p1의 텍스트 내용을 저장시킴
+	var txt1 = $(".d3 .p1").text();
+	// .d3 .p2에 위에서 저장시킨 내용을 삽입
+	$(".d3 .p2").text(txt1); // 변수명은 따옴표 하지 않음, 문자열만 따옴표 사용	
+
+	// .d4 p의 html구조를 저장
+	var d4 = $(".d4 p").html();
+	// .d4 h1의 새로운 html내용으로 활용
+	$(".d4 h1").html(d4);
+	
+	// .d5 .inner를 선택해 새로운 p태그들이 추가되어지도록 명령
+	/*
+	$(".d5 .inner").prepend("<p>prepend명령</p>"); // 추가될 대상, 장소
+	$(".d5 .inner").append("<p>append명령</p>");
+	$(".d5 .inner").before("<p>before명령</p>");
+	$(".d5 .inner").after("<p>after명령</p>");	
+	
+	=> 동일한 선택자에게 여러개의 명령을 실행시킬 경우 선택자를 한번만 불러내는 것이 효율적임(로딩)
+	$("선택자").명령어().명령어().명령어().명령어();
+	이러한 형태를 메서드체인이라고 부름
+	*/
+	
+	$(".d5 .inner").prepend("<p>prepend명령</p>")
+                   .append("<p>append명령</p>")
+                   .before("<p>before명령</p>")
+                   .after("<p>after명령</p>");	
+		
+	// .d6 .txt의 내용을 저장
+	// .d6 .box에 추가되도록 명령
+	var txt6 = $(".d6 .txt").html(); //추가될 장소, 대상	
+	/* 
+	$(txt6).prependTo(".d6 .box");
+    $(txt6).appendTo(".d6 .box");
+    $(txt6).insertBefore(".d6 .box");
+    $(txt6).insertAfter(".d6 .box");		
+	*/
+	$(txt6).prependTo(".d6 .box").appendTo(".d6 .box").insertBefore(".d6 .box").insertAfter(".d6 .box");	// 순차적으로 실행되면서 제일 마지막 아이만 남고 앞전 아이들은 삭제됨
+	
+	var txt8 = $(".d61 .txt").html(); //추가될 장소, 대상	
+ 
+	$(txt8).prependTo(".d61 .box");
+    $(txt8).appendTo(".d61 .box");
+    $(txt8).insertBefore(".d61 .box");
+    $(txt8).insertAfter(".d61 .box");		
+	
+	
+	// .d7 .p1의 글자색상 값을 저장 => 스타일과 관련 css()명령 사용
+	var red = $(".d7 .p1").css("color"); // 스타일속성이름
+	// .d7 .p2의 글자색상을 위의 값으로 변경
+	$(".d7 .p2").css("color",red);
+	
+	// .d8 a태그의 href속성 값을 변경시킴. href속성은 태그의 속성으로 attr() 명령을 사용하게 됨
+	$(".d8 a").attr("href","http://www.daum.net");
+	
+	// .d9 a태그의 href속성 값을 저장
+	var d9 = $(".d9 a").attr("href");	
+	// .d9 p img 태그의 src속성 값으로 위의 내용을 사용
+	$(".d9 p img").attr("src",d9);
+	
+	// .d10의 첫번째 p태그를 선택해서 red클래스 삭제
+	$(".d10 p:first-child").removeClass("red");
+	// .d10의 두번째 p태그를 선택해서 red클래스 추가
+	$(".d10 p:nth-child(2)").addClass("red");
+	
+	// .d11 ul li의 갯수를 저장
+	var ListSize = $(".d11 ul li").size();	
+	// .d11 ul의 너비값 변경, css(); 명령
+	var ulWidth = 100 * ListSize
+	// .d11 ul의 너비값 = li태그의 너비값 * li태그의 갯수
+	$(".d11 ul").css("width",ulWidth);
+	
+	// .d12 .u1 li .on의 순서값 저장 (a)
+	var Ul1 = $(".d12 .u1 .on").index();
+	// .d12 .u1 li .on의 color값 저장 (b)
+	var Color = $(".d12 .u1 .on").css("color");
+	// .d12 .u2 li태그 중 a와 동일한 순번을 가진 태그를 선택 한 후 color 속성을 변경시킴
+	$(".d12 .u2 li").eq(Ul1).css("color",Color);
+	
+		
+});//실행틀 끝
+</script>
+</head>
+
+<body>
+<textarea>
+1. text()명령
+선택자태그의 안쪽에 작성된 텍스트 내용을 변경시키는 명령
+$("선택자").text("변경시킬 텍스트");
+$("선택자").text(); -> 선택자태그의 텍스트내용을 저장시키겠다는 명령
+
+2. html()명령
+선택자태그의 안쪽에 작성된 html태그를 변경시키는 명령.
+$("선택자").html("태그구조");
+$("선택자").html(); -> 선택자태그의 html구조를 저장시키겠다는 명령
+
+
+== 문자
+js의 문자는 반드시 따옴표안에 작성해야함
+예) "문자"
+만약 문자의 길이가 너무 길어질 경우 문자를 분리시킬 수도 있음
+"가나다라마바사아자차카타파하"
+"가나다" + "라마바사" + "아자차카타파하" (문자와 문자가 연결되도록 + 기호 사용)
+
+== 변수
+자료를 저장시킬 창고
+
+var 변수명 = 저장시킬 내용 (숫자,문자,식,함수등의 다양한 형태 자료 저장가능)
+
+변수는 문자가 아니기때문에 변수이름을 불러낼때는 절대 따옴표를 사용하지 않을 것임
+
+== 함수
+여러줄의 명령을 묶어놓을 주머니
+
+function(){명령들}
+
+== 인덱스 index
+자료의 순서를 나타냄
+자바스크립트에서 첫번째 자료의 인덱스값은 0으로 시작
+
+
+</textarea>
+
+<div class="d1">변경 전</div>
+<div class="d2"><a href="#">링크텍스트</a></div>
+<div class="d3">
+	<p class="p1">d3클래스의 첫번째 p태그</p>
+	<p class="p2"></p>
+</div>
+<div class="d4">
+	<h1>d4클래스의 h1</h1>
+    <p><a href="#">d4클래스의 p</a></p>
+</div>
+
+<textarea>
+3. 기존의 내용을 그대로 유지한채 새로운 구조가 추가되어지도록 작성하는 명령
+
+$("새로운 내용이 추가될 장소").prepend("추가되어질 새로운 내용");//안쪽의 앞쪽
+$("새로운 내용이 추가될 장소").append("추가되어질 새로운 내용");//안쪽의 뒤쪽
+$("새로운 내용이 추가될 장소").before("추가되어질 새로운 내용");//바깥쪽의 앞쪽
+$("새로운 내용이 추가될 장소").after("추가되어질 새로운 내용");//바깥쪽의 뒤쪽
+
+$("새로운 내용이 추가될 내용").prependTo("추가되어질 새로운 장소");//안쪽의 앞
+$("새로운 내용이 추가될 내용").appendTo("추가되어질 새로운 장소");//안쪽의 뒤
+$("새로운 내용이 추가될 내용").insertBefore("추가되어질 새로운 장소");//바깥쪽의 앞
+$("새로운 내용이 추가될 내용").insertAfter("추가되어질 새로운 장소");//바깥쪽의 뒤
+
+장소영역의 안쪽 제일 앞에 추가 = prepend / prependTo
+장소영역의 안쪽 제일 뒤에 추가 = append / appendTo
+장소영역의 바깥쪽 제일 앞에 추가 = before / insertBefore
+장소영역의 바깥쪽 제일 뒤에 추가 = after / insertAfter
+</textarea>
+<div class="d5">
+	<div class="inner">.d5 .inner div</div>
+</div>
+
+<div class="d6">
+	<div class="txt"><h1><a href="#">.d6 .txt</a></h1></div>
+    <div class="box"><p>.d6 .box p</p></div>
+</div>
+
+<div class="d61">
+	<div class="txt"><h1><a href="#">.d61 .txt</a></h1></div>
+    <div class="box"><p>.d61 .box p</p></div>
+</div>
+
+<textarea>
+4. css()명령
+선택자의 스타일 속성을 변경시키는 명령
+$("선택자").css("스타일속성이름","값");
+$("선택자").css({스타일속성이름:"값"}); // 존슨형태, 여러개의 값 작성
+$("선택자").css({스타일속성이름:"값", 스타일속성이름:"값", 스타일속성이름:"값"});
+
+css()명령을 사용해 선택자의 스타일 속성을 저장시킬 수도 있음
+$("선택자").css("스타일속성이름");
+
+스타일속성에 하이픈 들어가는 경우 두번째 단어를 대문자로 적는다
+margin-left > marginLeft 
+$("선택자").css({marginLeft:"값"});
+
+</textarea>
+
+<div class="d7">
+	<p class="p1">.d7 .p1</p>
+    <p class="p2">.d7 .p2</p>
+</div>
+
+<textarea>
+5. attr()명령
+태그의 속성 값을 변경시키는 명령
+
+$("선택자").attr("속성이름","값"); // 태그의 속성 값을 변경시키는 명령
+$("선택자").attr("속성이름") // 선택자의 특정 속성 값을 저장시키는 명령
+
+
+</textarea>
+
+<div class="d8">
+	<a href="http://www.naver.com" target="_blank" title="새창열림">Link</a>
+</div>
+
+<div class="d9">
+	<a href="img/m01.jpg">Click</a>
+    <p><img src="img/m03.jpg" alt="" /></p>
+</div>
+
+<textarea>
+6. 선택자태그에 새로운 클래스이름을 추가하거나 삭제시킬 수 있는 명령
+$("선택자").addClass("클래스이름");
+$("선택자").removeClass("클래스이름");
+</textarea>
+
+<div class="d10">
+	<p class="red">1</p>
+	<p>2</p>
+	<p>3</p>
+	<p>4</p>            
+</div>
+
+<textarea>
+$("선택자").size() > 선택자로 지정한 태그의 갯수를 저장하는 명령
+
+$("선택자").index(); // 선택자의 index값을 저장하는 명령
+$("선택자").eq(인덱스값); // 선택자로 지정된 여러개의 태그들 중 특정 index값을 가진 대상만 선택하는 명령
+
+</textarea>
+
+<div class="d11">
+	<div class="case">
+    	<ul>
+        	<li>1</li>
+        	<li>2</li>
+        	<li>3</li>
+        	<li>4</li>
+        	<li>5</li>
+        	<li>6</li>
+        	<li>7</li>                                                            
+        </ul>
+    </div>
+</div>
+
+<div class="d12">
+	<ul class="u1">
+    	<li class="on">Left List1</li>
+    	<li>Left List2</li>
+    	<li>Left List3</li>
+    	<li>Left List4</li>                        
+    </ul>
+	<ul class="u2">
+    	<li>Right List1</li>
+    	<li>Right List2</li>
+    	<li>Right List3</li>
+    	<li>Right List4</li>                        
+    </ul>    
+</div>
+</body>
+</html>
+
+

@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>부산교통공사 대표 프로그램스타일가이드</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+<link type="text/css" rel="stylesheet" href="./_Css/common.css" />
+<link type="text/css" rel="stylesheet" href="./_Css/football/board.css" />
+<link type="text/css" rel="stylesheet" media="all" href="./_Css/football/board.rspnsv.css" />
+<link type="text/css" rel="stylesheet" href="./_Css/style.default.css" />
+<!--[if lt IE 9]>
+<script src="./_Js/respond.min.js"></script>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+
+<div id="content-wrap">
+<h2>탭스타일1</h2>
+<div class="c-tab01" id="deptCategoryTab"> 
+	<ul>
+		<li><a href="#"><span>탭메뉴 1-1</span></a></li>
+		<li><a href="#"><span>탭메뉴 1-2</span></a></li>
+		<li><a href="#" class="over"><span>탭메뉴 1-3</span></a></li>
+		<li><a href="#"><span>탭메뉴 1-4</span></a></li>
+		<li><a href="#"><span>탭메뉴 1-5</span></a></li>
+		<li><a href="#"><span>탭메뉴 1-6</span></a></li>
+	</ul>
+</div>
+<script type="text/javascript">
+function setDeptCategoryTab(){	$("#deptCategoryTab").rspnsvTab_fwidth({height:43,showCtrlBtns:true,ctrlBtnWidth:40,line_limit: 5});}
+function thisPageResizeAction(){		setDeptCategoryTab();}
+$(document).ready(function(){ setDeptCategoryTab(); });
+</script>
+
+<div class="gap"></div>
+
+<h2>타이틀 스타일</h2>
+<h3 class="c-tit01">타이틀 스타일 1 : c-tit01</h3>
+<h4 class="c-tit02">타이틀 스타일 2 : c-tit02</h4>
+<h5 class="c-tit03">타이틀 스타일 3 : c-tit03</h5>
+
+<div class="gap"></div>
+
+<h2>리스트 스타일</h2>
+<ul class="c-list01">
+	<li>리스트 스타일 1 : c-list01</li>
+	<li>리스트 스타일 1 <br />두줄로 출력될때는 이렇게 출력됨</li>
+</ul>
+<div class="sgap"></div>
+<ul class="c-list02">
+	<li>리스트 스타일 2 : c-list02</li>
+	<li>리스트 스타일 2 <br />두줄로 출력될때는 이렇게 출력됨</li>	
+</ul>
+<div class="sgap"></div>
+<ul class="c-list03">
+	<li>리스트 스타일 3 : c-list03</li>
+	<li>리스트 스타일 3 <br />두줄로 출력될때는 이렇게 출력됨</li>	
+</ul>
+
+<div class="gap"></div>
+
+<h2>테이블 : tbl-type01</h2>
+<table class="tbl-type01">
+<caption><span class="blind"></span></caption>
+<thead>
+<tr>
+	<th scope="col">구분</th>
+	<th scope="col">제목1-1</th>
+	<th scope="col">제목1-2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<th scope="row">왼제목1-1</th>
+	<td>내용1-1</td>
+	<td>내용1-2</td>
+</tr>
+</tbody>
+</table>
+
+<div class="gap"></div>
+
+<h2>안내문 info-box</h2>
+<div class="info-box">
+	<p class="info-tit">안내문 제목 info-tit</p>
+	<ul class="c-list02">
+		<li>여러줄로 안내해야 할 내용을 제공하는 부분입니다. 01</li>
+		<li>여러줄로 안내해야 할 내용을 제공하는 부분입니다. 02</li>
+	</ul>
+</div>
+
+<div class="sgap"></div>
+
+<h2>안내문 info-box.cg</h2>
+<div class="info-box cg">
+	<p class="info-tit">안내문 제목 info-tit</p>
+	<ul class="c-list02">
+		<li>여러줄로 안내해야 할 내용을 제공하는 부분입니다. 01</li>
+		<li>여러줄로 안내해야 할 내용을 제공하는 부분입니다. 02</li>
+	</ul>
+</div>
+
+<div class="gap"></div>
+
+<p class="info-ex">주의사항 및 알아두셔야 할 내용을 한줄로 제공하는 부분입니다.  .info-ex</p>
+
+	<div class="gap"></div>
+	
+	<h2>03. 버튼</h2>
+	<h3>컨텐츠 버튼</h3>
+	<h4>cw-btn</h4>
+	<a href="#" class="cw-btn"><span>기본버튼</span></a>
+	<input type="submit" class="cw-btn" value="input 태그" /><button class="cw-btn">button 태그</button>
+	<a href="#" class="cw-btn"><span class="down">다운버튼</span></a>
+	<a href="#" class="cw-btn"><span class="link">링크버튼</span></a>
+	<a href="#" class="cw-btn"><span class="win">새창버튼</span></a>
+	
+	<div class="sgap"></div>
+	
+	<h4>cp-btn</h4>
+	<a href="#" class="cp-btn"><span>컬러버튼</span></a>
+	<input type="submit" class="cp-btn" value="input 태그" /><button class="cp-btn">button 태그</button>
+	<a href="#" class="cp-btn"><span class="down">다운버튼</span></a>
+	<a href="#" class="cp-btn"><span class="link">링크버튼</span></a>
+	<a href="#" class="cp-btn"><span class="win">새창버튼</span></a>	
+
+	<div class="sgap"></div>
+	
+	<h4>cdp-btn</h4>
+	<a href="#" class="cdp-btn"><span>컬러버튼</span></a>
+	<input type="submit" class="cdp-btn" value="input 태그" /><button class="cdp-btn">button 태그</button>
+	<a href="#" class="cdp-btn"><span class="down">다운버튼</span></a>
+	<a href="#" class="cdp-btn"><span class="link">링크버튼</span></a>
+	<a href="#" class="cdp-btn"><span class="win">새창버튼</span></a>		
+	
+	<div class="sgap"></div>
+	
+	<h4>cg-btn</h4>
+	<a href="#" class="cg-btn"><span>그레이버튼</span></a>
+	<input type="submit" class="cg-btn" value="input 태그" /><button class="cg-btn">button 태그</button>
+	<a href="#" class="cg-btn"><span class="down">다운버튼</span></a>
+	<a href="#" class="cg-btn"><span class="link">링크버튼</span></a>
+	<a href="#" class="cg-btn"><span class="win">새창버튼</span></a>		
+	
+	<div class="sgap"></div>
+	
+	<h3>작은컨텐츠 버튼</h3>
+	<h4>sw-btn</h4>
+	<a href="#" class="sw-btn"><span>기본버튼</span></a>
+	<input type="submit" class="sw-btn" value="input 태그" /><button class="sw-btn">button 태그</button>
+	
+	<h4>sg-btn</h4>
+	<a href="#" class="sg-btn"><span>그레이버튼</span></a>
+	<input type="submit" class="sg-btn" value="input 태그" /><button class="sg-btn">button 태그</button>
+	
+	<h4>sp-btn</h4>	
+	<a href="#" class="sp-btn"><span>그레이버튼</span></a>
+	<input type="submit" class="sp-btn" value="input 태그" /><button class="sp-btn">button 태그</button>
+	
+	<h4>sdp-btn</h4>	
+	<a href="#" class="sdp-btn"><span>그레이버튼</span></a>
+	<input type="submit" class="sdp-btn" value="input 태그" /><button class="sdp-btn">button 태그</button>	
+	
+	<div class="sgap"></div>
+	
+	<h3>프로그램버튼</h3>
+	
+	<h4>bp-btn</h4>
+	<a href="#" class="bp-btn"><span>컬러버튼</span></a>
+	<input type="submit" class="bp-btn" value="input 태그" /><button class="bp-btn">button 태그</button>
+	
+	<h4>bdp-btn</h4>
+	<a href="#" class="bdp-btn"><span>컬러버튼</span></a>
+	<input type="submit" class="bdp-btn" value="input 태그" /><button class="bdp-btn">button 태그</button>	
+	
+	<h4>bg-btn</h4>
+	<a href="#" class="bg-btn"><span>그레이버튼</span></a>
+	<input type="submit" class="bg-btn" value="input 태그" /><button class="bg-btn">button 태그</button>
+	
+	<h4>bw-btn</h4>
+	<a href="#" class="bw-btn"><span>화이트버튼</span></a>
+	<input type="submit" class="bw-btn" value="input 태그" /><button class="bw-btn">button 태그</button>
+	
+	<div class="sgap"></div>
+	
+	<h3>빅프로그램 버튼</h3>
+	<h4>lp-btn</h4>
+	<a href="#" class="lp-btn"><span>빅컬러버튼</span></a>
+	<input type="submit" class="lp-btn" value="input 태그" /><button class="lp-btn">button 태그</button>
+
+	<h4>ldp-btn</h4>
+	<a href="#" class="ldp-btn"><span>빅컬러버튼</span></a>
+	<input type="submit" class="ldp-btn" value="input 태그" /><button class="ldp-btn">button 태그</button>	
+		
+	<h4>lg-btn</h4>
+	<a href="#" class="lg-btn"><span>빅그레이버튼</span></a>
+	<input type="submit" class="lg-btn" value="input 태그" /><button class="lg-btn">button 태그</button>
+	
+	<h4>lw-btn</h4>
+	<a href="#" class="lw-btn"><span>빅화이트버튼</span></a>
+	<input type="submit" class="lw-btn" value="input 태그" /><button class="lw-btn">button 태그</button>
+	
+	<div class="gap"></div>
+
+</body>
+</html>

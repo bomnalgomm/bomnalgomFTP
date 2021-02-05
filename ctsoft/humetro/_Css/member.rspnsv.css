@@ -1,0 +1,55 @@
+@charset "utf-8";
+@media all and (max-width:681px){
+	.login-wrap.m-leave.monitor .mem-box .m-tit {float:none;margin-bottom:10px;}
+	.login-wrap.m-leave.monitor .mem-box .m-txt {float:none;margin-left:0;}
+}
+	
+@media all and (max-width:652px){
+	/* 아이디비번찾기 */
+	.mem-box p {width:100%;}
+	.mem-box .cw-btn {position:relative;top:auto;right:auto;margin-top:10px;}
+	.monitor-wrap .mo-cont .tit {width:65%;font-size:20px;}	
+	.monitor-wrap .mo-cont .txt {width:100%;font-size:14px;}
+	
+	/* 회원정보동의 */
+	.agree-wrap .law-box .c-tit03, .cert-wrap .law-box .c-tit03 {width:100%;}
+	.agree-wrap .law-box ul,.cert-wrap .law-box ul {width:100%;border:0;padding-left:1%;}
+	
+	/* 결과확인 */
+	.result-wrap .result-table {width:652px;}  
+	
+	.monitor-wrap .mo-cont {background-size:45%;padding:25px;;}
+	.login-wrap.m-leave.monitor .mem-box .m-txt {margin:0;}
+	.login-wrap.m-leave.monitor .mem-box .cw-btn {position:absolute;top:14px;right:20px;}
+}
+	
+@media all and (max-width:581px){
+	/* 로그인 */
+	.login-wrap .login-tit, .login-wrap.m-leave .login-tit {width:100%;float:none;background-position:right 0;}
+	.login-wrap .login-tit .tit, .login-wrap.m-leave .login-tit .tit {float:left;}
+	.login-wrap.m-leave .login-tit .tit {margin-bottom:20px;float:none;}
+	.login-wrap .login-tit p {float:left;}
+	.login-wrap .login-tit p span {display:inline;}
+	.login-wrap.m-leave .login-tit p {margin-top:0;width:75%;font-size:13px;}
+	.login-wrap .login-cont {width:100%;float:none;}
+	.login-wrap.m-leave .login-cont {margin-top:30px;}
+	.login-wrap.m-leave.monitor .login-tit {padding-bottom:45px;}
+	
+	/* 아이디비번찾기 */
+	.find-wrap .find-cont {width:94%;}
+	.find-wrap .find-cont:first-child {border-bottom:1px dashed #ddd;}
+	.find-wrap .find-cont:first-child p {margin-bottom:21px;}
+	
+	.acc-terms .terms-cont {float:none;width:100%;margin-bottom:10px;clear:both;} 
+}	
+
+@media all and (max-width:441px){
+	/* 로그인 */
+	.login-wrap .login-cont .frm .login-frm {width:68%;}
+	.login-wrap .login-cont .member-link a {width:100%;}
+	.login-wrap .login-cont .member-link a:first-child {border:0;width:100%;border-bottom:1px solid #ddd;}
+	.login-wrap.m-leave.monitor .mem-box .cw-btn {position:relative;top:auto;right:auto;}
+	
+	.monitor-wrap .mo-cont {background:#fafafa;background-image:none;}	
+	.monitor-wrap .mo-cont .tit {width:100%;}	
+}	

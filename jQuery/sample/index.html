@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>웹 디자이너를 위한 jQuery 입문 샘플 코드</title>
+<style>
+body{
+	line-height:1.4;
+	font-family:'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+	padding:10px 30px;
+}
+p{
+	max-width:640px;
+}
+</style>
+</head>
+<body>
+<h1>웹 디자이너를 위한 jQuery 입문 샘플 코드</h1>
+<hr>
+<h2>샘플 파일을 사용하기 전에</h2>
+<p>일반적인 환경에서 샘플 파일은 특별히 문제없음을 확인하였으나, 만일 장애가 발생하여 그 결과 어떠한 손해가 발생한다 할지라도 기술 평론사 및 저자는 어떠한 책임도 지지 않는다. 또한 발생한 손해에 대한 어떠한 보증도 하지 않는다. 반드시 각자의 판단과 책임하에 이용하길 바란다.<br>
+또한,예제 파일은, 사진, 일러스트 등의 이미지 파일을 제외하면 상업적인 이용 및 재배포가 가능하다.</p>
+<ul>
+<li>각각의 파일은 저작권법의 보호를 받고 있다.</li>
+<li>jQuery 파일 (jquery-1.7.1.min.js) MIT / GPL의 듀얼 라이센스로 배포되고 있다.</li>
+<li>Chapter5의 Colorbox는 MIT 라이센스로 배포되고 있다 (책 264 페이지 참조).</li>
+</ul>
+<p>위의 사항을 확인한 후에 데이터를 이용하길 바란다.</p>
+<p>「무언가를 만들어 보기」의 샘플에는,상세하게 설명을 기재한 JavaScirpt파일 scripts_commented.js 를 각 디렉터리에 두었다. 다운로드한 후에 참조해보길 바란다.</p>
+<hr>
+<h2>기본</h2>
+<ul>
+<li><a href="Chapter1/2/1/index.html">웹 페이지의 로딩 완료를 기다리기 NG</a></li>
+<li><a href="Chapter1/2/2/index.html">웹 페이지의 로딩 완료를 기다리기 OK</a></li>
+<li><a href="Chapter1/2/3/index.html">코드의 외부 파일화</a></li>
+<li><a href="Chapter1/2/4/index.html">빈 템플릿</a></li>
+<li><a href="Chapter2/2/1/index.html">ID셀렉터</a></li>
+<li><a href="Chapter2/2/2/index.html">클래스 셀렉터</a></li>
+<li><a href="Chapter2/2/3/index.html">타입 셀렉터</a></li>
+<li><a href="Chapter2/2/4/index.html">자손 셀렉터</a></li>
+<li><a href="Chapter2/3/1/index.html">변수에 보관하기1</a></li>
+<li><a href="Chapter2/3/2/index.html">변수에 보관하기2</a></li>
+<li><a href="Chapter2/3/3/index.html">Firebug + FireQuery로 확인해보기</a></li>
+<li><a href="Chapter2/3/4/index.html">내포된 요소 안에서 좀 더 검색하기 - find</a></li>
+<li><a href="Chapter3/3/1/index.html">스타일을 변경하기 - css</a></li>
+<li><a href="Chapter3/3/2/index.html">요소의 표시／비표시를 변경하기 - show/hide</a></li>
+<li><a href="Chapter3/3/3/index.html">요소의 폭／높이를 변경하기 - width/height</a></li>
+<li><a href="Chapter3/4/1/index.html">페이드 애니메이션 - fadeIn/fadeOut</a></li>
+<li><a href="Chapter3/4/2/index.html">슬라이드 애니메이션 - slideDown/slideUp</a></li>
+<li><a href="Chapter3/4/3/index.html">범용적인 애니메이션 - animate</a></li>
+<li><a href="Chapter3/5/1/index.html">요소의 내용을 통째로 바꾸기 - text/html</a></li>
+<li><a href="Chapter3/5/2/index.html">요소의 내용을 비우기 - empty</a></li>
+<li><a href="Chapter3/5/3/index.html">요소의 속성값을 변경하기 - attr</a></li>
+<li><a href="Chapter3/5/4/index.html">요소의 입력값을 변경하기 - val</a></li>
+<li><a href="Chapter3/5/5/index.html">요소의 클래스 추가／삭제 - addClass/removeClass</a></li>
+<li><a href="Chapter3/6/1/index.html">요소를 이동하기1 - append</a></li>
+<li><a href="Chapter3/6/2/index.html">요소를 이동하기2 - appendTo</a></li>
+<li><a href="Chapter3/6/3/index.html">요소를 이동하기3 - prepend</a></li>
+<li><a href="Chapter3/6/4/index.html">요소를 새롭게 만들기 - $(문자열)</a></li>
+<li><a href="Chapter3/6/5/index.html">요소를 삭제하기 - remove</a></li>
+<li><a href="Chapter3/7/1/index.html">클릭을 감시하기 - click</a></li>
+<li><a href="Chapter3/7/2/index.html">마우스 포인터의 위치를 감시하기1 - mouseenter/mouseleave</a></li>
+<li><a href="Chapter3/7/3/index.html">마우스 포인터의 위치를 감시하기2 - hover</a></li>
+<li><a href="Chapter3/7/4/index.html">포커스를 감시하기 - focus/blur</a></li>
+<li><a href="Chapter3/7/5/index.html">이벤트와 this - 실패</a></li>
+<li><a href="Chapter3/7/6/index.html">이벤트와 this - 성공</a></li>
+<li><a href="Chapter3/8/1/index.html">각각에 대해서 처리하기 - each</a></li>
+<li><a href="Chapter3/8/2/index.html">값 및 내용을 세트하기/취득하기</a></li>
+</ul>
+<hr>
+<h2>무언가를 만들어 보기</h2>
+<ul>
+<li><a href="Chapter4/2/1/index.html">롤오버 - 기본형</a></li>
+<li><a href="Chapter4/2/2/index.html">롤오버 - 발전형</a></li>
+<li><a href="Chapter4/3/1/index.html">가이드 텍스트 - 기본형</a></li>
+<li><a href="Chapter4/3/2/index.html">가이드 텍스트 - 발전형</a></li>
+<li><a href="Chapter4/4/1/index.html">아코디언 - 기본형</a></li>
+<li><a href="Chapter4/4/2/index.html">아코디언 - 발전형</a></li>
+<li><a href="Chapter4/5/1/index.html">외부 파일로부터의 테이블 작성 - 기본형</a></li>
+<li><a href="Chapter4/5/2/index.html">외부 파일로부터의 테이블 작성 - 발전형</a></li>
+<li><a href="Chapter4/6/1/index.html">슬라이드 쇼 - 기본형</a></li>
+<li><a href="Chapter4/6/2/index.html">슬라이드 쇼 - 발전형</a></li>
+<li><a href="Chapter4/7/1/index.html">탭 콘텐츠 - 기본형</a></li>
+<li><a href="Chapter4/7/2/index.html">탭 콘텐츠 - 발전형</a></li>
+<li><a href="Chapter4/8/1/index.html">툴팁 - 기본형</a></li>
+<li><a href="Chapter4/8/2/index.html">툴팁 - 발전형</a></li>
+</ul>
+<hr>
+<h2>플러그인</h2>
+<ul>
+<li><a href="Chapter5/2/1/index.html">ColorBox</a></li>
+<li><a href="Chapter5/3/1/index.html">롤오버</a></li>
+</ul>
+</body>
+</html>

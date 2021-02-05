@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>jQuery event</title>
+  <link rel="stylesheet" href="_Css/style.css" />
+  <script type="text/javascript" src="_Js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="_Js/custom.js"></script> 
+<style type="text/css">
+body {height:2000px;}
+div {width:300px;height:300px;margin:50px;font-size:50px;color:#fff;}
+.box1 {background:red;}
+.box2 {background:blue}
+p {font-size:30px;}
+</style>
+<script type="text/javascript">
+$(function(){
+	// 클릭
+	$(".box1").on("click",function(){
+		$("p").text("box1을 클릭");
+	});
+	//마우스오버
+	$(".box1").on("mouseenter",function(){
+		$("p").text("box1에 마우스 오버");
+	});
+	//마우스리브
+	$(".box1").on("mouseleave",function(){
+		$("p").text("box1에 마우스 떠남");
+	});
+	//마우스움직임
+	$(".box2").on("mousemove",function(){
+		$("p").text("box1에 마우스 움직임");
+	});
+	//화면스크롤
+	$(window).on("scroll",function(){
+		$("p").text("화면을 스크롤");
+	});
+	//화면 리사이즈
+	$(window).on("resize",function(){
+		$("p").text("화면을 리사이즈");
+	});
+});
+</script>
+</head>
+
+<body>
+mousemove 이벤트가 걸리면 mouseenter, click 이벤트는 중복으로 먹히지 않음
+<div class="box1">box1</div>
+<div class="box2">box2</div>
+<p></p>
+  
+</body>
+</html>

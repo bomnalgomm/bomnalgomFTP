@@ -1,0 +1,419 @@
+@charset "utf-8";
+
+.f-l {float:left}
+.f-r {float:right}
+/* 시티투어 */
+/* 리스트 */
+.cl-b {clear:both}
+.ta-c {text-align:center !important;}
+.ta-l {text-align:left !important;}
+.ta-r {text-align:right !important;}
+.dp-block {display:block}
+.dp-iblock {display:inline-block}
+.dp-none {display:none}
+
+.citytour-list-wzine {position:relative;width:100%;}
+.citytour-list-wzine:after {clear:both;content:"";display:block;}
+.citytour-list-wzine li {position:relative;float:left;width:100%;border-bottom:1px solid #bac2ca;padding-bottom:20px;}
+
+.citytour-list-wzine li:hover {background-color:#f5f5f5;}
+/*.citytour-list-wzine li.isNotice {background:#f5f5f5}*/
+/*.citytour-list-wzine li.isNotice:hover {background:#f3f5f8}*/
+
+.citytour-list-wzine li .board-li-wrap {padding:20px 10px 0 20px;}
+.citytour-list-wzine li .board-li-wrap:after {clear:both;content:"";display:block;}
+
+.citytour-list-wzine li.isNotice .board-li-wrap {}
+
+.citytour-list-wzine .pnum {display:block;position:absolute;left:5px;top:50%;width:50px;height:1.5em;margin-top:-0.7em;text-align:center;font-size:0.85em;letter-spacing:-1px;}
+.citytour-list-wzine .pnotice	{display:block;position:absolute;left:5px;top:33px;width:50px;text-align:center;/*font-size:0.85em;*/letter-spacing:-1px;}
+
+.citytour-list-wzine .ptitle {display:block;margin-right:120px;font-weight:normal;}
+.citytour-list-wzine .ptitle a:hover,.citytour-list-wzine .ptitle a:focus {color:#268180;text-decoration:underline;}
+
+.citytour-list-wzine .pcate {color:#119c9a;font-weight:normal;font-size:0.923em;}
+.citytour-list-wzine .pcate:after {content:'  |  ';}
+.citytour-list-wzine .ptit {font-size:1.231em; white-space:nowrap;text-overflow:ellipsis;overflow:hidden;display:inline-block;width:auto;max-width:100%;}
+.citytour-list-wzine .isNotice .ptit {font-weight:bold;}
+.citytour-list-wzine .ptit * {vertical-align:middle;}
+.citytour-list-wzine .pinfo {position:absolute;top:0px;right:0;font-size:0.85em;color:#555; padding-left:15px; background:url(/img/board/icon_note.gif) no-repeat left 3px;padding-top:0px;text-align:left;display:block;margin-top:0px;}
+.citytour-list-wzine .pinfo .files,
+.citytour-list-wzine .pinfo .writer,
+.citytour-list-wzine .pinfo .date,
+.citytour-list-wzine .pinfo .read {display:inline-block;width:auto;}
+
+.citytour-list-wzine .pinfo .writer  {}
+.citytour-list-wzine .pinfo .files  {width:24px;text-align:center;}
+.citytour-list-wzine .pinfo .date  {}
+
+.citytour-list-wzine .pinfo .read  {}
+.citytour-list-wzine .pinfo .read .lbl {display:inline-block;}
+.citytour-list-wzine .pinfo .read .num {display:inline-block;padding-left:5px;}
+
+.citytour-list-wzine .pinfo em {font-style:normal; color:#ccc; padding:0 7px;display:inline-block;}
+.citytour-list-wzine .cmtNum {font-size:10px;color:#d4151c; font-family:Verdana; font-weight:normal;}
+
+.citytour-list-wzine .pcont-wrap {display:block;position:relative;margin-top:0px;}
+.citytour-list-wzine .pcont-wrap:after {clear:both;content:"";display:block}
+.citytour-list-wzine .pimg {float:left;margin-right:15px;width:160px;height:107px;}
+.citytour-list-wzine .pimg img {width:160px;height:107px;}
+.citytour-list-wzine .pcont {/*font-size:0.923em;*/font-size:1.077em;display:block;padding-top:10px;}
+.citytour-list-wzine .btn-more {display:block;font-size:1.077em;font-weight:bold;color:#268180;margin:15px 0 0 175px;}
+
+
+.citytour-list-wzine .pbtns {position:absolute;right:0px;top:50%;height:60px;margin-top:-30px;max-width:120px;}
+.citytour-list-wzine .pbtns .vbtn {border:1px solid #DDD;background:#FFF;display:block;float:left;width:48px;height:35px;padding-top:10px;padding-bottom:10px;text-align:center;}
+.citytour-list-wzine .pbtns .vbtn .lbl , .citytour-list-wzine .pbtns .vbtn .num {text-align:center;display:block;}
+.citytour-list-wzine .pbtns .vbtn .lbl {font-size:0.85em}
+.citytour-list-wzine .pbtns .vbtn.files {border-right:0;height:30px;padding-top:13px;padding-bottom:12px;}
+
+.citytour-station {text-align:right;margin-top:-21px}
+
+.prg-top-line {background:url(../img/board/common/line_prg_bg.gif) no-repeat 0 0;width:100%;height:2px}
+
+.citytour-link-wrap {float:right}
+.citytour-link-wrap ul {overflow:hidden}
+.citytour-link-wrap li {float:left}
+.citytour-link-wrap li a {display:block;width:88px;line-height:33px;text-align:center}
+.citytour-link-off a {background:#f6f6f6;border:1px solid #d2d2d2}
+.citytour-link-on a {background:#fcfdfe;border:1px solid #0c7bc2}
+
+.citytour-course-wrap {width:100%;border-top:2px solid #787878;border-bottom:1px solid #787878;margin:18px auto 0;padding:40px 0;padding:;overflow:hidden}
+
+.citytour-course-titlebox {float:left;width:353px;text-align:center}
+.ct-title-1 {font-family:Georgia;font-style:italic;font-size:14px;color:#777;margin:10px 0 13px}
+.ct-title-2 {font-weight:900;font-size :26px;color:#333;margin-bottom:14px}
+.ct-title-3 {font-size:18px;color:#888;letter-spacing:3px;line-height:21px;width:250px;margin:0 auto 30px}
+.ct-title-4 {font-size:23px;color:#c2c2c2;margin-bottom:18px}
+.ct-title-5 {font-size:13px;color:#666;line-height:24px;width:330px;margin:0 auto}
+.citytour-course-titleimg {float:left;width:547px;text-align:right}
+.citytour-course-detailbox1 {color:#666;line-height:24px;margin-top:40px}
+.citytour-course-detailbox1 li {float:left;line-height:24px}
+.ct-detail1-1 {width:340px}
+.ct-detail1-2 {width:560px}
+.citytour-course-detailbox2 {color:#666;line-height:24px;margin-top:40px}
+.citytour-course-detailbox2 li {float:left;line-height:24px}
+.ct-detail2-1 {width:560px}
+.ct-detail2-2 {width:340px;text-align:right}
+
+.ct-map-wrap {}
+.ct-map-box {position:relative;width:100%;height:380px;background:#e1e1e1}
+.ct-map-large {position:absolute;bottom:0;right:0}
+.ct-map-large a {display:block;width:130px;color:#fff;text-align:center;line-height:40px;background:#9097a0}
+
+.ct-course-info {}
+.ct-course-info li {float:left}
+.ct-course-info-titbox {width:109px;height:110px;border-right:1px dashed #d0d0d0;background:#62697b;color:#fff;text-align:center}
+.ct-course-info-titbox img {margin-top:31px}
+.ct-course-info-titbox .ct-course-info-tit {display:block;margin-top:9px}
+.ct-course-info-textbox {width:690px;height:85px;padding:25px 50px 0 50px;background:#f4f4f4;line-height:30px;color:#333}
+.ct-course-info-textbox .ct-course-next {padding:0 16px}
+
+.course-table {}
+.course-table td {padding:15px 0 !important;}
+.course-table .course-num {display:block;width:21px;height:21px;margin:0 auto;line-height:21px;text-align:center;font-size:10px;font-weight:700;color:#777;background:url(/homepage/default/img/course-number-bg.png) no-repeat}
+
+.cp-btn-1 {display:block;height:30px;background:#f66130;border:1px solid #f66130}
+.cp-btn-1 span, .cp-btn-2 span, .cp-btn-3 span, .cp-btn-4 span, .cp-btn-kimhae span {display:block;text-align:center;color:#fff;font-size:12px;line-height:30px;padding:0;margin:0;font-weight:700;}
+.cp-btn-2 {display:block;height:30px;background:#1fac14;border:1px solid #1fac14}
+.cp-btn-3 {display:block;height:30px;background:#b58941;border:1px solid #b58941}
+.cp-btn-4 {display:block;height:30px;background:#286fdb;border:1px solid #286fdb}
+.cp-btn-kimhae {display:block;height:30px;background:#af49cc;border:1px solid #af49cc}
+.cp-btn-etc {display:block;height:30px;line-height:30px;color:#444;font-weight:700;background:#fff;border-top:1px solid #c8c8c8;border-left:1px solid #c8c8c8;border-bottom:1px solid #9c9c9c;border-right:1px solid #9c9c9c}
+
+/* 이용안내 */
+/* 역정보 */
+.station-info-1 {text-align:center}
+.station-info-1-1 {font-size:14px;font-weight:700}
+.station-info-ring-1 {display:inline-block;width:21px;height:21px;line-height:21px;text-align:center;color:#f66130;font-size:11px;font-weight:900;background:url(/homepage/default/img/station-ring.png) no-repeat 0 0}
+.station-info-ring-2 {display:inline-block;width:21px;height:21px;line-height:21px;text-align:center;color:#1fac14;font-size:11px;font-weight:900;background:url(/homepage/default/img/station-ring.png) no-repeat -21px 0}
+.station-info-ring-3 {display:inline-block;width:21px;height:21px;line-height:21px;text-align:center;color:#b58941;font-size:11px;font-weight:900;background:url(/homepage/default/img/station-ring.png) no-repeat -42px 0}
+.station-info-ring-4 {display:inline-block;width:21px;height:21px;line-height:21px;text-align:center;color:#286fdb;font-size:11px;font-weight:900;background:url(/homepage/default/img/station-ring.png) no-repeat -63px 0}
+.station-info-ring-5 {display:inline-block;width:21px;height:21px;line-height:21px;text-align:center;color:#af49cc;font-size:11px;font-weight:900;background:url(/homepage/default/img/station-ring.png) no-repeat -84px 0}
+.station-info-1-1 b {display:inline-block;font-size:24px;font-weight:900;line-height:24px;margin:0 0 0 20px}
+.station-info-1-2 {margin-top:20px}
+.station-info-1-2 ul {text-align:center}
+.station-info-1-2 li {display:inline-block;line-height:16px}
+.station-info-1-2-line {width:1px;height:16px;background:#b5b5b5;margin:0 10px -4px}
+.station-info-1-2 b {font-weight:800;margin-right:13px}
+.station-info-1-3 {margin-top:25px}
+.station-info-1-3 ul {text-align:center}
+.station-info-1-3 li {display:inline-block}
+#station-info-line-sel, #station-info-station-sel {width:108px;height:32px;background:#fff;border:1px solid #ddd}
+
+.station-info-btn {display:inline-block;height:30px;background:#52a607;border:1px solid #52a607}
+.station-info-btn span {display:block;color:#fff;font-size:12px;padding:9px 10px;font-weight:bold;}
+
+.station-info-line {width:100%;height:3px;background:url(/homepage/default/img/station-info-line.png) repeat-x}
+
+.station-info-2 ul {overflow:hidden}
+.station-info-2-li {float:left;max-width:520px;margin-top:33px;}
+.station-info-img #mvis-content li {width:360px;height:225px}
+#m-visual.station-info-img {position:relative;overflow:hidden;width:360px;height:225px;margin:0}
+#m-visual .control .prev {position:absolute;right:29px;bottom:0;width:21px;height:30px;display:block;z-index:100} 
+#m-visual .control .next {position:absolute;right:0;bottom:0;width:29px;height:30px;display:block;z-index:100} 
+#mvis-scroll {position:absolute;left:0;top:0;width:360px;height:225px;overflow:hidden;z-index:1;}
+#mvis-scroll li {position:absolute;left:0;top:0;}
+#m-visual .ctrl-btns {position:absolute;right:50px;bottom:0;z-index:20;}
+
+.station-info-2-1 {}
+.station-info-2-1-ul {margin:0 0 16px 29px}
+.station-info-2-1 li {float:left}
+.station-info-2-1-line {width:1px;height:13px;background:#ddd;margin:4px 13px 0}
+.station-info-2-1-title {width:50px;letter-spacing:-0.01em;font-weight:800;padding-left:9px;background:url(/homepage/default/img/station-info-2-1-dot.png) no-repeat 0 4px}
+.station-info-2-1-info {color:#286fdb;max-width:400px}
+.station-info-2-1 .cp-btn {margin:29px 0 0 30px}
+
+.station-info-icon {display:inline-block;padding:3px 0 4px 28px;background:url(/homepage/default/img/station-info-ico.png) no-repeat}
+.si-icon1 {background-position:0px 5px}
+.si-icon2 {background-position:0px -26px}
+.si-icon3 {background-position:0px -57px}
+.si-icon4 {background-position:0px -88px}
+.si-icon5 {background-position:0px -119px}
+.si-icon6 {background-position:0px -149px}
+.si-icon7 {background-position:0px -180px}
+.si-icon8 {background-position:0px -211px}
+
+.station-info-4 {margin-top:20px}
+
+.station-info-5 b {font-size:14px}
+.station-info-5-ul {width:100%;border-top:1px solid #333;border-bottom:1px solid #999;overflow:hidden}
+.station-info-5-li {float:left;width:50%;border-bottom:1px solid #ddd;}
+.station-info-5-block {display:block;width:95%;margin:18px 0 18px 5%;border-right:1px dashed #d9d9d9}
+
+.station-info-5 table {border:0}
+
+/* 열차시간표 */
+.timetable-title-box {width:100%}
+.timetable-title-1 {margin-top:26px;font-size:25px;font-weight:800;color:#333;font-family: 'Nanum Myeongjo', serif;letter-spacing:-1px}
+.timetable-title-2 {margin:16px 0 62px;max-width:280px;font-size:15px;color:#333;letter-spacing:-1px}
+
+.timetable-search.board-search-full {background:#fff;padding:33px 0}
+.timetable-search-btn-box {background:#f9f9f9;border:1px solid #ddd;border-top:none}
+.initial-kor {text-align:center;padding:16px 0 12px}
+.initial-kor li {display:inline-block}
+.initial-kor .cw-btn {height:28px;padding:0 8px}
+.initial-kor .cw-btn:hover {text-decoration:underline}
+.initial-kor .cw-btn.select-on {background:#21a58f;border:1px solid #21a58f;color:#fff}
+.initial-blank {width:30px}
+
+.transit-mark {display:block;text-align:right;color:#f86c3e;padding-left:40px;margin:0 11px 11px 0;background:url(/homepage/default/img/Transit-mark.png) no-repeat right center}
+.timetable-search-result-box {border:1px solid #ddd;padding:33px 0}
+.timetable-search-result-box ul {text-align:center;overflow:hidden}
+.timetable-search-result-box li {display:inline-block;width:19%}
+.station-link {display:inline-block;min-width:70px;color:#555;padding:10px 5px;margin:15px 0;border:1px solid #ddd}
+.station-link:hover {text-decoration:underline}
+.transit-bg {color:#f86c3e;border:1px solid #e8c29e;background:url(/homepage/default/img/transit-bg.png)}
+
+.bd-btn-search {background:#52a607} 
+
+.station-search-full {overflow:hidden;padding:0px 0 23px}
+.station-search-full .select-wrap {display:inline;}
+.station-search-full label {font-weight:bold;color:#333;margin-right:15px;}
+.station-search-full .text {border:1px solid #ddd;width:86px;height:32px;line-height:32px;}
+.station-search-full select {height:32px;min-width:108px;margin:0 3px;background:#fff;vertical-align:middle;}
+.station-search-full .bd-btn-search {border:0;background:#52a607;color:#fff;width:48px;height:32px;line-height:32px;cursor:pointer;margin:0 3px;vertical-align:middle;}
+
+.station-search-full .station-info-1-1 {float:left}
+.station-search-full .select-wrap {float:right}
+
+.timetable-info-list ul {overflow:hidden}
+.timetable-info-list li {float:left;width:33%}
+.timetable-info-list li .small-box {margin-right:15px;padding:3%;border:1px solid #ddd}
+
+.timetable-other-box {}
+.timetable-other-box li {float:left}
+.timetable-other-box .course-mark-wrap {float:right}
+.course-on {color:#0c7bc2;text-decoration:underline;padding-left:50px;background:url(/homepage/default/img/course-on.png) no-repeat 26px center}
+.course-off {color:#666;padding-left:50px;background:url(/homepage/default/img/course-off.png) no-repeat 26px center}
+.course-mark-wrap span {padding:0 0 2px 34px;background:url(/homepage/default/img/course-nums-bg.png) no-repeat}
+.course-mark-1-s {background-position:13px 0px !important;}
+.course-mark-2-s {background-position:13px -19px !important;}
+.course-mark-3-s {background-position:13px -37px !important;}
+.course-mark-4-s {background-position:13px -56px !important;}
+.course-mark-5-s {background-position:13px -74px !important;}
+
+.timetable-time-cell {width:25px;letter-spacing:-1px}
+.timetable-detail {}
+.timetable-detail .course-mark-1, .timetable-detail .course-mark-2, .timetable-detail .course-mark-3, .timetable-detail .course-mark-4, .timetable-detail .course-mark-5 {float:left;display:inline-block;letter-spacing:-1px;text-align:center;font-weight:800;padding:0 8px;line-height:28px;background:url(/homepage/default/img/course-num-bg.png) no-repeat}
+.course-mark-1 {background-position:0px 0px !important;}
+.course-mark-2 {background-position:1px -29px !important;}
+.course-mark-3 {background-position:0px -58px !important;}
+.course-mark-4 {background-position:0px -87px !important;}
+.course-mark-5 {background-position:0px -116px !important;}
+
+/* 고객참여 */
+/* 고객의 소리 */
+/*이용안내 - 자주하는 질문*/
+.faq-title-box {width:100%;min-height:149px;background:url(/homepage/default/img/faq-top-bg.png) no-repeat right top}
+.faq-title-1 {margin-top:26px;font-size:25px;font-weight:800;color:#333;font-family: 'Nanum Myeongjo', serif;letter-spacing:-1px}
+.faq-title-2 {margin:16px 0 22px;max-width:280px;font-size:15px;color:#333;letter-spacing:-1px}
+
+.faq-cate-ul {overflow:hidden}
+.faq-cate-li {width:25%;float:left}
+.faq-cate-div {display:block;height:100%;border-left:1px dashed #d4d4d4}
+.faq-cate-li-first .faq-cate-div {border-left:none}
+.faq-cate-li .faq-cate-div {min-height:193px;padding:20px 0 20px 29px}
+.faq-cate-div .info-tit {font-size:14px;font-weight:800;color:#444;margin-bottom:8px}
+.faq-cate-div .c-list02 a:hover {text-decoration:underline}
+
+.folds-wrap.faq-folds {background:url(../img/board/common/line_prg_bg.gif) no-repeat 0 0;border-top:none}
+.faq-folds .fold-list .fold-in-wrap a {font-size:15px;color:#444;font-weight:400;background:url(/homepage/default/img/fold_open.png) no-repeat 97% center}
+.faq-folds .fold-list .over .fold-in-wrap a {background:url(/homepage/default/img/fold_close.png) no-repeat 97% center}
+.faq-fold-icon {display:inline-block;width:43px;height:43px;line-height:53px;font-size:0px;background:url(/homepage/default/img/faq-fold-icon.png) no-repeat}
+.over .faq-fold-icon {background-position:0 -43px}
+.faq-cate-text {font-size:13px;font-weight:800;color:#52a607;margin:0 17px}
+.faq-score {font-size:12px;color:#555;float:right;padding:18px 100px 0 0}
+.faq-score .faq-score-bar {color:#ddd}
+.faq-score .faq-score-num {color:#0c7bc2;font-weight:800}
+
+.faq-file-btn {display:inline-block;height:28px}
+.faq-file-btn span {display:block;color:#666;font-size:12px;padding:8px 10px 4px;font-weight:bold;}
+.faq-file-btn span.doc {background:url(/img/common/ico_doc.png) no-repeat left center;padding-left:35px;}
+.faq-file-btn span.hwp {background:url(/img/common/ico_hwp.png) no-repeat left center;padding-left:35px;}
+.faq-file-btn span.xls {background:url(/img/common/ico_xls.png) no-repeat left center;padding-left:35px;}
+.faq-file-btn span.pdf {background:url(/img/common/ico_pdf.png) no-repeat left center;padding-left:35px;}
+.faq-file-btn span.wav {background:url(/img/common/ico_wav.png) no-repeat left center;padding-left:35px;}
+.faq-file-btn span.zip {background:url(/img/common/ico_zip.png) no-repeat left center;padding-left:35px;}
+.faq-file-btn span.vod {background:url(/img/common/ico_vod.png) no-repeat left center;padding-left:35px;}
+.faq-file-btn span.img {background:url(/img/common/ico_img.png) no-repeat left center;padding-left:35px;}
+.faq-file-btn span.word {background:url(/img/common/ico_word.png) no-repeat left center;padding-left:35px;}
+.faq-file-btn span.ppt {background:url(/img/common/ico_ppt.png) no-repeat left center;padding-left:35px;}
+
+.faq-fold-text {width:85%;color:#666;padding:10px 0 0 5px}
+
+.faq-satisfaction-box {width:90%;overflow:hidden}
+.faq-satisfaction-box .c-tit03 {font-size:14px;color:#526272}
+.faq-satisfaction-radiobox {float:left;width:79%;padding:18px 0 20px 25px;background:#fff;border:1px solid #d9d9d9}
+.faq-satisfaction-radiobox input {vertical-align:middle}
+.faq-satisfaction-submitbox {float:left;width:88px;padding-left:1%}
+.faq-satisfaction-submitbox a {display:block;width:100%;line-height:88px;text-align:center;background:#6c707b;color:#fff !important;}
+
+
+
+
+
+/* 문화관광 */
+/* 문화행사 */
+/* 이달의 문화행사 */
+.culture-timetable-1-1cell {width:85px}
+.culture-timetable-3-1cell {width:165px}
+.culture-timetable-5-1cell {width:125px}
+.culture-timetable-5-5cell {width:125px}
+
+.qr-code {background:url(/homepage/default/img/img_code.png) no-repeat 35px 13px}
+
+/* 시티투어 */
+/* 호선별 관광정보 리스트 */
+.tourist-info-wzine {position:relative;width:100%;}
+.tourist-info-wzine:after {clear:both;content:"";display:block;}
+.tourist-info-wzine li {position:relative;float:left;width:100%;border-bottom:1px solid #bac2ca;padding-bottom:20px;}
+
+.tourist-info-wzine li:hover {background-color:#f5f5f5;}
+/*.tourist-info-wzine li.isNotice {background:#f5f5f5}*/
+/*.tourist-info-wzine li.isNotice:hover {background:#f3f5f8}*/
+
+.tourist-info-wzine li .board-li-wrap {padding:20px 10px 0 20px;}
+.tourist-info-wzine li .board-li-wrap:after {clear:both;content:"";display:block;}
+
+.tourist-info-wzine li.isNotice .board-li-wrap {}
+
+.tourist-info-wzine .pnum {display:block;position:absolute;left:5px;top:50%;width:50px;height:1.5em;margin-top:-0.7em;text-align:center;font-size:0.85em;letter-spacing:-1px;}
+.tourist-info-wzine .pnotice	{display:block;position:absolute;left:5px;top:33px;width:50px;text-align:center;/*font-size:0.85em;*/letter-spacing:-1px;}
+
+.tourist-info-wzine .ptitle {display:block;margin-right:120px;font-weight:normal;}
+.tourist-info-wzine .ptitle a:hover,.tourist-info-wzine .ptitle a:focus {color:#268180;text-decoration:underline;}
+
+.tourist-info-wzine .stat11, .tourist-info-wzine .stat12, .tourist-info-wzine .stat13, .tourist-info-wzine .stat14, .tourist-info-wzine .stat15, .tourist-info-wzine .stat16, .tourist-info-wzine .stat17, .tourist-info-wzine .stat18, .tourist-info-wzine .stat19, .tourist-info-wzine .stat20 {margin:-3px 0 0 10px}
+
+.tourist-info-wzine .pcate {color:#119c9a;font-weight:normal;font-size:0.923em;}
+.tourist-info-wzine .pcate:after {content:'  |  ';}
+.tourist-info-wzine .ptit {font-size:1.231em; white-space:nowrap;text-overflow:ellipsis;overflow:hidden;display:inline-block;width:auto;max-width:100%;}
+.tourist-info-wzine .isNotice .ptit {font-weight:bold;}
+.tourist-info-wzine .ptit * {vertical-align:middle;}
+.tourist-info-wzine .pinfo {position:absolute;top:0px;right:0;font-size:0.85em;color:#555; padding-left:15px; background:url(/homepage/default/img/ico-loca.png) no-repeat left 1px;padding-top:0px;text-align:left;display:block;margin-top:0px;}
+.tourist-info-wzine .pinfo .files,
+.tourist-info-wzine .pinfo .writer,
+.tourist-info-wzine .pinfo .date,
+.tourist-info-wzine .pinfo .read {display:inline-block;width:auto;}
+
+.tourist-info-wzine .pinfo .writer  {}
+.tourist-info-wzine .pinfo .files  {width:24px;text-align:center;}
+.tourist-info-wzine .pinfo .date  {}
+
+.tourist-info-wzine .pinfo .read  {}
+.tourist-info-wzine .pinfo .read .lbl {display:inline-block;}
+.tourist-info-wzine .pinfo .read .num {display:inline-block;padding-left:5px;}
+
+.tourist-info-wzine .pinfo em {font-style:normal; color:#ccc; padding:0 7px;display:inline-block;}
+.tourist-info-wzine .cmtNum {font-size:10px;color:#d4151c; font-family:Verdana; font-weight:normal;}
+
+.tourist-info-wzine .pcont-wrap {display:block;position:relative;margin-top:0px;}
+.tourist-info-wzine .pcont-wrap:after {clear:both;content:"";display:block}
+.tourist-info-wzine .pimg {float:left;margin-right:15px;width:160px;height:107px;}
+.tourist-info-wzine .pimg img {width:160px;height:107px;}
+.tourist-info-wzine .pcont {/*font-size:0.923em;*/font-size:1.077em;display:block;padding-top:10px;}
+.tourist-info-wzine .btn-more {display:block;font-size:1.077em;font-weight:bold;color:#268180;margin:15px 0 0 175px;}
+
+
+.tourist-info-wzine .pbtns {position:absolute;right:0px;top:50%;height:60px;margin-top:-30px;max-width:120px;}
+.tourist-info-wzine .pbtns .vbtn {border:1px solid #DDD;background:#FFF;display:block;float:left;width:48px;height:35px;padding-top:10px;padding-bottom:10px;text-align:center;}
+.tourist-info-wzine .pbtns .vbtn .lbl , .tourist-info-wzine .pbtns .vbtn .num {text-align:center;display:block;}
+.tourist-info-wzine .pbtns .vbtn .lbl {font-size:0.85em}
+.tourist-info-wzine .pbtns .vbtn.files {border-right:0;height:30px;padding-top:13px;padding-bottom:12px;}
+
+/* 호선별 관광정보 상세 */
+.line-sight-info-1 {}
+.line-sight-info-1-1 {font-size:14px;font-weight:700;color:#1fac14}
+.line-sight-info-dot {display:inline-block;width:20px;height:4px;padding:0 10px 7px;background:url(/homepage/default/img/line-sight-info-dot.png) no-repeat center center}
+.line-sight-info-ring-1 {display:inline-block;width:21px;height:21px;line-height:21px;text-align:center;color:#f66130;font-size:11px;font-weight:900;background:url(/homepage/default/img/station-ring.png) no-repeat 0 0}
+.line-sight-info-ring-2 {display:inline-block;width:21px;height:21px;line-height:21px;text-align:center;color:#1fac14;font-size:11px;font-weight:900;background:url(/homepage/default/img/station-ring.png) no-repeat -21px 0}
+.line-sight-info-ring-3 {display:inline-block;width:21px;height:21px;line-height:21px;text-align:center;color:#b58941;font-size:11px;font-weight:900;background:url(/homepage/default/img/station-ring.png) no-repeat -42px 0}
+.line-sight-info-ring-4 {display:inline-block;width:21px;height:21px;line-height:21px;text-align:center;color:#286fdb;font-size:11px;font-weight:900;background:url(/homepage/default/img/station-ring.png) no-repeat -63px 0}
+.line-sight-info-ring-5 {display:inline-block;width:21px;height:21px;line-height:21px;text-align:center;color:#af49cc;font-size:11px;font-weight:900;background:url(/homepage/default/img/station-ring.png) no-repeat -84px 0}
+
+.line-sight-info-btn {display:inline-block;height:30px;background:#52a607;border:1px solid #52a607}
+.line-sight-info-btn span {display:block;color:#fff;font-size:12px;padding:9px 10px;font-weight:bold;}
+
+.line-sight-info-line {width:100%;height:3px;background:url(/homepage/default/img/station-info-line.png) repeat-x}
+
+.line-sight-info-2 ul {overflow:hidden}
+.line-sight-info-2-li {float:left;max-width:520px;margin-top:33px;}
+.line-sight-info-img #mvis-content li {width:360px;height:225px}
+#m-visual.line-sight-info-img {position:relative;overflow:hidden;width:360px;height:225px;margin:0}
+
+.line-sight-info-2-1 {}
+.line-sight-info-2-1-ul {margin:0 0 16px 29px}
+.line-sight-info-2-1 li {float:left}
+.line-sight-info-2-1-line {width:1px;height:13px;background:#ddd;margin:4px 13px 0}
+.line-sight-info-2-1-title {width:50px;letter-spacing:-0.01em;font-weight:800;padding-left:9px;background:url(/homepage/default/img/station-info-2-1-dot.png) no-repeat 0 4px}
+.line-sight-info-2-1 .cp-btn {margin:88px 0 0 30px}
+
+.line-sight-info-3 {}
+.line-sight-info-3 .line-sight-info-3-text {color:#555;line-height:18px;padding:30px 0;border-top:1px solid #333;border-bottom:1px solid #999;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

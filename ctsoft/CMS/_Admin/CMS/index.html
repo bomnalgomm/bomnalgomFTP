@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>관리자 로그인</title>
+<link rel="stylesheet" type="text/css" href="../../_Admin/_Css/base.css" />
+</head>
+<body>
+<!-- 모달팝업이 떴을때 body에 overflow-y:hidden 넣고 모달팝업이 닫혔을때 body에 overflow-y:auto //-->
+<!-- cms-wrap -->
+<div id="cms-wrap" class="c-sky">
+	<!-- header-wrap -->	
+	<div id="header-wrap">
+		<h1><img src="../../_Admin/_Img/Common/logo.gif" alt="사이트명" /><span>사이트매니저</span></h1>
+		<!-- btn-wrap -->		
+		<div class="top-wrap">
+			<a href="#"><span>비밀번호 변경</span></a>
+			<a href="#" class="logout"><span>로그아웃</span></a>
+			<a href="#" class="allmenu"><span>전체메뉴</span></a>
+		</div>
+		<!-- btn-wrap //-->		
+		
+		<!-- menu-wrap -->		
+		<div class="menu-wrap">
+			<ul class="topmenu">
+				<li><a href="#" class="mn01 first">관리자관리</a></li>
+				<li><a href="#" class="mn02">메뉴관리</a></li>
+				<li><a href="#" class="mn03">컨텐츠관리</a></li>
+				<li><a href="#" class="mn04">게시판관리</a></li>
+				<li><a href="#" class="mn05">통계</a></li>
+				<li><a href="#" class="mn06">공통모듈관리</a></li>
+				<li><a href="#" class="mn07">프로그램관리</a></li>
+				<li><a href="#" class="mn08 last">회원관리</a></li>
+			</ul>
+		</div>
+		<!-- menu-wrap //-->		
+	</div>
+	<!-- header-wrap //-->	
+	
+	<!-- container-wrap -->	
+	<div id="container-wrap">
+		<!-- sidebar -->		
+		<div class="sidebar">
+			<h2>기본설정</h2>
+			<ul class="depth2">
+				<li>
+				<a href="#" class="over"><span>2차 메뉴명 1-1</span></a>
+				<ul class="depth3">
+					<li><a href="#" class="over">3차 메뉴명 1</a></li>
+					<li><a href="#">3차 메뉴명 2이 길어지는 경우 이렇게 출력됨</a></li>
+					<li><a href="#">3차 메뉴명 3</a></li>
+					<li><a href="#">3차 메뉴명 4</a></li>
+				</ul>
+				</li>
+				<li><a href="#"><span>2차 메뉴명 1-2이 길어지는 경우 이렇게 출력</span></a></li>
+				<li><a href="#"><span>2차 메뉴명 1-3</span></a></li>
+				<li><a href="#"><span>2차 메뉴명 1-4</span></a></li>
+			</ul>			
+		</div>
+		<!-- sidebar //-->		
+		
+		<!-- contain -->		
+		<div class="contain">
+			<div class="cont-tit">
+				<h3>타이틀이 나오는 곳</h3>
+				<div class="cms-site-wrap">
+					<div class="cms-site">
+						<button><span>관리사이트 선택</span></button>
+						<div class="cms-site-list on">
+							<!-- class명 on 활성화 -->							
+							<ul>
+								<li><a href="#">관리사이트명 1</a></li>
+								<li><a href="#">관리사이트명 2</a></li>
+								<li><a href="#">관리사이트명 3</a></li>
+								<li><a href="#">관리사이트명 4</a></li>
+								<li><a href="#">관리사이트명 5</a></li>
+							</ul>
+						</div>
+					</div>
+					<input type="submit" value="이동" />
+				</div>
+			</div>
+			<!-- content -->			
+			<div class="content">
+				<!-- 탭메뉴 -->				
+				<div class="cont-tab-menu">
+					<ul>
+						<li><a href="#" class="over">탭메뉴1-1</a></li>
+						<li><a href="#">탭메뉴1-2</a></li>
+						<li><a href="#">탭메뉴1-3</a></li>
+					</ul>
+				</div>
+				<!-- 탭메뉴 //-->				
+				
+				<div class="gap"></div>
+				
+				<!-- 검색영역 -->				
+				<div class="srh-wrap">
+					<select name="" id="cate01" title="검색할 게시판 선택">
+					<option value="">모든 게시판</option>
+					<option value="">자유게시판</option>
+					</select>
+					
+					<select name="" id="cate02" title="검색할 항목 선택">
+					<option value="">제목</option>
+					<option value="">내용</option>
+					</select>
+					
+					<input type="text" class="text mg10" id="" title="검색내용 입력" />
+					<input type="submit" value="검색" class="btn-srh" />
+				</div>
+				<!-- 검색영역 //-->				
+				
+				<div class="gap"></div>
+				
+				<!-- 기능 버튼 -->				
+				<div class="fn-wrap">
+					<div class="fn-left">
+						<button>사이트 등록</button><button>컨텐츠등록</button><button>게시판생성</button><button>프린트</button><button>목록</button><button>복사</button><button>삭제</button>
+					</div>
+					
+					<div class="fn-right">
+						<button class="btn-excel"><span>엑셀다운로드</span></button>
+						<select name="" id="cate01" title="한페이지에서 볼 목록개수 선택">
+						<option value="">15개</option>
+						<option value="">30개</option>
+						</select>
+					</div>
+				</div>
+				<!-- 기능 버튼 //-->				
+				
+				<div class="gap"></div>
+				
+				<!-- 데이터 테이블 -->				
+				<div class="board-wrap">
+					<table class="tbl-cms">
+					<caption><span class="blind">목록</span></caption>
+					<colgroup>
+					<col class="chk" />
+					<col style="width:10%;" />
+					<col style="width:10%;" />
+					<col style="width:8%;" />
+					<col style="width:10%;" />
+					<col style="width:10%;" />
+					<col style="width:10%;" />
+					<col style="width:12%;" />
+					<col style="width:15%;" />
+					<col style="width:15%;" />
+					</colgroup>
+					<thead>
+					<tr>
+						<th class="chk"><input type="checkbox" id="" title="전체선택" /></th>
+						<th>사이트</th>
+						<th>게시판명</th>
+						<th>언어</th>
+						<th>게시판스킨</th>
+						<th>게시판설정</th>
+						<th>게시판종류</th>
+						<th>게시물</th>
+						<th>설정관리</th>
+						<th>등록일자</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td><input type="checkbox" id="" title="전체선택" /></td>
+						<td>국문</td>
+						<td>업무추진비</td>
+						<td>국문</td>
+						<td>default</td>
+						<td>공개</td>
+						<td></td>
+						<td><a href="#" class="ac-btn"><span>게시물관리</span></a></td>
+						<td><a href="#" class="ac-btn"><span>설정관리</span></a><a href="#" class="ac-btn"><span>삭제</span></a></td>
+						<td>2014-10-16 14:05:12</td>
+					</tr>
+					<tr class="bg">
+						<td><input type="checkbox" id="" title="전체선택" /></td>
+						<td>국문</td>
+						<td>업무추진비</td>
+						<td>국문</td>
+						<td>default</td>
+						<td>공개</td>
+						<td></td>
+						<td><a href="#" class="ac-btn"><span>게시물관리</span></a></td>
+						<td><a href="#" class="ac-btn"><span>설정관리</span></a><a href="#" class="ac-btn"><span>삭제</span></a></td>
+						<td>2014-10-16 14:05:12</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" id="" title="전체선택" /></td>
+						<td>국문</td>
+						<td>업무추진비</td>
+						<td>국문</td>
+						<td>default</td>
+						<td>공개</td>
+						<td></td>
+						<td><a href="#" class="ac-btn"><span>게시물관리</span></a></td>
+						<td><a href="#" class="ac-btn"><span>설정관리</span></a><a href="#" class="ac-btn"><span>삭제</span></a></td>
+						<td>2014-10-16 14:05:12</td>
+					</tr>
+					<tr class="bg">
+						<td><input type="checkbox" id="" title="전체선택" /></td>
+						<td>국문</td>
+						<td>업무추진비</td>
+						<td>국문</td>
+						<td>default</td>
+						<td>공개</td>
+						<td></td>
+						<td><a href="#" class="ac-btn"><span>게시물관리</span></a></td>
+						<td><a href="#" class="ac-btn"><span>설정관리</span></a><a href="#" class="ac-btn"><span>삭제</span></a></td>
+						<td>2014-10-16 14:05:12</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" id="" title="전체선택" /></td>
+						<td>국문</td>
+						<td>업무추진비</td>
+						<td>국문</td>
+						<td>default</td>
+						<td>공개</td>
+						<td></td>
+						<td><a href="#" class="ac-btn"><span>게시물관리</span></a></td>
+						<td><a href="#" class="ac-btn"><span>설정관리</span></a><a href="#" class="ac-btn"><span>삭제</span></a></td>
+						<td>2014-10-16 14:05:12</td>
+					</tr>
+					<tr class="bg">
+						<td><input type="checkbox" id="" title="전체선택" /></td>
+						<td>국문</td>
+						<td>업무추진비</td>
+						<td>국문</td>
+						<td>default</td>
+						<td>공개</td>
+						<td></td>
+						<td><a href="#" class="ac-btn"><span>게시물관리</span></a></td>
+						<td><a href="#" class="ac-btn"><span>설정관리</span></a><a href="#" class="ac-btn"><span>삭제</span></a></td>
+						<td>2014-10-16 14:05:12</td>
+					</tr>
+					</tbody>
+					</table>				
+				</div>
+				<!-- 데이터 테이블 //-->				
+				
+				<!-- 버튼 -->				
+				<div class="btn-wrap r">
+					<a href="#" class="b-btn"><span>취소</span></a>
+					<input type="submit" name="" value="수정" /> <input type="submit" name="" value="삭제" /> 
+					<a href="#" class="g-btn"><span>목록</span></a>
+					<input type="submit" name="" value="확인" class="g-btn"/>
+				</div>
+				<!-- 버튼 //-->				
+				
+				<!--  페이징 -->				
+				<div class="board-list-paging">
+					<!-- 활성 -->					
+					<div class="pagelist">
+						<a href="#" class="firstpage"><span>처음</span></a>
+						<a href="#" class="prevblock"><span>이전10페이지</span></a>
+						<strong><span>1</span></strong>
+						<a href="#"><span>2</span></a>
+						<a href="#"><span>3</span></a>
+						<a href="#" class="nextblock"><span>다음10페이지</span></a>
+						<a href="#" class="lastpage"><span>끝</span></a>
+					</div>
+					<!-- 활성 //-->					
+					
+					<div class="sgap"></div> 
+					
+					<!-- 비활성 class에 1이 붙음 -->					
+					<div class="pagelist">
+						<a class="firstpage1"><span>처음</span></a>
+						<a class="prevblock1"><span>이전10페이지</span></a>
+						<strong><span>1</span></strong>
+						<a class="nextblock1"><span>다음10페이지</span></a>
+						<a class="lastpage1"><span>끝</span></a>
+					</div>
+					<!-- 비활성 //-->					
+				</div>
+				<!--  페이징 //-->				
+				
+				<div class="gap"></div>
+				
+				<!-- board view / write 공통 -->
+				<div class="board-wrap">
+					<div class="board-tit">
+						<h4>해당내용의 제목을 표시하는 곳입니다.</h4>
+					</div>
+					<table class="tbl-cms">
+					<caption><span class="blind">글쓰기 폼</span></caption>
+					<colgroup>
+					<col style="width:25%" />
+					<col style="width:*" />
+					</colgroup>
+					<tbody>
+					<tr>
+						<th>제목1-1</th>
+						<td class="l"><input type="checkbox" name="checkbox" id="chk01"><label for="chk01" class="mg30r">체크형1</label><input type="checkbox" name="checkbox" id="chk02"><label for="chk02" class="mg30r">체크형2</label><input type="checkbox" name="checkbox" id="chk03"><label for="chk03">체크형3</label></td>
+					</tr>
+					<tr>
+						<th>제목2-1</th>
+						<td class="l"><input type="text" name="" id="" class="text w90p" /></td>
+					</tr>
+					<tr>
+						<th>제목3-1</th>
+						<td class="l"><input type="text" class="text w90 mg5r" /><button class="btn-cal"><span>달력보기</span></button> ~ <input type="text" class="text w90 mg5r" /><button class="btn-cal">달력보기</button></td>
+					</tr>
+					<tr>
+						<th>제목4-1</th>
+						<td class="l">
+							<select name="" id="">
+							<option value="">셀렉트형</option>
+							</select>
+						</td>
+					</tr>
+					</tbody>
+					</table>
+				</div>
+				<!-- board view / write 공통 //-->
+			</div>
+			<!-- content //-->			
+		</div>
+		<!-- contain //-->		
+	</div>
+	<!-- container-wrap //-->	
+	
+	<!-- footer-wrap -->		
+	<div id="footer-wrap">
+		<!-- footer -->				
+		<div class="footer">
+			<ul>
+				<li><a href="#none">스킨설정</a></li>
+				<li><a href="#none">버전확인</a></li>
+				<li><a href="#none">문의하기</a></li>
+			</ul>
+			<span>copyright(c) centumsoft. all rights reserved.</span>
+		</div>
+		<!-- footer //-->				
+	</div>
+	<!-- footer-wrap //-->		
+</div>
+<!-- cms-wrap //-->
+</body>
+</html>
+

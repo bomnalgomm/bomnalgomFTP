@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="css/base.css" rel="stylesheet" />
+<style type="text/css">
+#intro {width:100%;padding:200px 0;background:#39c;color:#fff;font-size:40px;line-height:1em;text-align:center;}
+#header {width:100%;height:50px;background:#066;}
+#headerin {width:800px;margin:0 auto;}
+.logo {float:left;}
+.logo a {display:block;padding:9px 0;color:#fff;opacity:0.85;}
+.gnb {float:right;}
+.gnb h2 {display:none;}
+.gnb li {float:left;}
+.gnb li a {display:block;color:#fff;padding:14.5px 30px;}
+.gnb li.on a {background:#f60;}
+#container div {padding:100px 0;text-align:center;}
+#container div img {width:800px;}
+#footer {width:100%;height:200px;background:#ccc}
+</style>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+$(function(){ // 실행문 시작
+	var menu = $(".gnb li"); // menu 변수에 메인메뉴 li태그들을 저장함
+	var section = $("#container > div"); // section 변수에 각각의 메뉴를 클릭했을 때 도착할 영역을 나타내는 div 태그들을 저장함
+	var headerTop = $("#header").offset().top;
+
+	$(window).scroll(setting); 	// window에 scroll 이벤트가 발생되어질 때마다 setting 이라는 이름의 함수가 실행된다
+	
+	menu.click(function(){ // 메뉴를 클릭하면
+		var tg = $(this); // tg 변수에 내가 클릭한 메뉴만 선택해서 저장
+		var i = tg.index(); // i변수에 내가 클릭한 메뉴의 순서값을 저장
+		var arrive = section.eq(i); // arrive변수에 도착영역의 div태그들 중 내가 클릭한 메뉴의 순서값과 동일한 순서값을 가진 대상만 선택해서 저장
+		var tt = arrive.offset().top; // tt변수에 위의 대상이 가지는 offset().top을 저장시킴
+		// $("셀렉터").offset() > 문서의 첫 시작지점에서 셀렉터까지의 위치값을 저장시키는 명령
+		$("html, body").stop().animate({scrollTop:tt},500); // html과 body태그에게 애니메이트 명령을 적용시켜 움직이라고 함, 스크롤바가 가지고 있는 탑값의 위치를 tt변수에 저장된 갓의 위치로 이동
+		return false; // a태그 기본 기능 무시함
+	}); // menu.click() 마지막
+	
+	// logo를 클릭하면 #intro영역으로 이동하도록 명령
+	$(".logo").click(function(){
+		// #intro 영역의 위치값을 저장
+		var tt = $("#intro").offset().top;
+		$("html, body").stop().animate({scrollTop:tt},500,function(){
+			menu.removeClass("on");
+		});
+		return false;		
+	}); // logo.click() 마지막
+	
+	// setting 이라는 이름을 가진 함수를 만들어줌
+	function setting(){
+		var sct = $(window).scrollTop(); // sct변수에 스크롤바 탑의 위치값을 저장함
+		
+		// 조건문을 지정, 만약 sct값이 headerTop의 값보다 크거나 같다면 #header는 position:fixed값을 가지게 될 것이고, 아니라고 한다면 position:relative값을 가지게 됨
+		if(sct >= headerTop){
+			// 조건이 참일 때 실행될 문장
+			$("#header").css({position:"fixed",top:0,left:0});	
+		} else {
+			// 조건이 거짓일 때 실행될 문장
+			$("#header").css({position:"relative",top:"auto",left:"auto"});
+		}	
+		
+		//  sct의 값이 headerTop의 값보다 작을 경우 menu에 적용된 on클래스가 삭제
+		if(sct < headerTop) menu.removeClass("on");
+		
+		// 메뉴의 활성화 상태를 만들어 줌
+		section.each(function(){
+			var tg = $(this);
+			var i = tg.index();
+			if(sct >= tg.offset().top){
+				menu.removeClass("on");
+				menu.eq(i).addClass("on");
+			}
+		});
+		
+	}; // setting()함수 마지막
+}); // 실행문 끝
+</script>
+</head>
+
+<body>
+<section id="wrap">
+	<div id="intro"><p>Intro Page</div>
+    <header id="header">
+    	<div id="headerin">
+            <h1 class="logo"><a href="#intro">LOGO</a></h1>
+            <nav class="gnb">
+                <h2>main navigation</h2>
+                <ul>
+                    <li><a href="#cont1">List1</a></li>
+                    <li><a href="#cont2">List2</a></li>
+                    <li><a href="#cont3">List3</a></li>
+                    <li><a href="#cont4">List4</a></li>
+                    <li><a href="#cont5">List5</a></li>                                                                                
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="container">
+    	<div id="cont1"><img src="img/m01.jpg" alt="" /></div>
+    	<div id="cont2"><img src="img/m02.jpg" alt="" /></div>
+    	<div id="cont3"><img src="img/m03.jpg" alt="" /></div>
+    	<div id="cont4"><img src="img/m04.jpg" alt="" /></div>
+    	<div id="cont5"><img src="img/m05.jpg" alt="" /></div>                                
+    </div>
+    <footer id="footer">
+    	
+    </footer>
+</section>
+</body>
+</html>

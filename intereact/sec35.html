@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title>section 35 .scrollTop()</title>
+<link rel="stylesheet" href="./_Css/style.css" />
+<style type="text/css">
+body {height:3000px;}
+p {font-size:30px;position:fixed;top:0;left:0;}
+</style>
+</head>
+<body>
+	<p>
+
+	</p>	
+ 		<pre>
+		$(window).scrollTop();
+		브라우저의 스크롤바가 움직인 만큼의 거리 값을 계산
+		세로로 긴 웹페이지의 경우 버튼을 클릭할 때마다 해당 위치로 자동 스크롤되는 기능을 구현할때 활용
+		</pre>
+
+
+	<script type="text/javascript" src="./_Js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$(window).on("scroll", function(){ // 브라우저를 스크롤할 때
+			var ab = $(this).scrollTop(); // 변수 ab에 스크롤한 만큼의 거리를 저장
+			$("p").text(ab); // p태그 안에 변수 ab값을 통해 스크롤한 거리를 출력
+		});
+	});
+	</script>
+</body>
+</html>

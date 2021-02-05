@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="css/base.css" rel="stylesheet">
+<style>
+#slider{width:800px; margin:50px auto; position:relative;}
+.simg{width:800px; height:600px; position:relative; background:#FC3; overflow:hidden;}
+.simg li{position:absolute; top:0; left:100%;}
+.simg .s1{left:0;}
+.simg img{width:800px;}
+.pager{position:absolute; bottom:15px; left:50%; margin-left:-40px;}
+.pager li{float:left; margin:0 2px;}
+.pager li a{display:block; width:16px; height:16px; border-radius:8px; background:#666; text-indent:-9999px;}
+.pager .on a{background:#F36;}
+</style>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script>
+$(function(){ // 실행틀 시작
+
+	// 페이저버튼과 슬라이더이미지를 각각 저장시킬 변수를 만듬
+	var visual = $("#slider .simg ul li");
+	var button = $("#slider .pager li");
+	// 최초이미지의 인덱스값을 저장시킬 변수를 만듬
+	var current = 0;
+	
+	// button을 클릭한다면..
+	button.click(function(){
+		var tg = $(this);		// 현재 클릭한 내 자신을 저장시키는 변수를 만듬
+		var i = tg.index();	// tg의 인덱스값을 저장시키는 변수를 만듬
+		// 활성화상태를 나타내는 on클래스의 위치를 변경시킴. 모든 button을 대상으로 on클래스 삭제시키고, 내가 클릭한 대상에게만 on클래스 추가시킴.
+		button.removeClass("on");
+		tg.addClass("on");
+		move(i);
+		return false;
+	}) // button.click()의 끝
+	
+	// 이미지의 자동반복을 작성할 함수를 만듬.
+	timer()
+	function timer(){
+		setInterval(function(){
+			var n = current + 1;	
+			if(n == visual.size()) n = 0;
+			button.eq(n).click();
+		},2000);
+	} // timer()의 끝
+	
+	function move(i){
+			// 움직일 대상을 저장시킬 변수를 만듬
+			var currentEI = visual.eq(current);
+			var nextEI = visual.eq(i);
+			currentEI.css({left:0}).stop().animate({left:"-100%"},500);
+			nextEI.css({left:"100%"}).stop().animate({left:0},500);
+			current = i;
+	} // move()의 끝
+	
+	
+	
+	
+	
+}) // 실행틀 끝
+</script>
+</head>
+
+<body>
+<section id="slider">
+	<div class="simg">
+   	<ul>
+      	<li class="s1"><img src="img/m06.jpg"></li>
+         <li class="s2"><img src="img/m07.jpg"></li>
+         <li class="s3"><img src="img/m08.jpg"></li>
+         <li class="s4"><img src="img/m10.jpg"></li>
+      </ul>
+   </div>
+   <ul class="pager">
+   	<li class="on"><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+   </ul>
+</section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

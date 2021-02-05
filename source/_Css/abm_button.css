@@ -1,0 +1,163 @@
+
+@charset "utf-8";
+.button, .button * {
+    background: url("../../images/board/button.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 0 none;
+    color: #35383B;
+    display: inline-block;
+    font: 12px "µ¸¿ò",Tahoma,sans-serif;
+    margin: 0;
+    overflow: visible;
+    padding: 0;
+    position: relative;
+    text-decoration: none;
+    vertical-align: top;
+    white-space: nowrap;
+}
+.button {
+    margin-right: 7px;
+}
+.button * {
+    cursor: pointer;
+    left: 5px;
+}
+.button *:hover, .button *:active, .button *:focus {
+    color: #FF0000;
+}
+.button.small {
+    background-position: left top;
+    height: 25px;
+    line-height: 24px;
+}
+.button.small * {
+    background-position: right top;
+    font-size: 11px;
+    height: 25px;
+    line-height: 24px;
+    padding: 0 8px 0 4px;
+}
+.button.medium {
+    background-position: left -35px;
+    height: 30px;
+    line-height: 28px;
+}
+.button.medium * {
+    background-position: right -35px;
+    font-size: 13px;
+    height: 30px;
+    line-height: 28px;
+    padding: 0 11px 0 7px;
+}
+.button.large {
+    background-position: left -75px;
+    height: 35px;
+    line-height: 33px;
+}
+.button.large * {
+    background-position: right -75px;
+    font-size: 16px;
+    height: 35px;
+    line-height: 33px;
+    padding: 0 15px 0 11px;
+}
+.button.gray, .button.gray * {
+    background-image: url("../../images/board/button_gray.png");
+    color: #FFFFFF;
+}
+.button.gray *:hover, .button.gray *:active, .button.gray *:focus {
+    color: #FFE980;
+}
+.button.icon * {
+    padding-left: 3px;
+}
+.button.icon span {
+    background: url("../../images/board/icons.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    padding: 0;
+    width: 14px;
+}
+.button.small.icon, .button.medium.icon, .button.large.icon {
+    padding-left: 5px;
+}
+.button.iconWhite * {
+    padding-left: 3px;
+}
+.button.iconWhite span {
+    background: url("../../images/board/icons_white.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    padding: 0;
+    width: 14px;
+}
+.button.small.iconWhite, .button.medium.iconWhite, .button.large.iconWhite {
+    padding-left: 5px;
+}
+.button.small .jump {
+    background-position: 0 7px;
+}
+.button.medium .jump {
+    background-position: 0 10px;
+}
+.button.large .jump {
+    background-position: 0 13px;
+}
+.button.small .pop {
+    background-position: 0 -21px;
+}
+.button.medium .pop {
+    background-position: 0 -18px;
+}
+.button.large .pop {
+    background-position: 0 -15px;
+}
+.button.small .add {
+    background-position: 0 -50px;
+}
+.button.medium .add {
+    background-position: 0 -47px;
+}
+.button.large .add {
+    background-position: 0 -44px;
+}
+.button.small .arrow {
+    background-position: 0 -76px;
+}
+.button.medium .arrow {
+    background-position: 0 -73px;
+}
+.button.large .arrow {
+    background-position: 0 -70px;
+}
+.button.small .check {
+    background-position: 0 -102px;
+}
+.button.medium .check {
+    background-position: 0 -99px;
+}
+.button.large .check {
+    background-position: 0 -96px;
+}
+.button.small .down {
+    background-position: 0 -130px;
+}
+.button.medium .down {
+    background-position: 0 -127px;
+}
+.button.large .down {
+    background-position: 0 -124px;
+}
+.button.small .print {
+    background-position: 0 -161px;
+}
+.button.medium .print {
+    background-position: 0 -158px;
+}
+.button.large .print {
+    background-position: 0 -155px;
+}
+.button.small .calendar {
+    background-position: 0 -194px;
+}
+.button.medium .calendar {
+    background-position: 0 -191px;
+}
+.button.large .calendar {
+    background-position: 0 -188px;
+}

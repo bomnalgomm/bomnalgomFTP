@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title>카테고리용 탭</title>
+<script src="/xe/contents/_Js/all.js"></script>
+</head>
+<body class="guide">
+	<ul class="g-list">
+		<li>클래스명 : b-tab01(id="board-tab"과 셋트로 선언)</li>
+		<li>게시판 또는 프로그램페이지에서 카테고리 출력용으로 사용</li>
+		<li>한줄에 최대 4개의 탭 출력되는 기준</li>
+	</ul>
+
+	<div class="sgap"></div>
+	<div class="b-tab01" id="board-tab">
+		<button class="btn-prev"><span>이전</span></button>
+		<div class="tab-wrap">
+			<ul>
+				<li><a href="#" class="over">탭메뉴1-1</a></li>
+				<li><a href="#">탭메뉴1-2</a></li>
+				<li><a href="#">탭메뉴1-3</a></li>
+				<li><a href="#">탭메뉴1-4</a></li>
+				<li><a href="#">탭메뉴1-5</a></li>
+			</ul>
+		</div>
+		<button class="btn-next"><span>다음</span></button>
+	</div>
+
+	<div class="sgap"></div>
+
+	<h2>HTML</h2>
+	<pre class="brush: js">
+	<div class="b-tab01" id="board-tab">
+		<button class="btn-prev"><span>이전</span></button>
+		<div class="tab-wrap">
+			<ul>
+				<li><a href="#" class="over">탭메뉴1-1</a></li>
+				<li><a href="#">탭메뉴1-2</a></li>
+				<li><a href="#">탭메뉴1-3</a></li>
+				<li><a href="#">탭메뉴1-4</a></li>
+				<li><a href="#">탭메뉴1-5</a></li>
+			</ul>
+		</div>
+		<button class="btn-next"><span>다음</span></button>
+	</div>
+	</pre>
+
+	<div class="sgap"></div>
+
+	<h2>CSS</h2>
+	<pre class="brush: js">
+	/* 카테고리 탭스타일 */
+	.b-tab01 {position:relative;overflow:hidden;border:1px solid #d7d7d7;margin-bottom:30px;}
+	.b-tab01 li {float:left;width:20%;font-size:13px;text-align:center;}
+	.b-tab01 li a {padding:10px 0;display:block;border-right:1px solid #d7d7d7;line-height:18px;}
+	.b-tab01 li .over, .b-tab01 li:first-child a.over {background:#48525e;color:#fff;font-weight:700;text-decoration:underline;border-right:1px solid #48525e;}
+	.b-tab01 li a:hover, .b-tab01 li a:focus, .b-tab01 li a:active  {background:#eceef0;text-decoration:underline;border-right:1px solid #d7d7d7;}
+	.b-tab01 button {border:0;position:absolute;width:40px;height:38px;text-indent:-9999px;cursor:pointer;}
+	.b-tab01 button.btn-prev {left:0;top:0;border-right:1px solid #d7d7d7;background:#f4f4f4 url(/xe/contents/_Img/btn_prev.gif) no-repeat center center;}
+	.b-tab01 button.btn-prev:hover, .b-tab01 button.btn-prev:focus, .b-tab01 button.btn-prev:active {background:#f4f4f4 url(/xe/contents/_Img/btn_prev_o.gif) no-repeat center center;}
+	.b-tab01 button.btn-next {right:0;top:0;border-left:1px solid #d7d7d7;background:#f4f4f4 url(/xe/contents/_Img/btn_next.gif) no-repeat center center;width:41px;}
+	.b-tab01 button.btn-next:hover, .b-tab01 button.btn-next:focus, .b-tab01 button.btn-next:active {background:#f4f4f4 url(/xe/contents/_Img/btn_next_o.gif) no-repeat center center;}
+	</pre>
+</body>
+</html>

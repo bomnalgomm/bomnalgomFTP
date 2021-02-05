@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>부산항만공사 사진게시판 바로보기형 스타일 가이드</title>
+<link rel="stylesheet" href="../../_Css/common.css" />
+<style type="text/css">
+.content-wrap {width:760px;margin:0 auto;}
+.content-wrap h1 {font-size:30px;font-weight:bold;color:#222;line-height:100%;margin:20px 0;}
+
+
+
+</style>
+<script type="text/javascript" src="../../_Js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="../../_Js/jquery/photo-board.js"></script>
+
+</head>
+<body>
+<div class="content-wrap">
+	<h1>사진게시판 바로보기형 스타일</h1>	
+	
+	<!-- board-wrap -->	
+	<div id="board-wrap">
+		<!-- board-search-wrap / 검색 -->		
+		<div class="board-search-wrap">
+			<div class="board-total">
+				<span class="total">Total : <b>183</b></span><span class="page">(<b>1</b>/ 1페이지)</span>
+			</div>
+			
+			<form name="frm_searchs" action="?" method="get">
+			<!-- 월/일 검색 -->			
+			<div class="board-date">
+				<label for="srch" class="blind">검색연도 선택</label>
+				<select id="srch" name="search" class="w70">
+				<option value="b_subject">연도</option>
+				<option value="b_content">1999</option>
+				</select>
+				<select id="srch-m" name="search" class="w60">
+				<option value="b_subject">월</option>
+				<option value="b_content">10</option>
+				</select>
+				<input value="검색" class="btn-srh" type="submit" />
+			</div>
+			<!-- 월/일 검색 //-->
+			
+			<!-- 검색폼 label for 값과 input, select id값 동일한 값으로 매칭 -->
+			<div class="board-search">
+				<label for="srch" class="blind">검색항목을 선택하세요</label>
+				<select id="srch" name="search">
+				<option value="b_subject">제목</option>
+				<option value="b_content">내용</option>
+				<option value="b_subject|b_content">제목+내용</option>
+				<option value="reg_name">작성자</option>
+				</select>
+				<label class="blind" for="input_srch">검색어를 입력하세요</label>
+				<input name="skey" value="" class="text vtop2" id="input_srch" type="text" placeholder="검색어를 입력하세요" />
+				<input value="검색" class="btn-srh" type="submit" />
+			</div>
+			<!-- 검색폼 //-->
+			</form>
+		</div>
+		<!-- board-search-wrap / 검색 //-->		
+		
+		<!-- photo-vlist-wrap -->
+		<div class="photo-vlist-wrap" id="photo">
+			<!-- 게시글이 없을 경우 -->
+			<div class="no-data">
+				<p>등록된 게시글이 없습니다.</p>
+			</div>
+			<!-- 게시글이 없을 경우 //-->
+
+			<!-- 게시글이 있을 경우 바로보기 영역 -->
+			<div class="photo-vlist" id="photo-gallery">
+				<!-- ctrl-btn -->
+				<div class="ctrl-btn">
+					<button class="btn-prev"><span>이전보기</span></button>
+					<button class="btn-next"><span>다음보기</span></button>
+				</div>
+				<!-- ctrl-btn //-->
+				
+				<!-- photo-cont -->
+				<div class="photo-cont" id="photo-scroll">
+					<ul id="photo-content">
+						<li>
+						<div class="gcont">
+							<img src="http://www.busanpa.com/upload/BS5235/14144604075390.jpg" alt="게시글 제목" />
+							<div class="caption">
+								<p class="subject">제목이 나오는 곳으로 최대 3줄까지 제공되는 제목공간으로 프로그램처리 해주세요</p>
+								<span class="date">2014-01-01</span>
+								<p class="txt">
+								내용이 나오는 곳으로 4줄이상이면 스크롤을 제공하며 썸네일은 최대 6개까지 등록가능하며 아래서부터 채워지는 형태로 작업
+								</p>
+							</div>
+						</div>
+						</li>
+						<li>
+						<div class="gcont">
+							<img src="http://www.busanpa.com/upload/BS4235/14143955857971.jpg" alt="게시글 제목" />
+							<div class="caption">
+								<p class="subject">제목이 나오는 곳으로 최대 3줄까지 제공되는 제목공간으로 프로그램처리 해주세요</p>
+								<span class="date">2014-01-01</span>
+								<p class="txt">
+								내용이 나오는 곳으로 4줄이상이면 스크롤을 제공하며 썸네일은 최대 6개까지 등록가능하며 아래서부터 채워지는 형태로 작업, 내용이 길어지면 스크롤이 생깁니다 이렇게 
+								</p>
+							</div>
+						</div>
+						</li>
+						<li>
+						<div class="gcont">
+							<img src="http://www.busanpa.com/upload/BS5235/14144604075390.jpg" alt="게시글 제목" />
+							<div class="caption">
+								<p class="subject">제목이 나오는 곳으로 최대 3줄까지 제공되는 제목공간으로 프로그램처리 해주세요</p>
+								<span class="date">2014-01-01</span>
+								<p class="txt">
+								내용이 나오는 곳으로 4줄이상이면 스크롤을 제공하며 썸네일은 최대 6개까지 등록가능하며 아래서부터 채워지는 형태로 작업
+								</p>
+							</div>
+						</div>
+						</li>
+						<li>
+						<div class="gcont">
+							<img src="http://www.busanpa.com/upload/BS4235/14143955857971.jpg" alt="게시글 제목" />
+							<div class="caption">
+								<p class="subject">제목이 나오는 곳으로 최대 3줄까지 제공되는 제목공간으로 프로그램처리 해주세요</p>
+								<span class="date">2014-01-01</span>
+								<p class="txt">
+								내용이 나오는 곳으로 4줄이상이면 스크롤을 제공하며 썸네일은 최대 6개까지 등록가능하며 아래서부터 채워지는 형태로 작업
+								</p>
+							</div>
+						</div>
+						</li>
+						<li>
+						<div class="gcont">
+							<img src="http://www.busanpa.com/upload/BS5235/14144604075390.jpg" alt="게시글 제목" />
+							<div class="caption">
+								<p class="subject">제목이 나오는 곳으로 최대 3줄까지 제공되는 제목공간으로 프로그램처리 해주세요</p>
+								<span class="date">2014-01-01</span>
+								<p class="txt">
+								내용이 나오는 곳으로 4줄이상이면 스크롤을 제공하며 썸네일은 최대 6개까지 등록가능하며 아래서부터 채워지는 형태로 작업
+								</p>
+							</div>
+						</div>
+						</li>
+						<li>
+						<div class="gcont">
+							<!-- 등록된 이미지 없을 경우 //-->
+							<span class="blind">등록된 이미지 없음</span>
+							<div class="caption">
+								<p class="subject">제목이 나오는 곳으로 최대 3줄까지 제공되는 제목공간으로 프로그램처리 해주세요</p>
+								<span class="date">2014-01-01</span>
+								<p class="txt">
+								내용이 나오는 곳으로 4줄이상이면 스크롤을 제공하며 썸네일은 최대 6개까지 등록가능하며 아래서부터 채워지는 형태로 작업
+								</p>
+							</div>
+						</div>
+						</li>
+					</ul>
+				</div>
+				<!-- photo-cont //-->
+
+				<!-- ctrl-wrap -->
+				<div class="ctrl-wrap">
+					<div class="ctrl-nums">
+						<button class="nicon over"><span><img src="http://www.busanpa.com/upload/BS5235/14144604075390.jpg" alt="게시글 제목" /></span></button><button class="nicon"><span><img src="http://www.busanpa.com/upload/BS4235/14143955857971.jpg" alt="게시글 제목" /></span></button><button class="nicon"><span><img src="http://www.busanpa.com/upload/BS5235/14144604075390.jpg" alt="게시글 제목" /></span></button><button class="nicon"><span><img src="http://www.busanpa.com/upload/BS4235/14143955857971.jpg" alt="게시글 제목" /></span></button><button class="nicon"><span><img src="http://www.busanpa.com/upload/BS5235/14144604075390.jpg" alt="게시글 제목" /></span></button><button class="nicon"><span><em class="blind">등록된 이미지 없음</em></span></button>
+					</div>
+				</div>
+				<!-- ctrl-wrap //-->
+			</div>
+			<script type="text/javascript">photo.setBans();</script>			
+			<!-- 게시글이 있을 경우 바로보기 영역 //-->
+
+			<!-- photo-list/ 4개씩 출력되고 .first로 제어 -->
+			<ul class="photo-list">
+				<li class="first">
+					<a href="#" class="thum"><span class="blind">등록된 이미지 없음</span></a>
+					<p class="list-cont"><a href="#">제목 출력되는 곳으로 제목이 길어지면 이렇게 출력</a></p>
+					<span class="date">2014-01-01</span>
+				</li>
+				<li>
+					<a href="#" class="thum"><span class="blind">등록된 이미지 없음</span></a>
+					<p class="list-cont"><a href="#">제목 출력되는 곳</a></p>
+					<span class="date">2014-01-01</span>
+				</li>
+				<li>
+					<a href="#" class="thum"><img src="http://www.busanpa.com/upload/BS4235/14143955857971.jpg" alt="게시글 제목" /></a>
+					<p class="list-cont"><a href="#">제목 출력되는 곳</a></p>
+					<span class="date">2014-01-01</span>
+				</li>
+				<li>
+					<a href="#" class="thum"><span class="blind">등록된 이미지 없음</span></a>
+					<p class="list-cont"><a href="#">제목 출력되는 곳</a></p>
+					<span class="date">2014-01-01</span>
+				</li>
+				<li class="first">
+					<a href="#" class="thum"><span class="blind">등록된 이미지 없음</span></a>
+					<p class="list-cont"><a href="#">제목 출력되는 곳으로 제목이 길어지면 이렇게 출력</a></p>
+					<span class="date">2014-01-01</span>
+				</li>
+				<li>
+					<a href="#" class="thum"><span class="blind">등록된 이미지 없음</span></a>
+					<p class="list-cont"><a href="#">제목 출력되는 곳</a></p>
+					<span class="date">2014-01-01</span>
+				</li>
+				<li>
+					<a href="#" class="thum"><img src="http://www.busanpa.com/upload/BS4235/14143955857971.jpg" alt="게시글 제목" /></a>
+					<p class="list-cont"><a href="#">제목 출력되는 곳</a></p>
+					<span class="date">2014-01-01</span>
+				</li>
+				<li>
+					<a href="#" class="thum"><span class="blind">등록된 이미지 없음</span></a>
+					<p class="list-cont"><a href="#">제목 출력되는 곳</a></p>
+					<span class="date">2014-01-01</span>
+				</li>
+			</ul>
+			<!-- photo-list //-->
+		</div>
+		<!-- photo-vlist-wrap //-->
+		
+		<div class="board-list-paging">
+			<p class="f16 b">** 페이징 스타일은 일반게시판 공통</p>
+		</div>		
+	</div>
+	<!-- board-wrap //-->	
+	
+</div>
+
+
+</body>
+</html>

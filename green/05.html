@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="css/base.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.mboard {position:relative;width:400px;height:500px;overflow:hidden;}
+.mboard .tab {float:left;}
+.mboard .tab h3 {}
+.mboard .tab h3 a {display:block;width:80px;text-align:center;font-size:13px;font-weight:normal;padding:10px 0;background:#ccc;color:#444;border-top:1px solid #aaa;border-right:1px solid #aaa;}
+.mboard .tab:first-child h3 a {border-left:1px solid #aaa;}
+.mboard .tab.on h3 a, .mboard .tab h3 a:hover {background:#fff;color:#333;text-decoration:underline;}
+.mboard .tab .pannel {display:none;position:absolute;top:38px;left:0;}
+.mboard .tab .pannel p {padding:10px;background:#ccc;border:1px solid #aaa;}
+.mboard .tab .pannel p img {width:100%;height:auto;}
+.mboard .tab.on .pannel {display:block;}
+.mboard .tab .pannel .more {position:absolute;top:-25px;right:0;font-size:11px;color:#555;}
+
+.d2 {position:relative;}
+#header {width:100%;height:50px;border-bottom:1px solid #ccc;background:#fff;position:absolute;top:0;left:0;z-index:1000;}
+#header .headerin {position:relative;width:960px;height:50px;margin:0 auto;}
+#header .gnb {position:absolute;top:0;left:200px;}
+#header .gnb h2 {width:1px;height:1px;overflow:hidden;position:absolute;top:0;left:0;text-indent:-9999px;}
+#header .gnb li {position:relative;float:left;}
+#header .gnb li .m {display:block;line-height:20px;padding:15px 40px;}
+#header .gnb li .m:hover, #header .gnb li .m.on {color:#f30;text-decoration:underline;}
+#header .gnb li .depth2 {position:absolute;top:50px;left:40px;width:170px;height:150px;display:none;z-index:100;}
+#header .gnb:hover li .depth2 {display:block;}
+#header .gnb li .depth2 ul {padding-top:10px;}
+#header .gnb li .depth2 li {float:none;font-size:13px;margin-bottom:6px;}
+#header .subBg {width:100%;height:150px;background:#FF9;border-bottom:1px solid #ccc;display:none;}
+
+#container {position:relative;width:100%;height:300px;background:url(img/m02.jpg) no-repeat center 0;background-size:cover;z-index:10;padding-top:50px;}
+
+</style>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+$(function(){ // 실행틀 시작
+	// .mboard .tab h3 a를 클릭
+	$(".mboard .tab h3 a").click(function(){
+		// 모든 .tab을 동시에 선택해 클래스 on을 삭제
+		$(".mboard .tab").removeClass("on");
+		// 내가 클릭한 a태그를 선택, 이 대상을 감싸는 태그들 중 .tab을 선택, 해당태그에 클래스 on 추가시킴
+		$(this).parents(".tab").addClass("on");
+		return false;
+	});
+
+	// .gnb li에 마우스가 올라간다면
+	$(".gnb li").mouseover(function(){
+		// 내가 마우스를 올린 태그를 선택, 이 대상 안족에 작성된 .m을 찾기, 그리고 on클래스 추가
+		$(this).find(".m").addClass("on");
+		//$("#header").css("height",170);
+	}).mouseout(function(){
+		// 내가 마우스를 올린 태그를 선택, 이 대상 안족에 작성된 .m을 찾기, 그리고 on클래스 추가
+		$(this).find(".m").removeClass("on");
+		//$("#header").css("height",50);		
+	});	
+	
+	// .gnb에 마우스오버 > .subBg 등장
+	// .gnb에 마우스아웃 > .subBg 삭제	
+	$(".gnb").mouseover(function(){
+		$(".subBg").css("display","block");
+	}).mouseout(function(){
+		$(".subBg").css("display","none");		
+	});
+
+	
+}) // 실행틀 끝
+</script>
+</head>
+
+<body>
+<div class="d1">
+	<div class="mboard">
+    	<div class="tab t1 on">
+        	<h3><a href="#">공지사항</a></h3>
+            <div class="pannel">
+            	<p><img src="img/m01.jpg" alt="" /></p>
+                <a href="#" class="more" title="공지사항">더보기</a>
+            </div>
+        </div>
+    	<div class="tab t2">
+        	<h3><a href="#">보도자료</a></h3>
+            <div class="pannel">
+            	<p><a href="#"><img src="img/m02.jpg" alt="" /></a></p>
+                <a href="#" class="more" title="보도자료">더보기</a>                
+            </div>        
+        </div>
+    	<div class="tab t3">
+        	<h3><a href="#">채용공고</a></h3>
+            <div class="pannel">
+            	<p><img src="img/m03.jpg" alt="" /></p>
+                <a href="#" class="more" title="채용공고">더보기</a>                
+            </div>        
+        </div>
+    	<div class="tab t4">
+        	<h3><a href="#">관련법령</a></h3>
+            <div class="pannel">
+            	<p><img src="img/m04.jpg" alt="" /></p>
+                <a href="#" class="more" title="관련법령">더보기</a>                
+            </div>        
+        </div>
+    </div>
+</div>
+
+<div class="d2">
+	<!-- header -->
+	<header id="header">
+    	<!-- headerin -->
+    	<div class="headerin">
+        	<h1 class="logo"><a href="#">LOGO</a></h1>
+            <!-- gnb -->
+        	<nav class="gnb">
+            	<h2>주메뉴</h2>
+                <ul>
+                	<li>
+                    	<a href="#" class="m">COMPANY</a>
+                    	<div class="depth2">
+                        	<ul>
+                            	<li><a href="#">회사소개</a></li>
+                            	<li><a href="#">CEO 인사말</a></li>
+                            	<li><a href="#">기업이념</a></li>
+                            	<li><a href="#">CI/BI소개</a></li>                                                                                                
+                            </ul>
+                        </div>
+                    </li>
+                	<li>
+                    	<a href="#" class="m">PRODUCT</a>
+                    	<div class="depth2">
+                        	<ul>
+                            	<li><a href="#">티셔츠</a></li>
+                            	<li><a href="#">바지</a></li>
+                            	<li><a href="#">치마</a></li>
+                            	<li><a href="#">잡화</a></li>                                                                                                
+                            </ul>
+                        </div>                    
+                    </li>
+                	<li>
+                    	<a href="#" class="m">EVENT</a>
+                    	<div class="depth2">
+                        	<ul>
+                            	<li><a href="#">진행중인 이벤트</a></li>
+                            	<li><a href="#">지난 이벤트</a></li>                                                                                            
+                            </ul>
+                        </div>                        
+                    </li>
+                	<li>
+                    	<a href="#" class="m">COMMUNITY</a>
+                    	<div class="depth2">
+                        	<ul>
+                            	<li><a href="#">고객후기</a></li>
+                            	<li><a href="#">Q&amp;A</a></li>
+                            	<li><a href="#">F&amp;A</a></li>                                                                                              
+                            </ul>
+                        </div>                           
+                    </li>
+                </ul>
+            </nav>
+            <!-- gnb //-->            
+        </div>
+    	<!-- headerin //-->  
+        <div class="subBg"></div>      
+    </header>
+	<!-- header //-->  
+    
+    <!-- container -->
+    <div id="container">
+    </div>  
+    <!-- container //-->    
+</div>
+</body>	
+</html>

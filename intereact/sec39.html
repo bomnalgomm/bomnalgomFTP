@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title>section 39 setInterval()</title>
+<link rel="stylesheet" href="./_Css/style.css" />
+<style type="text/css">
+p {font-size:100px;font-weight:bold;font-family:arial;margin:50px auto;text-align:center;}
+</style>
+</head>
+<body>
+	<p>
+		<span>00</span> : <span>00</span> : <span>00</span>
+	</p>
+
+	<pre>
+	setInterval() 일정 시간마다 특정 구문 반복하기
+	clearInterval(변수명) : setInterval() 구문을 중지
+	</pre>
+
+
+	<script type="text/javascript" src="./_Js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		var ab = setInterval(function(){
+			var now = new Date();
+			var hr = now.getHours();
+			var min = now.getMinutes();
+			var sec = now.getSeconds();
+
+			$("span").eq(0).text(hr);
+			$("span").eq(1).text(min);
+			$("span").eq(2).text(sec);
+		},1000);
+	});
+	</script>
+</body>
+</html>

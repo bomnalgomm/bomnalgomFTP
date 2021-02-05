@@ -1,0 +1,12 @@
+#slides1 {
+	overflow: hidden;
+	height: 212px;
+}
+
+#slides1 li {
+	list-style: none;
+	width: 589px;
+}
+
+#slides1 li img {
+	float: left;

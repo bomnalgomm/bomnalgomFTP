@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>탭스타일</title>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.js"></script>
+  <link rel="stylesheet" href="/_Css/common.css" />
+ </head>
+ <body>
+	<div class="ce-professor">
+		<a href="http://naver.com">1번</a>
+		<a href="http://daum.com">2번</a>
+	</div>
+
+	<script type="text/javascript">
+	$(function(){
+		var obj = $(".ce-professor a");
+
+		obj.each(function(){
+			var this_s = $(this);
+			this_s.on("click", function(){
+				var objUrl = this_s.attr("href");
+				console.log(objUrl);
+				return false;
+			});
+		});
+
+		let points = 100;
+		let winner = false;
+
+		if(points > 90){
+			let winner = true;
+		}
+		console.log(winner);
+	});
+	</script>
+
+ </body>
+</html>

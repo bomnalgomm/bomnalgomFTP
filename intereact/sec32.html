@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title>section 32 .text()</title>
+<link rel="stylesheet" href="./_Css/style.css" />
+<style type="text/css">
+ul li {font-size:30px;margin-left:50px;}
+div {width:400px;height:400px;margin:50px;background:#555;font-size:50px;color:#fff;}
+</style>
+</head>
+<body>
+	<ul>
+		<li>red</li>
+		<li>blue</li>
+		<li>green</li>
+		<li>pink</li>
+	</ul>
+
+	<div></div>
+
+	<pre>
+	.text();
+	특정 요소안의 문자를 가져오거나 변경하기
+	</pre>
+
+	<script type="text/javascript" src="./_Js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$("li").on("click",function(){
+			var txt = $(this).text(); // 클릭한 li안에 컬러명을 변수 txt에 저장
+			$("div").text(txt); // 변수 txt에 저장된 컬러명을 div에 출력
+			$("div").css({"background":txt}); // 변수 txt에 저장된 컬러명으로 배경색을 변경
+		});
+	});
+	</script>
+</body>
+</html>

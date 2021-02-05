@@ -1,0 +1,179 @@
+# Whisper Comment Traditional Chinese Translation File.
+# Copyright (C) 2009 Without Boundaries
+# This file is distributed under the same license as the PACKAGE package.
+# Vic Hsieh <vic@anubisfrommemphis.com>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Whisper Comment Traditional Chinese Translation\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-01-23 08:32+1000\n"
+"PO-Revision-Date: 2009-01-23 08:33+1000\n"
+"Last-Translator: Vic Hsieh\n"
+"Language-Team: Anubis From Memphis <vic@anubisfrommemphis.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Chinese\n"
+"X-Poedit-Country: TAIWAN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=n==1?0:1;\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: whisper-comment-afm.php:16
+#: whisper-comment-afm.php:171
+msgid "Whisper Comment Settings"
+msgstr "悄悄話迴響設定"
+
+#: whisper-comment-afm.php:17
+msgid "Whisper Comment"
+msgstr "悄悄話迴響"
+
+#: whisper-comment-afm.php:29
+#: whisper-comment-afm.php:223
+msgid "Save Changes"
+msgstr "儲存變更"
+
+#: whisper-comment-afm.php:47
+msgid "Options saved."
+msgstr "設定已儲存。"
+
+#: whisper-comment-afm.php:52
+#: whisper-comment-afm.php:147
+msgid "Convert All Whispers"
+msgstr "轉換所有悄悄話"
+
+#: whisper-comment-afm.php:57
+#, php-format
+msgid "All whispers have been converted. There are %s comments affected."
+msgstr "已轉換所有悄悄話。共有 %s 則迴響受到影響。"
+
+#: whisper-comment-afm.php:59
+#: whisper-comment-afm.php:72
+msgid "There are currently no whispers."
+msgstr "目前並沒有任何悄悄話。"
+
+#: whisper-comment-afm.php:65
+#: whisper-comment-afm.php:148
+msgid "Delete All Whispers"
+msgstr "刪除所有悄悄話"
+
+#: whisper-comment-afm.php:70
+#, php-format
+msgid "All whispers have been deleted. There are %s comments affected."
+msgstr "已刪除所有悄悄話。共有 %s 則迴響受到影響。"
+
+#: whisper-comment-afm.php:82
+msgid "Whisper to blog author (content will not be displayed after submission if you are not registered)"
+msgstr "留悄悄話給網誌作者（如無註冊，發表後您將無法閱讀此迴響）"
+
+#: whisper-comment-afm.php:83
+#: whisper-comment-afm.php:86
+msgid "(...whisper...)"
+msgstr "（悄悄話…）"
+
+#: whisper-comment-afm.php:84
+msgid "(...whisper for you...)"
+msgstr "（這是給您的悄悄話…）"
+
+#: whisper-comment-afm.php:85
+msgid "(...whisper from you...)"
+msgstr "（這是您寫得悄悄話…）"
+
+#: whisper-comment-afm.php:95
+msgid "Whisper Comment Options"
+msgstr "悄悄話迴響選項"
+
+#: whisper-comment-afm.php:96
+msgid "Whisper Comment is a plugin for comment authors to control the comment visibility to other users."
+msgstr "悄悄話迴響是一個迴響插件，讓迴響作者選擇是否只要讓指定人選閱覽內容。"
+
+#: whisper-comment-afm.php:109
+msgid "Other Information"
+msgstr "其他資訊"
+
+#: whisper-comment-afm.php:115
+msgid "Author: <strong>Anubis From Memphis</strong>"
+msgstr "作者：<strong>豺狼</strong>"
+
+#: whisper-comment-afm.php:116
+msgid "Website: <a href=\"http://studio.anubisfrommemphis.com\"><strong>Without Boundaries Studio</strong></a>"
+msgstr "網站：<a href=\"http://www.anubisfrommemphis.com\"><strong>Without Boundaries</strong></a>"
+
+#: whisper-comment-afm.php:118
+msgid "Whisper Comment is currently available in <strong>English</strong> and <strong>Traditional Chinese</strong>. If you would like to contribute to the internationalization, please contact me directly or through WordPress plugins forum."
+msgstr "悄悄話迴響插件現在有<strong>英文</strong>與<strong>繁體中文</strong>的版本。如果您樂意幫忙翻譯，請與作者直接聯絡或利用 WordPress Plugin 的插件論壇功能。"
+
+#: whisper-comment-afm.php:119
+msgid "Please let me know if you have any ideas or suggestions about this plugin, And if you like, buy me a cup of coffee!"
+msgstr "歡迎給予任何關於本插件的主意或建議，如果您真的很喜歡這插件，也可以買杯咖啡請豺狼！"
+
+#: whisper-comment-afm.php:137
+msgid "Whisper Comment Database Cleaning Tools"
+msgstr "悄悄話資料庫清理工具"
+
+#: whisper-comment-afm.php:141
+msgid "<ul class=\"settings\"><li>'Convert All Whispers' will convert all whispers to normal comments and change their statuses to waiting.</li><li>'Delete All Whispers' will remove all whispers permanently</li></ul>"
+msgstr "<ul class=\"settings\"><li>「轉換所有悄悄」會轉換所有悄悄話為普通迴響並將狀態改為審核中</li><li>「刪除所有悄悄話」將永久刪除所有悄悄話</li></ul>"
+
+#: whisper-comment-afm.php:143
+msgid "Whisper Comment creates a new comment type in order to separate normal comments from whispers. If you have decided to remove this plugin and would like to clear obsolete data, you might want to use these tools. However, please remember to backup your database before you proceed."
+msgstr "為了區別普通迴響和悄悄話，悄悄話插件在資料庫裡增加了額外的迴響類型。如果您決定不再使用本插件並想清理資料庫內的多餘資料，可以使用這些工具。使用前，請記得備份您寶貴的資料庫。"
+
+#: whisper-comment-afm.php:178
+msgid "Activate Whisper Comment"
+msgstr "啟用悄悄話迴響"
+
+#: whisper-comment-afm.php:179
+msgid "Activate"
+msgstr "啟用"
+
+#: whisper-comment-afm.php:180
+msgid "If this option is changed from yes to no, all whisper statuses will be set to waiting to prevent whispers being exposed."
+msgstr "如從啟用改為不啟用，所有的悄悄話狀態都會變成「審核中」以避免內容暴露。"
+
+#: whisper-comment-afm.php:185
+msgid "Send Whisper To"
+msgstr "寫悄悄話給"
+
+#: whisper-comment-afm.php:188
+msgid "Whisper to Primary Administrator only"
+msgstr "僅用悄悄話給主要管理員"
+
+#: whisper-comment-afm.php:189
+msgid "Whisper to a registered user"
+msgstr "用悄悄話給任何一位已註冊用戶"
+
+#: whisper-comment-afm.php:191
+msgid "This plugin currently can only support whisper comments to the administrator and a single registered user only. This feature will be expanded in near future."
+msgstr "此插件現在僅提供給管理員和單一已註冊用戶的悄悄話迴響。此功能會在未來的版本改進與擴張。"
+
+#: whisper-comment-afm.php:198
+msgid "Whisper Checkbox Label"
+msgstr "悄悄話選項標籤"
+
+#: whisper-comment-afm.php:203
+msgid "Whisper Access Denied Message"
+msgstr "悄悄話禁止閱讀訊息"
+
+#: whisper-comment-afm.php:208
+msgid "Whisper Access Granted Message"
+msgstr "悄悄話允許閱讀訊息"
+
+#: whisper-comment-afm.php:213
+msgid "Whisper Author Access Message"
+msgstr "悄悄話作者閱讀訊息"
+
+#: whisper-comment-afm.php:218
+msgid "Whisper Administrator Access Message"
+msgstr "悄悄話管理者閱讀訊息"
+
+#: whisper-comment-afm.php:458
+msgid "Select a user"
+msgstr "選一用戶"
+
+#~ msgid "Whisper to registered users"
+#~ msgstr "用悄悄話給多位已註冊用戶"
+

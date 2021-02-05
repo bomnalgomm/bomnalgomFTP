@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="css/base.css" rel="stylesheet" />
+<style type="text/css">
+.visual1 {position:relative;width:960px;margin:50px auto;}
+.visual1 img {width:100%;}
+.visual1 .slidesjs-navigation {} 
+.visual1 .slidesjs-previous {display:block;width:12px;height:18px;background:url(img/btns-next-prev.png) no-repeat 0 0;text-indent:-9999px;position:absolute;top:50%;margin-top:-9px;left:10px;z-index:10}
+.visual1 .slidesjs-next {display:block;width:12px;height:18px;background:url(img/btns-next-prev.png) no-repeat -12px 0;text-indent:-9999px;position:absolute;top:50%;margin-top:-9px;right:10px;z-index:10}
+.visual1 .slidesjs-stop {display:block;width:17px;height:18px;background:url(img/btns-next-prev.png) no-repeat -41px 0;text-indent:-9999px;position:absolute;bottom:12.50px;left:50%;z-index:100;margin-left:29px}
+.visual1 .slidesjs-play {display:block;width:17px;height:18px;background:url(img/btns-next-prev.png) no-repeat -24px 0;text-indent:-9999px;position:absolute;bottom:12.5px;left:50%;z-index:100;margin-left:29px}
+.visual1 .slidesjs-playing {}  
+.visual1 .slidesjs-pagination {position:absolute;bottom:15px;left:50%;margin-left:-46px;z-index:100} 
+.visual1 .slidesjs-pagination li {float:left;margin:0 5px 0 0}
+.visual1 .slidesjs-pagination li a {display:block;width:13px;height:13px;text-indent:-9999px;background:url(img/pagination.png) no-repeat} 
+.visual1 .slidesjs-pagination li a.active {background-position:0 -26px;}  
+
+.visual2 {width:100%;position:relative;}
+.visual2 .vimg {width:100%;heiht:400px;}
+.visual2 .v1 {background:url(/img/slide/main_visual1.jpg) no-repeat center 0;}
+.visual2 .v2 {background:url(/img/slide/main_visual2.jpg) no-repeat center 0;}
+.visual2 .v3 {background:url(/img/slide/main_visual3.jpg) no-repeat center 0;}
+.visual2 .v4 {background:url(/img/slide/main_visual4.jpg) no-repeat center 0;}
+.visual2 .v5 {background:url(/img/slide/main_visual5.jpg) no-repeat center 0;}
+.visual2 .v6 {background:url(/img/slide/main_visual6.jpg) no-repeat center 0;}
+.visual2 .slidesjs-container {height:400px !important;}
+
+
+/* 
+.slidesjs-navigation{}  재생,멈춤,이전,다음 버튼의 공통 클래스명
+.slidesjs-previous{}   이전버튼
+.slidesjs-next{} 다음버튼
+.slidesjs-stop{}  멈춤버튼
+.slidesjs-play{}  재생버튼
+.slidesjs-playing {}  재생버튼의 활성화 상태를 적용 (슬라이더가 자동재생되고 있을 경우의 상태를 나타냄)
+.slidesjs-pagination{}  페이저 버튼을 감싸는 ul태그에 적용된 이름
+.slidesjs-pagination li {}   페이저버튼 하나를 나타내는 li태그 
+.slidesjs-pagination li a {} 
+.slidesjs-pagination li a.active {}  페이저버튼의 활성화 상태를 나타냄 
+*/
+</style>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.slides.min.js"></script>
+<script type="text/javascript">
+$(function(){ // 실행문 시작
+	$(".visual1").slidesjs({
+		width : 940,   // 이미지 너비값 설정
+		height : 529,   // 이미지 높이값 설정
+		navigation : {   // 좌우버튼 설정
+			active : true,   // 사용하면 true 사용안하면 false
+			effect : "slide"  // 좌우버튼을 눌렀을때 일어날 효과 지정. "slide" 또는 "fade"
+		},
+		 pagination : { // 페이저버튼 설정
+			 active : true,  // 사용하면 true 사용안하면 false
+			 effect : "slide" // 페이저버튼을 눌렀을때 일어날 효과 지정. "slide" 또는 "fade"
+		}, play : {  // 재생버튼 설정
+			 active : true,  // 사용하면 true 사용안하면 false
+			 effect : "slide", // 재생버튼을 눌렀을때 일어날 효과 지정. "slide" 또는 "fade"			
+			 interval : 3000,   // 자동재생 시 이미지 사이 간격을 설정  1초 = 1000
+			 auto : true,       // 문서가 열렸을 때 자동재생 상태로 만들려면 true, 멈춤상태로 만들려면 false
+			 swap : true,      // 플레이, 스탑버튼을 동시에 출력시키려면 false, 토글로 출력시키려면 true
+			 pauseOnHover : true, // 슬라이더영역에 마우스오버시 재생멈추려면 true, 아니면 false
+			 restartDelay : 1000
+		}, effect : {       			// 움직임 효과에 대한 설정
+			slide : {speed : 2000},
+			fade : {speed : 2000, crossfade : true}
+			
+		}		
+	}); // $(".visual1").slidesjs() 명령 끝
+	
+		$(".visual2").slidesjs({
+		width : 2000,   // 이미지 너비값 설정
+		height : 400,   // 이미지 높이값 설정
+		navigation : {   // 좌우버튼 설정
+			active : true,   // 사용하면 true 사용안하면 false
+			effect : "slide"  // 좌우버튼을 눌렀을때 일어날 효과 지정. "slide" 또는 "fade"
+		},
+		 pagination : { // 페이저버튼 설정
+			 active : true,  // 사용하면 true 사용안하면 false
+			 effect : "slide" // 페이저버튼을 눌렀을때 일어날 효과 지정. "slide" 또는 "fade"
+		}, play : {  // 재생버튼 설정
+			 active : true,  // 사용하면 true 사용안하면 false
+			 effect : "slide", // 재생버튼을 눌렀을때 일어날 효과 지정. "slide" 또는 "fade"			
+			 interval : 3000,   // 자동재생 시 이미지 사이 간격을 설정  1초 = 1000
+			 auto : true,       // 문서가 열렸을 때 자동재생 상태로 만들려면 true, 멈춤상태로 만들려면 false
+			 swap : true,      // 플레이, 스탑버튼을 동시에 출력시키려면 false, 토글로 출력시키려면 true
+			 pauseOnHover : true, // 슬라이더영역에 마우스오버시 재생멈추려면 true, 아니면 false
+			 restartDelay : 1000
+		}, effect : {       			// 움직임 효과에 대한 설정
+			slide : {speed : 2000},
+			fade : {speed : 2000, crossfade : true}
+			
+		}		
+	}); // $(".visual1").slidesjs() 명령 끝
+}); // 실행문 끝
+</script>
+</head>
+
+<body>
+	<section class="visual1">
+    	<img src="img/example-slide-1.jpg" />
+        <img src="img/example-slide-2.jpg" />
+        <img src="img/example-slide-3.jpg" />
+        <img src="img/example-slide-4.jpg" />
+    </section>
+    
+	<section class="visual2">
+    	<div clas"v1 vimg"></div>
+    	<div clas"v2 vimg"></div>
+    	<div clas"v3 vimg"></div>
+    	<div clas"v4 vimg"></div>
+    	<div clas"v5 vimg"></div>
+    	<div clas"v6 vimg"></div>                                                
+    </section>    
+</body>
+</html>
+

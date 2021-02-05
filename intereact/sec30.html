@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title>section 30 hide/show/fadeOut/fadeIn</title>
+<link rel="stylesheet" href="./_Css/style.css" />
+<style type="text/css">
+ul li {font-size:30px;margin-left:50px;}
+div {width:400px;height:400px;margin:50px;float:left;font-size:40px;color:#fff;}
+.box1 {background:blue;}
+.box2 {background:red;}
+</style>
+</head>
+<body>
+<ul>
+	<li>box1 hide</li>
+	<li>box show</li>
+	<li>box2 fadeOut</li>
+	<li>box2 fadeIn</li>
+</ul>
+
+<div class="box1">box1</div>
+<div class="box2">box2</div>
+
+
+<pre>
+바로 숨김/보이기 처리 
+.hide(); 
+.show(); 
+
+서서히 숨김/보이기 처리 
+.fadeOut(시간); 
+.fadeIn(시간);
+</pre>
+
+
+<script type="text/javascript" src="./_Js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("li").eq(0).on("click", function(){
+			$(".box1").hide();
+		});
+		$("li").eq(1).on("click", function(){
+			$(".box1").show();
+		});
+		$("li").eq(2).on("click", function(){
+			$(".box2").fadeOut();
+		});
+		$("li").eq(3).on("click", function(){
+			$(".box2").fadeIn(1000);
+		});
+	});
+	// fadeIn(), fadeOut()은 괄호안에 수치를 입력해 속도 조절 가능, 1000=1초
+</script>
+</body>
+</html>

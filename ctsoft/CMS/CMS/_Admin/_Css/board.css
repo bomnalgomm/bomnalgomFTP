@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* 2014-10-10 CSS CENTUMSOFT */
+/*////////// 게시판 스타일 //////////*/
+
+
+/*////////// 리스트 //////////*/
+.board-wrap {position:relative;}
+.board-tit {border-top:2px solid #555;padding:20px 0 20px 20px;font-size:14px;font-weight:bold;color:#444;}
+.tbl-cms {border-top:1px solid #555;border-collapse:collapse;width:100%;text-align:center;table-layout:fixed;}
+.tbl-cms thead th {padding:12px 0;border-left:1px solid #cdcdcd;background:#fafafa;border-bottom:1px solid #b2b2b2;}
+.tbl-cms tbody th {padding:12px 0;border-right:1px solid #cdcdcd;background:#fafafa;border-bottom:1px solid #e8e6e6;}
+.tbl-cms thead th:first-child, .tbl-cms thead th.first {border-left:0;}
+.tbl-cms td {padding:12px 0;border-bottom:1px solid #e8e6e6;word-wrap:break-word;}
+.tbl-cms td.l, .tbl-cms td.center {padding-left:15px;}
+.tbl-cms th.chk {width:50px;}
+.tbl-cms tr.bg td {background:#f7f7f7;}
+.tbl-cms input {vertical-align:middle;}
+.tbl-cms input.text {border:1px solid #cbcbcb;background:#f8f8f8;height:25px;line-height:25px;}
+.tbl-cms label {padding-left:8px;vertical-align:middle;}
+.tbl-cms select {height:25px;border:1px solid #cbcbcb;min-width:100px;background:#f8f8f8}
+
+/* 게시판내부 버튼 */
+.tbl-cms .ac-btn {background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);border:1px solid #bebebe;border-radius:2px;display:inline-block;*display:inline;*zoom:1;padding:2px 6px 1px;font-size:11px;color:#333;line-height:17px;vertical-align:top;margin:0 2px 2px;}
+.tbl-cms .btn-cal {border:0;background:url(../../_Admin/_Img/Common/ico_calendar.gif) no-repeat 0 0;text-indent:-9999px;width:18px;height:21px;vertical-align:middle;}
+
+/*////////// 페이징 스타일 //////////*/
+.board-list-paging {margin-top:20px;text-align:center;}
+.pagelist {text-align:center;line-height:110%;position:relative;height:25px;}
+.pagelist * {vertical-align:middle;line-height:120%;}
+.pagelist span {font-family:arial;font-size:100%;font-weight:bold;color:#12375f !important;}
+.pagelist span {margin:0px 4px;}
+.pagelist span.first {background:none;}
+.pagelist a span {cursor:pointer;display:block;width:26px;height:19px;padding-top:5px;border:1px solid #d7d8d8;}
+.pagelist a {display:inline-block;margin-top:2px;line-height:120%;}
+.pagelist strong  {display:inline-block;margin-top:2px;line-height:120%;}
+.pagelist strong span, .pagelist a:hover span, .pagelist a:focus span, .pagelist a:active span {color:#fff !important; text-decoration: underline;border:1px solid #12375f;width:26px;height:19px;display:inline-block;background:#12375f;padding-top:5px;}
+.pagelist .firstpage span, .pagelist .lastpage span, .pagelist .firstpage1 span, .pagelist .lastpage1 span,
+.pagelist .prevblock span, .pagelist .nextblock span, .pagelist .prevblock1 span, .pagelist .nextblock1 span,
+.pagelist .prevpage span, .pagelist .nextpage span, .pagelist .prevpage1 span, .pagelist .nextpage1 span {padding-top:0px;border:0px !important; background:none !important;visibility:hidden;margin-left:2px;margin-right:2px;}
+.pagelist .firstpage , .pagelist .lastpage , .pagelist .firstpage1 , .pagelist .lastpage1, .pagelist .prevblock , .pagelist .nextblock , .pagelist .prevblock1 , .pagelist .nextblock1 ,
+.pagelist .prevpage , .pagelist .nextpage  , .pagelist .prevpage1 , .pagelist .nextpage1  {display:inline-block;margin-top:2px;background-image:url(../../_Admin/_Img/Common/btn_page.gif);background-repeat:no-repeat;height:26px;width:26px;overflow:hidden;margin-left:2px;margin-right:2px;}
+
+/*비활성*/
+.pagelist .firstpage1  {background-position:0 -66px;}
+.pagelist .prevblock1 {background-position:-32px -66px;margin-right:5px;}
+.pagelist .nextblock1 {background-position:-98px -66px;margin-left:5px;}
+.pagelist .lastpage1 {background-position:-66px -66px;}
+
+/*활성*/
+.pagelist .firstpage  {background-position:0 0;}
+.pagelist .prevblock {background-position:-32px 0;margin-right:5px;}
+.pagelist .nextblock {background-position:-98px 0;margin-left:5px;}
+.pagelist .lastpage {background-position:-66px 0;}
+
+/*오버*/
+.pagelist .firstpage:hover {background-position:0px -33px;}
+.pagelist .prevblock:hover {background-position:-32px -33px;}
+.pagelist .nextblock:hover {background-position:-98px -33px;}
+.pagelist .lastpage:hover {background-position:-66px -33px;}

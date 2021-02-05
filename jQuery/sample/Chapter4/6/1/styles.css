@@ -1,0 +1,28 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	padding:30px;
+}
+h1{
+	padding:0 0 20px;
+}
+.slideshow{
+	width:300px;
+	height:300px;
+	margin:0 20px 20px 0;
+	float:left;
+	position:relative;
+}
+/* img요소는 절대 배치로 한 곳에 중복한다 */
+.slideshow img{
+	position:absolute;
+	top:0;
+	left:0;
+	border:1px solid #000;
+}
+/* 2번째 이후의 img요소에 class="alt"를 붙여서 지운기 */
+.slideshow img.alt{
+	display:none;
+}

@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="css/base.css" rel="stylesheet">
+<style>
+.wrap{width:200px; height:150px; margin:50px; position:relative; background:#3CF; overflow:hidden;}
+.wrap li{position:absolute; top:100%; left:0;}
+.wrap li.L1{top:0;}
+</style>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script>
+$(function(){ // 실행틀 시작
+	// 최초로 출력되고 있는 이미지 틀의 인덱스값을 저장시킨 변수를 만듬.
+	var current = 0;
+	// 각각의 이미지를 담고있는 틀을 저장시킨 변수를 만듬.
+	var banner = $(".wrap li")
+	
+	// setInterval()명령을 사용해서 current변수에 저장된 값이 하나씩 커지도록 명령. 이때 이미지가 총 3장이 있고 마지막 이미지의 인덱스값은 2가 됨. 그래서 current에 저장되어질 값이 3이 된다면 해당변수값에 대한 자료는 찾을 수 없기 때문에 이미지 롤링이 제대로 구현될 수 없음. 그렇다면 조건문을 사용해 current변수에 저장될 값이 3이 되는 순간 current변수의 값을 강제로 0이되도록 만들어줌.
+	setInterval(function(){
+		// prev변수를 만들어 현재 출력되어지고 있는 이미지틀을 지정함.
+		var prev = banner.eq(current);
+		// prev변수의 대상은 현재 위치에서 위쪽으로 올라가도록 명령
+		prev.css({top:0}).stop().animate({top:"-100%"},500);
+		current ++;   // current변수가 가지고 있는 값에 1을 더함
+		// if조건문을 사용해 current변수의 범위를 제한시킴
+		if(current == 3){
+			current = 0;
+		}
+		// next변수를 만들어 다음으로 출력되어져야하는 이미지틀을 지정함.
+		var next = banner.eq(current);
+		next.css({top:"100%"}).stop().animate({top:0},500)
+		
+	},3000) // setInterval()명령 끝
+		
+}) // 실행틀 끝
+</script>
+</head>
+
+<body>
+<textarea>
+== if조건문
+if(조건){
+   조건이 참일 때 실행될 문장
+}
+
+if(조건) 조건이 참일 때 실행될 문장
+
+if(현재시각 == 아침7시 ) { 알람이 울립니다. }
+
+조건문을 만들때는 두가지 대상을 비교하게 됨. 
+A == B   A와 B가 같다.
+A != B   A와 B가 같지않다.
+A > B
+A >= B
+A < B
+A >= B
+
+== 동작을 반복시키는 setInterval()명령
+setInterval(function(){
+  반복시킬 동작을 작성
+},시간)
+</textarea>
+<section class="wrap">
+	<ul>
+   	  <li class="L1"><img src="img/m01.jpg"></li>
+      <li class="L2"><img src="img/m05.jpg"></li>
+      <li class="L3"><img src="img/m08.jpg"></li>
+   </ul>
+</section>
+
+<style type="text/css">
+.doc-wrap {position:relative;width:200px;height:150px;overflow:hidden;background:#666;margin:30px;}
+.doc-wrap li{position:absolute;top:100%;left:0;}
+.doc-wrap li.n01{top:0;}
+</style>
+<script type="text/javascript">
+	$(function(){
+		var imgNum = 0;
+	    var banner = $(".doc-wrap li");
+	    
+	    setInterval(function(){
+	    	var prev = banner.eq(imgNum);
+	    	prev.css({top:0}).stop().animate({top:"-100%"},500);
+	    	imgNum ++;
+	    	if(imgNum == 3){
+	    		imgNum = 0;
+	    	}
+	    	var next = banner.eq(imgNum);
+	    	next.css({top:"100%"}).stop().animate({top:0},500);
+	    },4000);
+	});
+</script>
+<section class="doc-wrap">
+	<ul>
+		<li class="n01"><img src="img/m02.jpg" alt="" /></li>
+		<li class="n02"><img src="img/m08.jpg" alt="" /></li>
+		<li class="m03"><img src="img/m22.jpg" alt="" /></li>
+	</ul>	
+</section>
+
+<script type="text/javascript">
+	$(function(){
+		var Imgnum = 0;
+		var ban = $(".doc-wrap li");
+		
+		setInterval(function(){
+			var prev = ban.eq(Imgnum);
+			prev.css({}).
+		},3000);
+	});
+</script>
+<section class="doc-wrap">
+	<ul>
+    	<li class="n04"><img src="img/m04.jpg" /></li>
+    	<li class="n05"><img src="img/m14.jpg" /></li>
+    	<li class="n06"><img src="img/m21.jpg" /></li>                
+    </ul>
+</section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

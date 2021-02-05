@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title>section 31 addClass/removeClass</title>
+<link rel="stylesheet" href="./_Css/style.css" />
+<style type="text/css">
+ul li {font-size:20px;margin-left:50px;}
+div {width:200px;height:200px;background:#888;margin:50px;}
+div.on {width:400px;height:400px;background:#ff2000;}
+</style>
+</head>
+<body>
+	<ul>
+		<li>클래스 추가하기</li>
+		<li>클래스 제거하기</li>
+	</ul>
+
+	<div></div>
+
+	<pre>
+	.addClass();
+	.removeClass();
+	요소에 클래스 추가/ 제거하기
+	</pre>
+
+	<script type="text/javascript" src="./_Js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$("li").eq(0).on("click", function(){
+			$("div").addClass("on");
+		});
+		$("li").eq(1).on("click", function(){
+			$("div").removeClass("on");
+		});
+	});
+	// 변경될 모양을 css상에서 클래스를 추가하여 미리 정의해놓은 뒤, 특정 이벤트 발생 시, jQuery로 해당 요소에 클래스만 추가하고 제거하면 스크립트 파일을 깔끔하게 관리할 수 있음
+	</script>
+</body>
+</html>

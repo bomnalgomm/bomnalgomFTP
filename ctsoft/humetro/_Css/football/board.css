@@ -1,0 +1,259 @@
+@charset "utf-8";
+/* 빅프로그램버튼 - 회원가입관련 스타일 재정의 */
+.lp-btn {background:#2c64b1 url(/ctsoft/humetro/_Img/common/lp_btn_bg.png) no-repeat right 0;}
+.ldp-btn {background:#0aa4a2 url(/ctsoft/humetro/_Img/common/lp_btn_bg.png) no-repeat right 0;}
+.lg-btn {background:#3e4a53 url(/ctsoft/humetro/_Img/common/lp_btn_bg.png) no-repeat right 0;}
+.lw-btn {background:#f5f5f5}
+
+/* 페이징 */
+#pagingWrapper .pagingNumbering.over {background:#21A58F;}
+#pagingWrapper .pagingNumbering.over strong {color:#ffffff;text-decoration:underline;}
+
+/* 빅프로그램버튼 input, button 태그 스타일 재정의 */
+input.lp-btn, button.lp-btn {background:#2c64b1 url(/ctsoft/humetro/_Img/common/lp_btn_bg.png) no-repeat right 0;}
+input.ldp-btn, button.ldp-btn {background:#0aa4a2 url(/ctsoft/humetro/_Img/common/lp_btn_bg.png) no-repeat right 0;}
+input.lg-btn, button.lg-btn {background:#3e4a53 url(/ctsoft/humetro/_Img/common/lp_btn_bg.png) no-repeat right 0;}
+input.lw-btn, button.lw-btn {background:#f5f5f5}
+
+/* 검색폼 스타일 수정 */
+.board-search .text {height:30px;}
+.board-search-full {text-align:center;border:1px solid #d2d2d2;background:#f6f6f6;padding:10px 0 7px;}
+.board-search-full .sec {display:inline-block;*display:inline;*zoom:1;vertical-align:top;margin:0 5px;}
+.board-search-full .sec label {margin-right:10px;}
+.board-search-full .sec .text {width:80px;}
+.board-search-full .sec .text2 {width:166px;}
+.board-search-full .sec select {background:#fff;}
+.board-search-full .bd-btn-search {background-color:#48525e;color:#fff;border:0;width:50px;height:27px;cursor:pointer;}
+
+/* 버튼 스타일 수정 */
+.board-write-btns .bp-btn, .board-write-btns .bw-btn {margin:0 5px;}
+
+/* 경기일정/결과 */
+#result-wrap .result-list {clear:both;width:100%;background:url(/ctsoft/humetro/_Img/board/common/line_vp_bg.gif) repeat-x 0 6px;padding-top:6px;}
+.tbl-result {width:100%;border-collapse:collapse;text-align:center;word-wrap:break-word;}
+.tbl-result th, .tbl-result td {word-wrap:break-word;padding:12px 0;}
+.tbl-result thead th {border-bottom:1px solid #bac2ca;background:url(/ctsoft/humetro/_Img/board/common/thead_vbar.gif) no-repeat 0 17px;color:#333;padding:15px 0;}
+.tbl-result thead th:first-child {background:none;}
+.tbl-result tbody td {border-bottom:1px solid #ddd;}
+.tbl-result td.league {width:7%;}
+.tbl-result td.time {font-size:92%;width:15%;color:#333;}
+.tbl-result td.match {font-weight:bold;text-align:center;overflow:hidden;padding-bottom:20px;}
+.tbl-result td.match .team {display:block;color:#333;}
+.tbl-result td .r-team, .tbl-result td .r-ateam, .tbl-result td .r-score {display:inline-block;vertical-align:middle;width:auto;position:relative;}
+.tbl-result td .r-team {text-align:right;width:37%}
+.tbl-result td .r-ateam {text-align:left;width:39%}
+.tbl-result .r-score {font-size:138%;font-weight:800;margin:0;width:16%;}
+.tbl-result .r-score span {padding:0 4px}
+.tbl-result .r-score span.to {font-weight:normal;}
+.tbl-result .r-team .team {background-position:right top;padding:20px 40px 0 0}
+.tbl-result .r-ateam .team {background-position:left top;padding:20px 0 0 40px;}
+.tbl-result td.match .r-win, .tbl-result td.match .r-lose, .tbl-result td.match .r-draw {position:absolute;bottom:-12px;display:block;font-size:92%;font-weight:bold;margin-top:-5px;} 
+.tbl-result td.match .r-win {color:#ff3e3e;}
+.tbl-result td.match .r-lose {color:#2952ad;}
+.tbl-result td.match .r-draw {color:#555;}
+.tbl-result .r-team .r-win, .tbl-result .r-team .r-lose, .tbl-result .r-team .r-draw {right:7px;}
+.tbl-result .r-ateam .r-win, .tbl-result .r-ateam .r-lose, .tbl-result .r-ateam .r-draw {left:7px;}
+.tbl-result td.entry {width:12%}
+.tbl-result td.preview {width:11%}
+.tbl-result td.highlight {width:11%}
+.tbl-result td .place {display:block;}
+/* 팀별 로고 */
+.tbl-result .ycfc, .tbl-rank .ycfc {background:url(/ctsoft/humetro/_Img/board/common/ico_ycfc.png) no-repeat;} /* 용인시청 */
+.tbl-result .ghfc, .tbl-rank .ghfc {background:url(/ctsoft/humetro/_Img/board/common/ico_ghfc.png) no-repeat;} /* 김해시청 */
+.tbl-result .mifc, .tbl-rank .mifc {background:url(/ctsoft/humetro/_Img/board/common/ico_mifc.png) no-repeat;} /* 목포시청 */
+.tbl-result .ccfc, .tbl-rank .ccfc {background:url(/ctsoft/humetro/_Img/board/common/ico_ccfc.png) no-repeat;} /* 천안시청 */
+.tbl-result .cfc, .tbl-rank .cfc {background:url(/ctsoft/humetro/_Img/board/common/ico_cfc.png) no-repeat;} /* 창원시청 */
+.tbl-result .btcf, .tbl-rank .btcf {background:url(/ctsoft/humetro/_Img/board/common/ico_btcf.png) no-repeat;} /* 부산교통공사 */
+.tbl-result .gnfc, .tbl-rank .gnfc {background:url(/ctsoft/humetro/_Img/board/common/ico_gnfc.png) no-repeat;} /* 강릉시청 */
+.tbl-result .khnpfc, .tbl-rank .khnpfc {background:url(/ctsoft/humetro/_Img/board/common/ico_khnpfc.png) no-repeat;} /* 경주한국수력원자력 */
+.tbl-result .dkfc, .tbl-rank .dkfc {background:url(/ctsoft/humetro/_Img/board/common/ico_dkfc.png) no-repeat;} /* 대전코레일 */
+.tbl-result .dolphinfc, .tbl-rank .dolphinfc {background:url(/ctsoft/humetro/_Img/board/common/ico_dolphinfc.png) no-repeat;} /* 울산현대미포조선 */
+/* 출전선수 모달팝업 */
+#entry {display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:url(/ctsoft/humetro/_Img/board/support/opacity_bg.png) repeat;z-index:5000}
+#entry .entry-list {width:160px;margin:10% auto;background:#fff;text-align:left;}
+
+/* 순위표 */
+#rank-wrap {clear:both;width:100%;background:url(/ctsoft/humetro/_Img/board/common/line_vp_bg.gif) repeat-x 0 0;font-size:100%;}
+.tbl-rank {width:100%;border-collapse:collapse;text-align:center;word-wrap:break-word;table-layout:fixed;}
+.tbl-rank th, .tbl-rank td {word-wrap:break-word;padding:15px 0;}
+.tbl-rank thead th {border-bottom:1px solid #bac2ca;background:url(/ctsoft/humetro/_Img/board/common/thead_vbar.gif) no-repeat 0 17px;color:#333;padding:15px 0;}
+.tbl-rank thead th:first-child {background:none;}
+.tbl-rank tbody th, .tbl-rank tbody td {border-bottom:1px solid #ddd;}
+.tbl-rank tbody tr:hover th, .tbl-rank tbody tr:hover td {background:#f9f9f9;} 
+.tbl-rank tbody tr.btcf th, .tbl-rank tbody tr.btcf td, .tbl-rank tbody tr.btcf:hover th, .tbl-rank tbody tr.btcf:hover td {background:#e9f2fa;}
+.tbl-rank tbody th, .tbl-rank .team,  .tbl-rank .p-num {font-weight:bold;}
+.tbl-rank .team {text-align:left;}
+.tbl-rank .team span {padding:10px 0 10px 38px;margin-left:20px;display:block;}
+
+/* Q&A */
+#btcf-qa-wrap {clear:both;width:100%;background:url(/ctsoft/humetro/_Img/board/common/line_vp_bg.gif) repeat-x 0 0;font-size:100%;margin-top:10px;}
+.tbl-frm {width:100%;border-bottom:1px solid #ddd;}
+.tbl-frm th, .tbl-frm td {padding:9px 0 10px;}
+.tbl-frm th {text-align:center;border-bottom:1px dashed #ccc;}
+.tbl-frm td {padding-left:15px;}
+.tbl-frm td.subject {border-bottom:1px dashed #ccc;}
+.tbl-frm td.textarea {padding-left:0;}
+
+/* 응원한마디 */
+#support-wrap .support-top {background:url(/ctsoft/humetro/_Img/board/support/support_bg.gif) no-repeat 20px 0;padding:18px 0 0 260px;min-height:89px;}
+#support-wrap .support-top .tit {font-size:169%;font-weight:600;color:#333;letter-spacing:-1px;margin-bottom:10px;}
+#support-wrap .support-top .tit span {color:#2952ad;}
+#support-wrap .write-wrap {margin-top:40px;}
+#support-wrap .write-wrap h3, #support-wrap .view-wrap .tot-num {background:url(/ctsoft/humetro/_Img/board/support/icon_cmt.gif) no-repeat 0 0;padding-left:30px;color:#333;}
+#support-wrap .write-wrap .write-form {position:relative;border:1px solid #ddd;background:#f7f7f6;margin-top:14px;padding:14px;}
+#support-wrap .write-wrap .write-form label {color:#48525e;font-size:92%;margin-right:13px;}
+#support-wrap input.text {width:90px;border:1px solid #e9e9e9;border-top:1px solid #aeaeae;}
+#support-wrap .write-wrap .write-form .chk-secret {position:absolute;top:14px;right:1px;}
+#support-wrap .write-wrap .write-form .chk-secret input[type=checkbox] {vertical-align:middle;margin-right:7px;overflow:visible;}
+#support-wrap .write-wrap .write-cont {padding-right:85px;}
+#support-wrap textarea {width:96%;min-height:62px;border:1px solid #e9e9e9;border-top:1px solid #aeaeae;margin-top:12px;padding:2px;}
+#support-wrap .write-wrap .write-btn {position:absolute;top:53px;right:14px;}
+#support-wrap .btn-swrite {border:0;background:#6c707b;color:#fff;font-size:100%;width:78px;height:68px;overflow:visible;}
+#support-wrap .view-wrap {margin-top:40px;}
+#support-wrap .view-wrap .tot-num {font-weight:600;}
+#support-wrap .view-wrap .tot-num .cred {padding:0 3px 0 6px;}
+#support-wrap .view-wrap .tot-num .f11 {font-weight:normal;}
+#support-wrap .view-list {border-top:1px solid #ddd;margin-top:12px;}
+#support-wrap .view-list li {position:relative;border-bottom:1px solid #ddd;background:url(/ctsoft/humetro/_Img/board/support/icon_cmt_bg.gif) no-repeat 14px 20px;padding:20px 0;}
+#support-wrap .view-cont {padding:0 10px 0 87px;}
+#support-wrap .view-cont .view-writer {font-weight:600;font-size:107%;color:#333;}
+#support-wrap .view-cont .view-date {padding-left:12px;font-size:11px;color:#666}
+#support-wrap .view-cont .view-btns {position:absolute;top:13px;right:11px;font-size:92%;font-weight:600;}
+#support-wrap .view-cont .view-btns a:first-child {border-right:1px solid #c1c1c1;margin-right:5px;padding-right:7px;}
+#support-wrap .view-cont .view-contents {margin-top:8px;}
+#support-wrap #view-mod, #support-wrap #view-del {position:absolute;top:0;left:0;z-index:500;background:#fff;width:100%;height:100%;border-bottom:1px solid #ddd;}
+#support-wrap #view-del .view-del .del-wp {display:inline-block;}
+#support-wrap #view-mod .view-mod {padding:10px 15px;}
+#support-wrap #view-mod .view-mod label {margin-right:9px;}
+#support-wrap #view-mod .view-mod .text, #support-wrap #view-del .view-del .text {width:150px;}
+#support-wrap #view-mod .write-btn {position:absolute;top:48px;right:14px;}
+#support-wrap #view-mod .btn-close {position:absolute;top:10px;right:15px;border:0;background:url(/ctsoft/humetro/_Img/board/support/btn_cmt_close.gif) no-repeat 0 0;width:18px;height:18px;overflow:visible;cursor:pointer;}
+
+.pop_winWrap #view-mod, .pop_winWrap #view-del {position:absolute;top:5px;left:0;z-index:500;background:#fff;width:100%;height:auto}
+.pop_winWrap #view-del .view-del .del-wp {display:inline-block;vertical-align:top;}
+.pop_winWrap #view-mod .view-mod {padding:10px 15px 0 15px;}
+.pop_winWrap #view-mod .view-mod label {margin-right:9px;}
+.pop_winWrap #view-mod .view-mod .text, .pop_winWrap #view-del .view-del .text {width:150px;}
+.pop_winWrap textarea {width:80%;min-height:62px;border:1px solid #e9e9e9;border-top:1px solid #aeaeae;margin-top:12px;padding:2px;}
+.pop_winWrap #view-mod .write-btn {position:absolute;top:48px;right:14px;}
+.pop_winWrap .btn-swrite {border:0;background:#6c707b;color:#fff;font-size:100%;width:78px;height:68px;overflow:visible;}
+.pop_winWrap #view-mod .btn-close {position:absolute;top:10px;right:15px;border:0;background:url(/ctsoft/humetro/_Img/board/support/btn_cmt_close.gif) no-repeat 0 0;width:18px;height:18px;overflow:visible;cursor:pointer;}
+
+@media all and (max-width:460px){
+	.pop_winWrap textarea {width:70%;}
+}
+
+.pop_winWrap #view-del .view-del, #support-wrap #view-del .view-del {padding:45px 0;text-align:center;}
+.pop_winWrap  #view-del .view-del label, #support-wrap #view-del .view-del label {background:url(/ctsoft/humetro/_Img/board/support/ico_cmt_secret.gif) no-repeat 0 50%;padding:7px 18px 7px 33px;}
+.pop_winWrap #view-del .view-del .btn-del, #support-wrap #view-del .view-del .btn-del {border:0;background:#6c707b;width:40px;height:26px;overflow:visible;color:#fff;vertical-align:top;margin-left:7px;font-size:11px;cursor:pointer;}
+
+
+/* 회원 */
+/* 약관동의 */
+.agree-box {background:#f8f8f8;border:1px solid #ddd;color:#000;padding:25px;height:138px;overflow-y:scroll}
+.agree-wrap {text-align:left;padding:15px 0;}
+.agree-wrap input[type=radio] {vertical-align:middle;margin-right:12px;}
+
+/* 가입폼 */
+/* 쓰기폼 테이블 스타일 */
+table.tbl-form {width:100%;border-collapse:collapse;table-layout:fixed;background:url(/homepage/default/img/board/common/line_prg_bg.gif) no-repeat 0 0;border-bottom:1px solid #bac2ca;}
+table.tbl-form th {width:15%;border-bottom:1px dotted #666;min-height:28px;padding:7px 5px;text-align:left;}
+table.tbl-form th .tit {background:url(/img/common/blt05.gif) no-repeat 10px 8px;padding-left:22px;color:#666;display:block;}
+table.tbl-form .frm {margin-left:4%;width:95%;border-bottom:1px dotted #666;min-height:28px;line-height:28px;padding:8px 5px;overflow:hidden;}
+table.tbl-form .frm .text-wrap {line-height:180%;width:95%;}
+table.tbl-form .frm .g-box {margin:5px 0;width:95%;}
+table.tbl-form .frm .resv-list {margin-top:10px;border-top:1px dotted #ddd;padding-top:7px;}
+table.tbl-form .frm .resv-list .sec:first-child {margin-left:0;}
+table.tbl-form .frm .list {overflow:hidden;}
+table.tbl-form .frm .list li {float:left;width:auto;margin-left:20px;}
+table.tbl-form .frm .list li:first-child {margin-left:0;}
+table.tbl-form .frm .select, table.tbl-form .frm .pnum {overflow:hidden;}
+table.tbl-form .frm .select li {float:left;width:43%;position:relative;margin-left:7%;height:45px;padding-top:5px;}
+table.tbl-form .frm .select li:first-child {margin-left:0;border-right:1px dotted #ddd;}
+table.tbl-form .frm .select li label {display:inline-block;*display:inline;*zoom:1;vertical-align:top;}
+table.tbl-form .frm .select li .time {display:block;}
+table.tbl-form .frm .select li .vcen2 {position:absolute;top:10px;right:50px;}
+table.tbl-form .frm .pnum li {float:left;width:25%}
+table.tbl-form .frm .pnum li label {margin-right:10px;}
+table.tbl-form .frm .ticket-thum {overflow:hidden;} /* 주문제승차권 신청 */
+table.tbl-form .frm .ticket-thum li {float:left;width:24%;margin-left:1%;margin-bottom:10px;}
+table.tbl-form .certi-wrap {overflow:hidden;position:relative;background:#f9f9f9;padding:5px 0 5px 10px;margin-top:5px;}
+table.tbl-form .certi-wrap:first-child {margin-top:0;}
+table.tbl-form .certi-wrap button {position:absolute;bottom:6px;right:16px;}
+table.tbl-form .certi-wrap ul {width:95%;}
+table.tbl-form .certi-wrap li {float:left;margin-left:2%;width:22%;}
+table.tbl-form .certi-wrap li label {font-weight:bold;display:block;margin-bottom:5px;}
+
+table.tbl-form tr.sec td + th + td .frm {width:100%;} /* 2단으로 쓸 경우 */
+table.tbl-form .frm input, table.tbl-form .frm select {vertical-align:middle;}
+table.tbl-form .textarea {width:90%;}
+table.tbl-form input[type=file] {width:90%;}
+table.tbl-form span.sec {margin-left:20px;}
+table.tbl-form .info-no, table.tbl-form .info-im, table.tbl-form .info-err {padding-bottom:3px;display:inline-block;/* *display:inline;*zoom:1;vertical-align:top;min-height:20px; */}
+table.tbl-form tr.last th, table.tbl-form tr.last .frm {border-bottom:0;} /* 마지막항목은 라인없음 */
+table.tbl-form span.sec, table.tbl-form2 span.sec {display:block;margin:5px 0 0}
+.nec {background:url(/img/board/common/ico_nec.png) no-repeat 0 6px;padding:0 5px 0 11px;}
+label .nec {text-indent:-9999px;display:inline-block;*display:inline;*zoom:1;margin-left:5px;padding-left:0;}
+
+.form-vline {display:block;width:100%;height:2px;background:url(/homepage/default/img/board/common/line_prg_bg.gif) no-repeat 0 0;}
+table.tbl-form2 {width:100%;border-collapse:collapse;table-layout:fixed;border-bottom:1px solid #bac2ca;}
+table.tbl-form2 th, table.tbl-form2 td {border:1px solid #ddd;min-height:28px;text-align:left;padding:8px 5px;}
+table.tbl-form2 th {text-align:center;background:#f4f4f4;}
+table.tbl-form2 th .tit {color:#666;display:block;}
+table.tbl-form2 td {width:80%;padding-left:4%;min-height:28px;line-height:28px;}
+table.tbl-form2 .pnum li {float:left;width:33%}
+table.tbl-form2 .pnum li label {margin-right:10px;}
+
+table.tbl-form2 .line {padding:0;text-align:center}
+
+.ie8 table.tbl-form2 td.r {padding-left:0%;}
+
+/* 스크롤안내문 */
+.rspnsv-guide {display:none;}
+.rspnsv-guide span {background:url(/img/common/icon_scroll.gif) no-repeat 0 0;height:38px;padding:15px 0 0 50px;display:inline-block;font-weight:bold;text-align:left;}
+
+
+@media all and (max-width:652px){
+	/* 스크롤안내문 */
+	.rspnsv-guide {clear:both;display:block;background:#e8e8e8;text-align:center;color:#777;min-height:54px;padding:7px 20px 0 20px;margin-bottom:10px;}
+	
+	/* table 리스트 스타일 */
+	#prg-wrap, .rspnsv-wrap {width:auto;overflow-y:auto;}
+	.prg-list-table, .rspnsv-wrap > table, .rspnsv-wrap .tbl-gym {width:652px;}
+
+}	
+
+/* 결과확인 */
+.result-wrap {border:1px solid #ddd;padding:50px 40px;background:url(/img/member/result_bg.gif) no-repeat 95% 50px;}
+.result-wrap .tit {font-size:153%;color:#444;}
+.result-wrap .txt {font-size:115%;color:#777;margin:20px 0 35px;}
+.result-wrap .txt span {display:block;}
+.result-wrap #prg-wrap {background:none;}
+.result-wrap .result-table {width:100%;border-collapse:collapse;font-size:107%;color:#333;}
+.result-wrap .result-table th, .result-wrap .result-table td {border:1px solid #ddd;}
+.result-wrap .result-table th {font-weight:normal;padding:15px 20px;}
+.result-wrap .result-table td {font-size:100%;color:#777;background:#fbfbfb;padding:15px 20px;}
+
+/* 버튼영역 */
+.btn-wrap {text-align:center;margin:30px 0;}
+
+/* ie8 */
+.ie8 .tbl-result .r-score {font-size:138%;font-weight:800;margin:0;width:17%;}
+
+/* 목록 */
+.prg-list-table {width:100%;border-collapse:collapse;text-align:center;word-wrap:break-word;font-size:100%;}
+.prg-list-table th, .prg-list-table td {word-wrap:break-word;}
+.prg-list-table thead th {border-bottom:1px solid #bac2ca;background:url(/homepage/default/img/board/common/thead_vbar.gif) no-repeat 0 center;color:#333;padding:15px 0;font-size:100%;}
+.prg-list-table thead th:first-child {background:none;}
+.prg-list-table tbody td {border-bottom:1px solid #ddd;padding:10px 0;}
+.prg-list-table tbody tr:hover td {background:#f9f9f9}
+.prg-list-table .subject {text-align:left;padding-left:10px;font-size:100%;}
+.prg-list-table .notice .subject {font-weight:bold;}
+.prg-list-table .subject.c {padding-left:0;}
+/* 정렬기능 */
+.prg-list-table th.sort a {display:inline-block;background:url(/homepage/default/img/Infor/ico_sort.gif) no-repeat right center;padding-right:15px;}
+.prg-list-table th.sort.sort-up a {background:url(/homepage/default/img/Infor/ico_sort_up.gif) no-repeat right center;color:#0c7bc2;text-decoration:underline;}
+.prg-list-table th.sort.sort-dw a {background:url(/homepage/default/img/Infor/ico_sort_dw.gif) no-repeat right center;color:#0c7bc2;text-decoration:underline;}
+
+
+

@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+.m-news-pop {position:relative;}
+.m-news-pop ul {float:right; margin:20px 21px 0 0;}
+.m-news-pop ul li {display:inline;}
+.m-news-pop .pcont {position:absolute;left:0;top:0px; height:218px; letter-spacing:-1px;}
+
+.m-news-pop .nicon {float:left; display:inline-block;width:14px; height:10px;overflow:hidden; margin-left:6px; position:relative; z-index:9999;}
+.m-news-pop .nicon span {visibility:hidden;}
+.m-news-pop a {background:url(../_Img/Main/ico_main.png) no-repeat 0 0;}
+.m-news-pop .n1 a, .m-news-pop .n2 a, .m-news-pop .n3 a {background-position:-249px -101px;}
+.m-news-pop .n1 a.over, .m-news-pop .n2 a.over, .m-news-pop .n3 a.over {background-position:-229px -101px;}
+
+.m-news-pop .pop-btns {position:absolute; top:20px; right:86px; height:10px;}
+.m-news-pop .pop-btns button {background:url(../_Img/Main/ico_main.png) no-repeat 0 0; width:10px; height:10px; border:0;cursor:pointer; vertical-align:top;}
+.m-news-pop .pop-btns button span {visibility:hidden;display:block;width:1px;height:1px;}
+.m-news-pop .pop-btns .btn-pause {background-position:-211px -101px; width:10px; height:10px;}
+.m-news-pop .pop-btns .btn-play {background-position:-198px -101px; width:10px; height:10px;}

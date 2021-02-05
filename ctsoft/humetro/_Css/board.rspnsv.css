@@ -1,0 +1,146 @@
+@charset "utf-8";
+@media all and (max-width:900px){
+	.gym-select .gym-place ul {padding-left:20px;padding-right:20px;}
+	
+	/* 영세율공급증명내용 */
+	table.tbl-form .certi-wrap li {float:left;margin-left:2%;width:42%;}
+}
+	
+@media all and (max-width:861px){
+	/* 검색 */
+	.board-search-full div.sec {text-align:center;}
+	.board-search-full .select-wrap  {display:block;margin-top:5px;}
+	/* .board-search-full .select-wrap select {} */
+	
+	table.tbl-form .frm .select li .vcen2 {right:30px;}	
+}	
+
+@media all and (max-width:837px){	
+	.prg-write-default li .frm {width:67%;margin-left:4%;}
+	
+	.gym-select .gym-place {width:49%;margin-bottom:20px;}
+	.gym-select .gym-place + .gym-place + .gym-place {margin-left:0;}
+	.gym-select .gym-place + .gym-place + .gym-place + .gym-place {margin-left:1.3%;}
+	.gym-select .gym-place ul {padding-left:27px;padding-right:27px;}
+}
+	
+@media all and (max-width:781px){
+	table.tbl-form th, table.tbl-form2 th {width:25%;}
+	table.tbl-form .frm .list li {float:left;width:46%;margin-left:20px;}
+	table.tbl-form .frm .list li + li + li {margin-left:0;}
+	table.tbl-form .frm .list li + li + li + li {margin-left:20px;}
+	table.tbl-form .frm .select li {float:none;width:100%;position:relative;margin-left:0;height:auto;padding-top:5px;}
+	table.tbl-form .frm .select li label {display:inline}
+	table.tbl-form .frm .select li.none {margin-left:18px;} /* 예약완료 */
+	table.tbl-form .frm .select li .time {display:inline;}
+	table.tbl-form .frm .select li .vcen2 {position:relative;top:auto;right:auto;}
+	table.tbl-form .frm .pnum li {float:left;width:50%;margin-bottom:5px;}	
+	table.tbl-form .info-ex {display:block;margin-top:5px}
+	table.tbl-form .cal-wrap {float:none;width:50%;margin:0 auto;}
+	table.tbl-form .time-wrap {float:none;width:90%;} 
+	table.tbl-form .time-wrap {background:url(/homepage/default/img/Customer/cal_arr02.gif) no-repeat 50% 0;padding:75px 0 0 0}
+	table.tbl-form span.sec, table.tbl-form2 span.sec {display:block;margin:5px 0 0}
+		
+	/* 도시철도체험학습 */
+	.exp-wrap .list li {width:49%;margin-bottom:1%;}
+	.exp-wrap .list li.n03 {margin-left:0;}
+	
+	/* 자원봉사 */
+	.volu-wrap .volu-list {width:44%;margin-bottom:20px;}
+	.volu-wrap .volu-list + .volu-list + .volu-list {margin-left:0;}
+	.volu-wrap .volu-list + .volu-list + .volu-list + .volu-list {margin-left:1.3%;}
+}
+	
+@media all and (max-width:680px){	
+	.prg-write-default li, .prg-write-default li.first {float:none;width:100%;clear:both;margin-left:0;}
+	.prg-write-default li .frm {width:70%;margin-left:4%;}
+	.prg-write-default li.full .tit {width:21.5%}
+	.prg-write-default li.full .frm {width:67.6%;margin-left:4%}	
+	
+	.resv-confirm ul {margin:20px 0 0 22%;}
+	
+	table.tbl-form .frm .ticket-thum li {float:left;width:45%;}
+	
+	.faq-title-box {padding:25px;background-size:45%;}
+	
+}
+	
+@media all and (max-width:652px){
+	/* 스크롤안내문 */
+	.rspnsv-guide {clear:both;display:block;background:#e8e8e8;text-align:center;color:#777;min-height:54px;padding:7px 20px 0 20px;margin-bottom:10px;}
+	
+	/* table 리스트 스타일 */
+	#prg-wrap, .rspnsv-wrap {width:auto;overflow-y:auto;}
+	.prg-list-table, .rspnsv-wrap > table, .rspnsv-wrap .tbl-gym {width:652px;}
+
+}	
+
+@media all and (max-width:600px){	
+	/* 자원봉사 신청  */	
+	table.tbl-form .cal-wrap {width:70%;}	
+	table.tbl-form2 .pnum li {float:none;width:100%;margin-bottom:5px;}
+	
+	/* 영세율공급증명내용 */
+	table.tbl-form .certi-wrap ul {width:80%;}
+	table.tbl-form .certi-wrap li {float:none;width:95%;margin-left:0;}
+	
+	.timetable-title-box {background-size:40%;}
+	.timetable-title-1 {margin:20px 0 0 20px}
+	.timetable-title-2 {margin-left:20px;}
+}	
+
+@media all and (max-width:510px){	
+	.prg-write-default li .frm {width:69%;}	
+	.resv-confirm ul {margin:20px 0 0 12%;}
+
+}	
+
+@media all and (max-width:480px){
+	/* 스크롤안내문 */	
+	.rspnsv-guide span {padding-top:7px;height:45px;}
+	
+	/* 검색 */
+	.board-search-full  {text-align:left;padding-left:20px;}
+	.board-search-full div.sec {text-align:left;margin-left:0;}
+	.board-search-full .select-wrap select {margin-bottom:5px;}		
+	
+	table.tbl-form th, table.tbl-form2 th {width:30%;}	
+	table.tbl-form .frm .list li {float:none;width:100%;margin-left:0 !important;}
+	table.tbl-form .cal-wrap {width:90%;}
+	table.tbl-form .time-wrap {width:80%;text-align:left;}
+	
+	.gym-select .gym-place {width:100%;margin:0 0 20px;float:none;}
+	.gym-select .gym-place + .gym-place + .gym-place + .gym-place {margin-left:0;}
+	.gym-select .gym-place ul {min-height:auto;}
+	
+	.culture-cont .dl-list01 dt {float:none;width:100%;}
+	.culture-cont .dl-list01 dd {float:none;width:100%;background:none;margin-top:-5px;}
+}	
+
+@media all and (max-width:411px){	
+	/* 검색 */
+	.board-search-full label {display:block;margin-bottom:5px;}
+	.board-search-full .select-wrap {margin-left:-3px;}
+	
+	.prg-write-default li .frm {width:67%;}
+	table.tbl-form .textarea {width:80%;}
+	table.tbl-form .cal-wrap {width:80%;}
+	table.tbl-form .frm .pnum li {float:none;width:100%;}	
+	table.tbl-form .frm .ticket-thum li {float:none;width:95%;}
+		
+	/* 도시철도체험학습 */
+	.exp-wrap .list li {float:none;width:80%;margin:0 auto 3%;}
+	.exp-wrap .list li:first-child, .exp-wrap .list li.n03 {margin:0 auto 3%;}
+	.resv-confirm .tit {width:53%;}
+	.resv-confirm ul {margin-left:17%;}
+	
+	/* 자원봉사 */
+	.volu-wrap .volu-list {width:95%;margin-left:0;}
+	.volu-wrap .volu-list label {margin-top:20px;}
+	.real-wrap h4 {float:none}
+	.real-wrap .info-txt {float:none;margin-bottom:10px;}
+	.real-wrap .info-err.mg5 {margin-left:1px;}
+	
+	/* 영세율공급증명내용 */
+	table.tbl-form .certi-wrap ul {width:70%;}
+}	

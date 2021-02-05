@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>  
+<head>    
+<title>Localizing the Map</title>    
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">    
+<meta charset="utf-8">    
+<link href="https://developers.google.com/maps/documentation/javascript/examples/default.css" rel="stylesheet">    
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&language=en"></script>    
+<script>
+function initialize() {  
+	var mapOptions = {    
+		zoom: 8,    
+		center: new google.maps.LatLng(35.144327, 129.100929),    
+		mapTypeId: google.maps.MapTypeId.ROADMAP  
+		}; 
+		var map = new google.maps.Map(document.getElementById('map-canvas'),      
+		mapOptions);
+		}
+	google.maps.event.addDomListener(window, 'load', initialize);   
+	</script>  
+</head>  
+
+<body>    
+<iframe width="900" height="550" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=%EB%B6%80%EC%82%B0%EA%B4%91%EC%97%AD%EC%8B%9C+%EC%98%81%EB%8F%84%EA%B5%AC+%EB%8F%99%EC%82%BC%EB%8F%99+1125&amp;aq=&amp;sll=36.430122,128.056641&amp;sspn=5.567822,11.590576&amp;ie=UTF8&amp;hq=&amp;hnear=%EB%B6%80%EC%82%B0%EA%B4%91%EC%97%AD%EC%8B%9C+%EC%98%81%EB%8F%84%EA%B5%AC+%EB%8F%99%EC%82%BC%EB%8F%99+1125&amp;ll=35.080749,129.07917&amp;spn=0.011063,0.022638&amp;t=m&amp;z=14&amp;output=embed"></iframe>
+
+
+
+</body>
+</html>

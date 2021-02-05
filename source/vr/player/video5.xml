@@ -1,0 +1,168 @@
+<krpano version="1.16.2">
+
+	<!-- adjust the examples backbutton position (if available), the wait(0) in the onstart action allows executing this event -->
+	<events name="backbutton_adjust" onxmlcomplete="if(layer[backbutton], set(layer[backbutton].y,80));" />
+	
+
+	
+	
+
+	<!-- include the contextmenu settings and an example video-interface -->
+	<include url="contextmenu.xml" devices="flash" />
+	<include url="videointerface.xml" />
+
+
+
+
+
+<action name="loadexample">
+		<!-- then add an 'back' button with keep=true for returning to the start xml -->
+		add_back_button();
+		
+</action>
+<action name="add_back_button">
+		addlayer(backbutton);
+		layer[backbutton].loadstyle('button');
+		
+
+		set(layer[backbutton].style, null);
+		set(layer[backbutton].keep, true);
+		set(layer[backbutton].html, 'BACK');
+		set(layer[backbutton].align, 'rightbottom');
+		set(layer[backbutton].x, 32);
+		set(layer[backbutton].y, 32);
+		set(layer[backbutton].width, 70);
+		set(layer[backbutton].height, 50);
+		ifnot(device.ie, set(layer[backbutton].roundedge, 20); );
+		set(layer[backbutton].zorder, 99999);
+		set(layer[backbutton].alpha, 0.0);
+		set(layer[backbutton].onloaded, delayedcall(1.0,tween(alpha,1.0)); );
+		set(layer[backbutton].ondown, 'set(ondown,null); resetkrpano(); loadpano(%SWFPATH%/krpano.xml,null,IGNOREKEEP,BLEND(1));' );
+		set_drag_cursor();
+	</action>
+
+<action name="set_drag_cursor">
+		set(control.mousetype, drag2D);
+		set(control.touchtype, drag2D);
+		set(cursors.url, %CURRENTXML%/drag-cursors.png);
+		set(cursors.type, drag);
+		set(cursors.move,  2|0|30|32);
+		set(cursors.drag, 37|0|30|32);
+	</action>
+
+	<action name="set_qtvr_cursor">
+
+	set(control.mousetype, drag2D);
+	<!--
+		set(control.touchtype, drag2D);
+		set(cursors.url, %CURRENTXML%/drag-cursors.png);
+		set(cursors.type, drag);
+		set(cursors.move,  2|0|30|32);
+		set(cursors.drag, 37|0|30|32);
+		-->
+			set(layer[dragmode].visible, true);
+		set(layer[movemode].visible, false);
+		set(control.mousetype, moveto);
+		set(control.touchtype, moveto);
+		set(cursors.url, %CURRENTXML%/qtvr-cursors.png);
+		set(cursors.type, 8way);
+		set(cursors.move,       0|0|16|16);
+		set(cursors.drag,      16|0|16|16);
+		set(cursors.arrow_u,   32|0|16|16);
+		set(cursors.arrow_d,   48|0|16|16);
+		set(cursors.arrow_l,   64|0|16|16);
+		set(cursors.arrow_r,   80|0|16|16);
+		set(cursors.arrow_lu,  96|0|16|16);
+		set(cursors.arrow_ru, 112|0|16|16);
+		set(cursors.arrow_rd, 128|0|16|16);
+		set(cursors.arrow_ld, 144|0|16|16);
+		<!--set(control.mousetype, moveto);
+		set(control.touchtype, moveto);
+		set(cursors.url, %CURRENTXML%/qtvr-cursors.png);
+		set(cursors.type, 8way);
+		set(cursors.move,       0|0|48|48);
+		set(cursors.drag,      48|0|48|48);
+		set(cursors.arrow_u,   96|0|48|48);
+		set(cursors.arrow_d,   144|0|48|48);
+		set(cursors.arrow_l,   192|0|48|48);
+		set(cursors.arrow_r,   240|0|48|48);
+		set(cursors.arrow_lu,  240|0|48|48);
+		set(cursors.arrow_ru, 112|0|48|48);
+		set(cursors.arrow_rd, 128|0|48|48);
+		set(cursors.arrow_ld, 144|0|48|48);-->
+<!--
+		set(control.mousetype, moveto);
+		set(control.touchtype, moveto);
+		set(cursors.url, %CURRENTXML%/qtvr-cursors.png);
+		set(cursors.type, 8way);
+		set(cursors.move,       0|0|16|16);
+		set(cursors.drag,      16|0|16|16);
+		set(cursors.arrow_u,   32|0|16|16);
+		set(cursors.arrow_d,   48|0|16|16);
+		set(cursors.arrow_l,   64|0|16|16);
+		set(cursors.arrow_r,   80|0|16|16);
+		set(cursors.arrow_lu,  96|0|16|16);
+		set(cursors.arrow_ru, 112|0|16|16);
+		set(cursors.arrow_rd, 128|0|16|16);
+		set(cursors.arrow_ld, 144|0|16|16);-->
+	</action>
+<events name="panoevents"
+	        onloadcomplete="delayedcall(introimage, 4.0, if(layer[introimage], hideintroimage() ); ); set(events[panoevents].onloadcomplete,null);if(istouchdevice, set_drag_cursor(), set_qtvr_cursor() );"
+	        onremovepano="stopdelayedcall(introimage);"
+	        />
+	
+	<!--
+	<layer name="introimage"
+	       url="introimage.png"
+	       align="center"
+	       onloaded="set(alpha,0); tween(alpha,1.0);"
+	       onclick="hideintroimage();"
+	       />-->
+	
+	<action name="hideintroimage">
+		if(layer[introimage].enabled,
+			set(layer[introimage].enabled,false);
+			tween(layer[introimage].alpha, 0.0, 0.5, default, removelayer(introimage));
+		  );
+	</action>
+
+
+
+
+
+
+	<!-- adjust the video interface a bit (by overwriting size and position from the videointerface.xml) -->
+	<!-- <layer name="videointerface_control_bar" width="100%" y="0" /> -->
+
+
+	<!-- load and control the video with the videoplayer plugin -->
+	<plugin name="video"
+	        url="videoplayer.swf"
+	        alturl="videoplayer.js"
+	        loop="true"
+	        posterurl="video.jpg"
+	        onvideoready="videointerface_setvideo(get(name));"
+	        />
+
+	<!-- addtional settings for html5 to play the video as flat image -->
+	<plugin name="video" devices="html5" width="100%" height="prop" align="center" zorder="0" enabled="false" visible="false" onloaded="loadexample" />
+
+	<!-- addtional settings for iOS/Android - paused at start -->
+	<plugin name="video" devices="ios|android" pausedonstart="true" />
+
+	<!-- set the video source file (different files and different paths for different devices) -->
+	<plugin name="video" videourl="rtmp://59.19.158.7/vod/mp4:park_5.mp4" devices="flash" />
+	<plugin name="video" videourl="video.mp4"                        devices="firefox|chrome|opera" />
+	<plugin name="video" videourl="video.mp4"                         devices="ios|android|blackberry|ie" />
+
+
+	<!-- define the pano image and get the pano video from the videoplayer plugin (flash only) -->
+	<image hfov="360" vfov="180" devices="flash">
+		<sphere url="plugin:video" />
+	</image>
+
+
+	<!-- the startup view settings -->
+	<view hlookat="+51" vlookat="0" fov="130" fovtype="HFOV" />
+
+</krpano>

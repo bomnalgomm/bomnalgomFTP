@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+/* 공통사항 */
+.cont_inner {padding:15px 5px 0 5px}
+
+.div-wrap {width:100%;min-width:960px;position:relative;display:block;text-align:center;}
+.div-cont {position:relative;display:block;clear:both;width:960px;margin-left:auto;margin-right:auto;text-align:left;}
+.div-absolute {position:absolute;width:100%;}
+
+#doc_wrap {overflow-x:hidden;}
+#doc_wrap,#global_wrap,#header_wrap,#footer_wrap,#container_wrap, #mcontainer_wrap {width:100%;min-width:960px;position:relative;display:block;text-align:center;}
+#header, #container,#footer {position:relative;display:block;clear:both;width:960px;margin-left:auto;margin-right:auto;text-align:left;}
+
+.header-wrap-absolute {z-index:1000}
+#container {z-index:10}
+#footer_top,#footer {z-index:2000}
+
+/* header */
+#header_top {height:60px}
+#header_top h1 {padding-top: 11px;}
+#header_top .fnc_wrap {position: absolute; right:0; top:27px}
+#header_top .fnc_wrap * {float:left}
+.fnc_wrap li {float: left; padding:0 8px; background:url('../_Img/Common/bg_line.gif') no-repeat right 3px;}
+.fnc_wrap li.last {background: none;}
+
+#menuwrap {height:45px; background: #055aa7;}
+#topmenu-wrap {width:962px; margin: 0 auto;}
+#topmenu-wrap li {float:left;}
+
+
+/* container */
+#container {position:relative;background:url('../_Img/lm_bg.gif') repeat-y 170px 0;padding-bottom:40px;}
+#container:after {clear:both;content:"";display:block;}
+
+#side_wrap {position:relative; z-index:250;display:block;float:left;width:170px;overflow-x:hidden;margin-left:0px;padding-right:45px;}
+
+#contents_wrap {position:relative; z-index:15;display:block;float:left;width:745px;overflow:hidden;padding-top:30px;}
+#cont_top {position:relative;width:100%; padding-bottom:10px;margin-bottom:30px;border-bottom:2px solid #E6E6E6;}
+#cont_top .split {display:inline-block;position:absolute;left:0;top:37px;width:30px;height:2px;overflow:hidden;background:#1f3459;}
+
+.cont_navi {position:absolute;right:0px;top:20px;font-size:90%;line-height:180%;}
+.cont_navi .isOver {font-weight:bold;}
+.cont_navi * {vertical-align:baseline;line-height:120%;}
+.cont_navi img {vertical-align:middle !important;}
+
+
+/*사이드메뉴 스타일*/
+.submenu-01 {width:170px;position:relative;}
+.submenu-01 .lm-tit  {width:100%;padding-bottom:20px;padding-top:40px;}
+.submenu-01 .lm-tit p {color:#000e3a; line-height:20px;}
+.submenu-01 .lm-tit h2 {font-size:200%;font-weight:bold;color:#000e3a;line-height:30px;letter-spacing:-1px;}
+
+.submenu-01 ul {width:100%;position:relative;line-height:130%;}
+.submenu-01 ul:after {clear:both;content:"";display:block;}
+.submenu-01 ul li {float:left;width:100%;white-space:break-all;}
+.submenu-01 ul span {display:block;cursor:pointer;}
+
+.submenu-01 ul.depth2 {}
+.submenu-01 ul .lm_l2 {border-top:1px solid #eee;position:relative;font-size:13px;}
+.submenu-01 ul .lm_l2:first-child{border-top:none}
+
+.submenu-01 ul .lm_a2 {display:block;width:100%; background:#FFF;}
+.submenu-01 ul .lm_a2 span {color:#333;padding:13px 30px 11px 23px;font-weight:bold;background: url('../_Img/Common/mn_bulBg.gif') no-repeat 9px 18px;}
+.submenu-01 ul .lm_a2:hover, .submenu-01 ul .over .lm_a2 {background:#2a6fb5 url('../_Img/Common/mn_onBg.gif') no-repeat 153px 15px;}
+.submenu-01 ul .lm_a2:hover span, .submenu-01 ul .over .lm_a2 span {color:#FFF; background: url('../_Img/Common/mnon_bulBg.gif') no-repeat 9px 18px;}
+
+.submenu-01 ul.depth3 {padding-top:7px;padding-bottom:7px;font-size:12px;line-height:140%;background: #f4f8fb;display:none;}
+.submenu-01 .over .depth3 {display:block;}
+.submenu-01 ul .lm_a3 span {color:#555;padding:3px 15px 3px 20px;}
+.submenu-01 ul .lm_a3:hover span, .submenu-01 .depth3 .over .lm_a3 span {color:#3b577c;font-weight:bold; }
+
+
+
+
+/* FOOTER */
+#footer_wrap {border-top:1px solid #CCCCCC;}
+#footer {padding-bottom:50px;padding-top:20px;}
+#footer:after {clear:both;content:"";display:block;}
+#footer * {font-style:normal;}
+#flogo {float:left;margin-right:30px;}
+#fcopyright {float:left;line-height:130%;}
+#fcopyright em {font-weight:bold;}
+#fcopyright address {display:inline;}
+#fcopyright .copyright {padding-top:5px;}
+
+#fsitelink {position:absolute;right:0px;top:20px;line-height:1.5em;}
+#fsitelink select {height:24px;}
+#fsitelink * {vertical-align:middle;}
+
+
+

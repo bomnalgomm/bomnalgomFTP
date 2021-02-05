@@ -1,0 +1,585 @@
+@charset "utf-8";
+/* 이미지확대보기 */
+.img-zoom {position:relative;}
+.img-zoom a.zoomin {display:none;}
+.img-zoom a.zoomin span {font-size:1px;line-height:1px;text-indent:-1000em;visibility:hidden;width:1px;height:1px;overflow:hidden;}
+
+
+ol li {padding:5px 0px}
+ol li .num {display:inline-block; width:25px;}
+.board-search-full .s_year {background:url(/homepage/manage/img/selbox-label.png) no-repeat;padding-left:20px}
+/* 이용안내 */
+.cont-info {color:#333;border:1px solid #ddd;/*background:url(/homepage/default/img/Common/vline.gif) repeat-x 0 bottom;*/padding-bottom:30px;}
+.cont-info.lost {padding:45px;background:#fafafa url(/homepage/default/img/Guide/lost_top_bg.gif) no-repeat right bottom;}
+.cont-info .tit {font-size:21px;font-weight:bold;}
+.cont-info .txt {font-size:14px;width:60%;margin-top:15px;letter-spacing:-1px;}
+.cont-info .txt span {display:block;}
+.lost-guide {overflow:hidden;}
+.lost-guide .img {float:left;width:40%;}
+.lost-guide dl {float:right;width:57%;}
+.lost-guide dl dt {width:30%;color:#0c7bc2;}
+.lost-guide dl dd {width:63%;}
+.lost-guide dl dt.full, .lost-guide dl dd.full {width:100%;}
+.lost-guide dl dd.full {background:none;margin:0;}
+.lost-guide dl dd.full ul li ol {margin:5px 0 0 10px;}
+.lost-guide dl dd.full ul li ol li {background:none;list-style:decimal;padding-left:0;}
+/* 유실물 추가 */
+.lost-guide .lost-cont {float:right;width:57%;}
+.lost-guide .lost-cont  dl {float:none;width:100%;overflow:hidden;margin-top:1 0px}
+.lost-guide .lost-cont  dl dt {float:left;width:18%;color:#444;font-weight:bold;background:url(/img/common/blt04.gif) no-repeat 0 9px;padding:2px 0 2px 11px;margin:4px 0 7px;}
+.lost-guide .lost-cont  dl dd {float:left;width:72%;padding:2px 0;background:url(../img/Common/li_vline.gif) no-repeat 0 6px;padding-left:2%;margin:4px 0 7px;}
+
+/* 긴급상황대피요령 */
+.emerg-wrap {border:1px solid #ddd;}
+.emerg-wrap .tit {background:#ececec;border-bottom:1px solid #ddd;text-align:center;font-size:14px;color:#444;padding:14px 0 13px;margin-bottom:35px;}
+.emerg-wrap .emerg-cont {margin:35px 30px 40px;overflow:hidden;}
+.emerg-wrap .emerg-vod {position:relative;width:56%;height:100%;float:left;background:#d3d3d3;} 
+.emerg-wrap .emerg-cap {float:right;width:40%;height:100%;background:#ececec;border:1px solid #ddd;}
+.emerg-wrap .emerg-cap .caption {height:100%;height:264px;overflow-y:auto;}
+.emerg-use {overflow:hidden;}
+.emerg-use .emerg-img {float:left;width:57%;}
+.emerg-use .emerg-img ul {overflow:hidden;}
+.emerg-use .emerg-img li {float:left;width:48%;margin-left:4%;position:relative;margin-bottom:25px;}
+.emerg-use .emerg-img li.first {margin-left:0;}
+.emerg-use .emerg-img li img {width:100% !important;height:100% !important;}
+.emerg-use .emerg-img li .tit {position:absolute;bottom:0;left:0;display:block;background:#8d95a0;color:#fff;text-align:center;width:100%;padding:8px 0;}
+.emerg-use .use-txt {float:right;width:37%;min-height:131px;background:#f4f4f4;border:1px solid #ddd;padding:2%;}
+.emerg-use .use-txt.full {min-height:325px;}
+
+/* 고객참여 - 고객모니터 */
+.monitor-wrap .mo-cont {background:#fafafa url(/homepage/default/img/Customer/monitor_bg.gif) no-repeat right bottom;border:1px solid #ddd;padding:45px;margin-bottom:40px;}
+.monitor-wrap .mo-cont .tit {font-size:21px;font-weight:bold;width:53%;letter-spacing:0;margin-bottom:20px;}
+.monitor-wrap .mo-cont .txt {font-size:15px;width:50%;}
+
+
+/* 운임안내 */
+.price-wrap {overflow:hidden;}
+.price-wrap .price-list {float:left;width:30.5%;margin-left:4%;}
+.price-wrap .price-list:first-child {margin-left:0;}
+.price-wrap .price-list h4 {background:url(/homepage/default/img/Guide/price_bg.gif) repeat 0 0;color:#fff;font-size:15px;text-align:center;padding:15px 0;border-bottom:1px solid #ddd;}
+.price-wrap .price-list .ticket {border:1px solid #ddd;border-top:0;min-height:210px;overflow:hidden;padding:20px 15px;}
+.price-wrap .price-list .ticket h5 {float:left;width:28%;height:80px;margin-right:2%;background:url(/img/common/blt04.gif) no-repeat 0 11px;padding:5px 0 2px 11px;border-right:1px dashed #d9d9d9;margin-right:8%}
+.price-wrap .price-list .ticket h5 span {display:block;}
+.price-wrap .price-list .ticket img {float:left;padding-top:5px;}
+.price-wrap .price-list .etc {background:#f4f4f4;border:1px solid #ddd;border-top:0;min-height:30px;padding:30px 0 25px 25px;color:#444;}
+.price-wrap .price-list .etc span {display:block;margin-top:-10px}
+
+/* 도시철도이용 */
+.youtb-wrap {background:url(/homepage/default/img/board/common/line_prg_bg.gif) repeat-x 0 0;border-bottom:1px solid #ddd;}
+.youtb-wrap .title {font-size:16px;font-weight:bold;color:#333;padding:30px 0 30px 20px;}
+.youtb-cont {position:relative;padding-bottom:56.25%;height:0;overflow:hidden;}
+.youtb-cont iframe {position:absolute;top:0;left:0;width:100%;height:100%;} 
+.youtb-wrap .caption-wrap {background:#f6f6f6;padding:30px 0 30px 30px;}
+.youtb-wrap .caption {height:150px;overflow-y:auto;}
+.youtb-wrap .caption-wrap .tit {background:#666; color:#fff; display:inline-block; padding:5px 8px; line-height:100%; margin-bottom:10px}
+/* 도시철도에티켓 */
+.eti-list {overflow:hidden;}
+.eti-list li {float:left;width:21%;margin:0 0 45px 4.5%;}
+.eti-list li span {display:block;border:1px solid #ddd;padding:170px 0 0;text-align:center;font-size:14px;color:#444;min-height:78px}
+.eti-list li span em {display:block;font-style:normal;}
+.eti-list li.n01, .eti-list li.n05 {margin-left:20px;}
+/* 아이콘 */
+.eti-list li.n01 span {background:url(/homepage/default/img/Guide/eti01.gif) no-repeat center 25px;}
+.eti-list li.n02 span {background:url(/homepage/default/img/Guide/eti02.gif) no-repeat center 25px;}
+.eti-list li.n03 span {background:url(/homepage/default/img/Guide/eti03.gif) no-repeat center 25px;}
+.eti-list li.n04 span {background:url(/homepage/default/img/Guide/eti04.gif) no-repeat center 25px;}
+.eti-list li.n05 span {background:url(/homepage/default/img/Guide/eti05.gif) no-repeat center 25px;}
+.eti-list li.n06 span {background:url(/homepage/default/img/Guide/eti06.gif) no-repeat center 25px;}
+.eti-list li.n07 span {background:url(/homepage/default/img/Guide/eti07.gif) no-repeat center 25px;}
+.eti-list li.n08 span {background:#f4f4f4 url(/homepage/default/img/Guide/eti08.gif) no-repeat center 40px;}
+
+/* 교통약자배려시설 */
+.line-facil {overflow:hidden;margin:30px 0 95px;}
+.line-facil li {float:left;border:1px solid #ddd;width:18%;margin-left:2.2%;text-align:center;color:#444;}
+.line-facil li:first-child {margin-left:0;}
+.line-facil li .tit {background:url(/homepage/default/img/Guide/ico_subway.gif) no-repeat 0 15px;padding:18px 0 16px 32px;display:inline-block;*display:inline;*zoom:1;font-size:15px;height:22px;}
+.line-facil li:first-child .tit {background:none;padding-left:0;font-size:17px;}
+.line-facil li .num {display:block;width:100%;background:#f4f4f4;border-top:1px solid #ddd;font-size:30px;height:36px;padding:31px 0;line-height:150%;font-family:Nanum Barun Gothic,NanumBarunGothic;}
+.line-facil li:first-child .num {font-size:40px;padding-top:26px;height:41px;}
+
+.line-facil01 {overflow:hidden; border:1px solid #ddd; border-right:0px;}
+.line-facil01 li {float:left;width:20%;text-align:center;color:#444; }
+.line-facil01 .total {background:url(/homepage/default/img/station-care-bg.gif) repeat 0 0; height:156px;}
+.line-facil01 .total .snum {display:block; font-size:48px; color:#FFF; font-weight:bold; text-align:center; letter-spacing:-2px; line-height:1; padding:30px 0 15px 0;}
+.line-facil01 .total .stit {display:block; font-size:16px; color:#FFF; font-weight:bold; text-align:center; padding-top:3px; height:28px; background:url(/homepage/default/img/station-total-bg.png) no-repeat center 0}
+.line-facil01 li .tit { display:block;padding:15px 10px; border-right:1px solid #ddd;font-size:15px;}
+.line-facil01 li .num {display:block;background:#f4f4f4;border-top:1px solid #ddd;border-right:1px solid #ddd;font-size:30px;height:36px;padding:31px 0;line-height:150%;font-family:Nanum Barun Gothic,NanumBarunGothic;}
+.line-facil01 li:first-child .num {color:#0c7bc2}
+.line-facil01 li .icon {display:inline-block;width:27px;height:27px;line-height:27px;text-align:center;color:#f66130;}
+.line-facil01 li .station-1 {background:url(/homepage/default/img/station-icon1.gif) no-repeat 0 0}
+.line-facil01 li .station-2 {background:url(/homepage/default/img/station-icon2.gif) no-repeat 0 0}
+.line-facil01 li .station-3 {background:url(/homepage/default/img/station-icon3.gif) no-repeat 0 0}
+.line-facil01 li .station-4 {background:url(/homepage/default/img/station-icon4.gif) no-repeat 0 0}
+
+/* 편의시설통화장치 */
+.accom-wrap {position:relative;border:1px solid #ddd;overflow:hidden;padding:30px;}
+.accom-wrap .thum {float:left;width:28%;}
+.accom-wrap .accom-cont {float:left;padding-left:7%;width:65%;}
+.accom-wrap .accom-cont h4 {border-bottom:1px solid #ddd;}
+.accom-wrap .accom-cont h5 {background:#e2e2e2;width:auto;margin:15px 0 10px;display:inline-block;padding:3px 15px;} 
+.accom-wrap .accom-cont ol {padding-bottom:10px;}
+.accom-wrap .accom-cont ol li {margin:5px 0;}
+
+/* 승차권예약 */
+.charge-wrap {border:1px solid #ddd;background:#f9f9f9;padding:25px 25px 0;}
+.charge-wrap .charge-list {border-top:1px dotted #d4d4d4;padding-top:10px;margin-top:10px;overflow:hidden;}
+.charge-wrap .charge-list:first-child {border-top:0;margin-top:0;padding-top:0;}
+.charge-wrap .charge-list h4 {float:left;;background:url(/homepage/default/img/Customer/ico_person.gif) no-repeat 0 5px;padding:5px 40px 0 26px;color:#333;}
+.charge-wrap .charge-list:first-child h4 {background:url(/homepage/default/img/Customer/ico_point.gif) no-repeat 3px 5px;}
+.charge-wrap .charge-list select {background:#fff;margin:0 5px;}
+.charge-wrap .charge-list label {padding-right:20px;}
+.charge-wrap .charge-list .sec {background:url(/homepage/default/img/Customer/arr_bg.gif) no-repeat 20px 0;padding:0 0 10px 50px;}
+.charge-wrap .charge-list .charge-cont {float:left;;}
+.charge-wrap .charge-list ul {overflow:hidden;}
+.charge-wrap .charge-list li {float:left;margin-right:20px;}
+
+/* 주문제승차권 */
+table.ticket {border-collapse:collapse;border-spacing:0px;table-layout:fixed;word-wrap:break-word;width:100%;clear:both;text-align:center;}
+table.ticket th {background:url(/homepage/default/img/Guide/ticket_th_bg.gif) repeat 0 0;border:1px solid #ddd;border-right:1px dashed #ddd;font-size:16px;colord:#444;}
+table.ticket td {border:1px solid #ddd;padding:30px 0;border-left:0;}
+table.ticket td img {margin:0 5%;}
+
+/* 고객참여-제안안내 */
+.suggest-wrap .cont-info {background:#fafafa url(/homepage/default/img/Customer/simin_sugg_bg.gif) no-repeat right bottom;padding:45px;}
+.suggest-wrap .tit {font-size:251x;}
+.suggest-wrap .txt {font-size:15px;}
+.suggest-wrap span {display:block;}
+
+/* 부패신고 */
+.corr-wrap .cont-info {padding:45px;border:1px solid #ddd;background:#fafafa url(/homepage/default/img/Customer/corr_bg.gif) no-repeat right bottom}
+.corr-wrap .txt {width:80%;}
+.corr-wrap span {display:block;}
+.g-step {border:1px solid #d2d2d2;border-top:0;background:#f4f4f4;text-align:center;font-size:14px;color:#444;padding:17px 0;}
+.report-wrap {overflow:hidden;margin-top:20px;}
+.report-wrap .report-cont {float:left;width:47.5%;margin-left:5%;}
+.report-wrap .report-cont:first-child {margin-left:0;}
+.report-wrap .report-box {border:1px solid #ddd;padding:40px 0 40px 140px;}
+.report-wrap .report-box ul {width:95%;}
+.report-wrap .report-box li {margin:5px 0 0;letter-spacing:-1px;}
+.report-wrap .report-box li span {display:inline-block;width:100px;font-weight:bold;border-right:1px solid #ddd;margin-right:12px;}
+.report-wrap .report-box .btn {margin:10px 0 0 10px;}
+.report-wrap .report-box.mail .btn {margin-top:30px;}
+/* 아이콘 */
+.report-wrap .report-cont .mail {background:url(/homepage/default/img/Customer/ico_rphone.gif) no-repeat 20px 40px}
+.report-wrap .report-cont .internet {background:url(/homepage/default/img/Customer/ico_rinternet.gif) no-repeat 20px 40px}
+.report-wrap .report-cont .online {background:url(/homepage/default/img/Customer/ico_ronline.gif) no-repeat 20px 40px}
+/* 공익신고 */
+.public-box {border-top:1px solid #d2d2d2;border-bottom:1px solid #d2d2d2;background:#f4f4f4 url(/homepage/default/img/Customer/ico_public.gif) no-repeat 45px 50px;padding:24px 0;}
+.public-box .btns {margin-left:215px;}
+.public-box p {margin:30px 0 0 215px;width:75%;}
+
+/* 안전체험장 */
+.exper-wrap .cont-info {background:#fafafa url(/homepage/default/img/Customer/exp_bg.gif) no-repeat right bottom;padding:45px;}
+.exper-wrap.line4 {background:url(/homepage/default/img/Customer/exp_bg02.gif) no-repeat right 0;}
+.exp-line4-wrap {border:1px solid #ddd;background:url(/homepage/default/img/Customer/ico_ronline.gif) no-repeat 20px 40px;padding:40px 0 0 140px;}
+.exp-line4-wrap li {margin-bottom:40px;}
+.exp-line4-wrap li a {margin-top:10px;}
+.exp-line4-wrap li  span.txt {display:block;margin-top:15px;}
+
+/* 청소년자원봉사 */
+.volun-wrap .cont-info {background:#fafafa url(/homepage/default/img/Customer/volu_bg.gif) no-repeat right bottom;padding:45px;}
+.volu-step {overflow:hidden;margin-top:30px;}
+.volu-step > li {float:left;width:30%;margin-left:5%;}
+.volu-step > li:first-child {margin-left:0;}
+.volu-step > li .tit {background:url(/homepage/default/img/Guide/price_bg.gif) repeat 0 0;text-align:center;color:#fff;display:block;font-size:15px;font-weight:bold;padding:15px 0;margin-bottom:5px}
+.volu-step > li ol {background:#f0f0f0;min-height:235px;padding:20px 30px 0;}
+.volu-step > li ol li {margin-bottom:30px;line-height:22px;}
+
+/* 안전교육 */
+.safety-edu-wrap .cont-info {background:#fafafa url(/homepage/default/img/Customer/safety_edu_bg.gif) no-repeat right bottom;color:#333;padding:45px;}
+.safety-edu-wrap .tit {font-size:21px;font-weight:bold;}
+.safety-edu-wrap .txt {font-size:14px;width:65%;}
+.safety-edu-wrap span {display:block;}
+.safety-curr {overflow:hidden;margin:40px 0;}
+.safety-cs {overflow:hidden;margin-top:50px;}
+.safety-cs .cs-cont {width:45%;float:left;margin-left:8%}
+.safety-cs .cs-cont:first-child {margin-left:2%;}
+.safety-cs .cs-cont ul {border:1px solid #ddd;padding:0 20px;}
+.safety-cs .cs-cont ul li {margin:20px 0;}
+.safety-cs .cs-cont .tit {padding-right:10px;border-right:1px solid #ddd;margin-right:10px;font-weight:bold;}
+
+/* 문화관광- 문화행사신청 */
+.culture-wrap .cont-info {background:#fafafa url(/homepage/default/img/Culture/culture_bg.gif) no-repeat right bottom;padding:45px;} 
+.culture-wrap span {display:block;}
+/* 쌈수다 */
+.ssam-wrap {overflow:hidden;}
+.ssam-wrap .img {float:left;width:40%}
+.ssam-wrap .ssam-info {float:right;width:57%;}
+.ssam-wrap .ssam-info li {background-position:0 center;margin-bottom:10px;}
+.ssam-wrap .ssam-info li .tit {width:63px;border-right:1px solid #ddd;display:inline-block;margin-right:15px;font-weight:bold;}
+.ssam-box {border:1px solid #d2d2d2;background:#f4f4f4 url(/homepage/default/img/Culture/ssam_box_bg.png) no-repeat 20px 50px;padding:25px 50px 25px 180px;color:#444;}
+.ssam-box .tit {font-size:16px;font-weight:bold;margin-bottom:18px;}
+.ssam-box .txt {line-height:25px;}
+.ssam-list li {position:relative;display:inline-block;*display:inline;*zoom:1;width:264px;border:1px solid #9097a0;margin:0 1.5% 90px;}
+/* .ssam-list li.first {margin-left:0;} */
+.ssam-list li .ssam-thum {padding-bottom:40px;}
+.ssam-list li .ssam-thum .title {position:absolute;bottom:0;left:0;background:#9097a0;width:92.5%;padding:11px 0 10px 20px;color:#fff;}
+.ssam-list li .ssam-thum .down {position:absolute;right:0;bottom:0;display:block;width:45px;height:40px;text-indent:-9999px;z-index:20;border-left:1px solid #fff;background:url(/img/common/btn_mdown.png) no-repeat 50% 50%;}
+
+/* 정보공개 */
+.btn-top {background:url(/homepage/default/img/Infor/btn_top.gif) no-repeat right 0;display:block;height:8px;margin:10px 0;text-align:right;}
+/* 계약흐름도 */
+.tbl-flow {width:100%;text-align:center;border-collapse:collapse;word-wrap:break-word;margin-top:20px;font-size:14px;}
+.tbl-flow thead th .txt {display:block;border:1px solid #d2d2d2;background:#ebeff3;color:#1b75af;font-size:15px;padding:10px 0 9px;margin:0 5px;}
+.tbl-flow tbody th {background:url(/homepage/default/img/Infor/flow_step_bg02.gif) no-repeat 45% 0;color:#fff;font-size:16px;height:130px;padding-top:10px;}
+.tbl-flow tbody tr:first-child th {background:url(/homepage/default/img/Infor/flow_step_bg.gif) no-repeat 45% 32px;} 
+.tbl-flow tbody tr:first-child th {height:120px;padding-top:30px;}
+.tbl-flow td {background:url(/homepage/default/img/Infor/flow_bg.gif) repeat 0 -5px;}
+.tbl-flow tr:first-child td {background-position:0 10px;}
+.tbl-flow .part .txt {background:url(/homepage/default/img/Infor/flow_part_bg.gif) repeat 0 0;color:#fff;padding:11px 0 10px;margin:0 10px;height:41px;}
+.tbl-flow .part .txt.single {padding-top:20px;height:31px;}
+.tbl-flow .part .txt span {display:block;}
+.tbl-flow .part-cont .txt {border:1px solid #ddd;background:#f9f9f9;padding:19px 20px;text-align:left;margin:0 0 0 20px;}
+.tbl-flow tr:first-child .part .txt, .tbl-flow tr:first-child .part-cont .txt {margin-top:20px;} 
+/* 관련사이트 */
+.relation-wrap {border-top:2px solid #1350A1;border-bottom:1px solid #ddd;}
+.relation-wrap .relation-list {overflow:hidden;padding:20px 0;}
+.relation-wrap .relation-list li {float:left;width:23%;margin:10px 1%;}
+.relation-wrap .relation-list li a {display:block;}
+.relation-wrap .relation-list li .thum {display:table-cell;width:100%;height:50px;text-align:center;vertical-align:middle;}
+.relation-wrap .relation-list li .tit {font-size:14px;font-weight:bold;display:block;margin:15px 0;}
+/* 공공구매 */
+.smpp-wrap {overflow:hidden;}
+.smpp-wrap .smpp-img {float:left;width:50%;}
+.smpp-wrap .smpp-step {float:left;width:45%;margin-left:3%;border:1px solid #ddd;background:#f9f9f9;}
+.smpp-wrap .smpp-step ol {padding:35px 20px 35px 35px;}
+.smpp-wrap .smpp-step ol li {padding-left:29px;margin-bottom:25px;}
+.smpp-wrap .smpp-step ol span {font-size:14px;display:block;color:#1680c4;font-weight:bold;}
+.smpp-wrap .smpp-step .btn {text-align:right;margin:0 30px 20px 0}
+/* 숫자 */
+.smpp-wrap .smpp-step .n01 {background:url(/homepage/default/img/Infor/smpp_step01.png) no-repeat 0 0;}
+.smpp-wrap .smpp-step .n02 {background:url(/homepage/default/img/Infor/smpp_step02.png) no-repeat 0 0;}
+.smpp-wrap .smpp-step .n03 {background:url(/homepage/default/img/Infor/smpp_step03.png) no-repeat 0 0;}
+.smpp-wrap .smpp-step .n04 {background:url(/homepage/default/img/Infor/smpp_step04.png) no-repeat 0 0;}
+.smpp-wrap .smpp-step .n05 {background:url(/homepage/default/img/Infor/smpp_step05.png) no-repeat 0 0;}
+.smpp-wrap .smpp-step .n06 {background:url(/homepage/default/img/Infor/smpp_step06.png) no-repeat 0 0;}
+.smpp-wrap .smpp-step .n07 {background:url(/homepage/default/img/Infor/smpp_step07.png) no-repeat 0 0;}
+.smpp-wrap .smpp-step .n08 {background:url(/homepage/default/img/Infor/smpp_step08.png) no-repeat 0 0;}
+/* 명칭표기신청 */
+.info-sign .cont-info {background:#fafafa url(/homepage/default/img/Infor/info_sign_bg.gif) no-repeat right bottom;padding:45px;}
+.info-sign .tit, .conn-path .tit {font-size:21px;}
+.info-sign .txt, .conn-path .txt {font-size:14px;}
+.sign-list {position:relative;padding-bottom:50px;}
+.sign-list .sign-tab {position:absolute;left:0;bottom:0;width:100%;z-index:10;}
+.sign-list .sign-tab ul {overflow:hidden;}
+.sign-list .sign-tab li {float:left;width:25%;}
+.sign-list .sign-tab li a {display:block;background:#fff;text-align:center;border:1px solid #d2d2d2;border-left:0;padding:15px 0 14px;font-size:14px;}
+.sign-list .sign-tab li:first-child a {border-left:1px solid #d2d2d2;}
+.sign-list .sign-tab li a.over {border:1px solid #0c7bc2;background:#0c7bc2}
+.sign-list .sign-tab li a.over span {color:#fff;font-weight:bold;background:url(/homepage/default/img/Infor/info_sign_arr.gif) no-repeat 0 4px;padding-left:16px;}
+.sign-list .sign-cont {border:1px solid #d2d2d2;border-bottom:0;} 
+/* 연결통로설치 */
+.conn-path .cont-info {background:#fafafa url(/homepage/default/img/Infor/conn_bg.gif) no-repeat right bottom;padding:45px;}
+
+/* 전동차소개 */
+.subway-info {overflow:hidden;}
+.subway-info .thum {float:left;width:45%;display:table;}
+.subway-info .thum .thum-txt {background:#9097a0;padding:10px 0 10px 20px;color:#fff;}
+.subway-info .subway-cont {float:right;width:51%;}
+.subway-info .subway-cont li {margin-bottom:10px;overflow:hidden;}
+.subway-info .subway-cont li .tit {float:left;width:63px;border-right:1px solid #ddd;margin-right:15px;font-weight:bold;}
+.subway-info .subway-cont li .txt {float:left;width:74%;}
+.info-txt {margin-top:60px;font-size:14px;line-height:25px;}
+.info-txt .stit {font-size:15px;font-weight:bold;color:#444;}
+.info-txt p {margin-bottom:30px;}
+.subway-cabin {background:#dedede;overflow:hidden;margin-top:20px;}
+.subway-cabin .cabin-info {float:left;width:39%;}
+.subway-cabin .cabin-info ol {padding:20px 30px;overflow:hidden;}
+.subway-cabin .cabin-info li {padding:7px 0 7px 25px;font-size:14px;}
+.subway-cabin .thum {float:right;width:60%;text-align:right;}
+/* 객실안내숫자아이콘 */
+.subway-cabin .cabin-info li.n01 {background:url(/homepage/default/img/Safety/cabin_num01.png) no-repeat 0 8px;}
+.subway-cabin .cabin-info li.n02 {background:url(/homepage/default/img/Safety/cabin_num02.png) no-repeat 0 8px;}
+.subway-cabin .cabin-info li.n03 {background:url(/homepage/default/img/Safety/cabin_num03.png) no-repeat 0 8px;}
+.subway-cabin .cabin-info li.n04 {background:url(/homepage/default/img/Safety/cabin_num04.png) no-repeat 0 8px;}
+.subway-cabin .cabin-info li.n05 {background:url(/homepage/default/img/Safety/cabin_num05.png) no-repeat 0 8px;}
+.subway-cabin .cabin-info li.n06 {background:url(/homepage/default/img/Safety/cabin_num06.png) no-repeat 0 8px;}
+.subway-cabin .cabin-info li.n07 {background:url(/homepage/default/img/Safety/cabin_num07.png) no-repeat 0 8px;}
+.subway-cabin .cabin-info li.n08 {background:url(/homepage/default/img/Safety/cabin_num08.png) no-repeat 0 8px;}
+.subway-cabin .cabin-info li.n09 {background:url(/homepage/default/img/Safety/cabin_num09.png) no-repeat 0 8px;}
+.subway-cabin .cabin-info li.n10 {background:url(/homepage/default/img/Safety/cabin_num10.png) no-repeat 0 8px;}
+/* 차량사업소 */
+.soffice-info {overflow:hidden;}
+.soffice-info .thum {float:left;width:40%;display:table;}
+.soffice-info .soffice-cont {float:left;width:50%;margin-left:3%}
+.soffice-info .soffice-cont li {margin-bottom:10px;overflow:hidden;}
+.soffice-info .soffice-cont li .tit {float:left;width:83px;border-right:1px solid #ddd;margin-right:15px;font-weight:bold;}
+.soffice-info .soffice-cont li .txt {float:left;width:73%;}
+/* 설비 */
+.power-wrap {overflow:hidden;}
+.power-wrap .img {float:left;width:39.2%;margin-right:4%;}
+.power-wrap .cont {float:left;width:55%;line-height:25px;}
+.power-wrap .cont p {line-height:25px;}
+.power-wrap ul {margin-top:50px;}
+.power-wrap li {overflow:hidden;clear:both;margin-bottom:32px;}
+.power-wrap li .simg {float:left;width:22%;margin-right:4%;}
+.power-wrap li .simg img {border:1px solid #ddd;}
+.power-wrap li .scont {float:left;width:73%;line-height:25px;}
+.power-wrap li .scont h4 {margin-bottom:10px;}
+.power-wrap.sec .img {width:52%;margin:0 0 0 4%;}
+.power-wrap.sec .cont {width:43%;}
+.facil-wrap {overflow:hidden;margin-bottom:80px;}
+.facil-list {float:right;width:47%;}
+.facil-list:first-child {float:left;}
+.facil-list img {margin-bottom:20px;}
+.facil-list h6 {background:#828282;color:#fff;display:table;padding:2px 10px;margin:30px 0 0}
+.facil-list ol li {background:none;padding-left:0;}
+
+/* //////////////공사소개 */
+/* 인사말씀 */
+#contents  {word-break:keep-all; word-wrap:break-word;}
+.greeting .greet_top { min-height:410px; background:url(/homepage/default/img/Humetro/greeting_01.jpg) no-repeat right 0; }
+.greeting .tit {font-family:Nanum Myeongjo,"나눔명조";font-size:25px;font-weight:bold;color:#1450a1; width:380px; background:url(/homepage/default/img/Humetro/greeting_03.gif) no-repeat left bottom; padding-bottom:20px; margin-bottom:30px }
+.greeting .t1 {font-weight:bold; font-size:14px; color:#333; margin-bottom:30px;}
+.greeting .t2 {padding-right:50%; }
+.greeting .t3 {padding-top:20px}
+.greeting .sing {text-align:right; color:#333; font-weight:bold}
+/* 설립목적 */
+.purp {text-align:center; font-size:16px; width:560px; margin:0 auto; padding:20px; }
+
+/* 공사이미지 - CI, BI, 캐릭터, 로고송 */
+.logo_wrap {overflow:hidden;}
+.logo_wrap .lbox {float:left; width:48%; margin-left:2%;}
+.logo_wrap .lbox.first {margin-left:0; margin-right:2%;}
+.logo_wrap .t1 {font-weight:bold; font-size:14px; text-align:center; padding-top:20px}
+.grid_bg {text-align:center; padding:39px 15px; border:1px solid #bbb; background:url(/homepage/default/img/Humetro/ci_bg.gif) repeat 0 0;}
+.wht_bg {text-align:center;  border:1px solid #bbb; background:#fff;}
+
+.ui_list_2, .ui_list_3 {overflow:hidden;}
+.ui_list_2 li {float:left; width:40%; padding:0 3%; text-align:center;}
+.ui_list_2 li.ss {width:25%;}
+.ui_list_2 li.rr {width:60%;}
+
+
+/* 캐릭터 */
+.photo-wrap {z-index:1;position:relative;width:100%;margin:0 auto;}
+
+.photo-wrap .ctrl-btns {position:relative;z-index:200;width:100%;display:block;padding-top:300px;}
+.photo-wrap .ctrl-btns button {display:inline-block;margin:0px;border:none;cursor:pointer;background-color:transparent}
+.photo-wrap .ctrl-btns button span {display:inline-block;width:23px;height:50px; text-indent:-9999px;}
+.photo-wrap .ctrl-btn.btn-prev span {background:url(/homepage/default/img/Humetro/arr_l.png) no-repeat 0 0;}
+.photo-wrap .ctrl-btn.btn-next span {background:url(/homepage/default/img/Humetro/arr_r.png) no-repeat 0 0;}
+
+
+.photo-wrap .ctrl-btn.btn-prev {position:absolute;top:230px;left:20px;}
+.photo-wrap .ctrl-btn.btn-next {position:absolute;top:230px;right:20px;}
+
+.photo-wrap .vis-img-wrap {position:absolute;left:0;top:0;z-index:1;text-align:center;width:898px !important;margin-left:0 !important; }
+.photo-wrap .vis-img {position:absolute;left:0;width:100%;top:0;z-index:10;height:100%;}
+.photo-wrap .vis-img img {border:1px solid #ddd}
+
+.photo-wrap .ctrl-nums {position:relative;z-index:200;display:block;text-align:left;padding-top:220px;margin-left:-12px;overflow:hidden}
+.photo-wrap .ctrl-nums * {vertical-align:middle;}
+
+.photo-wrap .ctrl-nums  a {float:left;width:170px;height:105px;margin-left:12px; margin-bottom:10px;cursor:pointer;overflow:hidden;text-align:center;}
+.photo-wrap .ctrl-nums  a .img {display:block;border:1px solid #ddd; padding:4px}
+.photo-wrap .ctrl-nums  a.over .img {border:5px solid #0978be; padding:0px}
+.photo-wrap .ctrl-nums  a .img img {width:160px;height:95px;}
+
+/* 사가로고송 */
+.saga {border-top:2px solid #333 }
+.saga_top {overflow:hidden; padding:30px 40px; text-align:center}
+.saga_top h4 {text-align:left; font-weight:bold; font-size:14px; margin-bottom:10px}
+.saga_top .song {float:left}
+.saga_top .song embed {width:400px; height:45px}
+.saga_top .btns {float:right;}
+
+.saga_txt {background:#f4f4f4;overflow:hidden; padding:30px }
+.saga_txt li {float:left; width:43%; padding:0% 3%; font-size:14px}
+
+/* 비젼체계 */
+.vision01 {overflow:hidden;}
+.vision01 ul {text-align:center; }
+.vision01 li {width:290px; height:240px; color:#fff; display:inline-block;vertical-align:top  }
+.vision01 li h3 {font-size:30px; font-weight:bold; padding:60px 0 15px 0; margin-bottom:20px}
+.vision01 li p { width:200px; display:inline-block}
+.vision01 li.v1{background:url(/homepage/default/img/Humetro/vision_b1.gif) no-repeat center 0;}
+.vision01 li.v2{background:url(/homepage/default/img/Humetro/vision_g1.gif) no-repeat center 0;}
+.vision01 li.v3{background:url(/homepage/default/img/Humetro/vision_m1.gif) no-repeat center 0;}
+
+.vision01 li.v1 h3 {background:url(/homepage/default/img/Humetro/vision_b2.gif) no-repeat center bottom;}
+.vision01 li.v2 h3 {background:url(/homepage/default/img/Humetro/vision_g2.gif) no-repeat center bottom;}
+.vision01 li.v3 h3 {background:url(/homepage/default/img/Humetro/vision_m2.gif) no-repeat center bottom;}
+
+
+.vision02_top {text-align:center; height:153px; background:url(/homepage/default/img/Humetro/vision_tg1.gif) no-repeat center 0; margin-top:80px}
+.vision02_top .tit {font-size:22px; color:#fff; font-weight:bold; padding-top:18px;}
+.vision02_top .stxt {display:block; font-size:14px; color:#5d87ab; font-weight:bold; padding-top:45px;}
+.vision02_bot {overflow:hidden;}
+.vision02_bot ul {text-align:center;}
+.vision02_bot li {display:inline-block;vertical-align:top; width:140px; height:90px; padding-top:55px;  font-size:14px; color:#333; font-weight:bold;}
+.vision02_bot li.bg01 {background:url(/homepage/default/img/Humetro/vision_tg2.gif) no-repeat center 0;}
+.vision02_bot li.bg02 {background:url(/homepage/default/img/Humetro/vision_tg3.gif) no-repeat center 0;}
+.vision02_bot li.bg03 {background:url(/homepage/default/img/Humetro/vision_tg4.gif) no-repeat center 0;}
+.vision02_bot li.bg04 {background:url(/homepage/default/img/Humetro/vision_tg5.gif) no-repeat center 0;}
+.vision02_bot li.bg05 {background:url(/homepage/default/img/Humetro/vision_tg6.gif) no-repeat center 0;}
+
+.vision03_wrap {text-align:center;overflow:hidden; margin-top:80px; padding:0 20px; height:730px; background:url(/homepage/default/img/Humetro/vision_sm3.gif) no-repeat center 30px;}
+.vision03_tit {font-size:22px; color:#FFF; font-weight:bold; text-align:center; padding-top:17px; height:53px; margin-bottom:40px; background:url(/homepage/default/img/Humetro/vision_sm1.gif) no-repeat center 0;}
+.vision03_box {display:inline-block;vertical-align:top; padding:15px; width:200px; margin:0 0 4% 5%; min-height:240px; background:#f4f4f4;text-align:left}
+.vision03_box .ctit {position:relative; font-size:14px; padding:2px 0 15px 0; border-bottom:1px solid #a4d490}
+.vision03_box .ctit .circle {float:left; width:45px; height:45px; margin-top:-2px; font-size:27px; color:#FFF; font-weight:bold; text-align:center; margin-right:10px; background:url(/homepage/default/img/Humetro/vision_sm2.gif) no-repeat 0 0;}
+
+.vision03_box ul {padding:13px 10px;}
+.vision03_box ul li {margin:7px 0;}
+
+.vision04_wrap {margin-top:50px;}
+.vision04_top {text-align:center; background:url(/homepage/default/img/Humetro/vision_ba1.gif) no-repeat center 0;}
+.vision04_top .tit {font-size:22px; color:#fff; font-weight:bold; padding-top:18px;}
+.vision04_top .stxt {display:block; font-size:16px; color:#333; font-weight:bold; padding-top:130px;}
+.vision04_bot {overflow:hidden; margin-top:40px;}
+.vision04_bot ul {text-align:center; }
+.vision04_bot li {display:inline-block;vertical-align:top; width:140px; height:93px; padding-top:43px; font-size:14px; color:#333; font-weight:bold; letter-spacing:-0.02em}
+.vision04_bot li {background:url(/homepage/default/img/Humetro/vision_ba2.gif) no-repeat center 0;}
+.vision04_bot li b {font-size:20px; color:#31a9c1;}
+
+/* 찾아오시는 길 */
+.map {position:relative; }
+.map .a1 {position:absolute; right:0px; bottom:0px; z-index:10}
+
+/* 연혁 */
+.his-top {text-align:center}
+.his-top h3 {font-family:Nanum Myeongjo,"나눔명조";font-size:40px;font-weight:bold;color:#1450a1;} 
+.his-top .t1 {font-size:15px; font-weight:bold; color:#333;}
+.his-top .t2 {width:80%; margin:0 auto;padding:30px 0}
+
+.his-tab { overflow:hidden;background:url(/homepage/default/img/Humetro/his_tabend.gif) no-repeat right bottom; margin-top:30px;}
+.his-tab a {border-bottom:2px solid #ddd; text-align:center;font-size:16px; font-weight:bold; color:#333;  display:block; cursor:pointer; width:25%; float:left; padding-bottom:10px; background:url(/homepage/default/img/Humetro/his_tab.gif) no-repeat left bottom;}
+.his-tab a:hover, .his-tab a.over {border-bottom:4px solid #0c7bc2; padding-bottom:8px}
+
+.his-list {overflow:hidden; border-bottom:1px solid #ddd; padding:40px 0px}
+.his-list .himg {width:210px; float:left; margin-right:90px;text-align:center }
+.his-list .himg h4 {background:url(/homepage/default/img/Humetro/his_bg.gif) no-repeat center 0;font-size:25px; font-weight:bold; line-height:90%; padding-top:35px; min-height:105px; margin-bottom:30px}
+.his-list .himg h4 span {display:block;font-size:16px; }
+.his-list .himg img {border:1px solid #777; margin-bottom:10px;}
+.his-list .himg p span {display:block; font-weight:bold}
+
+.his-list dl {overflow:hidden;float;right;width:600px;}
+.his-list dt {background:url(/homepage/default/img/Humetro/his_blt.gif) no-repeat left 4px; padding-left:20px; margin:10px 0px; font-size:15px; font-weight:bold; color:#333; width:40%; float:left;clear:both;  }
+.his-list dd {widht:60%;float:left;margin:10px 0px; font-size:13px}
+
+/* 윤리경영이란  */
+.ethm01_wrap {background:url(/homepage/default/img/Humetro/ethm_bg01.gif) no-repeat center bottom; background-size:contain;padding-bottom:70px; text-align:center;color:#fff}
+.ethm01 {background:url(/homepage/default/img/Humetro/ethm_01.png) no-repeat center 0; min-height:236px;}
+.ethm01 h5 {font-size:28px; font-weight:bold; padding:60px 0 15px 0; margin-bottom:20px; background:url(/homepage/default/img/Humetro/vision_g2.gif) no-repeat center bottom;}
+.ethm01 p { width:160px; display:inline-block; font-size:14px; font-weight:bold}
+
+.ethm02 {position:relative; background:url(/homepage/default/img/Humetro/ethm_bg01.gif) no-repeat center bottom; background-size:contain;padding-bottom:90px; text-align:center; }
+.ethm02 .tit {position:absolute; width:100%; text-align:center;}
+.ethm02 h6 { width:180px; height:110px; border-radius:50%; background:#56ae00 url(/homepage/default/img/Humetro/pattern_01.png) repeat;display:inline-block; color:#fff;font-size:19px; font-weight:bold; padding-top:70px}
+.ethm02 ul {overflow:hidden; width:100%; background:url(/homepage/default/img/Humetro/ethm_bg03.gif) repeat-x 0 center;text-align:center; }
+.ethm02 ul li { float:left; background:url(/homepage/default/img/Humetro/ethm_won.png) no-repeat center 0; width:100px; height:85px; padding:55px 20px 0px 20px; font-size:13px}
+.ethm02 ul li.t1 {padding-top:62px; height:78px;}
+.ethm02 ul li.t2 {margin-left:40px}
+.ethm02 ul li.t3 {margin-left:260px}
+.ethm02 ul li.t4 {margin-left:40px}
+
+.ethm03 {background:url(/homepage/default/img/Humetro/ethm_bg02.gif) no-repeat center bottom; padding-bottom:90px; text-align:center; }
+.ethm03 h6 {  width:100px; height:120px; border-radius:50%; background:#00ae00 url(/homepage/default/img/Humetro/pattern_01.png) repeat;display:inline-block; color:#fff;font-size:19px; font-weight:bold;  padding:60px 40px 0px}
+.ethm03 ul {margin:20px 0 10px}
+.ethm03 ul li {width:20%;display:inline-block; vertical-align:top;  margin:0px 20px}
+.ethm03 ul li span {display:block; border:4px solid #e1e1e1; padding:15px 0;background:#fff;border-radius:30px; font-size:14px; color:#333; font-weight:bold;}
+
+.ethm04 {background:url(/homepage/default/img/Humetro/ethm_bg02.gif) no-repeat center bottom; padding-bottom:90px; text-align:center; }
+.ethm04 h6 {  width:100px; height:120px; border-radius:50%; background:#00ae5a url(/homepage/default/img/Humetro/pattern_01.png) repeat;display:inline-block; color:#fff;font-size:19px; font-weight:bold;  padding:60px 40px 0px}
+.ethm04 ul {margin:20px 0 10px}
+.ethm04 ul li {width:50%;display:inline-block; vertical-align:top;  margin:0px 20px}
+.ethm04 ul li span {display:block; border:4px solid #e1e1e1; padding:15px 0;background:#fff;border-radius:30px; font-size:14px; color:#333; font-weight:bold;}
+
+.ethm05 {background:url(/homepage/default/img/Humetro/ethm_bg04.gif) no-repeat center 80px; text-align:center; }
+.ethm05 h6 {  width:100px; height:120px; border-radius:50%; background:#018c56 url(/homepage/default/img/Humetro/pattern_01.png) repeat;display:inline-block; color:#fff;font-size:19px; font-weight:bold;  padding:60px 40px 0px}
+.ethm05 ul {margin:20px 0 10px}
+.ethm05 ul li {width:20%;display:inline-block; vertical-align:top;  margin:0px 20px}
+.ethm05 ul li span {display:block; border:4px solid #e1e1e1; padding:15px 0;background:#fff;border-radius:30px; font-size:14px; color:#333; font-weight:bold;}
+
+/* 윤리헌장  */
+.ethc01 .cont-info {background:#fafafa url(/homepage/default/img/Humetro/ethc_01.gif) no-repeat right bottom;margin-bottom:40px;padding:45px;}
+.ethc01 h4 {font-size:24px; color:#333; padding-bottom:10px}
+.ethc01 p {font-size:14px}
+
+.ethc02 {position:relative; overflow:hidden;border:4px solid #ddd; padding:80px 60px; }
+.ethc02 span {display:block; width:65px; height:55px; background:url(/homepage/default/img/Humetro/ethc_02.gif) no-repeat left top; }
+.ethc02 .v1 {position:absolute; top:-4px; left:-4px}
+.ethc02 .v2 {position:absolute; top:-4px; right:-4px}
+.ethc02 .v3 {position:absolute; bottom:-4px; left:-4px}
+.ethc02 .v4 {position:absolute; bottom:-4px; right:-4px}
+.ethc02 li {background:url(/homepage/default/img/Humetro/ethc_03.gif) no-repeat left 8px; padding-left:15px; font-size:15px; font-weight:bold; color:#444; margin:10px}
+
+/* 휴메트로 봉사단  */
+.corp_gae .tit {width:340px; margin:0 auto; border:1px solid #ddd; background:url(/homepage/default/img/Humetro/corp_03.gif) no-repeat center 20px; padding-top:170px}
+.corp_gae .tit span {display:block; border-top:1px solid #ddd; background:#f4f4f4; width:100%;  text-align:center; padding:10px 0px; color:#333; font-size:15px; font-weight:normal;}
+.corp_gae .hline {width:50%; height:40px; border-right:1px solid #ddd; display:block;}
+.corp_gae ul {border:1px solid #ddd; overflow:hidden; padding:20px 20px; }
+.corp_gae li {background:url(/img/common/blt05.gif) no-repeat 0 10px; padding:2px 0 2px 11px; float:left; width:18%; font-size:13px; }
+
+.corp_da li {border:1px solid #ddd; padding-top:145px;  text-align:center; width:22%; margin-left:3%; float:left; min-height:120px}
+.corp_da li.t1 {margin-left:0%;background:#f4f4f4 url(/homepage/default/img/Humetro/corp_04.png) no-repeat center 20px;}
+.corp_da li.t2 {background:#f4f4f4 url(/homepage/default/img/Humetro/corp_05.png) no-repeat center 20px;}
+.corp_da li.t3 {background:#f4f4f4 url(/homepage/default/img/Humetro/corp_06.png) no-repeat center 20px;}
+.corp_da li.t4 {background:#f4f4f4 url(/homepage/default/img/Humetro/corp_07.png) no-repeat center 20px;}
+.corp_da li .wline {width:30%; height:1px; background:#777; margin:0 auto; display:block;margin-bottom:20px}
+.corp_da li .txt {display:block; padding:0px 20px 20px; font-size:13px}
+
+.corp_em {overflow:hidden}
+.corp_em .e1, .corp_em .e2 {position:relative; border:1px solid #ddd; overflow:hidden;  }
+.corp_em .e1 {width:37%; float:left;}
+.corp_em .e2 {width:60%; float:right;}
+.corp_em .timg {height:290px;text-align:center ; padding-top:35px}
+.corp_em .title {background:#9097a0;z-index:10; position:absolute; bottom:0; left:0;width:100%;font-size:13px;color:#fff; padding:8px 10px;text-align:center ;  }
+
+/* 사회공헌황동  */
+.volun {overflow:hidden; margin-left:-30px}
+.volun li {float:left; width:280px; margin-left:30px; margin-bottom:20px}
+.volun li .txt {padding-top:20px; font-size:13px}
+.volun li.first {clear:both; }
+
+/* 공사인재상  */
+.reso li {position:relative; padding-left:220px; min-height:180px; margin-top:40px}
+.reso .tit { border-radius:30px; border:1px solid #52a607; color:#52a607; text-align:center; padding:20px; font-size:20px; font-weight:bold ; margin-bottom:20px}
+.reso .ico {position:absolute; left:0px; top:0px;width:180px; height:140px; border-radius:50%; background:#99bed5 url(/homepage/default/img/Humetro/pattern_01.png) repeat; padding-top:40px; text-align:center}
+.reso .tit-s {font-weight:bold; font-size:19px; color:#333; padding-top:60px}
+.reso .tit-s strong {color:#0c7bc2; font-size:25px}
+.reso .txt {font-size:13px}
+
+/* 모바일-RSS  */
+.qrcode {position:relative; background:#f4f4f4; padding:30px 40px; margin:160px 0px 160px }
+.qrcode .qr_l {width:180px; float:left; padding-top:30px; text-align:center; margin-right:30px;}
+.qrcode .qr_l .tit {border:1px solid #ddd; background:#fff; padding:10px 10px;margin-bottom:10px; font-size:14px}
+.qrcode .phone {position:absolute; top:-130px; right:0px; width:60%; height:500px; background:url(/homepage/default/img/Humetro/rss_02.png) no-repeat; background-size:contain}
+.qrcode:after {content:"";display:block;clear:both;}
+.dqrcode {overflow:hidden}
+.dqrcode li {width:30%; border:1px solid #ddd; margin-left:3%; float:left; padding-top:25%; text-align:center; padding-bottom:3%; background:url(/homepage/default/img/Humetro/rss_03.gif) no-repeat center 20px;background-size:contain}
+.dqrcode li.t1 {margin-left:0%;}
+.dqrcode li.t2 {background-image:url(/homepage/default/img/Humetro/rss_04.gif)}
+.dqrcode li.t3 {background-image:url(/homepage/default/img/Humetro/rss_05.gif)}
+
+/* 휴메트로 부산시티투어 */
+.cityt-wrap {overflow:hidden}
+.cityt-wrap .tit {width:60%; font-size:25px; text-align:center; margin:0 auto}
+.cityt-wrap .txt {font-size:15px;text-align:center; margin:0 auto; padding-top:10px}
+
+.cityt_list {overflow:hidden; margin:20px 0 50px 0;}
+.cityt_list li {float:left; padding:20px; margin:0 30px; border:1px solid #ddd; text-align:center;}
+.cityt_list li:first-child {margin-left:0;}
+
+.cityt_qr {overflow:hidden; margin:20px 0 50px 0;}
+.cityt_qr li {float:left; margin-left:50px; }
+.cityt_qr li:first-child {margin-left:0;}
+.cityt_qr li .pimg {padding:30px 60px; text-align:center; border:1px solid #ddd}
+.cityt_qr li .tit {background:#9097a0; text-align:center; color:#FFF; padding:10px 0;}
+
+/* 사이트맵 */
+.sitemn_wrap {overflow: hidden;}
+.sitemn_wrap .sitemn_box {float: left; width:30%; margin:0 0 5% 5%; min-height:500px;}
+.sitemn_wrap .sitemn_box.mn01, .sitemn_wrap .sitemn_box.mn04, .sitemn_wrap .sitemn_box.mn07 {margin-left:0;}
+.sitemap_tit {position:relative; font-size:20px; color:#FFF; text-align:center; overflow: hidden; padding:15px 0; background:url(/homepage/default/img/Humetro/sitemap_tit.gif) repeat 0 0;}
+.sitemap_tit .num {position: absolute; left:-6px; top:-10px; font-size:55px; color:#FFF; opacity:0.2; line-height:1; letter-spacing:-2px}
+.sitemn_box .depth2_wrap {background:#eee; padding:20px 25px;}
+.sitemn_box .depth2_wrap ul >li {margin:5px 0;}
+.sitemn_box .depth2_wrap .mn_a1 {font-size:14px; color: #0c7bc2; font-weight: bold; padding-left:11px; background:url(/homepage/default/img/Humetro/sitemap_blt01.gif) no-repeat 0 5px;}
+.sitemn_box .depth2_wrap .depth3 {margin-bottom:8px;}
+.sitemn_box .depth2_wrap .depth3 li {margin:3px 0 3px 11px;}
+.sitemn_box .depth2_wrap .mn_a2 {font-size:12px; color: #5d697a; padding-left:9px; background:url(/homepage/default/img/Humetro/sitemap_blt02.gif) no-repeat 0 6px;}
+
+
+

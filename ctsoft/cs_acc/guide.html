@@ -1,0 +1,232 @@
+<?
+$_group_path = '.';
+include_once ($_group_path.'/_common.php');
+
+
+$INC_GROUP ="vsource/";
+$DESIGN_OPT="";
+
+$_VARS["page_title"] ="센텀소프트 접근성 작업 가이드";
+include_once ($_group_path.'/_head.php');
+?>
+<h1>센텀소프트 웹접근성가이드 정리</h1>
+
+<!-- 스킵네비게이션 -->
+<div id="skipNavi">
+	<h2 class="vdpn">스킵네비게이션</h2>
+	<ul>
+		<li><a href="#contain" class="accessibility">본문바로가기</a></li>
+		<li><a href="#menu" class="accessibility">주메뉴바로가기</a></li>
+	</ul>
+</div>
+<!-- 스킵네비게이션 //-->
+
+<!-- 메뉴 -->
+<div id="header">
+	<h2 class="vdpn">주메뉴</h2>
+	<ul id="menu">
+		<li><a href="#guide01">인식의 용이성</a></li>
+		<li><a href="#guide02">운용의 용이성</a></li>
+		<li><a href="#guide03">이해의 용이성</a></li>
+		<li><a href="#guide04">견고성</a></li>
+	</ul>
+</div>
+<!-- 메뉴 //-->
+
+<div id="contain">
+	<!-- 인식의 용이성 -->																								
+	<div id="guide01">
+		<h3>인식의 용이성</h3>
+		<div class="wrap">
+			<h4>적절한 대체 텍스트 제공</h4>
+			<p class="pad20l">img 태그 사용시 alt값 필수</p>
+			
+			<div class="sgap"></div>
+			
+			<h4>자막제공</h4>
+			<p class="pad20l">동영상 제공시 원고나 자막 또는 수화를 반드시 함께 제공</p>
+			
+			<div class="sgap"></div>
+			
+			<h4>색에 무관한 콘텐츠 인식</h4>
+			<p class="pad20l">패턴추가</p>
+			
+			<div class="sgap"></div>
+			
+			<h4>명확한 지시사항 제공</h4>
+			<p class="pad20l">
+			모양, 크기, 위치, 방향, 색, 소리등에 관계없이 인식되어야 함<br />
+			예) 작성한 서식을 제출하려면 빨간색 버튼을 누르시오 (시각장애인은 사용불가능)
+			</p>
+			
+			<div class="sgap"></div>
+			
+			<h4>텍스트 콘텐츠의 명도 대비</h4>
+			<p class="pad20l">텍스트와 배경간의 명도대비는 4.5:1</p>
+			
+			<div class="sgap"></div>
+			
+			
+			<h4>배경음 사용 금지</h4>
+			<p class="pad20l">자동으로 재생되는 배경음 사용금지</p>			
+		</div>
+		<div class="sgap"></div>
+	</div>
+	<!-- 인식의 용이성 //-->																								
+	
+	<div class="line_top"><span><a href="#header">▲ top</a></span></div>
+	
+	<div class="gap"></div>
+	
+	<!-- 운용의 용이성 -->																								
+	<div id="guide02">
+		<h3>운용의 용이성</h3>
+		<div class="wrap">
+			<h4>키보드 사용 보장</h4>
+			<p class="pad20l">모든 기능은 키보드만으로도 사용가능해야 함</p>
+			
+			<div class="sgap"></div>
+			
+			<h4>초점 이동</h4>
+			<p class="pad20l">키보드에 의한 초점은 논리적으로 이동, 시각적으로 구별해야 함</p>
+			
+			<div class="sgap"></div>
+			
+			<h4>응답시간 조절</h4>
+			<p class="pad20l">시간제한이 있는 콘텐츠 응답시간 조절기능 제공</p>
+			
+			<div class="sgap"></div>
+			
+			<h4>정지 기능 제공</h4>
+			<p class="pad20l">자동으로 변경되는 콘텐츠 움직임 제어기능 제공</p>
+			
+			<div class="sgap"></div>
+			
+			<h4>깜빡임과 번쩍임 사용 제한</h4>
+			<p class="pad20l">초당 3~50회 주기로 깜빡이거나 번쩍임 금지 - 발작 일으키는 경우 있음</p>
+			
+			<div class="sgap"></div>
+			
+			<h4>반복 영역 건너뛰기</h4>
+			<p class="pad20l">반복되는 영역은 건너뛸 수 있게 스킵네비게이션(본문 바로가기) 제공</p>
+			
+			<div class="sgap"></div>
+			
+			<h4>제목 제공</h4>
+			<p class="pad20l">페이지(title), 프레임(iframe title), 콘텐츠 블록(h1, h2, h3...)</p>
+			
+			<div class="sgap"></div>
+			
+			<h4>적절한 링크 텍스트</h4>
+			<p class="pad20l">
+			용도나 목적을 이해할 수 있도록 제공<br />
+			예) 테스트를 하고 싶다면 여기를 클릭하세요 -> 이동할 페이지를 명확히 명시해야함
+			</p>			
+		</div>
+		<div class="sgap"></div>
+	</div>
+	<!-- 인식의 용이성 //-->																								
+	
+	<div class="line_top"><span><a href="#header">▲ top</a></span></div>
+	
+	<div class="gap"></div>
+	
+	<!-- 이해의 용이성 -->											
+	<div id="guide03">
+		<h3>이해의 용이성</h3>
+		<div class="wrap">
+			<h4>기본 언어 표시</h4>
+			<p class="pad20l">
+			주 언어 명시<br />
+			예) dtd xhtml : lang="ko" xml:lang="ko" 그외 lang="ko"
+			</p>
+			
+			
+			<div class="sgap"></div>
+			
+			<h4>사용자 요구에 따른 실행</h4>
+			<p class="pad20l">
+			사용자가 의도하지 않은 기능은 실행되지 않아야 함<br />
+			예) 새창-팝업, 초점 변화 (onchange)
+			</p>
+			
+			
+			<div class="sgap"></div>
+			
+			<h4>콘텐츠의 선형화</h4>
+			<p class="pad20l">논리적인 순서로 콘텐츠 마크업 - css로 화면에 보이는 순서 변경은 상관없음 (css제거 후 html 소스로 판단)</p>
+			
+			
+			<div class="sgap"></div>
+			
+			<h4>표의 구성</h4>
+			<p class="pad20l">
+			표는 이해하기 쉽게 구성<br />
+			- caption, summary, 헤더 셀과 데이터 셀의 관계 정의(th scope이나 id/headers)
+			</p>
+			
+			
+			<div class="sgap"></div>
+			
+			<h4>레이블 제공</h4>
+			<p class="pad20l">입력 서식에는 대응하는 레이블을 제공해야 함.</p>
+			
+			
+			<div class="sgap"></div>
+			
+			<h4>오류 정정</h4>
+			<p class="pad20l">입력 오류를 정정할 수 잇는 방법 제공</p>
+			
+			
+			<div class="sgap"></div>
+		</div>
+		
+		<div class="sgap"></div>
+		
+	</div>
+	<!-- 이해의 용이성 //-->									
+	
+	<div class="line_top"><span><a href="#header">▲ top</a></span></div>
+	
+	<div class="gap"></div>
+	
+	<!-- 견고성 -->								
+	<div id="guide04">
+		<h3>견고성</h3>
+		<p class="pad10f">웹 콘텐츠는 미래의 기술로도 접근할 수 있도록 견고하게 만들어야 한다.</p>
+		<div class="wrap">
+			<h4>마크업 오류 방지</h4>
+			<p class="pad20l">
+			validator 체크<br />
+			파이어폭스 view source나 http://validator.kldp.org에서 체크
+			</p>
+			
+			<div class="sgap"></div>
+			
+			
+			<h4>웹 애플리케이션 접근성 준수</h4>
+			<p class="pad20l">
+			콘텐츠에 포함된 웹 애플리케이션(플래시, 자바스크립트, 플러그인)은 접근성을 준수해야함<br />
+			예) 
+			<ul>
+				<li>플래시 - 플래시를 지원하지 않는 브라우저나 pc의 경우 대체컨텐츠 제공되어야 함</li>
+				<li>자바스크립트 - 링크를 a태그를 이용하지 않고 div나 span 요소에 자바스크립트 클릭 이벤트를 사용하여 구현할 경우 키보드 초첨을 받지 못하거나 링크로 인식하지 못함</li>
+			</ul>
+			</p>
+			
+			
+			
+			
+		</div>
+		
+		<div class="sgap"></div>
+		
+	</div>
+	<!-- 견고성 //-->									
+	
+	<div class="line_top"><span><a href="#header">▲ top</a></span></div>
+	
+	<div class="gap"></div>
+</div>	
+
+<? include_once ($_group_path.'/_tail.php');?>

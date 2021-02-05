@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+	<title>풀페이지 슬라이드</title>
+
+	<link rel="stylesheet" type="text/css" href="./_Css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="./_Css/example2.css" />
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+		
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>		
+	<script type="text/javascript" src="./_js/jquery.fullPage.js"></script>
+
+	<!-- 슬라이드 페이지별 배경색 -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var pepe = $.fn.fullpage({
+				slidesColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ddd', '#ccddff'],
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', 'lastPage'],
+				menu: '#menu'
+			});
+		});
+	</script>
+</head>
+<body>
+
+
+<ul id="menu">
+	<li><a href="#firstPage">1 slide</a></li>
+	<li><a href="#secondPage">2 slide</a></li>
+	<li><a href="#3rdPage">3 slide</a></li>
+	<li><a href="#4thpage">4 slide</a></li>
+	<li><a href="#5thpage">5 slide</a></li>
+	<li><a href="#lastPage">마지막 slide</a></li>
+</ul>
+
+<div class="section " id="section0">
+	<h1>1페이지</h1>
+</div>
+
+<div class="section" id="section1">
+	<h1>2페이지</h1>
+</div>
+<div class="section" id="section2">
+	<h1>3페이지</h1>
+</div>
+<div class="section" id="section3">
+	<h1>4페이지</h1>
+</div>
+<div class="section" id="section4">
+	<h1>5페이지</h1>
+</div>
+<div class="section" id="section5">
+	<h1>마지막</h1>
+</div>
+
+</body>
+</html>

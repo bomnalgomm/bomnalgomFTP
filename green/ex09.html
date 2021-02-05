@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="css/base.css" rel="stylesheet" />
+<link href="css/jquery-ui-1.9.2.cusom.css" rel="stylesheet" />
+<style type="text/css">
+#wrap {width:100%;height:100%;background:#333;position:absolute;top:0;left:0;}
+img {width:100px;}
+.piece {width:400px;position:relative;z-index:10}
+.piece p {position:absolute;z}
+.pannel {width:306px;position:absolute;top:50px;left:500px;}
+.pannel p {float:left;margin:1px;opacity:0.5}
+.box {width:300px;height:18px;padding:20px 0;margin:0;text-align:center;background:#ccc;font-size:16px;position:absolute;top:50%;left:50%;}
+</style>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.9.2.custom.min.js"></script>
+<script type="text/javascript">
+$(function(){ // 실행문 시작
+	var piece = $(".piece p");
+	var pannel = $(".pannel p");
+	var cnt = 0;
+	var totalSize = piece.size();
+	
+
+	randomP();
+		
+	// piece를 흩어놓을 수 있는 명령을 작성함
+	function randomP(){
+		piece.each(function(){
+			var tt = Math.random() * 300; // 0 ~ 300의 숫자를 랜덤으로 선택해 저장
+			var tl = Math.random() * 300; // 0 ~ 300의 숫자를 랜덤으로 선택해 저장
+			$(this).css({top:tt, left:tl});		
+		});
+	}; // randomP() 마지막
+
+	// 조각을 선택해 드래그상태를 적용시킴
+	piece.draggable({
+		revert : "invalid"		
+		// revert:true  >> 드래그하고 드롭 시에 다시 제자리로 돌아감
+		// revert:false  >> 기본값, 드롭이 된 자리에 선택자를 세워놓음
+		// revert:"invalid" >> 첫번재드롭이 된 자리를 기억해 그 다음 드롭이 일어나더라도 첫번째 자리로 돌아감
+	});
+	// 패널에 조각이 드롭될 수 있도록 적용
+	pannel.each(function(){
+		var tg = $(this);
+		var idx = tg.index();
+		var tgPiece = piece.eq(idx); // piece와 똑같은 순서값 가진 대상(pannel)을 저장
+		tg.droppable({
+			accept : tgPiece , // accept옵션에 현재 영역에 드롭될 대상을 지정함
+			drop : function(){ // drop옵션에 현재 영역에 드롭이 될 때 일어날 일을 작성할 수 있음
+				var tg = $(this); // 현재 패널을 저장
+				var tx = tg.offset().top;
+				var ty = tg.offset().left;
+				tgPiece.animate({top:tx,left:ty},300,function(){
+					cnt ++; // 퍼즐조각이 패널에 맞춰지는 움직임이 완료될때마다 cnt변수의 값이 1씩 증가함
+					// 조건문을 사용해 cnt의 값이 totalSize와 같아질때를 체크해 완료 동작을 만들어줌.
+					if(cnt == totalSize){
+						piece.remove();
+						pannel.css({opacity:1,margin:0});
+						$("body").append("<div class='box'>성공하셨습니다!</div>");
+					}
+				});
+			}
+		});
+	});				
+}); // 실행문 끝
+</script>
+</head>
+
+<body>
+	<section id="wrap">
+    	<div class="piece">
+        	<p><img src="img/m01.jpg" /></p>
+        	<p><img src="img/m02.jpg" /></p>
+        	<p><img src="img/m03.jpg" /></p>
+        	<p><img src="img/m04.jpg" /></p>
+        	<p><img src="img/m05.jpg" /></p>
+        	<p><img src="img/m06.jpg" /></p>
+        	<p><img src="img/m07.jpg" /></p>
+        	<p><img src="img/m08.jpg" /></p>
+        	<p><img src="img/m09.jpg" /></p>
+        </div>
+    	<div class="pannel">
+        	<p><img src="img/m01.jpg" /></p>
+        	<p><img src="img/m02.jpg" /></p>
+        	<p><img src="img/m03.jpg" /></p>
+        	<p><img src="img/m04.jpg" /></p>
+        	<p><img src="img/m05.jpg" /></p>
+        	<p><img src="img/m06.jpg" /></p>
+        	<p><img src="img/m07.jpg" /></p>
+        	<p><img src="img/m08.jpg" /></p>
+        	<p><img src="img/m09.jpg" /></p>
+        </div>
+    </section>
+</body>
+</html>

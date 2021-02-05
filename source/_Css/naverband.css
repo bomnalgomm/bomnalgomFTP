@@ -1,0 +1,105 @@
+/* Common */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
+body,input,textarea,select,button,table{font-family:'³ª´®°íµñ', 'NanumGothic',dotum, sans-serif, 'Helvetica Neue';font-size:14px;line-height:1.25em}
+body.s,.s input,.s textarea,.s select,.s button,.s table{font-family:Helvetica}
+body{position:relative;padding-bottom:30px;background-color:#f7f7f7;color:#000;-webkit-text-size-adjust:none;}
+html, body{overflow-x:hidden;}
+img,fieldset{border:0}
+ul,ol{list-style:none}
+em,address{font-style:normal}
+a{color:#000;text-decoration:none}
+table{border-collapse:collapse}
+hr{display:none !important}
+.alt{visibility:hidden;overflow:hidden;position:absolute;left:-999em;width:0;height:0;font-size:0;line-height:0}
+.ui-loader, .ui-loader-fakefix{display:none;}
+
+.header{position:relative;z-index:2;max-width:1280px;height:202px;margin:0 auto;text-align:center;}
+.header .bi{position:absolute;left:12px;top:30px;}
+.header .tt{margin-left:12px;margin-bottom:11px;}
+.header .stt{margin-left:3px;}
+.header .hgroup{position:relative;width:960px;padding-top:79px;margin:0 auto;}
+.header .hgroup .btn_fb_evt{position:absolute;top:0;right:-4px;z-index:4;}
+.main{position:relative;width:1024px;margin:0 auto;}
+.main .main_promotion_wrap{min-width:1024px;height:500px;position:relative;}
+.main .main_promotion_wrap .bg{position:absolute;left:0;top:0;z-index:1;}
+.main .main_promotion_wrap .bg .left,
+.main .main_promotion_wrap .bg .right{position:absolute;height:500px;width:1280px;}
+.main .main_promotion_wrap .bg .left{right:-512px;top:0;}
+.main .main_promotion_wrap .bg .right{left:512px;top:0;}
+.main .main_promotion_bg{position:absolute;left:32px;z-index:2;width:480px;height:589px;}
+.main .main_promotion_bg .p_bg{position:absolute;left:0;top:0;width:100%;height:589px;}
+.main .main_promotion_bg .bg_1{}
+.main .main_promotion_bg .bg_2{display:none;}
+.main .main_promotion_bg .bg_3{display:none;}
+.main .main_promotion_bg .bg_4{display:none;}
+.main .main_promotion_bg .bg_5{display:none;}
+.main .main_promotion_bg .bg_6{display:none;}
+
+.main .main_contents{position:relative;z-index:2;width:480px;}
+
+.main .bg_1 .main_txt{z-index:3;position:absolute;left:0;top:0;}
+.main .bg_2 .main_txt{position:absolute;left:0;top:0;}
+.main .bg_3 .main_txt{position:absolute;left:0;top:0;}
+.main .bg_4 .main_txt{position:absolute;left:0;top:0;}
+.main .bg_5 .main_txt{position:absolute;left:0;top:0;}
+.main .bg_6 .main_txt{position:absolute;left:0;top:0;}
+
+.main .main_promotion_wrap .page_nav{position:absolute;z-index:5;left:405px;top:670px;}
+.main .main_promotion_wrap .page_nav li{display:inline-block;}
+.main .main_promotion_wrap .page_nav li a{display:block;}
+.main .main_promotion_wrap .page_nav li .on img{visibility:hidden;}
+.main .main_promotion_wrap .page_nav li .on{background:url(http://static.band.naver.com/web/event/2013_11_band_branding/img/pc/page_nav_list_on.png) no-repeat 0 0;}
+
+.main .and_content{position:absolute;z-index:3;left:512px;top:0;width:480px;height:589px;}
+.main .and_content #toggle_slide_sub{position:absolute;left:0;top:0;width:480px;height:589px;}
+.main .and_content #toggle_slide_sub .p_bg{left:0;position:absolute;width:480px;height:589px;}
+.main .and_content #toggle_slide_sub .bg_1{z-index:1;}
+.main .and_content #toggle_slide_sub .bg_2{z-index:1;display:none;}
+.main .and_content #toggle_slide_sub .bg_3{z-index:1;display:none;}
+.main .and_content #toggle_slide_sub .bg_4{z-index:1;display:none;}
+.main .and_content #toggle_slide_sub .bg_5{z-index:1;display:none;}
+.main .and_content #toggle_slide_sub .bg_6{z-index:1;display:none;}
+
+.main .pos_wrap{position:relative;left:74px;top:440px;z-index:5;}
+.main .pos_wrap .pos{display:block;float:left;width:145px;height:120px;margin-left:1px;background:url(http://static.band.naver.com/web/event/2013_11_band_branding/img/brand_campaign/btn_slide_1_off.png) no-repeat scroll 0 0;}
+.main .pos_wrap .pos img{visibility:hidden;}
+.main .pos_wrap .pos_1{}
+.main .pos_wrap .pos_2{background-image: url(http://static.band.naver.com/web/event/2013_11_band_branding/img/brand_campaign/btn_slide_2_off.png);}
+.main .pos_wrap .pos_3{background-image: url(http://static.band.naver.com/web/event/2013_11_band_branding/img/brand_campaign/btn_slide_3_off.png);}
+.main .pos_wrap .pos_4{background-image: url(http://static.band.naver.com/web/event/2013_11_band_branding/img/brand_campaign/btn_slide_4_off.png);}
+.main .pos_wrap .pos_5{background-image: url(http://static.band.naver.com/web/event/2013_11_band_branding/img/brand_campaign/btn_slide_5_off.png);}
+.main .pos_wrap .pos_6{background-image: url(http://static.band.naver.com/web/event/2013_11_band_branding/img/brand_campaign/btn_slide_6_off.png);}
+.main .pos_wrap .pos.on img{visibility:visible;}
+.main #slide_nav{position:absolute;z-index:4;left:0;top:437px;width:100%;width:1025px;height:126px;background:url(http://static.band.naver.com/web/event/2013_11_band_branding/img/brand_campaign/bg_nav.png) no-repeat scroll 0 0;}
+.main #slide_nav a.nav_prev,
+.main #slide_nav a.nav_next{position:absolute;top:3px;background-repeat:no-repeat;background-position:0 0;background-attachment:scroll;}
+.main #slide_nav a img{visibility:hidden;}
+.main #slide_nav a.nav_prev{left:4px;background-image:url(http://static.band.naver.com/web/event/2013_11_band_branding/img/brand_campaign/btn_slide_prev_off.png);}
+.main #slide_nav a.nav_next{right:4px;background-image:url(http://static.band.naver.com/web/event/2013_11_band_branding/img/brand_campaign/btn_slide_next_off.png);}
+.main #slide_nav a:hover img{visibility:visible;}
+.main #slide_nav .txt{position:absolute;bottom:-26px;right:73px;}
+
+.footer{position:relative;margin-top:113px;text-align:center;}
+.footer .footer_wrap{position:relative;width:318px;height:74px;margin:0 auto;text-align:left;}
+.footer .footer_wrap .qrcode{position:absolute;left:0;top:0;}
+.footer .footer_wrap .app_download{position:absolute;left:86px;top:18px;}
+.footer .footer_wrap .app_download p{margin-left:3px;margin-bottom:2px;}
+.footer .copyright{margin-top:36px;}
+.footer .copyright img{position:relative;left:2px;}
+
+.dimmed{display:none;position:fixed;z-index:5;left:0;right:0;bottom:0;top:0;background-color:rgb(0,0,0);opacity:0.5;cursor:pointer;_cursor:hand;filter:alpha(opacity=50);-ms-filter:"alpha(opacity=50)";}
+.ly{display:none;position:absolute;left:50%;top:50%;width:867px;height:627px;z-index:10;margin:-313px 0 0 -433px;background:url(http://static.band.naver.com/web/event/2013_11_band_branding/img/brand_campaign/ly.png) no-repeat scroll 0 0;}
+.ly .tt,
+.ly .evt_cont,
+.ly .gift{position:absolute;left:0;top:0;text-indent:-9999em;}
+.ly .btn_join_event{position:absolute;left:3px;top:483px;}
+.ly .sns_wrap{position:absolute;left:0;top:563px;width:100%;text-align:center;/*font-size:0;*/}
+.ly .btn_ly_close{position:absolute;right:39px;top:34px;}
+.spi_lst{width:160px;overflow:hidden;white-space:nowrap;margin:0 auto;}
+.spi_lst li{float:left;}
+.spi_lst li a{display:block;vertical-align:top;width:32px;height:31px;margin:0 0 0 5px;background-repeat:no-repeat;background-attachment:scroll;background-position:0 0;text-indent:-999em;}
+.spi_lst li.spi_lnk_facebook a{background-image:url(http://static.band.naver.com/web/event/2013_11_band_branding/img/brand_campaign/btn_sns_facebook.png);}
+.spi_lst li.spi_lnk_twitter a{background-image:url(http://static.band.naver.com/web/event/2013_11_band_branding/img/brand_campaign/btn_sns_twitter.png);}
+.spi_lst li.spi_lnk_me2 a{background-image:url(http://static.band.naver.com/web/event/2013_11_band_branding/img/brand_campaign/btn_sns_me2day.png);}
+.spi_lst li.spi_lnk_blog a{background-image:url(http://static.band.naver.com/web/event/2013_11_band_branding/img/brand_campaign/btn_sns_blog.png);}
+.spi_lst li.spi_lnk_sms a{background-image:url(http://static.band.naver.com/web/event/2013_11_band_branding/img/brand_campaign/btn_sns_sms.png);}

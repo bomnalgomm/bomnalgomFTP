@@ -1,0 +1,391 @@
+
+@charset "utf-8";
+#layPop.page {
+    display: block !important;
+}
+#layPop.details .layBody ul {
+    float: none;
+    padding: 0;
+    width: auto;
+}
+#layPop.page .layBody .contactWrap ul li {
+    color: #333333;
+    margin: 0;
+    padding: 5px 0 7px;
+}
+#layPop.details .btnArea {
+    margin-top: 20px;
+    text-align: center;
+}
+#layPop.details .btnArea button {
+    background: url("/portfolio/common/img/common/ico_apply.png") no-repeat scroll 20px 11px #CA0014;
+    border: medium none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    height: 40px;
+    line-height: 0;
+    padding-left: 36px;
+    width: 120px;
+}
+#layPop.details .btnArea button.submit {
+    background: url("/portfolio/common/img/common/ico_submit.png") no-repeat scroll 20px 11px #CA0014;
+}
+#layPop .clearfix .blockType1 {
+    float: left;
+    width: 256px;
+}
+#layPop .blockType1 h3 {
+    color: #CA0014;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 11px;
+}
+#layPop .blockType1 p {
+    margin-bottom: 6px;
+}
+#layPop .blockType1 .item {
+    display: inline-block;
+    width: 50px;
+}
+.contactWrap {
+    margin: 28px 20px 0;
+}
+.listForm {
+    border-bottom: 1px solid #CCCCCC;
+}
+.listForm .item {
+    background: url("/portfolio/common/img/common/bul_list.gif") no-repeat scroll 0 12px rgba(0, 0, 0, 0);
+    display: inline-block;
+    font-size: 14px;
+    padding: 5px 0 0 8px;
+    vertical-align: top;
+    width: 161px;
+}
+.listForm input[type="text"] {
+    border: 1px solid #CCCCCC;
+    font-size: 14px;
+    height: 29px;
+    padding-left: 10px;
+    vertical-align: middle;
+    width: 480px;
+}
+.listForm input.right[type="text"] {
+    margin-right: 5px;
+    padding-left: 0;
+    padding-right: 10px;
+    text-align: right;
+    width: 133px;
+}
+.listForm input.email01 {
+    width: 153px;
+}
+.listForm input.email02 {
+    margin-left: 3px;
+    width: 141px;
+}
+.listForm select {
+    border: 1px solid #CCCCCC;
+    font-size: 14px;
+    height: 31px;
+    padding-left: 10px;
+    vertical-align: middle;
+    width: 148px;
+}
+.listForm select.full {
+    width: 491px;
+}
+.listForm input.tel[type="text"] {
+    width: 143px;
+}
+.listForm .checkInput {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 5px;
+}
+.listForm .flowType {
+    margin-left: 5px;
+    margin-right: 15px;
+}
+.listForm .checkInput input {
+    height: 13px;
+    vertical-align: middle;
+    width: 13px;
+}
+.listForm .checkInput label {
+    vertical-align: middle;
+}
+.listForm textarea {
+    border: 1px solid #CCCCCC;
+    height: 148px;
+    width: 490px;
+}
+.listForm li.line {
+    border-top: 1px solid #E5E5E5;
+}
+.listForm input[type="file"] {
+    width: 200px;
+}
+.noti {
+    color: #333333;
+    display: block;
+    float: right;
+    margin-right: 20px;
+}
+.notiPhone {
+    display: none;
+}
+.contactWrap p {
+    color: #666666;
+    font-size: 13px;
+}
+.contactWrap .phone {
+    color: #333333;
+    margin-top: 35px;
+}
+.contactWrap .addr {
+    margin-top: 4px;
+}
+.contactWrap .dept {
+    margin: 31px 0 45px;
+}
+.details h3 {
+    color: #333333;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: -1px;
+    margin-bottom: 14px;
+}
+.details .block {
+    margin-bottom: 35px;
+}
+.details h4 {
+    color: #333333;
+    font-weight: normal;
+    margin-bottom: 3px;
+}
+.details .subBlock {
+    margin-bottom: 13px;
+}
+#layPop .layBody .related.full .relatedList li a, #layPop .layBody .related.full .relatedList li a img {
+    height: 239px;
+    padding: 0;
+    width: 239px;
+}
+#layPop .layBody .related.full .relatedList li.empty {
+    background: url("/portfolio/common/img/common/bg_empty.gif") no-repeat scroll left top #FFFFFF;
+    height: 239px;
+    width: 239px;
+}
+.recruitWrap {
+    border-top: 1px solid #EDEDED;
+    display: none;
+    margin: 40px 20px 0;
+    padding: 30px 0 3px;
+}
+#layPop.details .layBody ul.listForm {
+    padding-bottom: 20px;
+}
+#layPop.details .layBody .recruitWrap ul li {
+    padding: 5px 0 7px;
+}
+#layPop.details .subTitle {
+    color: #CA0014;
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+#layPop.details p.import {
+    color: #333333;
+}
+#layPop.details .layBody ul li {
+    color: #666666;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+}
+#location_map {
+    height: 420px;
+    margin: 0 auto;
+    width: 679px;
+}
+.lineBlock {
+    border-top: 1px solid #EDEDED;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+.maplinks {
+    margin: 10px 20px 0;
+}
+.maplinks a {
+    background: none repeat scroll 0 0 #666666;
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 10px;
+    font-weight: bold;
+    margin-right: 5px;
+    padding: 7px 11px 6px;
+}
+#layPop .layBody .txt {
+    color: #666666;
+    font-size: 13px;
+    margin: 10px 20px 0;
+}
+#layPop .layBody.people {
+    overflow: hidden;
+}
+.peopleWrap {
+    margin-bottom: 60px;
+    width: 4314px;
+}
+.peopleWrap .sect {
+    float: left;
+    width: 719px;
+}
+.peopleWrap .sect .figure img {
+    width: 550px;
+}
+.award {
+    border-bottom: 1px solid #EDEDED;
+    border-top: 1px solid #EDEDED;
+    padding-top: 30px;
+}
+.award h3 {
+    float: left;
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    width: 129px;
+}
+.award h4 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 18px;
+}
+.award .contArea {
+    float: left;
+    width: 550px;
+}
+.award .imgArea p {
+    float: left;
+}
+.award .imgArea .mark {
+    float: right;
+}
+.award .desc {
+    line-height: 24px;
+    margin: 14px 0 40px;
+}
+#layPop .layBody ul.awardList {
+    padding-top: 24px;
+}
+#layPop .layBody ul.awardList li {
+    margin-bottom: 28px;
+}
+#layPop .layBody ul.awardList li strong {
+    color: #333333;
+    display: inline-block;
+    font-size: 14px;
+    padding-top: 6px;
+    vertical-align: top;
+    width: 19%;
+}
+#layPop .layBody ul.awardList li span {
+    display: inline-block;
+    line-height: 24px;
+    vertical-align: top;
+    width: 81%;
+}
+.ci {
+    border-top: 1px solid #EDEDED;
+    padding-top: 30px;
+}
+.ci h3 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 18px;
+}
+#layPop.details .ci .subTitle {
+    margin-bottom: 35px;
+}
+.imgCi {
+    margin-bottom: 37px;
+    text-align: center;
+}
+.ci .descTile {
+    margin-bottom: 3px;
+    text-align: center;
+}
+.ci .desc {
+    margin: 0 auto;
+    width: 447px;
+}
+.ci .ciSect {
+    margin-bottom: 60px;
+}
+#layPop .layBody .acgSns .request.downCi a {
+    background: url("/portfolio/common/img/detail/ico_down.png") no-repeat scroll 15px 10px #CA0014;
+    width: 112px;
+}
+#layPop .layBody .related.story {
+    overflow: hidden;
+    position: relative;
+    width: 720px;
+}
+#layPop .layBody .related.story .relatedList {
+    width: 1440px;
+}
+#layPop .layBody .related.story .relatedList li {
+    position: relative;
+}
+#layPop .layBody .related.story .relatedList li img {
+    width: 239px;
+}
+#layPop .layBody .related.story .relatedList li a {
+    background: url("/portfolio/common/img/common/dim_w.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 239px;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+#layPop .layBody .related.story .relatedList li.atv a {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 3px solid #CA0014;
+    height: 233px;
+    width: 233px;
+}
+#layPop .layBody .related.story .storyControl {
+    position: absolute;
+    right: 12px;
+    top: 8px;
+}
+#layPop .layBody .storyControl2 {
+    display: none;
+}
+#layPop .layBody .related.story .storyControl a {
+    background: url("/portfolio/common/img/detail/btn_paging.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: inline-block;
+    font-size: 0;
+    height: 25px;
+    line-height: 0;
+    overflow: hidden;
+    text-indent: -9999px;
+    vertical-align: middle;
+    width: 25px;
+}
+#layPop .layBody .related.story .storyControl a.next {
+    background-position: -25px 0;
+}
+#layPop .layBody .related.story .storyControl span {
+    display: inline-block;
+    font-size: 13px;
+    vertical-align: middle;
+}
+#layPop .layBody .related.story .storyControl span.atv {
+    color: #333333;
+    font-weight: bold;
+}
+#layPop .layBody .related.story .storyControl span.storyPaging {
+    margin: 0 5px;
+}

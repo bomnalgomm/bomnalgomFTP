@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>150825 수업</title>
+<link href="css/base.css" rel="stylesheet" />
+<style type="text/css">
+#gallery {width:700px;margin:50px auto;}
+#image {margin-bottom:20px;}
+#image p {display:none;}
+#image .i1 {display:block;}
+#image p img {width:700px;height:auto;}
+#thumbnail {width:700px;height:67px;position:relative;}
+#thumbnail .list {width:600px;margin:0 auto;overflow:hidden;}
+#thumbnail .list ul {/*width:1800px;*/}
+#thumbnail .list li {float:left;margin:0 5px}
+#thumbnail .list li img {width:90px;height:auto;}
+#thumbnail button {border:0;background:#333;position:absolute;top:0;width:39px;height:69px;cursor:pointer;}
+#thumbnail button span {color:#fff;font-size:20px;}
+#thumbnail button.btn-prev {left:0;}
+#thumbnail button.btn-next {right:0;}
+
+
+</style>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript">
+$(function() {//실행문 시작
+	//변수를 만들어 필요한 대상들을 미리 저장시킴
+	var current = 0;
+	var thumbListSize = 6;
+	var prev =$("#thumbnail .btn-prev");
+	var next =$("#thumbnail .btn-next");	
+	var thumbnail = $("#thumbnail");
+	var list = thumbnail.find(".list ul");
+	var thumb = list.find(".thumb"); // 썸네일 이미지 하나를 감싸는 li태그
+	var image = $("#image p"); // 메인 이미지 하나를 감싸는 p태그
+	var thumbSize = thumb.size(); // size()명령으로 li태그의 갯수를 저장
+	var thumbWidth = thumb.outerWidth(true); // li태그의 마진값을 포함한 가로공간사이즈를 저장
+	
+	// 변수 list의 너비값 구하는 식
+	list.css({ width : thumbSize * thumbWidth });
+	
+	// 변수 prev를 클릭했을 때 일어날 일
+	prev.on("click",function(){
+		// 버튼이 작동될 수 있는 범위를 조건문을 통해 지정
+		if(current > 0) current --
+		move();
+		//var tl = thumbWidth * thumbListSize * current * -1;		
+		//list.stop().animate({marginLeft:tl},500);		
+	});
+	
+	// 변수 .next를 클릭했을 때 일어날 일
+	next.on("click",function(){
+		// 버튼이 작동될 수 있는 범위를 조건문을 통해 지정
+		if(current < thumbSize/thumbListSize-1) current ++		
+		move();	
+		// 썸네일을 담고 있는 변수list에게 움직일 수 있도록 작성
+		// 한번에 6쌍의 썸네일이 가지고 있는 가로공간값만큼 움직여야함
+		//var tl = thumbWidth * thumbListSize * current * -1;
+		// 변수 tl = li태그의너비값 * 한번에 이동될 li태그갯수 * 현재의인덱스값 * -1(왼쪽으로 이동해야하니까)
+		// 인덱스값이 0일때 list의 margin=left값은 0
+		// 인덱스값이 1일때 list의 margin-left값은 -600
+		// 인덱스값이 2일때 list의 margin-left값은 -1200		
+		//list.stop().animate({marginLeft:tl},500);
+		
+	});
+	
+	// prev버튼과 next버튼을 클릭했을 때 일어나는 동작이 동일함. 그래서 외부함수의 형태로 동작을 만들어 두고 각각의 이벤트영역에서 함수를 호출해 사용할 수 있도록 함
+	function move(){
+		var tl = thumbWidth * thumbListSize * current * -1;
+		list.stop().animate({marginLeft:tl},{duration:500,easing:"easeInQuint"});
+	}
+	
+	// 변수 thumb을 클릭했을 때 일어날 일
+	thumb.on("click",function(){
+		var i = $(this).index(); // 내가 클릭한 대상의 인덱스값 저장
+		image.css({display:"none"});
+		image.eq(i).css({display:"block"}); // 내가 클릭한 대상의 순번과 동일한 이미지가 보이도록 
+	});
+	
+	
+});//실행문 끝
+</script>
+</head>
+
+<body>
+<section id="gallery">
+	<div id="image">
+	    <p class="i1"><img src="img/m01.jpg" alt="" /></p>
+	    <p><img src="img/m02.jpg" alt="" /></p>
+	    <p><img src="img/m03.jpg" alt="" /></p>
+	    <p><img src="img/m04.jpg" alt="" /></p>
+	    <p><img src="img/m05.jpg" alt="" /></p>
+	    <p><img src="img/m06.jpg" alt="" /></p>                                        
+	    <p><img src="img/m07.jpg" alt="" /></p>
+	    <p><img src="img/m08.jpg" alt="" /></p>
+	    <p><img src="img/m09.jpg" alt="" /></p>
+	    <p><img src="img/m10.jpg" alt="" /></p>
+	    <p><img src="img/m11.jpg" alt="" /></p>
+	    <p><img src="img/m12.jpg" alt="" /></p>
+	    <p><img src="img/m13.jpg" alt="" /></p>
+	    <p><img src="img/m14.jpg" alt="" /></p>
+	    <p><img src="img/m15.jpg" alt="" /></p>
+	    <p><img src="img/m16.jpg" alt="" /></p>
+	    <p><img src="img/m17.jpg" alt="" /></p>
+	    <p><img src="img/m18.jpg" alt="" /></p>                                        
+    </div>
+    <div id="thumbnail">
+    	<div class="list">
+        	<ul>
+            	<li class="thumb"><img src="img/m01.jpg" alt="" /></li>
+            	<li class="thumb"><img src="img/m02.jpg" alt="" /></li>
+            	<li class="thumb"><img src="img/m03.jpg" alt="" /></li>
+            	<li class="thumb"><img src="img/m04.jpg" alt="" /></li>
+            	<li class="thumb"><img src="img/m05.jpg" alt="" /></li>
+            	<li class="thumb"><img src="img/m06.jpg" alt="" /></li>
+            	<li class="thumb"><img src="img/m07.jpg" alt="" /></li>
+            	<li class="thumb"><img src="img/m08.jpg" alt="" /></li>
+            	<li class="thumb"><img src="img/m09.jpg" alt="" /></li>
+            	<li class="thumb"><img src="img/m10.jpg" alt="" /></li>
+            	<li class="thumb"><img src="img/m11.jpg" alt="" /></li>
+            	<li class="thumb"><img src="img/m12.jpg" alt="" /></li>
+            	<li class="thumb"><img src="img/m13.jpg" alt="" /></li>
+            	<li class="thumb"><img src="img/m14.jpg" alt="" /></li>
+            	<li class="thumb"><img src="img/m15.jpg" alt="" /></li>
+            	<li class="thumb"><img src="img/m16.jpg" alt="" /></li>
+            	<li class="thumb"><img src="img/m17.jpg" alt="" /></li>
+            	<li class="thumb"><img src="img/m18.jpg" alt="" /></li>                                          
+            </ul>
+        </div>
+        <button type="button" class="btn-prev"><span>&lt;</span></button>
+        <button type="button" class="btn-next"><span>&gt;</span></button>        
+    </div>
+</section>
+</body>
+</html>

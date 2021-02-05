@@ -1,0 +1,31 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	padding:30px;
+}
+h1{
+	padding:0 0 20px;
+}
+.slideshow{
+	width:300px;
+	height:300px;
+	margin:0 20px 20px 0;
+	float:left;
+	position:relative;
+}
+/* a要素は絶対配置で一か所に重ねる */
+.slideshow a{
+	position:absolute;
+	top:0;
+	left:0;
+}
+	.slideshow a img{
+		border:1px solid #000;
+		vertical-align:top;
+	}
+/* 2番目以降のimg要素にclass="alt"を付け、消す */
+.slideshow a.alt{
+	display:none;
+}

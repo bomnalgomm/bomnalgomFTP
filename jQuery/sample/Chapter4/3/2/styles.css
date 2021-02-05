@@ -1,0 +1,20 @@
+*{
+	font-family:sans-serif;
+}
+body{
+	padding:30px;
+}
+form{
+	padding:0 0 10px;
+}
+form div{
+	padding:0 0 3px;
+}
+.guide{
+	color:#cccccc;
+}
+textarea{
+	display:block;
+	width:300px;
+	margin:5px 0 5px;
+}

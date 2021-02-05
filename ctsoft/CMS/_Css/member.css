@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* 2014-10-21 CSS CENTUMSOFT */
+
+/* member ========== */
+/* 공통 */
+.member-wrap {width:760px;margin:0 auto;}
+#member-box {width:100%;border-top:2px solid #043d86;border-left:1px solid #ddd;border-right:1px solid #ddd;border-bottom:1px solid #ddd;}
+.btn-wrap {margin:30px 0;}
+
+.mem-link {border-top:1px solid #ddd;background:#f3f5f8;padding:25px 0;overflow:hidden;}
+.mem-link h4 {color:#043d86;font-size:14px;margin-bottom:5px;}
+.mem-link a {display:inline-block;border-top:1px solid #c8c8c8;border-left:1px solid #c8c8c8;border-right:1px solid #9c9c9c;border-bottom:1px solid #9c9c9c;background:#fff;color:#444;padding:4px 10px;margin-right:7px;}
+.mem-link a.join {background:#fff url(../_Img/member/ico_join.gif) no-repeat 12px center;padding-left:30px;}
+.mem-link a.id {background:#fff url(../_Img/member/ico_findId.gif) no-repeat 12px center;padding-left:30px;}
+.mem-link a.pw {background:#fff url(../_Img/member/ico_findPw.gif) no-repeat 12px center;padding-left:30px;}
+
+
+/* 로그인 */
+.login-top {padding:40px 30px 40px 210px;background:#f9f9f9 url(../_Img/member/ico_login.png) no-repeat 60px center;border-bottom:1px solid #ddd;}
+.login-top h3 {font-size:29px;color:#043d86;margin-bottom:30px;}
+.login-form {width:480px;margin:45px auto 50px;position:relative;}
+.login-form ul {overflow:hidden;width:380px;}
+.login-form ul li {/* margin:3px 0; */overflow:hidden;margin-bottom:10px;position:relative;vertical-align:top;}
+.login-form li label {font-size:15px;font-weight:bold;float:left;width:70px;line-height:40px;color:#333;}
+.login-form li input {border:1px solid #ccc;background:#f4f4f4;width:288px;height:38px;line-height:38px;float:left;padding:0 5px;}
+.btn-login {position:absolute;top:0;right:0;background:#48525e;width:100px;height:90px;color:#fff;font-weight:600;border:0;font-size:16px;line-height:40px;cursor:pointer;}
+.mem-link .link-cont {float:left;padding-left:50px;}
+.mem-link .link-cont:first-child {border-right:1px dotted #aaaaab;padding-right:90px;padding-left:50px;}
+
+
+/* 회원가입 ========== */
+/* 회원구분 */
+.member-sec-wrap {width:760px;margin:0 auto;}
+.member-sec-wrap .ms-top {background:url(../_Img/member/ico_member.png) no-repeat right 0;padding-bottom:40px;}
+.member-sec-wrap .ms-top h3 {color:#043d86;font-size:29px;padding-top:10px;width:100%;line-height:100%;}
+.member-box {overflow:hidden;clear:both;display:block;}
+.member-box div {border-top:2px solid #043d86;border-left:1px solid #ddd;border-right:1px solid #ddd;border-bottom:1px solid #ddd;float:left;width:368px;text-align:center;padding:125px 0 30px;}
+.member-box div label {display:block;color:#043d86;font-size:16px;font-weight:bold;margin-bottom:18px;}
+.member-box div label span {display:block;font-size:12px;color:#666;margin-top:14px;}
+.member-box .person {margin-right:15px;background:url(../_Img/member/ico_person.png) no-repeat center 50px;}
+.member-box .company {background:url(../_Img/member/ico_company.png) no-repeat center 50px;}
+.member-box .person.chk {background:#f9f9f9 url(../_Img/member/ico_person.png) no-repeat center 50px;}
+.member-box .company.chk {background:#f9f9f9 url(../_Img/member/ico_company.png) no-repeat center 50px;}
+
+/* 약관동의 및 공공아이핀 */
+.join-step {margin-bottom:40px;}
+.agree-box {border:1px solid #ddd;background:#f8f8f8;height:110px;padding:20px;overflow-y:scroll;}
+.ipin {background:url(../_Img/member/ico_ipin.png) no-repeat center 30px;padding:130px 0 20px;}
+.ipin p {letter-spacing:-1px;}
+.help-box {margin:12px auto 25px;}
+
+/* 회원정보입력 */
+.member-form {overflow:hidden;}
+/* .member-form .nec {background:url(../_Img/member/ico_nec.png) no-repeat 0 3px;padding-left:15px;} */
+.tbl-form {border-top:2px solid #043d86;width:100%;border-collapse:collapse;clear:both;}
+.tbl-form th {background:#f3f5f8;padding:12px 10px 12px 15px;border-right:1px solid #bac2ca;border-bottom:1px solid #ddd;font-size:13px;color:#043d86;text-align:left;}
+.tbl-form th label {padding-left:18px;position:relative;}
+.tbl-form th label .nec {background:url(../_Img/member/ico_nec.png) no-repeat 0 3px;text-indent:-9999px;display:block;position:absolute;top:0px;left:0px;width:9px;height:15px;}
+.tbl-form td {border-bottom:1px solid #ddd;padding:12px 0 12px 15px;}
+
+
+/* 회원가입완료 */
+.leave-top {background:#fff url(../_Img/member/ico_leave.png) no-repeat center 38px;padding:172px 0 30px;text-align:center;font-size:13px;font-weight:bold;}
+.mem-link .link-cont2 {float:left;padding-left:40px;}
+.mem-link .link-cont2:first-child {border-right:1px dotted #aaaaab;padding:0 40px 20px 50px;}

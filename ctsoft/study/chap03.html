@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title>3주차 테이블마크업</title>
+<link rel="stylesheet" href="/ctsoft/_Css/common.css" />
+<link rel="stylesheet" href="/ctsoft/study/_Css/layout.css" />
+<link rel="stylesheet" href="/ctsoft/study/_Css/style.default.css" />
+<!--[if lte IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body class="isMain">
+	<!-- doc-wrap -->
+	<div id="doc-wrap">		
+		<div class="cont">
+			<h1 style="font-size:20px;font-weight:bold;color:#333;">테이블스타일 01 - 테이블 클래스명 : tbl-type01</h1>
+			<h2 class="mg20t">thead가 있는 경우</h2>
+			<table class="tbl-type01">
+			<caption><span class="blind">테이블스타일 01목록으로 구분, 제목1-1, 제목1-2 제공</span></caption>
+			<colgroup>
+			<col style="width:25%" />
+			<col style="width:25%" />
+			<col style="width:*" />
+			</colgroup>
+			<thead>
+			<tr>
+				<th scope="col">구분</th>
+				<th scope="col">제목1-1</th>
+				<th scope="col">제목1-2</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<th scope="row">왼제목1-1</th>
+				<td>내용1-1</td>
+				<td>내용1-2</td>				
+			</tr>
+			</tbody>
+			</table>
+
+			<div class="gap"></div>
+
+			<h2 class="mg20t">thead가 없는 경우</h2>
+			<table class="tbl-type01">
+			<caption><span class="blind">테이블스타일 01목록으로 구분, 제목1-1, 제목1-2 제공</span></caption>
+			<colgroup>
+			<col style="width:25%" />
+			<col style="width:25%" />
+			<col style="width:*" />
+			</colgroup>
+			<tbody>
+			<tr class="first">
+				<th scope="row">왼제목1-1</th>
+				<td>내용1-1</td>
+				<td>내용1-2</td>
+			</tr>
+			<tr>
+				<th scope="row">왼제목1-2</th>
+				<td>내용2-1</td>
+				<td>내용2-2</td>
+			</tr>
+			</tbody>
+			</table>
+
+			<div class="gap"></div>
+			<div class="gap"></div>
+
+		
+			<h1 style="font-size:20px;font-weight:bold;color:#333;">테이블스타일 02 - 테이블 클래스명 : tbl-type02</h1>
+			<h2 class="mg20t">thead가 있는 경우</h2>
+			<table class="tbl-type02">
+			<caption><span class="blind">테이블스타일02로 구분, 제목1-1, 제목1-2, 제목1-3, 제목1-4</span></caption>
+			<colgroup>
+			<col style="width:15%" />
+			<col style="width:22%" />
+			<col style="width:22%" />
+			<col style="width:27%" />
+			<col style="width:*" />
+			</colgroup>
+			<thead>
+			<tr>
+				<th scope="col">구분</th>
+				<th scope="col">제목1-1</th>
+				<th scope="col">제목1-2</th>
+				<th scope="col">제목1-3</th>
+				<th scope="col">제목1-4</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<th scope="row">왼제목</th>
+				<td>내용1-1</td>
+				<td>내용1-2</td>
+				<td>내용1-3</td>
+				<td>내용1-4</td>
+			</tr>
+			</tbody>
+			</table>
+
+			<div class="gap"></div>
+
+			<h2 class="mg20t">thead가 있는 경우</h2>
+			<table class="tbl-type02">
+			<caption><span class="blind">테이블스타일02로 구분, 제목1-1, 제목1-2, 제목1-3, 제목1-4</span></caption>
+			<colgroup>
+			<col style="width:15%" />
+			<col style="width:22%" />
+			<col style="width:22%" />
+			<col style="width:27%" />
+			<col style="width:*" />
+			</colgroup>
+			<tbody>
+			<tr>
+				<th scope="row">왼제목1-1</th>
+				<td>내용1-1</td>
+				<td>내용1-2</td>
+				<td>내용1-3</td>
+				<td>내용1-4</td>
+			</tr>
+			<tr>
+				<th scope="row">왼제목1-2</th>
+				<td>내용2-1</td>
+				<td>내용2-2</td>
+				<td>내용2-3</td>
+				<td>내용2-4</td>
+			</tr>
+			</tbody>
+			</table>
+		
+		</div>
+	</div>
+</body>
+</html>

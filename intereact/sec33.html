@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title>section 33 .html()</title>
+<link rel="stylesheet" href="./_Css/style.css" />
+<style type="text/css">
+	button {font-size:20px;margin:20px;}
+	span {font-size:12px;margin:20px;}
+</style>
+</head>
+<body>
+	<button type="button">태그구조 바꾸기</button>
+
+	<div>
+		<span>변경전 입니다.</span>
+	</div>
+ 
+	<pre>
+	.html();
+	선택자 안의 html 구조를 가져오거나 변경하기
+	</pre>
+
+	<script type="text/javascript" src="./_Js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$("button").on("click", function(){
+			$("div").html("<h1>변경후 입니다.</h1>"); // button을 클릭하면 div태그안에 구조를 ""안에 있는 내용으로 변경
+		});
+		$("div").on("click", function(){
+			var abc = $(this).html(); // 클릭된 div안의 html구조를 변수 abc에 저장
+			alert(abc); // 경고창으로 변수 abc에 저장된 div안의 html 구조를 출력
+		});
+	});
+	</script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title>section 38 new Date()</title>
+<link rel="stylesheet" href="./_Css/style.css" />
+<style type="text/css">
+p {font-size:20px;margin:20px;}
+</style>
+</head>
+<body>
+
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+
+	<pre>
+	new Date(); 현재 날짜 시간에 대한 모든 정보 가져오기
+
+	new Date().getFullYear(); 년도에 해당하는 정보만 가져오기
+
+	new Date().getMonth()+1; 월에 해당하는 정보만 가져오기
+
+	new Date().getDate(); 일에 해당하는 정보만 가져오기
+
+	new Date().getDay(); 요일에 해당하는 정보만 가져오기 / 일요일은 0
+
+	new Date().getHours(); 시에 해당하는 정보만 가져오기
+
+	new Date().getMinutes(); 분에 해당하는 정보만 가져오기
+
+	new Date().getSeconds(); 초에 해당하는 정보만 가져오기
+	</pre>
+
+
+	<script type="text/javascript" src="./_Js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		var now = new Date();
+		$("p").eq(0).text(now);
+
+		var year = now.getFullYear();
+		$("p").eq(1).text(year);
+
+		var month = now.getMonth()+1;
+		$("p").eq(2).text(month);
+
+		var date = now.getDate();
+		$("p").eq(3).text(date);
+
+		var day = now.getDay();
+		$("p").eq(4).text(day);
+
+		var hr = now.getHours();
+		$("p").eq(5).text(hr);
+
+		var min = now.getMinutes();
+		$("p").eq(6).text(min);
+
+		var sec = now.getSeconds();
+		$("p").eq(7).text(sec);
+	});
+	</script>
+</body>
+</html>

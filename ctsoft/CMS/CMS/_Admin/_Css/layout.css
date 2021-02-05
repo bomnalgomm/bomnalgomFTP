@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* 2014-10-10 CSS CENTUMSOFT */
+/*// layout css //*/ 
+
+/*////////// login //////////*/
+/* layout */
+#login-wrap {min-width:1000px;}
+#login-wrap .header {background:#fff;font-size:20px;color:#333;text-align:center;padding:40px 0 30px}
+#login-wrap .container {min-height:520px;}
+#footer-wrap {position:fixed;bottom:10px;width:100%;}
+
+/* login 사이트로고 */
+#login-wrap .header h1 span {vertical-align:middle;padding-left:10px;border-left:1px solid #b0b0b0;padding-left:15px;margin-left:15px;}
+
+/* login 로그인폼 */
+#login-wrap .login-form {width:405px;min-height:380px;margin:110px auto 0;padding-top:125px;}
+#login-wrap .login-form h2 {font-size:14px;text-align:center;font-weight:normal;margin-bottom:30px;}
+#login-wrap .login-form ul {}
+#login-wrap .login-form li {border-left:1px solid #d6d6d6;border-top:1px solid #d6d6d6;background:#fff;height:35px;margin-bottom:15px;}
+#login-wrap .login-form li:first-child label {display:inline-block;background:url(../../_Admin/_Img/Login/ico_id.gif) no-repeat center 0;}
+#login-wrap .login-form label {display:inline-block;*display:inline;*zoom:1;background:url(../../_Admin/_Img/Login/ico_pw.gif) no-repeat center 0;width:50px;height:30px;text-indent:-9999px;}
+#login-wrap .login-form input {*display:inline;*zoom:1;border:0;width:345px;display:inline-block;height:32px;line-height:32px;font-size:14px;}
+#login-wrap .login-form p {background:url(../../_Admin/_Img/Common/ico_notice.png) no-repeat 0 0;padding:1px 0 0 25px;margin:0 0 30px 2px;}
+#login-wrap .login-form input.btn-login {display:block;border-radius:3px;background:#ca0114;color:#fff;font-weight:bold;font-size:16px;width:130px;height:50px;margin:0 auto;cursor:pointer;}
+
+/* login 하단 */
+#footer-wrap .footer {width:980px;background:#f0f0f0;padding:5px 0 0;margin:0 auto;font-size:11px;overflow:hidden;border-right:1px solid #c3c3c3;border-bottom:1px solid #c3c3c3;}
+#footer-wrap .footer ul {overflow:hidden;float:left;}
+#footer-wrap .footer li {float:left;padding:10px 5px;height:16px;}
+#footer-wrap .footer li a {display:block;border-left:1px solid #d6d6d6;padding-left:10px;line-height:17px;}
+#footer-wrap .footer li:first-child {;background:url(../../_Admin/_Img/Common/ico_skin.png) no-repeat 15px 10px;}
+#footer-wrap .footer li:first-child a {border-left:0;padding-left:35px;}
+#footer-wrap .footer span {float:right;text-transform:uppercase;letter-spacing:-0.5px;padding:10px 15px;}
+
+/*////////// admin //////////*/
+body {height:100%;}
+
+/* layout */
+#cms-wrap {min-width:1000px;}
+#header-wrap {background:#fff;position:relative;}
+#container-wrap {position:relative;float:left;width:100%;height:100%;margin-bottom:54px;}
+#footer-wrap {position:fixed;left:0;bottom:0px;width:100%;}
+
+/* 상단 */
+#header-wrap h1 {padding:20px 0 10px 25px;}
+#header-wrap h1 span {font-size:20px;color:#333;vertical-align:middle;padding-left:10px;border-left:1px solid #b0b0b0;padding-left:15px;margin-left:15px;}
+#header-wrap .top-wrap {position:absolute;right:20px;top:14px;}
+
+/* 메뉴 */
+.menu-wrap {width:100%;background:#06a9dc;height:100px;}
+.menu-wrap ul {width:1000px;margin:0 auto;overflow:hidden;text-align:center;}
+.menu-wrap li {display:inline-block;*display:inline;*zoom:1;vertical-align:top;width:109px;padding-top:24px;margin:0 6px;}
+.menu-wrap li:hover {background:url(../../_Admin/_Img/Common/over_bg.png) no-repeat center 10px;}
+.menu-wrap li a {display:block;color:#fff;font-size:16px;font-weight:bold;letter-spacing:-0.5px;padding:40px 0 10px;margin:0 auto;}
+.menu-wrap li .mn01 {background:url(../../_Admin/_Img/Common/ico_mn01.png) no-repeat center 0;}
+.menu-wrap li .mn02 {background:url(../../_Admin/_Img/Common/ico_mn02.png) no-repeat center 0;}
+.menu-wrap li .mn03 {background:url(../../_Admin/_Img/Common/ico_mn03.png) no-repeat center 0;}
+.menu-wrap li .mn04 {background:url(../../_Admin/_Img/Common/ico_mn04.png) no-repeat center 0;}
+.menu-wrap li .mn05 {background:url(../../_Admin/_Img/Common/ico_mn05.png) no-repeat center 0;}
+.menu-wrap li .mn06 {background:url(../../_Admin/_Img/Common/ico_mn06.png) no-repeat center 0;}
+.menu-wrap li .mn07 {background:url(../../_Admin/_Img/Common/ico_mn07.png) no-repeat center 0;}
+.menu-wrap li .mn08 {background:url(../../_Admin/_Img/Common/ico_mn08.png) no-repeat center 0;}
+.menu-wrap li .first {margin-left:0;}
+.menu-wrap li .last {margin-right:0;}
+
+/* 좌측메뉴 */
+#container-wrap .sidebar {position:absolute;left:10px;top:10px;width:200px;background:#fff;border-right:1px solid #c3c3c3;border-bottom:1px solid #c3c3c3;}
+#container-wrap .sidebar .depth2 li a {display:block;border-bottom:1px solid #eee;padding:13px 15px 11px 24px;}
+#container-wrap .sidebar .depth2 li a.over {background:#f3f3f3 url(../../_Admin/_Img/Common/arr_sky.png) no-repeat 170px 12px;font-weight:bold;}
+#container-wrap .sidebar .depth2 li .depth3 {background:#ededed;padding:15px 10px 15px 20px;border-top:1px solid #e6e6e6;}
+#container-wrap .sidebar .depth2 li .depth3 li a {padding:5px 10px;line-height:18px;background:url(../../_Admin/_Img/Common/blt_depth3.gif) no-repeat 0 12px;}
+#container-wrap .sidebar .depth2 li .depth3 a.over {font-weight:bold;}
+
+/* 본문 */
+#container-wrap .contain {margin:10px 10px 70px 220px;border-right:1px solid #c3c3c3;border-bottom:1px solid #c3c3c3;background:#fff;}
+#container-wrap .cont-tit {position:relative;border-bottom:1px solid #e0e0e0;padding:23px 0 18px 20px;}
+#container-wrap .sidebar h2 {border-top:4px solid #06a9dc;color:#009dce;font-size:16px;text-align:center;padding:22px 0 15px;border-bottom:1px solid #e6e6e6;}
+#container-wrap .contain h3 {font-size:16px;}
+#container-wrap .content {min-height:550px;padding:20px;}
+
+/* 하단 */
+#footer-wrap .footer {width:99%;min-width:1000px;background:#f0f0f0;padding:5px 0 0;margin:0 auto;font-size:11px;overflow:hidden;border-right:1px solid #c3c3c3;border-bottom:1px solid #c3c3c3;}
+#footer-wrap .footer ul {overflow:hidden;float:left;}
+#footer-wrap .footer li {float:left;padding:10px 5px;height:16px;}
+#footer-wrap .footer li a {display:block;border-left:1px solid #d6d6d6;padding-left:10px;line-height:17px;}
+#footer-wrap .footer li:first-child {;background:url(../../_Admin/_Img/Common/ico_skin.png) no-repeat 15px 10px;}
+#footer-wrap .footer li:first-child a {border-left:0;padding-left:35px;}
+#footer-wrap .footer span {float:right;text-transform:uppercase;letter-spacing:-0.5px;padding:10px 15px;}

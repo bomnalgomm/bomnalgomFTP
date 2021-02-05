@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>탭스타일</title>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.js"></script>
+  <link rel="stylesheet" href="/_Css/common.css" />
+  <style type="text/css">
+	.tab-wr {position:relative;width:200px;padding-top:30px;}
+	.tab-wr dt {position:absolute;top:0;}
+	.tab-wr dt.sec {right:0;}
+	.tab-wr dd > div {display:none;}
+	.tab-wr dd > div.is-open {display:block;}
+  </style>
+ </head>
+ <body>
+	
+	<div class="tab-wr">
+		<dl>
+			<dt class="first"><a href="#mst-tab" class="is-open">탭1</a></dt>
+			<dd>
+				<div id="mst-tab" class="is-open">
+					<a href="">탭1 내용</a>
+
+				</div>
+			</dd>
+			<dt class="sec"><a href="#mdft-tab">탭2</a></dt>
+			<dd>
+				<div id="mdft-tab">
+					<a href="">탭2 내용</a>
+				</div>
+			</dd>
+		</dl>
+	</div>
+	<script type="text/javascript">
+		function mtabEffect(){
+			var mtabBtn = $(".tab-wr dt a");
+			mtabBtn.click(function(){
+				$($(this).attr("href")).addClass("is-open", function(){
+				});
+				$(this).addClass("is-open");
+				$(".tab-wr dd > div").not($(this).attr("href")).removeClass("is-open", function(){
+				});
+				$(".tab-wr dt a").not(this).removeClass("is-open");
+				return false;
+			});
+		}
+		mtabEffect();
+	</script>
+
+
+ </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ko" xml:lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>슬라이딩 배너</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet"  media="" href="./_Css/common.css" />
+<script language="javascript" type="text/javascript" src="http://demo.cs21.com/source/cs_rolling/_Js/jquery.cs_scroll.js"></script>
+<script type="text/javascript" src="_Js/10.1.min.js"></script>
+	<style type="text/css">
+	.scrollcont-scrollwrap {position:relative;overflow:hidden;border:1px solid red;}
+	.scrollcont-datalist {position:absolute;left:0;top:0;min-width:100%;}
+	.scrollcont-datalist:after {clear:both;content:"";display:block;}
+	.scrollcont-datalist li { float: left; }
+	</style>
+ </head>
+
+ <body>
+ 	<div class="div-wrap">
+		<div class="div-cont">		
+	
+		
+		<div class="isbox">
+
+			<div id="vscrollBox-wrap" class="scrollcont-wrap">
+
+				
+				<div id="vscrollBox" class="scrollcont">
+
+					<div  class="scrollcont-ctr">
+						<button class="btn-prev"><span><img src="./_Img/bannerzone/banner_bt_l.gif"  alt="이전" /></span></button>
+						<button class="btn-stop"><span><img src="./_Img/bannerzone/banner_pause.gif"  alt="멈춤" /></span></button>
+						<button class="btn-play"><span><img src="./_Img/bannerzone/banner_play.gif"  alt="재생" /></span></button>
+						<button class="btn-next"><span><img src="./_Img/bannerzone/banner_bt_r.gif"  alt="다음" /></span></button>
+					</div>
+
+					<div  class="scrollcont-scrollwrap">
+						<ul  class="scrollcont-datalist">
+							<li><a href="#테스트"><img src="./_Img/bannerzone/noimg.gif" width="142" height="33" alt="1" /></a></li>
+							<li><a href="#테스트"><img src="./_Img/bannerzone/noimg.gif" width="142" height="33" alt="2" /></a></li>
+							<li><a href="#테스트"><img src="./_Img/bannerzone/noimg.gif" width="142" height="33" alt="3" /></a></li>
+							<li><a href="#테스트"><img src="./_Img/bannerzone/noimg.gif" width="142" height="33" alt="4" /></a></li>
+							<li><a href="#테스트"><img src="./_Img/bannerzone/noimg.gif" width="142" height="33" alt="5" /></a></li>
+							<li><a href="#테스트"><img src="./_Img/bannerzone/noimg.gif" width="142" height="33" alt="6" /></a></li>
+							<li><a href="#테스트"><img src="./_Img/bannerzone/noimg.gif" width="142" height="33" alt="7" /></a></li>
+							<li><a href="#테스트"><img src="./_Img/bannerzone/noimg.gif" width="142" height="33" alt="8" /></a></li>
+							<li><a href="#테스트"><img src="./_Img/bannerzone/noimg.gif" width="142" height="33" alt="9" /></a></li>
+							<li><a href="#테스트"><img src="./_Img/bannerzone/noimg.gif" width="142" height="33" alt="10" /></a></li>
+							<li><a href="#테스트"><img src="./_Img/bannerzone/noimg.gif" width="142" height="33" alt="11" /></a></li>
+						</ul>
+
+					</div>
+
+					
+
+				</div>
+			</div>
+
+
+
+			<script type="text/javascript">
+			
+				$("#vscrollBox").vscrollContent2({
+					wrap:$("#vscrollBox .scrollcont-scrollwrap"),	//scroll-wrap 지정
+					vcount:8,	//한번에 이동할 li 갯수
+					li_w:149,	li_h:35, 
+					isPlay:false,	//초기 실행 여부
+					auto:4000,		//자동실행 시간(1초=1000)
+					toggleBtn:true,		//재생,멈춤버튼 전환여부(false:전환없이 모두 출력됨)
+					btnPrev:$("#vscrollBox .btn-prev"),btnNext:$("#vscrollBox .btn-next")
+				});
+			
+			</script>
+
+		
+
+		</div>
+
+
+		<div class="gap"></div>
+
+
+
+		</div>
+	</div>
+
+ </body>
+</html>

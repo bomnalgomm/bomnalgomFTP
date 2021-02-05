@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>부산교통공사 대표 프로그램스타일가이드</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+<link type="text/css" rel="stylesheet" href="./_Css/common.css" />
+<link type="text/css" rel="stylesheet" href="./_Css/board.css" />
+<link type="text/css" rel="stylesheet" media="all" href="./_Css/board.rspnsv.css" />
+<link type="text/css" rel="stylesheet" href="./_Css/style.default.css" />
+<!--[if lt IE 9]>
+<script src="/_Js/jquery/respond.min.js"></script>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+
+<!--  검색 -->
+<div class="board-list-top">
+	<div class="board-tot-wrap">
+		<span class="tot-num">Total : </span>
+		<span class="pg-num"><strong>232</strong>건</span>  
+	</div>
+	<div class="board-search-wrap">
+		<div class="board-search">
+			<label for="search_key" class="blind">검색항목 선택</label>
+			<select id="search_key" name="search_key">
+				<option value="jemok">제목</option>
+				<option value="naeyong">내용</option>
+				<option value="jemok_naeyong">제목+내용</option>
+				<option value="jakseongja_nm">작성자</option>
+			</select>
+			<input type="text" size="40" name="keyword" class="text" title="검색어 입력" />					
+			<input type="image" onclick="onSearch();" src="/ctsoft/humetro/_Img/board/btn_search_img.png" alt="검색" class="bd-btn-search" />				
+		</div>
+	</div>	
+</div>	
+<!--  검색 //-->
+
+<!--  좌우스크롤 -->
+<p class="rspnsv-guide"><span>좌우로 스크롤 하시면 자세한 내용을 확인하실 수 있습니다.</span></p>
+<!--  좌우스크롤 //-->
+
+<!--  리스트 -->
+<div id="prg-wrap">				
+	<table class="prg-list-table">
+		<caption><span class="blind">해당메뉴명 리스트로 번호, 제목, 작성자, 작성일, 조회, 첨부, 진행상태 제공</span></caption>
+		<colgroup>
+		<col style="width:8%" />
+		<col style="width:*" />
+		<col style="width:10%" />
+		<col style="width:12%" />
+		<col style="width:8%" />
+		<col style="width:6%" />
+		<col style="width:15%" />
+		</colgroup>
+		<thead>
+		<tr>
+			<th scope="col">번호</th>
+			<th scope="col">제목</th>
+			<th scope="col">작성자</th>
+			<th scope="col">작성일</th>
+			<th scope="col">조회</th>
+			<th scope="col">첨부</th>
+			<th scope="col">진행상태</th>
+		</tr>
+		</thead>
+		<tbody>	
+		<tr class="notice"><!--  공지 -->
+			<td><img src="/ctsoft/humetro/_Img/board/common/icon_notice.png" alt="공지" /></td>
+			<td class="subject"><a href="#">공지글이 나오는 곳입니다.</a></td>
+			<td>관리자</td>
+			<td>2015-01-01</td>
+			<td>79</td>
+			<td><a href="#"><img src="/ctsoft/humetro/_Img/board/common/icon_file_b.png" alt="첨부파일다운로드" /></a></td> <!--  첨부파일 하나일때  -->
+			<td><span class="stat11">상태값1</span><span class="stat01">진행중1</span></td>				
+		</tr><!--  공지 //-->	
+		<tr>
+			<td>10</td>
+			<td class="subject"><a href="#">열번째 게시글 출력</a></td>
+			<td>사용자</td>
+			<td>2015-01-01</td>
+			<td>206</td>
+			<td><a href="#"><img src="/ctsoft/humetro/_Img/board/common/icon_files_b.png" alt="첨부파일목록보기" /></a></td> <!--  첨부파일 두개이상일때 모달팝업열기 / 동서대 입학참고 -->
+			<td><span class="stat12">상태값2</span><span class="stat02">진행중2</span></td>				
+		</tr>	
+		<tr>
+			<td>9</td>
+			<td class="subject"><a href="#">아홉번째 게시글 출력</a></td>
+			<td>사용자</td>
+			<td>2015-01-01</td>
+			<td>206</td>
+			<td><a href="#"><img src="/ctsoft/humetro/_Img/board/common/icon_files_b.png" alt="첨부파일목록보기" /></a></td>
+			<td><span class="stat13">상태값3</span><span class="stat03">진행중3</span></td>				
+		</tr>	
+		<tr>
+			<td>8</td>
+			<td class="subject"><img src="/ctsoft/humetro/_Img/board/common/icon_reply.gif" alt="답변" class="pad5r" /><a href="#">아홉번째 게시판의 답변제목이 나옵니다</a></td>
+			<td>사용자</td>
+			<td>2015-01-01</td>
+			<td>206</td>
+			<td><a href="#"><img src="/ctsoft/humetro/_Img/board/common/icon_files_b.png" alt="첨부파일목록보기" /></a></td>
+			<td><span class="stat14">상태값4</span><span class="stat04">진행중4</span></td>		
+		</tr>	
+		<tr>
+			<td>7</td>
+			<td class="subject"><a href="#">일곱번째 게시글 출력</a><img src="/ctsoft/humetro/_Img/board/common/icon_secret.png" alt="비밀글" class="pad5l" /></td>
+			<td>사용자</td>
+			<td>2015-01-01</td>
+			<td>206</td>
+			<td><a href="#"><img src="/ctsoft/humetro/_Img/board/common/icon_files_b.png" alt="첨부파일목록보기" /></a></td>
+			<td><span class="stat15">상태값5</span><span class="stat05">진행중5</span></td>				
+		</tr>	
+		<tr>
+			<td>6</td>
+			<td class="subject"><a href="#">여섯번째 게시글 출력</a></td>
+			<td>사용자</td>
+			<td>2015-01-01</td>
+			<td>206</td>
+			<td><a href="#"><img src="/ctsoft/humetro/_Img/board/common/icon_files_b.png" alt="첨부파일목록보기" /></a></td>
+			<td><span class="stat16">상태값6</span><span class="stat06">진행중6</span></td>				
+		</tr>	
+		<tr>
+			<td>5</td>
+			<td class="subject"><a href="#">다섯번째 게시글 출력</a></td>
+			<td>사용자</td>
+			<td>2015-01-01</td>
+			<td>206</td>
+			<td><a href="#"><img src="/ctsoft/humetro/_Img/board/common/icon_files_b.png" alt="첨부파일목록보기" /></a></td>
+			<td><span class="stat17">상태값7</span><span class="stat07">진행중7</span></td>				
+		</tr>	
+		<tr>
+			<td>4</td>
+			<td class="subject"><a href="#">네번째 게시글 출력</a></td>
+			<td>사용자</td>
+			<td>2015-01-01</td>
+			<td>206</td>
+			<td><a href="#"><img src="/ctsoft/humetro/_Img/board/common/icon_files_b.png" alt="첨부파일목록보기" /></a></td>
+			<td><span class="stat18">상태값8</span><span class="stat08">진행중8</span></td>				
+		</tr>	
+		<tr>
+			<td>3</td>
+			<td class="subject"><a href="#">세번째 게시글 출력</a></td>
+			<td>사용자</td>
+			<td>2015-01-01</td>
+			<td>206</td>
+			<td><a href="#"><img src="/ctsoft/humetro/_Img/board/common/icon_files_b.png" alt="첨부파일목록보기" /></a></td>
+			<td><span class="stat19">상태값9</span><span class="stat09">진행중9</span></td>				
+		</tr>	
+		<tr>
+			<td>2</td>
+			<td class="subject"><a href="#">두번째 게시글 출력</a></td>
+			<td>사용자</td>
+			<td>2015-01-01</td>
+			<td>206</td>
+			<td><a href="#"><img src="/ctsoft/humetro/_Img/board/common/icon_files_b.png" alt="첨부파일목록보기" /></a></td>
+			<td><span class="stat20">상태값10</span><span class="stat10">진행중20</span></td>				
+		</tr>	
+		<tr>
+			<td>1</td>
+			<td class="subject"><a href="#">첫번째 게시글 출력</a></td>
+			<td>사용자</td>
+			<td>2015-01-01</td>
+			<td>206</td>
+			<td><a href="#"><img src="/ctsoft/humetro/_Img/board/common/icon_files_b.png" alt="첨부파일목록보기" /></a></td>
+			<td><span class="p-gold">금상</span><span class="p-silver">은상</span><span class="p-bronz">동상</span></td>				
+		</tr>	
+		<tr>
+			<td>1</td>
+			<td class="subject"><a href="#">진행률 상태바 처리로 span style="width:80%" 형식으로 %처리</a></td>
+			<td>사용자</td>
+			<td>2015-01-01</td>
+			<td>206</td>
+			<td><a href="#"><img src="/ctsoft/humetro/_Img/board/common/icon_files_b.png" alt="첨부파일목록보기" /></a></td>
+			<td><div class="stat-bar"><span style="width:30%">처리중 진행률 30%</span></div></td>		
+		</tr>
+	</tbody>
+	</table>	
+</div>
+<!--  리스트 //-->
+
+<div class="gap"></div>
+
+<div class="board-search-full">
+	<label for="">날짜선택</label><input type="text" class="text" value="2015-05-12" /> ~ <input type="text" class="text mg10r" value="2015-05-13" />
+	<div class="select-wrap">
+		<select name="" id=""><option value="">선택1</option></select>
+		<select name="" id=""><option value="">선택2</option></select>
+		<select name="" id=""><option value="">선택3</option></select>
+		<input type="submit" class="bd-btn-search" value="검색" /><input type="submit" class="bd-btn-reset" value="검색초기화" />
+	</div>
+</div>
+
+<div class="gap"></div>
+
+<div class="prg-write-default">
+	<ul>
+		<li class="first">
+			<label for="lossdate" class="tit">분실일자</label>
+			<div class="frm">
+				<select name="" id="lossdate" title="분실일자 연도 선택"><option value="">2015</option></select>
+				<select name="" id="lossdate1" title="분실일자 월 선택"><option value="">07</option></select>
+				<select name="" id="lossdate2" title="분실일자 일 선택"><option value="">23</option></select>								
+			</div>
+		</li>
+		<li>
+			<label for="station" class="tit">역명</label>
+			<div class="frm">
+				<input type="text" id="station" class="text" />
+			</div>
+		</li>
+		<li class="first">
+			<label for="losscate" class="tit">분류</label>
+			<div class="frm">
+				<select name="" id="losscate"><option value="">현금/상품권</option></select>
+			</div>
+		</li>
+		<li>
+			<label for="lossplace" class="tit">분실장소</label>
+			<div class="frm">
+				<input type="text" id="lossplace" class="text" />
+			</div>
+		</li>
+		<li class="full last">
+			<label class="tit">분실물분류</label>
+			<div class="frm">
+				<ul class="loss-list">
+					<li class="loss01"><label for="loss01">현금/상품권</label><input type="checkbox" id="loss01" /></li>
+					<li class="loss02"><label for="loss02">핸드폰</label><input type="checkbox" id="loss02" /></li>
+					<li class="loss03"><label for="loss03">전자제품</label><input type="checkbox" id="loss03" /></li>
+					<li class="loss04"><label for="loss04">가방</label><input type="checkbox" id="loss04" /></li>
+					<li class="loss05"><label for="loss05">지갑</label><input type="checkbox" id="loss05" /></li>
+					<li class="loss06"><label for="loss06">쇼핑백</label><input type="checkbox" id="loss06" /></li>
+					<li class="loss07"><label for="loss07">의류</label><input type="checkbox" id="loss07" /></li>
+					<li class="loss08"><label for="loss08">신발/우산</label><input type="checkbox" id="loss08" /></li>
+					<li class="loss09"><label for="loss09">도서</label><input type="checkbox" id="loss09" /></li>
+					<li class="loss10"><label for="loss10">기타</label><input type="checkbox" id="loss10" /></li>
+				</ul>				
+			</div>
+		</li>
+	</ul>
+</div>
+
+<div class="gap"></div>
+
+<div class="f20 mg30t mg30f b">쓰기폼 시작</div>
+
+<table class="tbl-form"> 
+<caption><span class="blind"></span></caption>
+	<tbody>	
+		<tr>
+			<th scope="row"><label for="" class="tit">회원이름</label></th>
+			 <td><div class="frm"><input type="text" class="text" id="" /></div></td>
+		</tr>
+		<tr>
+			<th scope="row"><label for="" class="tit">휴대폰</label></th>
+			<td>
+				<div class="frm"><input type="text" class="text w50" /> - <input type="text" class="text w50" /> - <input type="text" class="text w50" />
+					<span class="mg5 info-im">휴대폰과 연락처 중 한가지는 입력하여 주시기 바랍니다.</span>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row"><label for="" class="tit">연락처</label></th>
+			<td><div class="frm"><input type="text" class="text w50" /> - <input type="text" class="text w50" /> - <input type="text" class="text w50" /></div></td>
+		</tr>
+		<tr>
+			<th scope="row"><label for="" class="tit">연락처</label></th>
+			<td><div class="frm"><select name="" id=""><option value="">선택</option></select> - <input type="text" class="text w50" /> - <input type="text" class="text w50" /></div></td>
+		</tr>		
+		<tr>
+			<th scope="row"><label for="" class="tit">SMS수신</label></th>
+			<td><div class="frm"><input type="checkbox" id="" /><span class="pad5l">휴대폰 번호 입력시 접수/처리 상황을 SMS로 알려드립니다.</span></div></td>
+		</tr>
+		<tr>
+			<th scope="row"><label for="" class="tit">응답구분</label></th>
+			<td><div class="frm"><input type="checkbox" id="" /><label for="" class="pad5l">게시판</label><input type="checkbox" id="" class="mg20" /><label for="" class="pad5l">우편</label><input type="checkbox" id="" class="mg20" /><label for="" class="pad5l">전화</label></div></td>
+		</tr>
+		<tr>
+			<th scope="row"><label for="" class="tit">이메일</label></th>
+			<td><div class="frm"><input type="text" class="text w25p" id="" /> @ <input type="text" class="text w35p" id="" /> <select name="" id=""><option value="">직접입력</option></select></div></td>
+		</tr>
+		<tr>
+			<th scope="row"><label for="" class="tit">주소</label></th>
+			<td>
+				<div class="frm">
+					<input type="text" class="text w60" id="" /> <button class="sw-btn vcen2" title="새창열림"><span>주소검색</span></button> <input type="text" class="text w50p" id="" title="주소검색후 자동입력" />
+					<input type="text" class="text w70p" title="상세주소 입력" placeholder="상세주소 입력" />
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row"><label for="" class="tit">제목</label></th>
+			<td>
+				<div class="frm"><input type="text" class="text w70p" /></div>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row"><label for="" class="tit">내용</label></th>
+			<td>
+				<div class="frm">
+					<textarea name="" id="" cols="30" rows="10" class="textarea"></textarea>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row"><label for="" class="tit">첨부파일1</label></th>
+			<td>
+				<div class="frm"><input type="file" id="" /></div>
+			</td>
+		</tr>		
+		<tr>
+			<th scope="row"><label for="" class="tit">첨부파일2</label></th>
+			<td>
+				<div class="frm"><input type="file" id="" /></div>
+			</td>
+		</tr>	
+		<tr>
+			<th scope="row"><label for="" class="tit">익명여부</label></th>
+			<td>
+				<div class="frm"><input type="radio" name="RadioGroup2" id="" /><label for="" class="pad5l">익명</label> <input type="radio" name="RadioGroup2" id="" class="mg20" /><label for="" class="pad5l">실명</label></div>
+			</td>			
+		</tr>	
+		<tr>
+			<th scope="row"><label for="" class="tit">예약현황</label></th>
+			<td>
+				<div class="frm">
+					<input type="radio" name="RadioGroup1" id="" /><label for="" class="pad5l">9시~12시 <span class="stat11 vcen2">예약가능</span></label><span class="sec"><input type="radio" id="" name="RadioGroup1" /><label for="" class="pad5l">13시~17시 <span class="stat20 vcen2">예약불가</span></label></span>
+				</div>
+			</td>			
+		</tr>	
+		<tr>
+			<th scope="row"><label for="" class="tit">일시&amp;장소</label></th>
+			<td>
+				<div class="frm">
+					<select name="" id=""><option value="">2015</option></select> - <select name="" id=""><option value="">07</option></select> - <select name="" id=""><option value="">23</option></select>
+					<span class="sec"><select name="" id=""><option value="">선택</option></select><label for="" class="pad5l mg20r">호선</label><select name="" id=""><option value="">선택</option></select><label for="" class="pad5l">역</label></span>
+				</div>
+			</td>
+		</tr> 		
+		<tr>
+			<th scope="row"><label for="" class="tit">소속학교</label></th>
+			<td>
+				<div class="frm">
+					<input type="text" class="text" id="" /> <select name="" id=""><option value="">선택</option></select>
+					<span class="sec"><input type="text" class="text w20" id="" /><label for="">학년</label><input type="text" class="text w20 mg20" id="" /><label for="">반</label></span>					
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row"><label for="" class="tit">이용자수</label></th>
+			<td>
+				<div class="frm">
+					<select name="" id=""><option value="">0</option></select>
+					<span class="sec info-im">이용자수를 선택하세요.</span>
+				</div>
+			</td>
+		</tr> 		
+		<tr>
+			<th scope="row"><label for="" class="tit">명단첨부</label></th>
+			<td>
+				<div class="frm">
+					<a href="#" class="cw-btn"><span class="down">서식다운로드</span></a>
+					<span class="sec info-im">한글파일 작성 후 첨부 가능</span>
+					<input type="file" class="mg5t" />
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row"><label for="" class="tit">촬영일자</label></th>
+			<td>
+				<div class="frm">
+					<select name="" id=""><option value="">2015</option></select> <select name="" id=""><option value="">07</option></select> <select name="" id="" class="mg15r"><option value="">23</option></select> ~ 
+					<span class="sec"><select name="" id=""><option value="">2015</option></select> <select name="" id=""><option value="">07</option></select> <select name="" id=""><option value="">23</option></span>
+				</div>
+			</td>
+		</tr> 		
+		<tr>
+			<th scope="row"><label for="" class="tit">촬영시간</label></th>
+			<td>
+				<div class="frm"> 
+					<select name="" id=""><option value="">00</option></select> <label for="" class="mg5r">시</label> <select name="" id=""><option value="">00</option></select> <label for="">분</label> 부터 
+					<span class="sec"><select name="" id=""><option value="">00</option></select> <label for="" class="mg5r">시</label> <select name="" id=""><option value="">00</option></select> <label for="">분</label> 까지</span>
+				</div>
+			</td>
+		</tr> 		
+		<tr>
+			<th scope="row"><label for="" class="tit">촬영장소</label></th>
+			<td>
+				<div class="frm">
+					<textarea name="" id="" cols="30" rows="10" class="textarea"></textarea>
+					<ul class="c-list01">
+						<li>장소별 촬영 소요 시간 기재 요망</li>
+						<li>필요시 별도 첨부 가능</li>
+					</ul>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row"><label for="" class="tit">견학일자</label></th>
+			<td>
+				<div class="frm">
+					<div class="cal-wrap">
+						<div class="date-wrap">
+							<button type="button" class="btn-prev"><span>이전달보기</span></button>
+							<span class="date">2015년 09월</span>
+							<button type="button" class="btn-next"><span>다음달보기</span></button>
+						</div>
+						<table class="tbl-cal">
+						<caption><span class="blind">도시철도 체험학습 견학신청가능 현황 달력으로 해당 월별 신청가능일 제공</span></caption>
+						<colgroup>
+						<col style="width:14.8%" />
+						<col style="width:14.2%" />
+						<col style="width:14.2%" />
+						<col style="width:14.2%" />
+						<col style="width:14.2%" />
+						<col style="width:14.2%" />
+						<col style="width:14.2%" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">일</th>
+								<th scope="col">월</th>
+								<th scope="col">화</th>
+								<th scope="col">수</th>
+								<th scope="col">목</th>
+								<th scope="col">금</th>
+								<th scope="col">토</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td></td>
+								<td>1</td>
+								<td>2</td>
+								<td>3</td>
+								<td>4</td>
+								<td>5</td>
+								<td>6</td>								
+							</tr>
+							<tr>
+								<td>7</td>
+								<td>8</td>
+								<td>9</td><!-- 신청가능 : resv / 선택일 : select -->
+								<td class="select"><a href="#">10<em class="blind">신청가능</em></a></td>
+								<td>11</td>
+								<td class="resv">12<em class="blind">신청가능</em></td>
+								<td>13</td>								
+							</tr>
+							<tr>
+								<td>14</td>
+								<td>15</td>
+								<td class="resv"><a href="#">16<em class="blind">신청가능</em></a></td>
+								<td>17</td>
+								<td>18</td>
+								<td>19</td>
+								<td>20</td>								
+							</tr>
+							<tr>
+								<td>21</td>
+								<td>22</td>
+								<td>23</td>
+								<td>24</td>
+								<td>25</td>
+								<td>26</td>
+								<td>27</td>								
+							</tr>
+							<tr>
+								<td>28</td>
+								<td>29</td>
+								<td>30</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>								
+							</tr>							
+						</tbody>
+						</table>
+						<div class="cal-info">
+							<ul>
+								<li><span></span>신청가능</li>
+								<li><span></span>선택일</li>
+							</ul>
+						</div>
+					</div>
+					<div class="time-wrap">
+						<ul>
+							<li><span class="tit">예약선택일</span>2015-09-05</li>
+							<li>
+								<label class="time">시간선택</label>
+								<select name="" id=""><option value="">1회차 오전타임(10시~10시반 시작)</option></select>
+							</li>
+							<li><span class="info-no">4호선탐방학습 A,B코스 : 화요일~금요일 / 경전철홍보관 : 연중무휴</span></li>
+						</ul>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row"><label for="" class="tit">인원</label></th>
+			<td>
+				<div class="frm">
+					<ul class="pnum">
+						<li><label for="">유치원생</label><input type="text" class="text w30" /> 명</li>
+						<li><label for="">초중고</label><input type="text" class="text w30" /> 명</li>
+						<li><label for="">일반인</label><input type="text" class="text w30" /> 명</li>
+						<li><label for="">장애인</label><input type="text" class="text w30" /> 명</li>
+					</ul>					
+				</div>
+			</td>
+		</tr>	
+		<tr>
+			<th scope="row"><label for="" class="tit">견학시간</label></th>
+			<td>
+				<div class="frm">
+					<ul class="select">
+						<li><input type="radio" name="RadioGroup1" id=""><label for="" class="pad5l">1호선 노포차량사업소 1회차 <span class="time">오전타임(10시~10시반 시작)</span> <span class="stat11 vcen2">예약가능</span></label></li>
+						<li class="none">1호선 노포차량사업소 2회차 <span class="time">오후타임(2시~2시반 시작)</span> <span class="stat20 vcen2">예약완료</span></li><!--  예약완료일 경우 none 클래스 추가  -->
+					</ul>
+					</div>
+				</div>
+			</td>			
+		</tr>			
+		<tr class="last"><!--  마지막 항목에는 last 클래스 추가 -->
+			<th scope="row"><label for="" class="tit">촬영인원</label></th>
+			<td>
+				<div class="frm">
+				<input type="text" class="text w20" id="" /> <label for="">명</label><span class="info-im mg20">숫자만 입력하세요</span>		
+				</div>
+			</td>
+		</tr>		
+	</tbody>
+</table>	
+
+<div class="btn-wrap">
+	<input type="submit" class="bp-btn" value="등록" /> <a href="#" class="bw-btn"><span>취소</span></a>
+</div>
+
+<div class="gap"></div>
+
+
+<div class="f20 mg30t mg30f b">쓰기, 읽기 테이블 스타일  (셀병합이 있는 경우만 사용)</div>
+
+<!--  좌우스크롤 -->
+<p class="rspnsv-guide"><span>좌우로 스크롤 하시면 자세한 내용을 확인하실 수 있습니다.</span></p>
+<!--  좌우스크롤 //-->
+
+<div class="rspnsv-wrap">
+	<span class="form-vline"></span>
+	<table class="tbl-form2"> 
+	<caption><span class="blind">단체권 예약 미리보기로 예약자명, 전화번호, email 제공</span></caption>
+		<tbody>		
+			<tr>
+				<th scope="row" colspan="2"><label for="" class="tit">단체명</label></th>
+				 <td colspan="7">디비콩</td>
+			</tr>		
+			<tr>
+				<th scope="rowgroup" rowspan="3">대표자</th>
+				<th scope="row"><label for="" class="tit">대표자명</label></th>
+				 <td colspan="7">강용하</td>
+			</tr>		
+			<tr>
+				<th scope="row"><label for="" class="tit">주소</label></th>
+				<td colspan="7">부산시 해운대구 우동</td>
+			</tr>
+			<tr>
+				<th scope="row"><label for="" class="tit">전화번호</label></th>
+				<td colspan="7">051-4154-4555</td>
+			</tr>		
+			<tr>
+				<th scope="row" colspan="2"><label for="" class="tit">승차일시</label></th>
+				 <td colspan="7">2015년 09월 10일 12시 00분</td>
+			</tr>
+			<tr>
+				<th scope="row" colspan="2"><label for="" class="tit">여행구간</label></th>
+				<td colspan="7">수안 역에서 물만골 역까지 (1구간)</td>
+			</tr>	
+			<tr>
+				<th scope="rowgroup" rowspan="4">승차인원 및 <br />운임</th>
+				<th scope="row">여객구분</th>
+				<th scope="col">계</th>
+				<th scope="col">무임인원</th>
+				<th scope="col">운임인원</th>
+				<th scope="col">기본운임</th>
+				<th scope="col">할인율</th>
+				<th scope="col">할인운임</th>
+				<th scope="col">운임액</th>
+			</tr>
+			<tr>
+				<th scope="row">어른</th>
+				<td class="r">20</td>
+				<td class="r">1</td>
+				<td class="r">19</td>
+				<td class="r">1,200</td>
+				<td class="r">10%</td>
+				<td class="r">1,080</td>
+				<td class="r">20,520</td>
+			</tr>
+			<tr>
+				<th scope="row">청소년</th>
+				<td class="r">2</td>
+				<td class="r"></td>
+				<td class="r">2</td>
+				<td class="r">950</td>
+				<td class="r">10%</td>
+				<td class="r">855</td>
+				<td class="r">1,710</td>
+			</tr>
+			<tr>
+				<th scope="row">어린이</th>
+				 <td class="r">1</td>
+				 <td class="r"></td>
+				 <td class="r">1</td>
+				 <td class="r">600</td>
+				 <td class="r">10%</td>
+				 <td class="r">540</td>
+				 <td class="r">540</td>
+			</tr>
+			<tr>
+				<th scope="row" colspan="2"><label for="label" class="tit">계</label></th>
+				<td class="r">23</td>
+				<td class="r">1</td>
+				<td class="r">22</td>
+				<td class="r"></td>
+				<td class="r"></td>
+				<td class="r"></td>
+				<td class="r">22,770</td>
+			</tr>	
+			<tr>
+				<th scope="row" colspan="2">영수액</th>
+				<td colspan="7">22,720원</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+<div class="gap"></div>
+
+</body>
+</html>

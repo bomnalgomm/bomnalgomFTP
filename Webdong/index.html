@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+ <title>Document</title>
+ <script src="/_Js/jquery-1.10.2.js"></script>
+ <style type="text/css">
+	#pannel {height:30px;font-size:13px}
+ </style>
+ </head>
+ <body>
+	<ul class="controller">
+	  <li><a href="#">1</a></li>
+	  <li><a href="#">2</a></li>
+	  <li><a href="#">3</a></li>
+	  <li><a href="#">4</a></li>
+	  <li><a href="#">5</a></li>
+	</ul>
+	<script>
+		$(function(){
+			$(".controller li").click(function(){
+			  var i=$(this).index();
+				console.log(i)  
+			  });
+		 });
+	</script>
+ </body>
+</html>

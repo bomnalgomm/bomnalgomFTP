@@ -1,0 +1,20 @@
+@charset 'utf-8';
+* {margin:0;padding:0;}
+ul {list-style:none;}
+
+#box_a {height:400px;background:#f1779e;min-width:320px;}
+.list-man {margin:0 auto;width:80%;padding-top:50px;}
+.list-man li {width:18%;margin:1%;background:#fff;float:left;}
+
+@media screen and (max-width:1024px) {
+.list-man {width:95%;}
+.list-man li {width:23%;margin:1%}
+}
+
+@media screen and (max-width:800px) {
+.list-man li {width:31.333%;margin:1%;}
+}
+
+@media screen and (max-width:480px) {
+.list-man li {width:48%;margin:1%;}
+}

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>부산항만공사 FAQ게시판 스타일 가이드</title>
+<link rel="stylesheet" href="../../_Css/common.css" />
+<style type="text/css">
+.content-wrap {width:760px;margin:0 auto;}
+.content-wrap h1 {font-size:30px;font-weight:bold;color:#222;line-height:100%;margin:20px 0;}
+
+
+</style>
+<script type="text/javascript" src="../../_Js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+<div class="content-wrap">
+	<h1>FAQ게시판 스타일</h1>	
+
+	<!-- board-wrap -->
+	<div id="board-wrap">
+		<!-- board-search-wrap / 검색 -->
+		<div class="board-search-wrap">
+			<div class="board-total">
+				<span class="total">Total : <b>183</b></span><span class="page">(<b>1</b> / 1페이지)</span>
+			</div>
+			<!-- 검색폼 label for 값과 input, select id값 동일한 값으로 매칭 -->
+			<div class="board-search">
+				<form name="frm_searchs" action="?" method="get">
+				<label for="srch" class="blind">검색항목을 선택하세요</label>
+				<select id="srch" name="search">
+				<option value="b_subject">제목</option>
+				<option value="b_content">내용</option>
+				<option value="b_subject|b_content">제목+내용</option>
+				<option value="reg_name">작성자</option>
+				</select>
+				<label class="blind" for="input_srch" >검색어를 입력하세요</label>
+				<input name="skey" value="" class="text vtop2" id="input_srch" type="text" />
+				<input value="검색" class="btn-srh" type="submit" />
+				</form>
+			</div>
+			<!-- 검색폼 //-->
+		</div>
+		<!-- board-search-wrap / 검색 //-->
+
+		<!-- 탭 -->
+	<div class="b-tab1">
+		<ul>
+			<li><a href="#" class="first over">탭메뉴1-1</a></li>
+			<li><a href="#">탭메뉴1-2</a></li>
+			<li><a href="#">탭메뉴1-3</a></li>
+			<li><a href="#">탭메뉴1-4</a></li>
+			<li><a href="#">탭메뉴1-5</a></li>
+		</ul>
+	</div>
+		<!-- 탭 //-->
+
+		<div class="faq-list-wrap" id="board-list-wrap">
+			<ul class="board-faq-list" id="faq-list">
+				<li id="faq-data5">
+					<div class="faq-in-wrap">
+						<em class="blind">질문</em><span class="ptitle"><a href="#faq-data-cont5"  onclick="javascript:viewFaq(5);return false;"><span class="pcate">[카테고리항목1]</span><p class="pcont">질문이 여러줄일경우 이렇게 출력됩니다. 질문이 여러줄일경우 이렇게 출력됩니다.질문이 여러줄일경우 이렇게 출력됩니다.질문이 여러줄일경우 이렇게 출력됩니다.</p></a></span>
+					</div>
+					<div class="faq-in-cont" id="faq-data-cont5">
+						<em class="blind">답변</em>
+						<div class="faq-contents">
+						답변이 들어오는 곳으로 접기와 펴기기능으로 이루어 지며 답변내용에 따라 공간도함께 늘어나게 됩니다, 
+						(특정 세로길이 지정 후 스크롤 할지는 선택사항)<br />
+						답변이 들어오는 곳으로 접기와 펴기기능으로 이루어 지며 답변내용에 따라 공간도함께 늘어나게 됩니다, 
+						(특정 세로길이 지정 후 스크롤 할지는 선택사항)
+						</div>
+					</div>
+				</li>
+				<li id="faq-data4">
+					<div class="faq-in-wrap">
+						<em class="blind">질문</em><span class="ptitle"><a href="#faq-data-cont4"  onclick="javascript:viewFaq(4);return false;"><span class="pcate">[카테고리항목1]</span><p class="pcont">제목이 들어가는 영역</p></a></span>
+					</div>
+					<div class="faq-in-cont" id="faq-data-cont4">
+					<em class="blind">답변</em>
+						<div class="faq-contents">
+						내용이 들어가는 영역
+						</div>
+					</div>
+				</li>
+				<li id="faq-data3">
+					<div class="faq-in-wrap">
+						<em class="blind">질문</em><span class="ptitle"><a href="#faq-data-cont3"  onclick="javascript:viewFaq(3);return false;"><span class="pcate">[카테고리항목1]</span><p class="pcont">제목이 들어가는 영역</p></a></span>
+					</div>
+					<div class="faq-in-cont" id="faq-data-cont3">
+					<em class="blind">답변</em>
+						<div class="faq-contents">
+						내용이 들어가는 영역
+						</div>
+					</div>
+				</li>
+				<li id="faq-data2">
+					<div class="faq-in-wrap">
+						<em class="blind">질문</em><span class="ptitle"><a href="#faq-data-cont2"  onclick="javascript:viewFaq(2);return false;"><span class="pcate">[카테고리항목1]</span><p class="pcont">제목이 들어가는 영역</p></a></span>
+					</div>
+					<div class="faq-in-cont" id="faq-data-cont2">
+					<em class="blind">답변</em>
+						<div class="faq-contents">
+						내용이 들어가는 영역
+						</div>
+					</div>
+				</li>
+				<li id="faq-data1">
+					<div class="faq-in-wrap">
+						<em class="blind">질문</em><span class="ptitle"><a href="#faq-data-cont1"  onclick="javascript:viewFaq(1);return false;"><span class="pcate">[카테고리항목이 길어질 경우 이렇게 출력됩니다]</span><p class="pcont">제목이 들어가는 영역</p></a></span>
+					</div>
+					<div class="faq-in-cont" id="faq-data-cont1">
+					<em class="blind">답변</em>
+						<div class="faq-contents">
+						내용이 들어가는 영역
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	<script type="text/javascript">
+		function viewFaq(idx){
+					var obj = $("#faq-list #faq-data"+idx);
+					var obj_other = $("#faq-list li:not(#faq-data"+idx+")");
+					
+					$(".faq-in-cont",$(obj_other)).slideUp("fast");
+					$(obj_other).removeClass("over");			
+
+					if(obj.hasClass("over")){
+						
+						$(".faq-in-cont",$(obj)).slideUp("fast");
+						$(obj).removeClass("over");
+					}else{
+
+						$(".faq-in-cont",$(obj)).slideDown("fast");
+						$(obj).addClass("over");
+					}
+				}
+	</script>
+	</div>
+</div>
+</body>

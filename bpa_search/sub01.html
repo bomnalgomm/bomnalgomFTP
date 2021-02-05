@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="expries" content="0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>부산항만공사 통합검색</title>
+<link type="text/css" href="./_Css/search.css" rel="stylesheet" /><!-- 사이트 디폴트 정의 -->
+<script type="text/javascript" src="./_Js/search.js"></script><!-- JS 관련 -->
+<script type="text/javascript" src="http://www.bdu.ac.kr/_Js/jquery-1.10.2.js" charset="utf-8"></script><!-- JS 관련 -->
+</head>
+<body>
+<div id="doc-wrap">
+	<!-- skipNavi -->
+	<div id="skipNavi">
+		<h2 class="blind">스킵네비게이션</h2>
+		<ul><li><a href="#side-wrap" class="skipLink">본문바로가기</a></li>
+		<li><a href="#contents" class="skipLink">주메뉴 바로가기</a></li>
+	</div>
+	<!-- skipNavi //-->
+
+	<!-- header-wrap -->
+	<div id="header-wrap">
+		<div id="header" class="div-cont">
+			<h1 class="logo">
+			<a href="#"><img src="./_Img/Layout/logo.gif" alt="부산항만공사" /></a>
+			</h1>
+			<div class="search-wrap">
+				<div class="search-box">
+					<select name="" id="" title="검색카테고리 선택">
+					<option value="">통합검색</option>
+					<option value="">직원/업무</option>
+					<option value="">홍보마당</option>
+					<option value="">고객센터</option>
+					<option value="">항만운영/건설</option>
+					<option value="">BPA소개</option>
+					<option value="">정보공개3.0</option>
+					</select>
+					<input type="text" name="" id="" placeholder="검색어를 입력하세요" title="검색어 입력" class="srh-text" />
+				</div>
+				<button type="button" class="btn-srh"><span>검색하기</span></button><button type="button" onclick="detailSearchShow();return false;" class="btn-srh-more"><span>상세검색</span></button><input type="checkbox" id="re-srh" class="check" /><label for="re-srh">결과내 재검색</label>
+			</div>
+		</div>
+		<div id="detail-search">
+			<div class="detail-cont">
+				<ul class="list"><!-- 웹접근성 이슈로 label for 값과 input/select id값 매칭필수 -->
+					<li class="first"><label for="keyword">키워드 :</label><input type="text" id="keyword" class="dtext" /></li>
+					<li class="sec"><label for="del-key">제외어 :</label><input type="text" id="del-key" class="dtext last" /></li>
+					<li class="thr">
+						<label for="srh-area">검색영역 :</label>
+						<select name="" id="srh-area">
+						<option value="">전체</option>
+						<option value="">직원/업무</option>
+						</select>
+					</li>
+					<li class="last">
+						<span>검색기간 :</span>
+						<input type="radio" name="srh-date" value="radio" id="srh-date-1" class="radio"><label for="srh-date-1">전체</label>
+						<input type="radio" name="srh-date" value="radio" id="srh-date-2" class="radio"><label for="srh-date-2">최근일주일</label>
+						<input type="radio" name="srh-date" value="radio" id="srh-date-3" class="radio"><label for="srh-date-3">최근1개월</label>
+					</li>
+				</ul>
+				<div class="btn-wrap">
+					<button type="button" class="btn-srh"><span>검색</span></button><button type="button" onclick="detailSearchHide();return false;" class="btn-srh-close"><span>닫기</span></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- header-wrap //-->	
+	
+	<!-- container-wrap -->
+	<div id="container-wrap">
+		<!-- container -->
+		<div id="container">
+			<!-- side-wrap -->
+			<div id="side-wrap">
+				<h2 class="blind">부산항만공사 통합검색 주메뉴</h2>
+				<div class="submenu">
+					<ul>
+						<li><a href="index.html"><span>통합검색</span></a></li>
+						<li><a href="sub01.html" class="over"><span>직원/업무</span></a></li>
+						<li><a href="sub02.html"><span>홍보마당</span></a></li>
+						<li><a href="sub03.html"><span>고객센터</span></a></li>
+						<li><a href="sub04.html"><span>항만운영/건설</span></a></li>
+						<li><a href="sub05.html"><span>BPA소개</span></a></li>
+						<li><a href="sub06.html"><span>정보공개3.0</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- side-wrap //-->
+			
+			<!-- 검색결과 영역 -->
+			<div id="contents">
+				
+				<!-- 검색결과 없는 경우 -->
+				<div class="no-result">
+					<p class="tit"><span>"항만"</span>에 대한 검색 결과가 없습니다.</p>
+					<ul>
+						<li>단어의 철자가 정확한지 확인해 주시기 바랍니다.</li>
+						<li>검색어의 단어 수를 줄이거나, 다른 검색어(유사어)로 검색해 보시기 바랍니다.</li>
+						<li>일반적으로 많이 사용하는 검색어로 다시 검색해 주시기 바랍니다.</li>
+					</ul>
+				</div>
+				<!-- 검색결과 없는 경우 //-->	
+				
+				<!-- 검색결과 있는 경우 -->
+				<div class="result-wrap">
+					<p class="tit"><span>"항만"</span>에 대해 전체 <span class="corg">"625"</span>개의 결과를 찾았습니다.</p>
+					
+					<!-- section / 메뉴별 section 클래스로 구분 -->
+					<div class="section">
+						<h3>직원/업무 <span>[총 3건]</span></h3>
+						<table class="tbl-srh">
+						<caption><span class="blind">직원/업무현황으로 부서, 성명, 담당업무, 전화번호, 팩스번호, 전자메일 제공</span></caption>
+						<colgroup>
+						<col style="width:18%" />
+						<col style="width:15%" />
+						<col style="width:*" />
+						<col style="width:15%" />
+						<col style="width:15%" />
+						<col style="width:20%" />
+						</colgroup>
+						<thead>
+						<tr>
+							<th scope="col">부서</th>
+							<th scope="col">성명</th>
+							<th scope="col">담당업무</th>
+							<th scope="col">전화번호</th>
+							<th scope="col">팩스번호</th>
+							<th scope="col">전자메일</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>기획조정실</td>
+							<td>안미선</td>
+							<td><span class="keyword">항만</span>/여객/TOC부두</td>
+							<td>051-999-3015</td>
+							<td>051-999-3015</td>
+							<td>moment82@naver.com</td>
+						</tr>
+						<tr>
+							<td>기획조정실</td>
+							<td>안미선</td>
+							<td><span class="keyword">항만</span>/여객/TOC부두</td>
+							<td>051-999-3015</td>
+							<td>051-999-3015</td>
+							<td>moment82@naver.com</td>
+						</tr>
+						<tr>
+							<td>기획조정실</td>
+							<td>안미선</td>
+							<td><span class="keyword">항만</span>/여객/TOC부두</td>
+							<td>051-999-3015</td>
+							<td>051-999-3015</td>
+							<td>moment82@naver.com</td>
+						</tr>
+						</tbody>
+						</table>
+						<div class="r"><a href="#" class="btn-more">더보기</a></div>
+					</div>
+					<!-- section //-->
+
+				</div>
+				<!-- 검색결과 있는 경우 //-->
+				
+			</div>
+			<!-- 검색결과 영역 //-->
+			
+			<!-- rank-wrap -->
+			<div id="rank-wrap">
+				<div class="m-keyword">
+					<h3>내가 찾은 검색어</h3>
+					<ol>
+						<li>
+						<span class="num">1</span>
+						<a href="#" class="keyword">전자발급</a>
+						<button type="button" class="btn-del"><span>삭제</span></button>
+						</li>
+						<li>
+						<span class="num">2</span>
+						<a href="#" class="keyword">민원서식</a>
+						<button type="button" class="btn-del"><span>삭제</span></button>
+						</li>
+						<li>
+						<span class="num">3</span>
+						<a href="#" class="keyword">소개브로슈어</a>
+						<button type="button" class="btn-del"><span>삭제</span></button>
+						</li>
+						<li>
+						<span class="num">4</span>
+						<a href="#" class="keyword">검색어가 길어질 경우 이렇게 출력</a>
+						<button type="button" class="btn-del"><span>삭제</span></button>
+						</li>
+					</ol>
+				</div>
+				<div class="f-keyword">
+					<h3>인기검색어</h3>
+					<div class="key-tab" id="mboardTab">
+						<dl class="first isOn">
+							<dt>
+							<a onblur="return false;" onfocus="setBoardTab('mboardTab',1,'');return false;" onmouseover="setBoardTab('mboardTab',1,'');return false;" onclick="setBoardTab('mboardTab',1,'c');return false;" href="#mBoard1"><span>주간</span></a>
+							</dt>
+							<dd class="datalist">
+							<ol id="mBoard1">
+								<li><span class="num">1</span><a href="#" class="keyword">부산항만공사</a></li>
+								<li><span class="num">2</span><a href="#" class="keyword">항만공사</a></li>
+								<li><span class="num">3</span><a href="#" class="keyword">부산</a></li>
+								<li><span class="num">4</span><a href="#" class="keyword">질문</a></li>
+								<li><span class="num">5</span><a href="#" class="keyword">항만</a></li>
+								<li><span class="num">6</span><a href="#" class="keyword">공사</a></li>
+								<li><span class="num">7</span><a href="#" class="keyword">국제항</a></li>
+								<li><span class="num">8</span><a href="#" class="keyword">국제</a></li>
+								<li><span class="num">9</span><a href="#" class="keyword">부산항</a></li>
+								<li><span class="num">10</span><a href="#" class="keyword">부산신항</a></li>
+							</ol>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+							<a onblur="return false;" onfocus="setBoardTab('mboardTab',2,'');return false;" onmouseover="setBoardTab('mboardTab',2,'');return false;" onclick="setBoardTab('mboardTab',2,'c');return false;" href="#mBoard2"><span>일간</span></a>
+							</dt>
+							<dd class="datalist">
+							<ol id="mBoard2">
+								<li><span class="num">1</span><a href="#" class="keyword">항만공사</a></li>
+								<li><span class="num">2</span><a href="#" class="keyword">부산항만공사</a></li>
+								<li><span class="num">3</span><a href="#" class="keyword">부산</a></li>
+								<li><span class="num">4</span><a href="#" class="keyword">질문</a></li>
+								<li><span class="num">5</span><a href="#" class="keyword">항만</a></li>
+								<li><span class="num">6</span><a href="#" class="keyword">공사</a></li>
+								<li><span class="num">7</span><a href="#" class="keyword">국제항</a></li>
+								<li><span class="num">8</span><a href="#" class="keyword">국제</a></li>
+								<li><span class="num">9</span><a href="#" class="keyword">부산항</a></li>
+								<li><span class="num">10</span><a href="#" class="keyword">부산신항</a></li>
+							</ol>
+							</dd>
+						</dl>
+					</div>
+				</div> 
+			</div>
+			<!-- rank-wrap //-->
+		</div>
+		<!-- container //-->	
+	</div>
+	<!-- container-wrap //-->
+	
+	<!-- footer-wrap -->
+	<div id="footer-wrap">
+		<!-- service-wrap -->
+		<div class="service-wrap">
+			<h3 class="blind">부산항만공사 통합검색 서비스메뉴</h3>
+			<!-- flink -->
+			<ul class="flink">
+				<li><a href="/kor/Contents.do?mCode=MN0968">개인정보취급방침</a></li>
+				<li><a href="/kor/Contents.do?mCode=MN0056">찾아오시는길</a></li>
+				<li><a href="#">저작권보호</a></li>
+				<li><a href="#">홈페이지 개선의견</a></li>
+				<li><a href="#">이용안내</a></li>
+				<li><a href="#">접속통계</a></li>
+			</ul>
+			<!-- flink //-->
+			
+			<!-- family-site -->
+			<div id="family-site">
+				<div class="selBox01 isWidget-fquick">
+					<dl>
+						<dt>
+						<a href="#fquick_sl1">관련사이트 바로가기</a>
+						</dt>
+						<dd class="isSelSub" style="display:none;">
+						<ul id="fquick1_list">
+							<li><a title="새창열림" target="_blank" href="/bpr/Main.do">부산항홍보관<img alt="홈페이지 바로가기" class="btn_go" src="/kor/_Img/Layout/flink_go.gif"></a></li>
+							<li><a title="새창열림" target="_blank" href="/bpg/Main.do">부산항만안내선<img alt="홈페이지 바로가기" class="btn_go" src="/kor/_Img/Layout/flink_go.gif"></a></li>
+							<li><a title="새창열림" target="_blank" href="/bpt/Main.do">부산항여객터미널<img alt="홈페이지 바로가기" class="btn_go" src="/kor/_Img/Layout/flink_go.gif"></a></li>
+							<li><a title="새창열림" target="_blank" href="/npr/Main.do">북항재개발라운드테이블<img alt="홈페이지 바로가기" class="btn_go" src="/kor/_Img/Layout/flink_go.gif"></a></li>
+							<li><a title="새창열림" target="_blank" href="/drh/Main.do">재난대책본부<img alt="홈페이지 바로가기" class="btn_go" src="/kor/_Img/Layout/flink_go.gif"></a></li>
+						</ul>
+						<div class="isCloseBtnArea"><button class="isCloseBtn"><img alt="닫기" src="/_Img/Common/ico_btn_close.gif"></button></div>
+						</dd>
+					</dl>
+				</div>
+				<script type="text/javascript">//selBox.init();</script>	
+			</div>
+			<!-- family-site //-->
+		</div>
+		<!-- service-wrap //-->	
+		
+		<!-- footer -->
+		<div id="footer" class="div-cont">
+			<!-- copyright -->
+			<div id="fcopyright">
+				<address>(우) 600-755 부산광역시 중구 충장대로9번길 46(중앙동4가) 부산항만공사</address>
+				<ul class="tel">
+					<li>TEL. (051) 999-3000</li>
+					<li>FAX. (051) 663-4089</li>
+				</ul>
+				<p class="copy">Copyright (c) 2010 <strong>BUSAN PORT AUTHORITY</strong> All rights reserved.</p>
+			</div>
+			<!-- copyright //-->	
+			
+			<div class="flicense">
+				<img alt="Donation for Education 교육기부 우수기관 교육부 마크" src="./_Img/Layout/dfe.gif">
+			</div>
+		</div>
+		<!-- footer //-->	
+	</div>
+	<!-- footer-wrap //-->
+</div>
+</body>
+</html>
+

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title>에디터용 테이블</title>
+<script src="/xe/contents/_Js/all.js"></script>
+</head>
+<body class="guide">
+
+	<ul class="g-list">
+		<li>클래스명 : etbl-type01</li>
+		<li>caption은 &lt;span class="blind"&gt;&lt;/span&gt;안에 값 기재</li>
+		<li>에디터 전용 테이블로 마크업에 특별한 class 추가 없이 사용해야 함</li>
+		<li>DTD HTML5 기준</li>
+	</ul>
+
+	<div class="sgap"></div>
+
+	<table class="etbl-type01">
+	<caption><span class="blind">에디터용 테이블로 구분, 제목1-1, 제목1-2 정보제공</span></caption>
+	<colgroup>
+	<col style="width:30%" />
+	<col style="width:*" />
+	<col style="width:*" />
+	</colgroup>
+	<thead>
+	<tr>
+		<th scope="col">구분</th>
+		<th scope="col">제목1-1</th>
+		<th scope="col">제목1-2</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<th scope="row">왼제목1-1</th>
+		<td>내용1-1</td>
+		<td>내용1-2</td>
+	</tr>
+	</tbody>
+	</table>
+
+	<div class="sgap"></div>
+
+	<h2>HTML</h2>
+	<pre class="brush: js">
+	<table class="etbl-type01">
+	<caption><span class="blind">에디터용 테이블로 구분, 제목1-1, 제목1-2 정보제공</span></caption>
+	<colgroup>
+	<col style="width:30%" />
+	<col style="width:*" />
+	<col style="width:*" />
+	</colgroup>
+	<thead>
+	<tr>
+		<th scope="col">구분</th>
+		<th scope="col">제목1-1</th>
+		<th scope="col">제목1-2</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<th scope="row">왼제목1-1</th>
+		<td>내용1-1</td>
+		<td>내용1-2</td>
+	</tr>
+	</tbody>
+	</table>
+	</pre>
+
+	<div class="sgap"></div>
+
+	<h2>CSS</h2>
+	<pre class="brush: js">
+	/* 에디터용 테이블 */
+	.etbl-type01 {border-top:1px solid #48525e;width:100%;border-collapse:collapse;font-size:13px;table-layout:fixed;clear:both;}
+	.etbl-type01 th {background:#f5f5f5;border:1px solid #ccc;color:#333;text-align:center;border-top:0;}
+	.etbl-type01 thead th {border-bottom:1px solid #919191;font-weight:700;line-height:120%;padding:11px 5px;}
+	.etbl-type01 tbody th {background:#f9f9f9;padding:9px 5px;}
+	.etbl-type01 td {background:#fff;border:1px solid #ccc;text-align:center;padding:9px 5px;}
+	.etbl-type01 tfoot th, .etbl-type01 tfoot td {background:#f9f9f9;color:#333;}
+	.etbl-type01 th.l, .etbl-type01 td.l {padding-left:10px;} /* 좌측정렬 */
+	.etbl-type01 th.r, .etbl-type01 td.r {padding-right:5px;} /* 우측정렬 */
+	.etbl-type01 .bg th, .etbl-type01 .bg td {background:#f9f9f9;font-weight:700;} /* 배경색 */
+	</pre>
+</body>
+</html>

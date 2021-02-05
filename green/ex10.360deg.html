@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="css/base.css" rel="stylesheet" />
+<link href="css/jquery-ui-1.9.2.custom.css" rel="stylesheet" />
+<style type="text/css">
+#wrap {margin:50px;}
+.visual {width:400px;margin:0 50px;}
+.visual p {display:none;}
+.visual p img {width:100%;height:auto;}
+.visual .first {display:block;}
+.slider {width:500px;}
+</style>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.9.2.custom.min.js"></script>
+<script type="text/javascript">
+$(function(){ // 실행문 시작
+	var vList = $(".visual p");
+	var vMin = 0;
+	var vMax = vList.size() - 1;
+	
+	// .slider 영역이 슬라이더로 활용될 수 있도록 명령을 작성함
+	$(".slider").slider({
+		min : vMin,  // 슬라이더명령의 옵션 중 최소값을 적용하는 min에 vMin 변수의 값을 지정
+		max : vMax,  // 슬라이더명령의 옵션 중 최대값을 적용하는 max에 vMax 변수의 값을 지정
+		slider : function(event, ui){ // 슬라이더가 움직일 때 일어날 명령을 지정
+			vList.css({display:"none"});
+			vList.eq(ui.value).css({display:"block"});
+		}
+	});
+
+}); // 실행문 끝
+</script>
+</head>
+
+<body>
+	<section id="wrap">
+    	<div class="visual">
+        	<p class="first"><img src="img/slideImg/Picanto_Green_00000.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00001.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00002.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00003.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00004.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00005.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00006.jpg" /></p>                                                                        
+        	<p><img src="img/slideImg/Picanto_Green_00007.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00008.jpg" /></p>                        
+        	<p><img src="img/slideImg/Picanto_Green_00009.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00010.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00011.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00012.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00013.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00014.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00015.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00016.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00017.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00018.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00019.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00020.jpg" /></p>                                                                                                                                                
+        	<p><img src="img/slideImg/Picanto_Green_00021.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00022.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00023.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00024.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00025.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00026.jpg" /></p>                                                                        
+        	<p><img src="img/slideImg/Picanto_Green_00027.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00028.jpg" /></p>                        
+        	<p><img src="img/slideImg/Picanto_Green_00029.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00030.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00031.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00032.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00033.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00034.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00035.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00036.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00037.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00038.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00039.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00040.jpg" /></p>        	
+            <p><img src="img/slideImg/Picanto_Green_00051.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00052.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00053.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00054.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00055.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00056.jpg" /></p>                                                                        
+        	<p><img src="img/slideImg/Picanto_Green_00057.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00058.jpg" /></p>                        
+        	<p><img src="img/slideImg/Picanto_Green_00059.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00060.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00061.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00062.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00063.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00064.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00065.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00066.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00067.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00068.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00069.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00070.jpg" /></p>                                                                                                                                                
+        	<p><img src="img/slideImg/Picanto_Green_00071.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00072.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00073.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00074.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00075.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00076.jpg" /></p>                                                                        
+        	<p><img src="img/slideImg/Picanto_Green_00077.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00078.jpg" /></p>                        
+        	<p><img src="img/slideImg/Picanto_Green_00079.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00080.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00081.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00082.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00083.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00084.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00085.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00086.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00087.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00088.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00089.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00090.jpg" /></p>        	
+        	<p><img src="img/slideImg/Picanto_Green_00091.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00092.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00093.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00094.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00095.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00096.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00097.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00098.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00099.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00100.jpg" /></p>                                                                                                                                                
+        	<p><img src="img/slideImg/Picanto_Green_00101.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00102.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00103.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00104.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00105.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00106.jpg" /></p>                                                                        
+        	<p><img src="img/slideImg/Picanto_Green_00107.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00108.jpg" /></p>                        
+        	<p><img src="img/slideImg/Picanto_Green_00109.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00100.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00101.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00102.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00103.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00104.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00105.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00106.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00107.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00108.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00109.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00110.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00111.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00112.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00113.jpg" /></p>
+        	<p><img src="img/slideImg/Picanto_Green_00114.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00115.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00116.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00117.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00118.jpg" /></p> 
+        	<p><img src="img/slideImg/Picanto_Green_00119.jpg" /></p>                                                                
+        </div>
+        <div class="slider">
+        </div>
+    </section>
+</body>
+</html>

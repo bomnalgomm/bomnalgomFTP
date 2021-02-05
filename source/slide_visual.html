@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ko" xml:lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+<link href="_Css/base.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="http://abmarch.thecube.kr/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="_Js/m_visual_slide.js"></script>
+<style type="text/css">
+	/* main */
+	body {background:#000}
+	.mainVisual{ width:100%; margin:0 auto; overflow:hidden; z-index:1; position:relative; max-width:1300px; background:#000;}
+	.mainVisual #slides{ position:relative;}
+	.mainVisual #slides .slidesjs-navigation { position:absolute; top:50%; margin:20px 0 0 0; z-index:100; background:url(http://www.amosprofessional-company.com/kr/resources/images/main/btn_navigation.png) no-repeat; text-indent:-9999px; width:41px; height:40px;}
+	.mainVisual #slides .slidesjs-previous { left:0; background-position:0 0;}
+	.mainVisual #slides .slidesjs-next { right:0; background-position:-41px 0;}
+	.mainVisual .slidesjs-pagination { position:absolute; bottom:30px; left:0; width:100%; text-align:center; z-index:100;}
+	.mainVisual .slidesjs-pagination li { display:inline-block; padding:0 7px;}
+	.mainVisual .slidesjs-pagination li a {background:url(http://www.amosprofessional-company.com/kr/resources/images/main/btn_pagination_tablet.png) -27px 0 no-repeat; width:14px; height:14px; display:block; text-indent:-9999px;  }
+	.mainVisual .slidesjs-pagination li a.active,.mainVisual .slidesjs-pagination li a:hover.active,.mainVisual .slidesjs-pagination li a:hover{background:url(http://www.amosprofessional-company.com/kr/resources/images/main/btn_pagination_tablet.png) 0 0 no-repeat;}
+	.mainVisual #slides .slidesjs-slide img{ width:100%;}
+	.mainVisual #slides .item01 .txComment{ width:454px; height:160px; background:url(http://www.amosprofessional-company.com/kr/resources/images/main/main_copy01.png) 50% 50% no-repeat; position:absolute; top:50%; left:50%; margin:-40px 0 0 -227px; text-indent:-9999px;}
+	.mainVisual #slides .item02 .txComment{ width:454px; height:160px; background:url(http://www.amosprofessional-company.com/kr/resources/images/main/main_copy02.png) 50% 50% no-repeat; position:absolute; top:50%; left:50%; margin:-40px 0 0 -227px; text-indent:-9999px;}
+	</style>
+ </head>
+
+ <body>
+            <div class="mainVisual">
+            	<div id="slides">
+				                    <a href="#" class="slidesjs-previous slidesjs-navigation">이전 이미지 보기</a>
+                	<div class="item01"><img src="http://www.amosprofessional-company.com//kr/resources/images/main/main01_pc.gif" alt="" /><span class="txComment">PROFESSIONAL TOUCH FOR PROFESSIONAL Sketch up professional from consumer voice</span></div>
+                	<div class="item02"><img src="http://www.amosprofessional-company.com//kr/resources/images/main/main02_pc.gif" alt="" /><span class="txComment">PROFESSIONAL TOUCH FOR PROFESSIONAL Sketch up professional from consumer voice</span></div>
+
+      				<a href="#" class="slidesjs-next slidesjs-navigation">다음 이미지 보기</a>
+                </div>
+            </div>
+            
+        	<script type="text/javascript">
+				$(document).ready(function(){
+					$('#slides').slidesjs({
+        					width: 1300,
+        					height: 760,
+       				 		navigation: false
+      					});
+					
+				});
+			</script>
+            
+
+ </body>
+</html>

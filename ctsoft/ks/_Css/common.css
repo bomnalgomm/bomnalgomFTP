@@ -1,0 +1,438 @@
+@charset "utf-8";
+@import url("layout.css");
+@import url("contents.css");
+
+
+/* 2012-05-07  CSS  2.1 CENTUMSOFT */
+
+/* html5 호환 설정*/
+* {margin:0;padding:0;}
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video { border: 0; outline: 0; background: transparent; font-size: 100%;}
+table, caption, tbody, tfoot, thead, tr, th, td {outline: 0; background: transparent; font-size: 100%; }
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary { display: block;}
+nav ul { list-style: none;}
+blockquote, q { quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none;}
+
+a { margin: 0; padding: 0; border: 0; font-size: 100%; }
+ins {  color: #000; text-decoration: none;}
+mark {  color: #000; font-style: italic; font-weight: bold;}
+del { text-decoration: line-through;}
+abbr[title], dfn[title] { border-bottom: 1px dotted #000; cursor: help;}
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #cccccc; margin: 1em 0; padding: 0;}
+
+
+body {font-family:NanumGothic,"나눔고딕","돋움","굴림",Gulim,Helvetica,sans-serif; font-size:12px;color:#555;line-height:150%;}
+select,input,button,textarea,button{font-family:NanumGothic,"나눔고딕","돋움","굴림",Gulim,Helvetica,sans-serif;}
+table{font-size:inherit;font:100%;}
+pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%;}
+
+/* 글자 속성 */
+a{color:#555;text-decoration:none;}
+a:visited,a:visited {color:#555;text-decoration:none;}
+a.visited,a.visited:visited{color:#555;text-decoration:none;}
+a:hover,a:hover ,a.visited:hover{color:#000;text-decoration:none;}
+
+/* LIST 요소 기본 */
+li {list-style:none;}
+ul.fllist li {float:left;}
+ul.fllist:after {clear:both;display:block;content:"";}
+ol.onum li {list-style-type:decimal}
+.onum {padding-left:22px;}
+
+
+/* Form 요소들 기본 */
+fieldset {padding:0px;margin:0px;border:0px;}
+legend{display:none;}
+
+input.text,  input.password {border:1px solid #ddd; height:20px;  padding:3px 2px 1px 2px; font-size:100%;line-height:110%;}
+input.file {border:1px solid #ddd; height:16px;  padding:2px; font-size:100%;line-height:110%;}
+input.image, input.radio, input.checkbox {border:0px !important;vertical-align:middle;padding:0px;margin:0px;}
+input.num {text-align:right;border:1px solid #ddd; height:16px;  padding:2px; font-size:100%;line-height:110%;}
+input.readonly {background-color:#f7f7f7;}
+textarea {border:1px solid #ddd; padding:2px;}
+select {height:26px;}
+
+.pointer, .hand{cursor:pointer;}
+
+.en{font-family:verdana}
+.icost{
+	background:url(/_Img/Common/num_bar.gif) repeat right 0px;
+	border:1px solid #aeaeae;
+	text-align:right;
+	width:86px;
+	height:17px;
+	padding-right:1px;
+	letter-spacing:2px;font-family:verdana
+}
+.ipercent{
+	background:url(/_Img/Common/num_bar.gif) repeat right 0px;
+	border:1px solid #aeaeae;
+	width:26px;
+	text-align:right;
+	height:17px;
+	padding-right:1px;
+	letter-spacing:2px;font-family:verdana
+}
+.inum{
+background:url(/_Img/Common/num_bar.gif) repeat right 0px;
+	border:1px solid #aeaeae;
+	text-align:right;
+	height:17px;
+	padding-right:1px;
+	letter-spacing:2px;font-family:verdana
+}
+.inum3 { width:26px;}
+.inum4 { width:36px;}
+.inum5 { width:46px;}
+.inum6 { width:56px;}
+
+/* 이미지 요소 기본 */
+img {border:0px;vertical-align:middle;} 
+img.button{cursor:pointer;}
+button.imgBtn {padding:0px;margin:0px;border:0px;cursor:pointer;}
+
+
+
+
+/*기본 스타일 정의*/
+/*플로팅*/
+.fr {float:right;}
+.fl {float:left;}
+.cr {clear:both;}
+.aftercr:after {clear:both;content:"";display:block;}
+
+/*박스유형*/
+.isbox {display:block;position:relative;}
+.isabs {position:absolute;}
+.inline {display:inline-block;}
+
+/*포지셔닝*/
+.pos_r {position:relative;}
+.pos_a {position:absolute;}
+.pos_i {position:inline-block;}
+
+/* 글자자름 */
+.ellipsis{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;   }
+
+/*숨김*/
+.hidden {visibility:hidden; width:1px; height:1px; overflow:hidden; font-size:0.1px; position:absolute; top:-9999px;}
+.blind {visibility:hidden; width:1px; height:1px; overflow:hidden; position:absolute; top:-9999px;}
+table caption {visibility:hidden; width:1px; height:1px; overflow:hidden; font-size:1px; line-height:1px;}
+
+/*공백*/
+.gap10 {height:10px;clear:both;overflow:hidden;}
+.gap20 {height:20px;clear:both;overflow:hidden;}
+.gap30 {height:30px;clear:both;overflow:hidden;}
+
+.gap {height:40px;clear:both;}
+.sgap {height:15px;clear:both;}
+.ssgap {height:5px;clear:both;}
+
+/*정렬*/
+.left ,.l {text-align:left !important;}
+.right,.r {text-align:right !important;}
+.center, .c {text-align:center !important;}
+.vtop,.vtop * {vertical-align:text-top !important;}
+.vcen,.vcen * {vertical-align:middle !important;}
+.vfoot,.vfoot * {vertical-align:text-bottom !important;}
+.vtop2 {vertical-align:top !important;}
+.vcen2 {vertical-align:middle !important;}
+.vfoot2 {vertical-align:bottom !important;}
+
+
+/* 폰트색상 */
+.c0  {color:#000;}
+.c2  {color:#222;}
+.c3  {color:#333 !important;}
+.c4  {color:#444;}
+.c5  {color:#555;}
+.c6  {color:#666;}
+.c8  {color:#888;}
+.c9  {color:#999;}
+.cf  {color:#fff;}
+.cg1 {color:#69696a;}
+.cg2 {color:#ababab;}
+.cyellow {color:#fdaf17;}
+.cg3 {color:#848484;}
+.cg4 {color:#727272;}
+.cg5 {color:#b3b7bc;}
+.cred {color:#DF2519; font-weight:bold;}
+.cblue {color:#2176C6;}
+.cblue1 {color:#4e70a5;}
+.cblue2 {color:#0f61ac;}
+.cpink {color:#f9587d}
+.cgold {color:#b8883c;}
+.cgreen {color:#758d0a;}
+.cbrown {color:#9F2C00;}
+
+
+/* 폰트속성 */
+.nb {font-weight:normal;}
+.b {font-weight:bold;}
+.fs {font-size:90%}
+.fb {font-size:120%;}
+
+.f11 {font-size:11px;}
+.f12 {font-size:12px;}
+.f13 {font-size:13px;}
+.f14 {font-size:14px;}
+.f16 {font-size:16px;}
+.f18 {font-size:18px;}
+.f20 {font-size:20px;}
+.f24 {font-size:24px;}
+.f26 {font-size:26px;}
+
+/*도움말 공통*/
+.fhelp{font-size:11px;letter-spacing:-1px;color:#b8a173;line-height:130%;}
+
+/*줄간격*/
+.tlh180 {line-height:180%;}
+.tlh150 {line-height:150%;}
+.tlh140 {line-height:140%;}
+.tlh130 {line-height:130%;}
+.tlh120{line-height:120%;}
+.tlh110{line-height:110%;}
+
+/*영문,숫자*/
+.en {font-size:90%;font-family:Verdana;}
+
+/*회색조*/
+.gray { filter: Gray; }
+
+
+/* 패딩 5,10단위만 지정함*/
+.pad5a {padding:5px}
+.pad5tf {padding-top:5px;padding-bottom:5px}
+.pad5lr {padding-left:5px;padding-right:5px;}
+.pad5r {padding-right:5px}
+.pad5l {padding-left:5px}
+.pad5t {padding-top:5px}
+.pad5f {padding-bottom:5px}
+.pad10a {padding:10px}
+.pad10tf {padding-top:10px;padding-bottom:10px}
+.pad10lr {padding-left:10px;padding-right:10px;}
+.pad10r {padding-right:10px}
+.pad10l {padding-left:10px}
+.pad10t {padding-top:10px}
+.pad10f {padding-bottom:10px}
+.pad15a {padding:15px}
+.pad15tf {padding-top:15px;padding-bottom:15px}
+.pad15lr {padding-left:15px;padding-right:15px;}
+.pad15r {padding-right:15px}
+.pad15l {padding-left:15px}
+.pad15t {padding-top:15px}
+.pad15f {padding-bottom:15px}
+.pad20a {padding:20px}
+.pad20tf {padding-top:20px;padding-bottom:20px}
+.pad20lr {padding-left:20px;padding-right:20px;}
+.pad20r {padding-right:20px}
+.pad20l {padding-left:20px}
+.pad20t {padding-top:20px}
+.pad20f {padding-bottom:20px}
+.pad25a {padding:25px}
+.pad25tf {padding-top:25px;padding-bottom:25px}
+.pad25lr {padding-left:25px;padding-right:25px;}
+.pad25r {padding-right:25px}
+.pad25l {padding-left:25px}
+.pad25t {padding-top:25px}
+.pad25f {padding-bottom:25px}
+.pad30a {padding:30px}
+.pad30tf {padding-top:30px;padding-bottom:30px}
+.pad30lr {padding-left:30px;padding-right:30px;}
+.pad30r {padding-right:30px}
+.pad30l {padding-left:30px}
+.pad30t {padding-top:30px}
+.pad30f {padding-bottom:30px}
+.pad40a {padding:40px}
+.pad40tf {padding-top:40px;padding-bottom:40px}
+.pad40lr {padding-left:40px;padding-right:40px;}
+.pad40r {padding-right:40px}
+.pad40l {padding-left:40px}
+.pad40t {padding-top:40px}
+.pad40f {padding-bottom:40px}
+.pad50a {padding:50px}
+.pad50tf {padding-top:50px;padding-bottom:50px}
+.pad50lr {padding-left:50px;padding-right:50px;}
+.pad50r {padding-right:50px}
+.pad50l {padding-left:50px}
+.pad50t {padding-top:50px}
+.pad50f {padding-bottom:50px}
+.pad60a {padding:60px}
+.pad60tf {padding-top:60px;padding-bottom:60px}
+.pad60lr {padding-left:60px;padding-right:60px;}
+.pad60r {padding-right:60px}
+.pad60l {padding-left:60px}
+.pad60t {padding-top:60px}
+.pad60f {padding-bottom:60px}
+
+
+
+
+/*마진*/
+.no_mgf {margin-bottom:0px !important;}
+.mg5f {margin-bottom:5px;}
+.mg10f {margin-bottom:10px;}
+.mg15f {margin-bottom:15px;}
+.mg20f {margin-bottom:20px;}
+.mg25f {margin-bottom:25px;}
+.mg30f {margin-bottom:30px;}
+.mg40f {margin-bottom:40px;}
+.mg50f {margin-bottom:50px;}
+.mg5t {margin-top:5px;}
+.mg10t {margin-top:10px;}
+.mg15t {margin-top:15px;}
+.mg20t {margin-top:20px;}
+.mg25t {margin-top:25px;}
+.mg30t {margin-top:30px;}
+.mg40t {margin-top:40px;}
+.mg5 {margin-left:5px;}
+.mg10 {margin-left:10px;}
+.mg15 {margin-left:15px;}
+.mg20 {margin-left:20px;}
+.mg25 {margin-left:25px;}
+.mg30 {margin-left:30px;}
+.mg5r {margin-right:5px;}
+.mg10r {margin-right:10px;}
+.mg15r {margin-right:15px;}
+.mg20r {margin-right:20px;}
+.mg25r {margin-right:25px;}
+.mg30r {margin-right:30px;}
+.mg5a {margin:5px;}
+.mg10a {margin:10px;}
+.mg15a {margin:15px;}
+.mg20a {margin:20px;}
+.mg25a {margin:25px;}
+.mg30a {margin:30px;}
+
+.mg30l {margin-left:30px;}
+.mg30r {margin-right:30px;}
+.mg20l {margin-left:20px;}
+.mg20r {margin-right:20px;}
+.mg40l {margin-left:40px;}
+.mg40r {margin-right:40px;}
+.mg50l {margin-left:50px;}
+.mg50r {margin-right:50px;}
+
+
+
+
+/*가로 크기*/
+.w100 {width:100px;}
+.w470 {width:470px;}
+.w500 {width:500px;}
+.w530 {width:530px;}
+.w60 {width:60px;}
+.w80 {width:80px;}
+.w100p {width:100%;}
+.w33p {width:33%;}
+.w30p {width:30%;}
+.w40p {width:40%;}
+.w25p {width:25%;}
+.w50p {width:49%;}
+.w55p {width:55%;}
+.w60p {width:60%;}
+.w65p {width:65%;}
+
+
+/*컨텐츠 요소 지정 스타일 */
+
+
+/*스마트에디터*/
+
+sup{ font:10px Tahoma;}
+sub{ font:10px Tahoma;}
+
+
+/* 라인 스타일 */
+.aline01 {border:1px solid #DDD;}
+.aline01-f {border-bottom:1px solid #DDD;}
+
+.aline02 {border:1px dotted #DDD;}
+.aline02-f {border-bottom:1px dotted #DDD;}
+
+.aline03 {border:1px dashed #DDD;}
+.aline03-f {border-bottom:1px dashed #DDD;}
+
+
+/* 리스트 스타일 */
+.list_hor {overflow:hidden}
+.list_hor li {float:left; margin-right: 25px; padding-left:8px; background:url('../_Img/Common/bul_tit01.gif') no-repeat 0 7px;}
+
+/* 테이블 */
+.tbl_style01 {border-top:2px solid #2a6fb5; width:100%; border-collapse:collapse}
+.tbl_style01 thead th{font-size: 14px; padding:9px 0 10px 0;color:#333;background:#f4f8fb;border-bottom:1px solid #91b3d6;border-left:1px solid #91b3d6;text-align:center;}
+.tbl_style01 td{padding:9px 14px 10px;border-left:1px solid #91b3d6;border-bottom:1px solid #91b3d6; text-align:center;word-wrap:break-word;}
+.tbl_style01 .first {border-left:0}
+
+.tbl_style02 {border-top:2px solid #2a6fb5; border-bottom:1px solid #2a6fb5; width:100%; border-collapse:collapse}
+.tbl_style02 th{padding:9px 14px 10px;color:#333;background:#f4f8fb;border-bottom:1px solid #c8d2db;}
+.tbl_style02 td{padding:9px 14px 10px;border-bottom:1px solid #c8d2db;word-wrap:break-word;}
+.tbl_style02 th.last, .tbl_style02 td.last {border-bottom:0}
+
+
+.tbl_style03 {border-top:2px solid #2a6fb5; border-bottom:1px solid #2a6fb5; width:100%; border-collapse:collapse;font-size:13px;}
+.tbl_style03 th{padding:9px 14px 10px;color:#333;background:#f4f8fb;border-bottom:1px solid #c8d2db;text-align:center;}
+.tbl_style03 td{padding:9px 14px 10px;border-bottom:1px solid #c8d2db; word-wrap:break-word;}
+.tbl_style03 th.last, .tbl_style02 td.last {border-bottom:0}
+
+
+
+
+/*컨텐츠 하단 만족도 조사 외*/
+#cont_foot {border:1px solid #DDD;position:relative;position:relative;padding:20px;width:678px;height:110px;overflow:hidden;margin-top:80px;}
+
+#charge {line-height:120%;position:absolute;left:20px;top:115px;}
+#charge:after {clear:both;content:"";display:block}
+#charge * {display:inline-block;float:left;vertical-align:baseline;}
+#charge dt {padding-right:8px;color:#333;font-weight:bold;}
+#charge dd {margin-right:30px;}
+
+#bodyutil {position:absolute;right:20px;top:115px;display:block;}
+#bodyutil:after , #bodyutil ul:after {clear:both;content:"";display:block}
+#bodyutil li {float:left;margin-left:4px;}
+#bodyutil .first {background:url('../_Img/Common/charge_bar.gif') no-repeat 100% 3px;padding-right:10px;margin-right:10px;}
+#bodyutil  * {vertical-align:top;}
+
+#satisfaction {position:absolute;left:20px;top:20px;width:698px;}
+#satisfaction h3 {display:none;}
+#satisfaction dt {visibility:hidden; width:1px; height:1px; overflow:hidden; font-size:0.1px; position:absolute;}
+#satisfaction .grade {padding-top:5px;}
+#satisfaction .grade label {padding-right:15px;}
+#satisfaction * {vertical-align:middle}
+#satisfaction .answer {margin-top:10px;}
+#satisfaction .answer .text {width:607px;height:21px;padding:4px 3px 2px 3px;background:#f7f7f7;border:0;color:#a1a1a1;border:1px solid #ddd}
+#satisfaction .answer .image {position:absolute;right:20px}
+#satisfaction .question {background:url('../_Img/Common/charge_icon.gif') no-repeat 0 3px;padding-left:25px;}
+
+
+/* 배너모음 */
+/* 가로폭은 div-wrap, div-cont 스타일로 처리*/
+.bannerzone-wrap {height:60px;background:#EFEFEF;}
+#bannerZone {height:60px;}
+#bannerZone-scroll {position: absolute; left:0; top:13px; width:900px; height:37px; overflow: hidden;}
+#bannerZone-content { position: absolute; left: 0; top: 0; }
+#bannerZone ul { position: absolute; left: 0; top: 0; }
+#bannerZone ul li { float: left; margin: 0 2px 0 2px; background: #FFF;}
+#bannerZone ul li img { vertical-align: top; width:143px;height:33px;border:1px solid #DDD}
+
+
+#bannerZone-ctr {position:absolute;right:0;top:10px;}
+#bannerZone-ctr button {background:none;border:0;float:left;overflow:hidden;position:relative;display:block;width:18px;height:15px;}
+#bannerZone-ctr button img {position:absolute;left:0;top:0;}
+#bannerZone-ctr:after {clear:both;content:"";display:block;}
+#bannerZone-ctr button.btn-next {width:19px;}
+#bannerZone .btn-more {position:absolute;right:0;top:30px;}

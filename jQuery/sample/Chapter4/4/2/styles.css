@@ -1,0 +1,39 @@
+*{
+	margin:0;
+	padding:0;
+	line-height:1.4;
+}
+body{
+	padding:40px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+dl{
+	width:320px;
+	margin:0 0 20px;
+}
+	dt{
+		padding:6px 10px 6px;
+		background:#eee;
+		margin:0 0 3px;
+		font-weight:bold;
+		border-left:2px solid #444;
+		border-top:2px solid #444;
+		border-radius:8px 0 0 0;
+	}
+	/* 닫았을 때의 스타일 */
+	dt.closed{
+		cursor:pointer;
+		color:#fff;
+		background:#444 url(bg.png) repeat-y 100% 0;
+	}
+	dd{
+		padding:0 10px 12px;
+		width:298px;
+		border-left:2px solid #444;
+		background:#eee;
+		margin:-3px 0 3px;
+	}
+	/* 닫았을 때의 스타일 */
+	dd.closed{
+		display:none;
+	}

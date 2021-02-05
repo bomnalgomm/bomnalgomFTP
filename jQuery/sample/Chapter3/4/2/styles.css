@@ -1,0 +1,4 @@
+body{ font-size:5em; }
+.container{ height:120px; }
+#div1{ background:pink; display:none; }
+#div2{ background:yellow; display:block; }

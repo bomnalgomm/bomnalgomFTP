@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>부산항만공사 사보게시판 스타일 가이드</title>
+<link rel="stylesheet" href="../../_Css/common.css" />
+<style type="text/css">
+.content-wrap {width:760px;margin:0 auto;}
+.content-wrap h1 {font-size:30px;font-weight:bold;color:#222;line-height:100%;margin:20px 0;}
+
+
+</style>
+</head>
+<body>
+<div class="content-wrap">
+	<h1>사보게시판 스타일</h1>	
+
+	<!-- board-wrap -->
+	<div id="board-wrap">
+		<!-- board-search-wrap / 검색 -->
+		<div class="board-search-wrap">
+			<div class="board-total">
+				<span class="total">Total : <b>183</b></span><span class="page">(<b>1</b> / 1페이지)</span>
+			</div>
+			<!-- 검색폼 label for 값과 input, select id값 동일한 값으로 매칭 -->
+			<div class="board-search">
+				<form name="frm_searchs" action="?" method="get">
+				<label for="srch" class="blind">검색항목을 선택하세요</label>
+				<select id="srch" name="search">
+				<option value="b_subject">제목</option>
+				<option value="b_content">내용</option>
+				<option value="b_subject|b_content">제목+내용</option>
+				<option value="reg_name">작성자</option>
+				</select>
+				<label class="blind" for="input_srch" >검색어를 입력하세요</label>
+				<input name="skey" value="" class="text vtop2" id="input_srch" type="text" />
+				<input value="검색" class="btn-srh" type="submit" />
+				</form>
+			</div>
+			<!-- 검색폼 //-->
+		</div>
+		<!-- board-search-wrap / 검색 //-->
+
+		<!-- webzine-list-wrap -->
+		<div class="webzine-list-wrap" id="board-list-wrap">
+			<!-- 게시글 없을 경우
+			<div class="no-data">
+				<p>등록된 게시글이 없습니다</p>
+			</div>
+			게시글 없을 경우 //-->
+			
+			<!-- 세로형 4개 출력 -->
+			<ul class="webzine-list">
+				<li class="first">
+					<a href="#" class="thum"><span class="blind">등록된 이미지 없음</span></a>
+					<p class="subject"><a href="#">제목이 출력되는 곳</a></p>
+					<div class="ico-wrap"><a href="#" class="view"><span>바로보기</span></a></div>
+				</li>
+				<li>
+					<a href="#" class="thum"><img src="http://www.busanpa.com/upload/BS4251/140716.gif" alt="제목이 출력" /></a>
+					<p class="subject"><a href="#">제목이 출력되는 곳 제목이 길면 두줄까지 출력되도록 프로그램처리</a></p>
+					<div class="ico-wrap"><a href="#" class="down"><span>내려받기</span></a></div>
+				</li>
+				<li>
+					<a href="#" class="thum"><span class="blind">등록된 이미지 없음</span></a>
+					<p class="subject"><a href="#">제목이 출력되는 곳</a></p>
+					<div class="ico-wrap"><a href="#" class="view"><span>바로보기</span></a><a href="#" class="down"><span>내려받기</span></a></div>
+				</li>
+				<li>
+					<a href="#" class="thum"><span class="blind">등록된 이미지 없음</span></a>
+					<p class="subject"><a href="#">제목이 출력되는 곳</a></p>
+					<div class="ico-wrap"><a href="#" class="view"><span>바로보기</span></a><a href="#" class="down"><span>내려받기</span></a></div>
+				</li>
+				<li class="first">
+					<a href="#" class="thum"><span class="blind">등록된 이미지 없음</span></a>
+					<p class="subject"><a href="#">제목이 출력되는 곳</a></p>
+					<div class="ico-wrap"><a href="#" class="view"><span>바로보기</span></a><a href="#" class="down"><span>내려받기</span></a></div>
+				</li>
+				<li>
+					<a href="#" class="thum"><img src="http://www.busanpa.com/upload/BS4251/140716.gif" alt="제목이 출력" /></a>
+					<p class="subject"><a href="#">제목이 출력되는 곳</a></p>
+					<div class="ico-wrap"><a href="#" class="view"><span>바로보기</span></a><a href="#" class="down"><span>내려받기</span></a></div>
+				</li>
+				<li>
+					<a href="#" class="thum"><span class="blind">등록된 이미지 없음</span></a>
+					<p class="subject"><a href="#">제목이 출력되는 곳</a></p>
+					<div class="ico-wrap"><a href="#" class="view"><span>바로보기</span></a><a href="#" class="down"><span>내려받기</span></a></div>
+				</li>
+				<li>
+					<a href="#" class="thum"><span class="blind">등록된 이미지 없음</span></a>
+					<p class="subject"><a href="#">제목이 출력되는 곳 제목이 길면 두줄까지 출력되도록 프로그램처리</a></p>
+					<div class="ico-wrap"><a href="#" class="view"><span>바로보기</span></a><a href="#" class="down"><span>내려받기</span></a></div>
+				</li>
+			</ul>
+			<!-- 4개 출력 //-->
+		</div>
+
+		<div class="gap"></div>
+
+
+		<!-- webzine-list-wrap -->
+		<div class="webzine-list-wrap" id="board-list-wrap">
+			<!-- 가로형 3개 출력 -->
+			<ul class="webzine-list hrz">
+				<li class="first">
+					<a href="#" class="thum"><span class="blind">등록된 이미지 없음</span></a>
+					<p class="subject"><a href="#">제목이 한줄만 출력됨</a></p>
+					<div class="ico-wrap"><a href="#" class="view"><span>바로보기</span></a><a href="#" class="down"><span>내려받기</span></a></div>
+				</li>
+				<li>
+					<a href="#" class="thum"><img src="http://www.busanpa.com/upload/BS4251/140716.gif" alt="제목이 출력" /></a>
+					<p class="subject"><a href="#">제목이 출력되는 곳으로 제목이 길어지면 이렇게 출력</a></p>
+					<div class="ico-wrap"><a href="#" class="view"><span>바로보기</span></a><a href="#" class="down"><span>내려받기</span></a></div>
+				</li>
+				<li>
+					<a href="#" class="thum"><span class="blind">등록된 이미지 없음</span></a>
+					<p class="subject"><a href="#">제목이 출력되는 곳</a></p>
+					<div class="ico-wrap"><a href="#" class="view"><span>바로보기</span></a><a href="#" class="down"><span>내려받기</span></a></div>
+				</li>
+				<li class="first">
+					<a href="#" class="thum"><span class="blind">등록된 이미지 없음</span></a>
+					<p class="subject"><a href="#">제목이 출력되는 곳</a></p>
+					<div class="ico-wrap"><a href="#" class="view"><span>바로보기</span></a><a href="#" class="down"><span>내려받기</span></a></div>
+				</li>
+				<li>
+					<a href="#" class="thum"><img src="http://www.busanpa.com/upload/BS4251/140716.gif" alt="제목이 출력" /></a>
+					<p class="subject"><a href="#">제목이 출력되는 곳</a></p>
+					<div class="ico-wrap"><a href="#" class="view"><span>바로보기</span></a><a href="#" class="down"><span>내려받기</span></a></div>
+				</li>
+				<li>
+					<a href="#" class="thum"><span class="blind">등록된 이미지 없음</span></a>
+					<p class="subject"><a href="#">제목이 출력되는 곳으로 제목이 길어지면 이렇게 출력</a></p>
+					<div class="ico-wrap"><a href="#" class="view"><span>바로보기</span></a><a href="#" class="down"><span>내려받기</span></a></div>
+				</li>
+			</ul>
+			<!-- 가로형 3개 출력 //-->
+		</div>
+		<!-- webzine-list-wrap //-->
+
+		<div class="board-list-paging">
+		<p class="f16 b">** 페이징 스타일은 일반게시판 공통</p>
+		</div>
+
+	</div>
+	<!-- board-wrap //-->
+
+</div>
+</body>
+</html>

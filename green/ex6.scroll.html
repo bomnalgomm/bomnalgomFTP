@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="css/base.css" rel="stylesheet" />
+<style type="text/css">
+img {width:800px;}
+#wrap {position:relative;min-width:800px;}
+#header {position:fixed;top:0;left:0;width:100%;height:100px;background:#fc6;}
+.headerin {width:800px;margin:0 auto;position:relative;}
+.logo {}
+.gnb {position:absolute;top:55px;right:0;}
+.gnb li {float:left;margin-left:50px;}
+.gnb li a:hover, .gnb li.on a {color:#f30;}
+.container {width:800px;margin:0 auto;padding-bottom:240px;}
+.container div {padding-top:120px;}
+</style>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+$(function(){//실행문 시작
+	var menu = $(".gnb > ul > li");
+	var section = $(".container > div");
+
+	// 메뉴를 클릭한다면
+	menu.click(function(){
+		var i = $(this).index();
+		var tg = section.eq(i);
+		var tt = tg.offset().top; // offset()명령 : 문서의 원점으로부터 셀렉터가 배치된 공간까지의 좌표를 저장시킴
+		$("html, body").stop().animate({scrollTop:tt});
+		return false;
+	}); // menu.click() 마지막
+	
+	// 문서의 스크롤이 작동되어 진다면
+	$(window).scroll(function(){
+		// 현재 스크롤바의 위치값을 저장시킴
+		var sct = $(window).scrollTop();
+/*		if(sct >= section.eq(0).offset().top){
+			menu.removeClass("on");
+			menu.eq(0).addClass("on");			
+		}
+		if(sct >= section.eq(1).offset().top){
+			menu.removeClass("on");
+			menu.eq(1).addClass("on");			
+		}
+		if(sct >= section.eq(2).offset().top){
+			menu.removeClass("on");
+			menu.eq(2).addClass("on");			
+		}
+		if(sct >= section.eq(3).offset().top){
+			menu.removeClass("on");
+			menu.eq(3).addClass("on");			
+		}		*/		
+		section.each(function(){
+			var tg = $(this);
+			var i = tg.index();
+			if(sct >= tg.offset().top){
+				menu.removeClass("on");
+				menu.eq(i).addClass("on");
+			}
+		});
+		
+	});
+	
+});//실행문 끝
+</script>
+</head>
+
+<body>
+	<section id="wrap">
+    	<header id="header">
+        	<div class="headerin">
+                <h1 class="logo"><a href="#">LOGO</a></h1>
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="#cont1">MENU1</a></li>
+                        <li><a href="#cont2">MENU2</a></li>
+                        <li><a href="#cont3">MENU3</a></li>
+                        <li><a href="#cont4">MENU4</a></li>                                                            
+                    </ul>
+                </nav>
+               </div>
+        </header>
+        <div class="container">
+        	<div id="cont1"><img src="img/m01.jpg" /></div>
+        	<div id="cont2"><img src="img/m02.jpg" /></div>
+        	<div id="cont3"><img src="img/m03.jpg" /></div>
+        	<div id="cont4"><img src="img/m04.jpg" /></div>                                    
+        </div>
+    </section>
+</body>
+</html>

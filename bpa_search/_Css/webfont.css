@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+@font-face {
+font-family:'NanumGothic';
+src:url('../_Font/NanumGothic.eot');
+src: local(※), url('../_Font/NanumGothic.eot?#iefix') format('embedded-opentype'),
+	local(※), url('../_Font/NanumGothic.ttf') format('truetype'),
+	local(※), url('../_Font/NanumGothic.woff') format('woff');
+font-weight:normal;
+font-style:normal;
+font-size:12px;
+}
+
+@font-face {
+font-family:'NanumGothic';
+src: url('../_Font/NanumGothicBold.eot');
+src:local(※), url('../_Font/NanumGothicBold.eot?#iefix') format('embedded-opentype'),
+	local(※), url('../_Font/NanumGothicBold.ttf') format('truetype'),
+	local(※), url('../_Font/NanumGothicBold.woff') format('woff');
+font-weight:bold;
+font-style:normal;
+font-size:12px;
+}
+
+@font-face {
+font-family:'NanumGothic';
+src:url('../_Font/NanumGothicExtraBold.eot');
+src:local(※), url('../_Font/NanumGothicExtraBold.eot?#iefix') format('embedded-opentype'),
+	local(※), url('../_Font/NanumGothicExtraBold.ttf') format('truetype'),
+	local(※), url('../_Font/NanumGothicExtraBold.woff') format('woff');
+font-weight:600;
+font-style:normal;
+font-size:12px;
+}
+
+@font-face {
+font-family:'NanumMyeongjo';
+src:url('../_Font/NanumMyeongjo.eot');
+src: local(※), url('../_Font/NanumMyeongjo.eot?#iefix') format('embedded-opentype'),
+	local(※), url('../_Font/NanumMyeongjo.ttf') format('truetype'),
+	local(※), url('../_Font/NanumMyeongjo.woff') format('woff');
+font-weight:normal;
+font-style:normal;
+font-size:12px;
+}
+
+@font-face {
+font-family:'NanumMyeongjo';
+src: url('../_Font/NanumMyeongjo.eot');
+src:local(※), url('../_Font/NanumMyeongjo.eot?#iefix') format('embedded-opentype'),
+	local(※), url('../_Font/NanumMyeongjo.ttf') format('truetype'),
+	local(※), url('../_Font/NanumMyeongjo.woff') format('woff');
+font-weight:bold;
+font-style:normal;
+font-size:12px;
+}
+
+
+@font-face {
+font-family:'Godo';
+src:url('../_Font/GodoM.eot');
+src: local(※), url('../_Font/GodoM.eot?#iefix') format('embedded-opentype'),
+	 local(※), url('../_Font/GodoM.ttf') format('truetype'),
+	 local(※), url('../_Font/GodoM.woff') format('woff');
+font-weight:bold;
+font-style:normal;
+font-size:12px;
+
+
+@font-face {
+font-family:'Godo';
+src: url('../_Font/GodoB.eot');
+src:local(※), url('../_Font/GodoB.eot?#iefix') format('embedded-opentype'),
+	local(※), url('../_Font/GodoB.ttf') format('truetype'),
+	local(※), url('../_Font/GodoB.woff') format('woff');
+font-weight:600;
+font-style:normal;
+font-size:12px;
+}

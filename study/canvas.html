@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>canvas test</title>
+  <link rel="stylesheet" href="/_Css/common.css" />
+  <style type="text/css">
+	.drawCanvas {margin-left:200px;width:300px;height:200px;border:1px solid #993300;box-sizing:border-box;}
+  </style>
+ </head>
+ <body>
+	<canvas id="drawCanvas" class="drawCanvas">
+		<p>이문장은 웹브라우저가 지원하지 않을때 출력</p>
+	</canvas>
+	<script>
+		var paper = document.getElementById("drawCanvas");
+		var context = paper.getContext("2d");
+		context.strokeRect(10,10,250,130);
+
+		context.fillStyle ="blue";
+		context.fillRect(20,20,200,100);
+		context.clearRect(0,0,50,50);
+
+	</script>
+
+	<p>strokeRect() 함수를 호출 선만으로 이루어진 사각형</p>
+	<p>fillRect() 함수를 호출 파란색으로 채워진 사각형</p>
+	<p>clearRect() 함수를 호출 사각형 모양으로 안의 내용 지움</p>
+
+
+ </body>
+</html>

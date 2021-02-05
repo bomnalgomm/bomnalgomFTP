@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+	
+<!-- html_head -->
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="author" content="iACTS" />
+<meta name="keywords" content="iACTS" />
+<meta name="description" content="iACTS" />
+<title>iACTS</title>
+<link rel="stylesheet" type="text/css" href="../../expo/share/css/font.css" />
+<!-- <link rel="stylesheet" type="text/css" href="../../expo/share/css/_vendor/normalize.min.css" /> -->
+<link rel="stylesheet" type="text/css" href="../../expo/share/css/base.css" /><!-- Do not edit! -->
+<link rel="stylesheet" type="text/css" href="../../expo/share/css/all.css" />
+<link rel="stylesheet" type="text/css" href="../../expo/share/css/style.css" /><!-- ◆ 개별 -->
+<link rel="stylesheet" type="text/css" href="../../expo/share/css/main.css" /><!-- ◆ 개별 -->
+<!--[if !IE]>-->
+<script src="../../expo/share/js/hammer.min.js"></script>
+<!--<![endif]-->
+<script src="../../expo/share/js/iscroll-min.js"></script>
+<script src="../../expo/share/js/jquery-1.12.4.min.js"></script>
+<script src="../../expo/share/js/jquery.easing.1.3.js"></script>
+<!--[if lt IE 9]>
+<script src="../../expo/share/js/html5shiv.min.js"></script>
+<script src="../../expo/share/js/selectivizr.js"></script>
+<script src="../../expo/share/js/respond.min.js"></script>
+<script src="../../expo/share/js/jquery.backgroundSize.js"></script>
+<![endif]-->
+<!-- Do not edit! -->
+<script src="../../expo/share/js/script_base.js"></script>
+<script src="../../expo/share/js/script_gesture1.js"></script>
+<script src="../../expo/share/js/script_swipe1.js"></script>
+<!-- /Do not edit! -->
+<script src="../../expo/share/js/script.js"></script><!-- 실행호출 -->
+<!-- /html_head -->
+	
+</head>
+
+<body class="d0 d0_0 d0_0_0 d0_0_0_0" data-layout="main">
+
+<!-- #container -->
+<div id="container">
+
+<!-- header begin -->
+
+<div class="bg bg2top"><div></div></div>
+<div class="bg bg2btm"><div></div></div>
+<noscript><p class="noscript">JavaScript has been disabled. This site requires JavaScript for full functionality, please enable.</p></noscript>
+<div id="skipnav">
+<ul>
+<li><a href="#body">본문 바로가기</a></li>
+</ul>
+</div><hr class="dpn" />
+<!-- #head -->
+<div id="head" class="init">
+<div class="bg bg2head"><div></div></div>
+<!-- #head_s1 -->
+<div id="head_s1" class="clearfix">
+<!-- container -->
+<div class="container">
+<h1 id="logo">
+<a href="/main.web" title="홈으로 이동">
+<img src="/_res/portal/img/inc/logo@2x.png" alt="inernet ACTS" />
+</a>
+</h1>
+<h2 class="blind">상단 메뉴</h2>
+<!-- gn1 -->
+<div id="gn1">
+<strong class="blind">Global Navigation</strong>
+<ul>
+<li class="login"><a href="/02068/02108.web"><i class="ic1 bsContain"></i> <span class="t1">로그인</span></a></li>
+<!-- <li class="sitemap"><a href="#?"><i class="ic1 bsContain"></i> <span class="t1">사이트맵</span></a></li> -->
+<!-- <li class="search"><a href="#?"><i class="ic1 bsContain"></i> <span class="t1">검색</span></a></li> -->
+</ul>
+</div>
+<!-- /gn1 -->
+<!-- anb1 -->
+<div id="anb1">
+<h3 class="blind">전체메뉴</h3>
+<strong><a href="#anb1c" class="b1 toggle"><i class="ic1 bsContain"></i> <span class="t1 blind">SITEMAP</span> <span class="blind">여닫기</span></a></strong>
+<!-- anb1c -->
+<div id="anb1c"><div class="bg"></div>
+<div class="wrap1">
+<div class="hg1">
+<strong class="h1"><img src="/_res/portal/img/inc/logo_c0.png" alt="internet ACTS" /></strong>
+<strong class="ht1">SITEMAP</strong>
+</div>
+<!-- d1 -->
+<div class="d1"><div class="bg"></div>
+<ul>
+<li class="m1"><a href="/02066.web"><i class="ic1"></i> <span class="t1">ABOUT</span></a>
+<div class="d2"><div class="bg"></div>
+<div class="hg1"><!-- 1차제목, 부제목 추가 -->
+<strong class="h1">ABOUT</strong>
+<p class="h2"></p>
+<i class="ic1"></i>
+</div>
+<ul>
+<li class="m1"><a href="/02066/02071.web"><i class="ic1"></i> <span class="t1">인사말</span></a></li>
+<li class="m2"><a href="/02066/02072.web"><i class="ic1"></i> <span class="t1">회사소개</span></a></li>
+<li class="m3"><a href="/02066/02073.web"><i class="ic1"></i> <span class="t1">걸어온 길</span></a></li>
+<li class="m4"><a href="/02066/02074.web"><i class="ic1"></i> <span class="t1">주요고객</span></a></li>
+<li class="m5"><a href="/02066/02076.web"><i class="ic1"></i> <span class="t1">나눔과 섬김</span></a></li>
+<li class="m6"><a href="/02066/02075.web"><i class="ic1"></i> <span class="t1">최근소식</span></a></li>
+</ul>
+</div>
+</li>
+<li class="m2"><a href="/02067.web"><i class="ic1"></i> <span class="t1">BUSINESS</span></a>
+<div class="d2"><div class="bg"></div>
+<div class="hg1"><!-- 1차제목, 부제목 추가 -->
+<strong class="h1">BUSINESS</strong>
+<p class="h2"></p>
+<i class="ic1"></i>
+</div>
+<ul>
+<li class="m1"><a href="/02067/02085.web"><i class="ic1"></i> <span class="t1">사업분야</span></a></li>
+<li class="m2"><a href="/02067/02086.web"><i class="ic1"></i> <span class="t1">포트폴리오</span></a></li>
+<li class="m3"><a href="/02067/02096.web"><i class="ic1"></i> <span class="t1">자체개발SW</span></a></li>
+<li class="m4"><a href="/02067/02136.web"><i class="ic1"></i> <span class="t1">공급지원SW</span></a></li>
+<li class="m5"><a href="/02067/02104.web"><i class="ic1"></i> <span class="t1">웹 접근성</span></a></li>
+<li class="m6"><a href="/02067/02105.web"><i class="ic1"></i> <span class="t1">정부 지침 준수</span></a></li>
+</ul>
+</div>
+</li>
+<li class="m3"><a href="/02068.web"><i class="ic1"></i> <span class="t1">SUPPORT</span></a>
+<div class="d2"><div class="bg"></div>
+<div class="hg1"><!-- 1차제목, 부제목 추가 -->
+<strong class="h1">SUPPORT</strong>
+<p class="h2"></p>
+<i class="ic1"></i>
+</div>
+<ul>
+<li class="m1"><a href="/02068/02106.web"><i class="ic1"></i> <span class="t1">고객지원정책</span></a></li>
+<li class="m2"><a href="/02068/02108.web"><i class="ic1"></i> <span class="t1">고객지원시스템</span></a></li>
+<li class="m3"><a href="/02068/02109.web"><i class="ic1"></i> <span class="t1">고객전용알림</span></a></li>
+<li class="m4"><a href="/02068/02110.web"><i class="ic1"></i> <span class="t1">직원비상연락망</span></a></li>
+</ul>
+</div>
+</li>
+<li class="m4"><a href="/02069.web"><i class="ic1"></i> <span class="t1">RECRUIT</span></a>
+<div class="d2"><div class="bg"></div>
+<div class="hg1"><!-- 1차제목, 부제목 추가 -->
+<strong class="h1">RECRUIT</strong>
+<p class="h2"></p>
+<i class="ic1"></i>
+</div>
+<ul>
+<li class="m1"><a href="/02069/02111.web"><i class="ic1"></i> <span class="t1">OVERVIEW</span></a></li>
+<li class="m2"><a href="/02069/02114.web"><i class="ic1"></i> <span class="t1">인재상 및 직군</span></a></li>
+<li class="m3"><a href="/02069/02129.web"><i class="ic1"></i> <span class="t1">기업문화</span></a></li>
+<li class="m4"><a href="/02069/02157.web"><i class="ic1"></i> <span class="t1">스토리갤러리</span></a></li>
+<li class="m5"><a href="/02069/02124.web"><i class="ic1"></i> <span class="t1">사무실소개</span></a></li>
+<li class="m6"><a href="/02069/02112.web"><i class="ic1"></i> <span class="t1">채용소식</span></a></li>
+<li class="m7"><a href="/02069/02116.web"><i class="ic1"></i> <span class="t1">입사지원</span></a></li>
+</ul>
+</div>
+</li>
+<li class="m5"><a href="/02070.web"><i class="ic1"></i> <span class="t1">CONTACT</span></a>
+<div class="d2"><div class="bg"></div>
+<div class="hg1"><!-- 1차제목, 부제목 추가 -->
+<strong class="h1">CONTACT</strong>
+<p class="h2"></p>
+<i class="ic1"></i>
+</div>
+<ul>
+<li class="m1"><a href="/02070/02117.web"><i class="ic1"></i> <span class="t1">프로젝트의뢰</span></a></li>
+<li class="m2"><a href="/02070/02118.web"><i class="ic1"></i> <span class="t1">파트너제안</span></a></li>
+<li class="m3"><a href="/02070/02119.web"><i class="ic1"></i> <span class="t1">전화번호안내</span></a></li>
+<li class="m4"><a href="/02070/02120.web"><i class="ic1"></i> <span class="t1">모바일 앱</span></a></li>
+<li class="m5"><a href="/02070/02121.web"><i class="ic1"></i> <span class="t1">찾아오시는 길</span></a></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<!-- /d1 -->
+<a href="#anb1c" class="b2 close"><i class="ic1 bsContain"></i> <span class="blind">SITEMAP</span> <span class="t1 blind">닫기</span></a>
+</div>
+</div>
+<!-- /anb1c -->
+</div>
+<!-- /anb1 -->
+<!-- search1 -->
+<div id="search1">
+<strong><a href="#search1c" class="b1 toggle"><i class="ic1 bsContain"></i><span class="t1 blind">검색 박스 여닫기</span></a></strong>
+<!-- search1c -->
+<div id="search1c">
+<div class="wrap1">
+<div class="hg1">
+<strong class="h1"><img src="/_res/portal/img/inc/logo_c0.png" alt="iACTS. 15 YEARS" /></strong>
+<strong class="ht1">SEARCH</strong>
+</div>
+<form id="search2f0" action="?">
+<fieldset>
+<legend class="blind"><strong class="h1">통합 검색</strong></legend>
+<input type="text" id="search2f0text" value=" 검색어를 입력하세요." title="검색어"
+onfocus="if( this.value == this.defaultValue ) this.value=''; this.select();"
+onblur="if( this.value=='' ) this.value=this.defaultValue;"
+class="text" />
+<button type="submit" class="button submit search" onclick="alert('서비스 준비중입니다.'); return false;"><i class="ic1 bsContain"></i><span class="t1 blind">검색</span></button>
+</fieldset>
+</form>
+<a href="#search1c" class="b2 close"><i class="ic1"></i><span class="t1 blind">검색 박스 닫기</span></a>
+</div>
+</div>
+<!-- /search1c -->
+</div>
+<!-- /search1 -->
+</div>
+<!-- /container -->
+</div>
+<!-- /#head_s1 -->
+<!-- #head_s2 -->
+<div id="head_s2" class="clearfix">
+<!-- container -->
+<div class="container">
+<!-- tnb1 [JS] -->
+<div id="tnb1">
+<h3 class="blind">주 메뉴</h3>
+<strong class="h1"><a href="#tnb1c" class="b1 toggle"><i class="ic1 bsContain"></i> <span class="t1 blind">주 메뉴</span> <span class="blind">여닫기</span></a></strong>
+<!-- tnb1c -->
+<div id="tnb1c"><div class="bg"></div>
+<!-- cont -->
+<div class="cont"><div class="bg"></div><!-- 20171018 ((( :before 는 클릭안되어 수정 -->
+<a href="#tnb1c" class="b2 close"><i class="ic1 bsContain"></i> <span class="t1 blind">주 메뉴</span> <span class="blind">닫기</span></a>
+<!-- d1 -->
+<div class="d1"><div class="bg"></div>
+<ul>
+<li class="m1">
+<a href="/02066.web"><i class="ic1"></i> <span class="t1">ABOUT</span></a>
+<div class="d2"><div class="bg"></div>
+<div class="hg1"><!-- 1차제목, 부제목 추가 -->
+<strong class="h1">ABOUT</strong>
+<p class="h2"></p>
+<i class="ic1"></i>
+</div>
+<ul>
+<li class="m1">
+<a href="/02066/02071.web"><i class="ic1"></i> <span class="t1">인사말</span></a>
+</li>
+<li class="m2">
+<a href="/02066/02072.web"><i class="ic1"></i> <span class="t1">회사소개</span></a>
+<div class="d3"><div class="bg"></div>
+<ul>
+<li class="m1">
+<a href="/02066/02072.web">기업개요</a>
+</li>
+<li class="m2">
+<a href="/02066/02072.web">비전</a>
+</li>
+<li class="m3">
+<a href="/02066/02072.web">조직도</a>
+</li>
+<li class="m4">
+<a href="/02066/02072.web">CI</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="m3">
+<a href="/02066/02073.web"><i class="ic1"></i> <span class="t1">걸어온 길</span></a>
+<div class="d3"><div class="bg"></div>
+<ul>
+<li class="m1">
+<a href="/02066/02073.web">2018년~2015년</a>
+</li>
+<li class="m2">
+<a href="/02066/02073.web">2014년~2011년</a>
+</li>
+<li class="m3">
+<a href="/02066/02073.web">2010년~2006년</a>
+</li>
+<li class="m4">
+<a href="/02066/02073.web">2005년~2003년</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="m4">
+<a href="/02066/02074.web"><i class="ic1"></i> <span class="t1">주요고객</span></a>
+</li>
+<li class="m5">
+<a href="/02066/02076.web"><i class="ic1"></i> <span class="t1">나눔과 섬김</span></a>
+</li>
+<li class="m6">
+<a href="/02066/02075.web"><i class="ic1"></i> <span class="t1">최근소식</span></a>
+<div class="d3"><div class="bg"></div>
+<ul>
+<li class="m1">
+<a href="/02066/02075.web">Notice</a>
+</li>
+<li class="m2">
+<a href="/02066/02075.web">Project News</a>
+</li>
+<li class="m3">
+<a href="/02066/02075.web">Happy Acts</a>
+</li>
+<li class="m4">
+<a href="/02066/02075.web">Trend Report</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li class="m2">
+<a href="/02067.web"><i class="ic1"></i> <span class="t1">BUSINESS</span></a>
+<div class="d2"><div class="bg"></div>
+<div class="hg1"><!-- 1차제목, 부제목 추가 -->
+<strong class="h1">BUSINESS</strong>
+<p class="h2"></p>
+<i class="ic1"></i>
+</div>
+<ul>
+<li class="m1">
+<a href="/02067/02085.web"><i class="ic1"></i> <span class="t1">사업분야</span></a>
+</li>
+<li class="m2">
+<a href="/02067/02086.web"><i class="ic1"></i> <span class="t1">포트폴리오</span></a>
+<div class="d3"><div class="bg"></div>
+<ul>
+<li class="m1">
+<a href="/02067/02086.web">전체</a>
+</li>
+<li class="m2">
+<a href="/02067/02086.web">지자체대표</a>
+</li>
+<li class="m3">
+<a href="/02067/02086.web">관광·축제·행사</a>
+</li>
+<li class="m4">
+<a href="/02067/02086.web">공공시설·서비스</a>
+</li>
+<li class="m5">
+<a href="/02067/02086.web">기관·기업</a>
+</li>
+<li class="m6">
+<a href="/02067/02086.web">모바일</a>
+</li>
+<li class="m7">
+<a href="/02067/02086.web">대학</a>
+</li>
+<li class="m8">
+<a href="/02067/02086.web">기타</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="m3">
+<a href="/02067/02096.web"><i class="ic1"></i> <span class="t1">자체개발SW</span></a>
+<div class="d3"><div class="bg"></div>
+<ul>
+<li class="m1">
+<a href="/02067/02096.web">콘텐츠관리시스템(CMS)</a>
+</li>
+<li class="m2">
+<a href="/02067/02096.web">첨부파일바로보기</a>
+</li>
+<li class="m3">
+<a href="/02067/02096.web">통합검색 솔루션</a>
+</li>
+<li class="m4">
+<a href="/02067/02096.web">웹 접근성 자동검사 솔루션</a>
+</li>
+<li class="m5">
+<a href="/02067/02096.web">한글 맞춤법·문법 검사기</a>
+</li>
+<li class="m6">
+<a href="/02067/02096.web">웹 트렌드 리포트</a>
+</li>
+<li class="m7">
+<a href="/02067/02096.web">뉴스미디어 통합 패키지</a>
+</li>
+<li class="m8">
+<a href="/02067/02096.web">기타</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="m4">
+<a href="/02067/02136.web"><i class="ic1"></i> <span class="t1">공급지원SW</span></a>
+</li>
+<li class="m5">
+<a href="/02067/02104.web"><i class="ic1"></i> <span class="t1">웹 접근성</span></a>
+<div class="d3"><div class="bg"></div>
+<ul>
+<li class="m1">
+<a href="/02067/02104.web">웹 접근성 준수</a>
+</li>
+<li class="m2">
+<a href="/02067/02104.web">품질인증마크 획득 현황</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="m6">
+<a href="/02067/02105.web"><i class="ic1"></i> <span class="t1">정부 지침 준수</span></a>
+</li>
+</ul>
+</div>
+</li>
+<li class="m3">
+<a href="/02068.web"><i class="ic1"></i> <span class="t1">SUPPORT</span></a>
+<div class="d2"><div class="bg"></div>
+<div class="hg1"><!-- 1차제목, 부제목 추가 -->
+<strong class="h1">SUPPORT</strong>
+<p class="h2"></p>
+<i class="ic1"></i>
+</div>
+<ul>
+<li class="m1">
+<a href="/02068/02106.web"><i class="ic1"></i> <span class="t1">고객지원정책</span></a>
+</li>
+<li class="m2">
+<a href="/02068/02108.web"><i class="ic1"></i> <span class="t1">고객지원시스템</span></a>
+</li>
+<li class="m3">
+<a href="/02068/02109.web"><i class="ic1"></i> <span class="t1">고객전용알림</span></a>
+</li>
+<li class="m4">
+<a href="/02068/02110.web"><i class="ic1"></i> <span class="t1">직원비상연락망</span></a>
+</li>
+</ul>
+</div>
+</li>
+<li class="m4">
+<a href="/02069.web"><i class="ic1"></i> <span class="t1">RECRUIT</span></a>
+<div class="d2"><div class="bg"></div>
+<div class="hg1"><!-- 1차제목, 부제목 추가 -->
+<strong class="h1">RECRUIT</strong>
+<p class="h2"></p>
+<i class="ic1"></i>
+</div>
+<ul>
+<li class="m1">
+<a href="/02069/02111.web"><i class="ic1"></i> <span class="t1">OVERVIEW</span></a>
+</li>
+<li class="m2">
+<a href="/02069/02114.web"><i class="ic1"></i> <span class="t1">인재상 및 직군</span></a>
+<div class="d3"><div class="bg"></div>
+<ul>
+<li class="m1">
+<a href="/02069/02114.web">인재상</a>
+</li>
+<li class="m2">
+<a href="/02069/02114.web">모집직군</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="m3">
+<a href="/02069/02129.web"><i class="ic1"></i> <span class="t1">기업문화</span></a>
+</li>
+<li class="m4">
+<a href="/02069/02157.web"><i class="ic1"></i> <span class="t1">스토리갤러리</span></a>
+</li>
+<li class="m5">
+<a href="/02069/02124.web"><i class="ic1"></i> <span class="t1">사무실소개</span></a>
+</li>
+<li class="m6">
+<a href="/02069/02112.web"><i class="ic1"></i> <span class="t1">채용소식</span></a>
+</li>
+<li class="m7">
+<a href="/02069/02116.web"><i class="ic1"></i> <span class="t1">입사지원</span></a>
+</li>
+</ul>
+</div>
+</li>
+<li class="m5">
+<a href="/02070.web"><i class="ic1"></i> <span class="t1">CONTACT</span></a>
+<div class="d2"><div class="bg"></div>
+<div class="hg1"><!-- 1차제목, 부제목 추가 -->
+<strong class="h1">CONTACT</strong>
+<p class="h2"></p>
+<i class="ic1"></i>
+</div>
+<ul>
+<li class="m1">
+<a href="/02070/02117.web"><i class="ic1"></i> <span class="t1">프로젝트의뢰</span></a>
+</li>
+<li class="m2">
+<a href="/02070/02118.web"><i class="ic1"></i> <span class="t1">파트너제안</span></a>
+</li>
+<li class="m3">
+<a href="/02070/02119.web"><i class="ic1"></i> <span class="t1">전화번호안내</span></a>
+</li>
+<li class="m4">
+<a href="/02070/02120.web"><i class="ic1"></i> <span class="t1">모바일 앱</span></a>
+</li>
+<li class="m5">
+<a href="/02070/02121.web"><i class="ic1"></i> <span class="t1">찾아오시는 길</span></a>
+<div class="d3"><div class="bg"></div>
+<ul>
+<li class="m1">
+<a href="/02070/02121.web">경남사무실</a>
+</li>
+<li class="m2">
+<a href="/02070/02121.web">부산센텀사무실</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<!-- /d1 -->
+<a href="#tnb1c" class="b2 close"><i class="ic1 bsContain"></i> <span class="t1 blind">주 메뉴</span> <span class="blind">닫기</span></a>
+</div>
+<!-- /cont -->
+</div>
+<!-- /tnb1c -->
+</div>
+<!-- /tnb1 -->
+</div>
+<!-- /container -->
+</div>
+<!-- /#head_s2 -->
+<!-- #head_s3 -->
+<div id="head_s3" class="clearfix">
+<!-- container -->
+<div class="container">
+<!-- head_visual.jsp 위치는 fixed 안에 두면 안되므로.. sidebar.jsp 로 옮김 -->
+</div>
+<!-- /container -->
+</div>
+<!-- /#head_s3 -->
+</div><hr class="dpn" />
+<!-- /#head -->
+
+<!-- #wrap -->
+<div id="wrap">
+<!-- container -->
+<div class="container clearfix">
+<!-- #body -->
+<div id="body" tabindex="-1" class="init">
+<div class="bg bg2body bsContain"><div></div></div>
+
+
+
+<!-- go1mainbody -->
+<div id="go1mainbody">
+<div class="wrap1">
+	<ul>
+	<li class="m1"><a href="#mainbody1"><i class="ic1"></i> <span class="t1">Intro / Login</span></a></li>
+	<li class="m2"><a href="#mainbody2"><i class="ic1"></i> <span class="t1">Solution</span></a></li>
+	<li class="m3"><a href="#mainbody3"><i class="ic1"></i> <span class="t1">Portfolio</span></a></li>
+	<li class="m4"><a href="#mainbody4"><i class="ic1"></i> <span class="t1">About / Recruit</span></a></li>
+	<li class="m5"><a href="#mainbody5"><i class="ic1"></i> <span class="t1">Notice ..</span></a></li>
+	</ul>
+</div>
+</div>
+<!-- /go1mainbody -->
+<script src="../../expo/share/js/script_scroll1section3.js"></script><!-- 20180327. 메인본문섹션 페이징 스크롤 추가 -->
+
+
+<!-- ◇◆ mainbody1 ◇◆◇◆◇◆◇◆◇◆ -->
+<!-- [JS]
+	(기본값) default
+	(8~12) morning
+	(12~13) lunch
+-->
+<div id="mainbody1" class="mainbody1 bsCover" data-time='default'>
+<div id="mainbody1Cont" class="bg bsCover"><div></div></div>
+<!-- container -->
+<div class="container clearfix">
+
+
+
+<!-- time1weather1 -->
+<div id="time1weather1">
+	<span class="time1">
+		<!-- <span class="dpib">2018년 3월 22일</span> -->
+		<!-- <span class="dpib">AM 09:00</span> -->
+		<!-- <span class="dpib">PM 12:00</span> -->
+		<!-- <span class="dpib">PM 01:30</span> -->
+	</span>
+	<span class="weather1">
+		<span class="t1">맑음</span>
+		<i class="ic1"><img src="/_res/portal/img/main/weather1/w101.png" alt="맑음" /></i>
+	</span>
+</div>
+<!-- /time1weather1 -->
+  
+<script>/*<![CDATA[*/
+/** ◇◆ 시계 (2018년 3월 23일 AM 10:21:50). 20180323. MoonYoungshin.
+ */
+(function(){
+
+	// 호출실행
+	printClock();
+
+	// ◇◆ 시계 출력
+	function printClock() {
+
+		var d = new Date(); // 현재시각
+		var nYear = d.getFullYear();
+		var nMonth = d.getMonth()+1;
+		var nDate =  d.getDate();
+		var amPm = 'AM'; // 초기값 AM
+		var nHours = addZeros(d.getHours(), 2);
+		var nMinutes = addZeros(d.getMinutes() , 2);
+		var nSeconds =  addZeros(d.getSeconds(), 2);
+		var htmlClock = ''; // 출력 마크업
+		var $clock = $('#time1weather1 .time1'); // 여기 출력
+
+		// 시간이 12보다 클 때 PM으로 세팅, 12를 빼줌
+		if(nHours >= 12){
+			amPm = 'PM';
+			nHours = addZeros(nHours - 12, 2);
+		}
+
+		// 50초 이상일 때 색을 변환해 준다.
+		if(nSeconds >= 50){
+		   nSeconds = '<em style="color:#ff0;">'+nSeconds+'</em>'
+		}
+		
+		// 출력 마크업 생성
+		htmlClock =  '<span class="dpib">' + nYear + '년 ' + nMonth + '월 ' + nDate + '일</span> ';
+		//htmlClock += '<span class="dpib">' + amPm + ' ' + nHours + ':' + nMinutes + ':' + nSeconds + '</span> ';
+		htmlClock += '<span class="dpib">' + amPm + ' ' + nHours + ':' + nMinutes + '</span> ';
+
+		// 현재시각 출력
+		$clock.html( htmlClock );
+
+		// 1초마다 갱신
+		// 첫 인수가 전역 함수가 아닐 때 printClock() 형태로 호출하면 오류 ))) printClock 형태로 호출해야 한다. 
+		setTimeout( printClock, 1000);
+	}
+
+	// ◇◆ 자릿수 맞추기
+	function addZeros(num, digit) {
+		  var zero = '';
+		  num = num.toString();
+		  if (num.length < digit) {
+			for (i = 0; i < digit - num.length; i++) {
+			  zero += '0';
+			}
+		  }
+		  return zero + num;
+	}
+
+	// 날씨관련정보
+	if(0 == 0){
+		if(3 == 4){
+            $('#time1weather1 .weather1 .t1').html("흐림");
+            $('#time1weather1 .weather1 .ic1').html("<img src='/_res/portal/img/main/weather1/w101.png' alt='흐림' />");
+        }else if(3 == 3){
+            $('#time1weather1 .weather1 .t1').html("구름많음");
+            $('#time1weather1 .weather1 .ic1').html("<img src='/_res/portal/img/main/weather1/w101.png' alt='구름많음' />");
+        }else if(3 == 2){
+            $('#time1weather1 .weather1 .t1').html("구름조금");
+            $('#time1weather1 .weather1 .ic1').html("<img src='/_res/portal/img/main/weather1/w101.png' alt='구름조금' />");
+        }else{
+            $('#time1weather1 .weather1 .t1').html("맑음");
+            $('#time1weather1 .weather1 .ic1').html("<img src='/_res/portal/img/main/weather1/w101.png' alt='맑음' />");
+        }
+	}else if(0 == 1){
+			$('#time1weather1 .weather1 .t1').html("비");
+            $('#time1weather1 .weather1 .ic1').html("<img src='/_res/portal/img/main/weather1/w101.png' alt='비' />");
+	}else if(0 == 2){
+			$('#time1weather1 .weather1 .t1').html("비/눈");
+            $('#time1weather1 .weather1 .ic1').html("<img src='/_res/portal/img/main/weather1/w101.png' alt='비/눈' />");
+	}else{
+			$('#time1weather1 .weather1 .t1').html("눈");
+            $('#time1weather1 .weather1 .ic1').html("<img src='/_res/portal/img/main/weather1/w101.png' alt='눈' />");
+	}
+
+	
+
+})();
+/*]]>*/</script>
+
+<!-- slogan1 -->
+<div id="slogan1">
+	<div class="tg1 time-default">
+		<p class="t1 ffgdrR">Good Morning</p>
+		<p class="t2">오늘도 활기찬 하루되세요!</p>
+      	<input type="hidden" id="imgMsg" value="업무시작2.jpg"/>
+	</div>
+</div>
+<!-- /slogan1 -->
+  
+<script>/*<![CDATA[*/
+
+	//메인 이미지 변경
+	var img = $("#imgMsg").val();
+	$('#mainbody1Cont').attr('style', 'background-image: url("/upload/welcomeMsg/' + img +'")');
+
+/*]]>*/</script>
+
+<!-- login1 : ★로그인전 -->
+  
+<script>/*<![CDATA[*/
+	$('#slogan1').show();
+/*]]>*/</script>
+  
+<div id="login1">
+	<form name="frm_intranet_login_side" action="/iacts/login.do" method="post" onsubmit="return dosubmit_side_login(this);">
+      <input type="hidden" name="rn_url" value="http://iacts2018.iacts.co.kr" />
+		<fieldset class="check">
+			<legend class="blind">고객지원시스템 로그인</legend>
+			<div class="w1">
+				<span class="item">
+					<input type="radio" name="ediv" value="P" id="login1f0e0e0" class="radio" />
+					<label class="label" for="login1f0e0e0">
+						<i class="ic1"></i>
+						<span class="t1">프로젝트 고객</span>
+					</label>
+				</span>
+				<span class="item">
+					<input type="radio" name="ediv" value="M" id="login1f0e0e1" class="radio" />
+					<label class="label" for="login1f0e0e1">
+						<i class="ic1"></i>
+						<span class="t1">유지보수 고객</span>
+					</label>
+				</span>
+			</div>
+			<div class="w2">
+				<p class="item">
+					<label for="login1f0e1" class="blind">아이디</label>
+					<input type="text" name="member_id" id="login1f0e1" maxlength="30" value="" placeholder="    ID" />
+				</p>
+				<p class="item">
+					<label for="login1f0e2" class="blind">비밀번호</label>
+					<input type="password" name="password" id="login1f0e2"	maxlength="30" value="" placeholder="    PASSWORD" />
+				</p>
+				<button type="submit" value="submit" class="b1 submit"><span class="t1 ffgdrR">login</span></button>
+			</div>
+		</fieldset>
+	</form>
+</div>
+<!-- /login1 -->
+
+
+
+<script>/*<![CDATA[*/
+	function dosubmit_side_login(theForm) {
+
+		if ( !theForm.ediv[0].checked && !theForm.ediv[1].checked) {
+			alert("유지보수와 프로젝트 중 하나를 선택하여 주세요.");
+			theForm.ediv[0].focus();
+			return false;
+		}
+		if ( theForm.member_id.value == "") {
+			alert("아이디를 입력하세요");
+			theForm.member_id.focus();
+			return false;
+		}
+		if ( theForm.password.value == "") {
+			alert("암호를 입력하세요");
+			theForm.password.focus();
+			return false;
+		}
+	}
+/*]]>*/</script>
+
+<a href="#mainbody2" class="mousewheel1 scroll1down1"><i class="ic1 bsContain"></i> <span class="t1">아래로 scroll</span></a>
+
+
+</div>
+<!-- /container -->
+</div>
+<!-- /mainbody1 -->
+<!-- ◇◆ mainbody2 ◇◆◇◆◇◆◇◆◇◆ -->
+<div id="mainbody2" class="mainbody2 bsCover">
+<!-- container -->
+<div class="container clearfix">
+
+
+<!-- solution1 [JS] -->
+<div id="solution1">
+<div class="wrap1">
+	<div class="hg1">
+		<!-- <h3 class="h1"><img src="/_res/portal/img/main/ct3solution1h1@2x.png" alt="Solution" style="width:75%;max-width:257px;height:auto;" /></h3> -->
+		<h3 class="h1 ffgdrR">Solution</h3>
+		<p class="ht1">더 나은 인터넷을 위한 <span class="dpib">스마트한 대안!</span></p>
+	</div>
+	<!-- menu -->
+	<div class="menu">
+		<div class="mNum">
+			<a href="#solution1c1" class="m m1"><i class="ic1"></i> <span class="t1">SmartManager v2</span></a>
+			<a href="#solution1c2" class="m m2"><i class="ic1"></i> <span class="t1">SmartOpen v3</span></a>
+			<a href="#solution1c3" class="m m3"><i class="ic1"></i> <span class="t1">SmartNet v3</span></a>
+			<a href="#solution1c4" class="m m4"><i class="ic1"></i> <span class="t1">SmartWA v1</span></a>
+			<a href="#solution1c6" class="m m6"><i class="ic1"></i> <span class="t1">SmartTrend v1</span></a>
+			<a href="#solution1c5" class="m m5"><i class="ic1"></i> <span class="t1">Smart한글 v1</span></a>			
+		</div>
+		<a href="/02067/02096/02103.web" class="more"><i class="ic1 bsContain"></i> <span class="t1 blind">솔루션 더 보기</span></a>
+		<div class="mControl">
+			<!-- <button type="button" class="m stop"><i class="ic1 bsContain"></i> <span class="blind">Solution. 순환 정지</span></button> -->
+			<!-- <button type="button" class="m play"><i class="ic1 bsContain"></i> <span class="blind">Solution. 순환 재생</span></button> -->
+			<button type="button" class="m prev dpn"><i class="ic1 bsContain"></i> <span class="blind">Solution. 이전 보기</span></button>
+			<button type="button" class="m next dpn"><i class="ic1 bsContain"></i> <span class="blind">Solution. 다음 보기</span></button>
+		</div>
+		<!-- <div class="mPage">
+			<span class="text" title="현재페이지 / 전체페이지"><b class="on"></b><span class="sep">/</span><b class="total"></b></span>
+		</div> -->
+	</div>
+	<!-- /menu -->
+	<!-- w1 -->
+	<div class="w1">
+
+		<div class="mControl2">
+			<button type="button" class="m prev" onclick="$('#solution1 .mControl .prev').triggerHandler('click');"><i class="ic1 bsContain"></i> <span class="blind">Solution. 이전 보기</span></button>
+			<button type="button" class="m next" onclick="$('#solution1 .mControl .next').triggerHandler('click');"><i class="ic1 bsContain"></i> <span class="blind">Solution. 다음 보기</span></button>
+		</div>
+
+		<!-- mView -->
+		<div class="mView" id="solution1s">
+			<ul class="mCont" id="solution1c">
+				<li class="mContC" id="solution1c1">
+					<a href="/02097.web" class="c a1">
+						<i class="ic1"><img src="/_res/portal/img/main/solution1/p1001@2x.png" alt="" /></i>
+						<div class="tg1">
+							<strong class="t1">SmartManager v2</strong>
+							<span class="t2">행정·공공기관 웹 사이트 통합 관리를 위한 편리한<br />콘텐츠관리시스템(CMS)</span>
+							<span class="t3">
+								<span class="t3p1"><img src="/_res/portal/img/main/mark1gs@2x.png" width="71" height="36" alt="GoodSoftware 마크" /></span>
+								<span class="t3t1">GS인증 제품</span>
+							</span>
+							<b class="b1">자세히보기</b>
+						</div>
+					</a>
+				</li>
+				<li class="mContC" id="solution1c2">
+					<a href="/02098.web" class="c a1">
+						<i class="ic1"><img src="/_res/portal/img/main/solution1/p1002@2x.png" alt="" /></i>
+						<div class="tg1">
+							<strong class="t1">SmartOpen v3</strong>
+							<span class="t2">문서자동 변환 및 뷰어기능 등 3가지의 효과를 볼 수 있는<br />첨부파일바로보기 솔루션</span>
+							<span class="t3">
+								<span class="t3p1"><img src="/_res/portal/img/main/mark1gs@2x.png" width="71" height="36" alt="GoodSoftware 마크" /></span>
+								<span class="t3t1">GS인증 제품</span>
+							</span>
+							<b class="b1">자세히보기</b>
+						</div>
+					</a>
+				</li>
+				<li class="mContC" id="solution1c3">
+					<a href="/02150.web" class="c a1">
+						<i class="ic1"><img src="/_res/portal/img/main/solution1/p1003@2x.png" alt="" /></i>
+						<div class="tg1">
+						<strong class="t1">SmartNet v3</strong>
+							<span class="t2">콘텐츠관리시스템 통합형 검색기능을 제공하는<br />통합검색 솔루션</span>
+							<span class="t3">
+								<span class="t3p1"><img src="/_res/portal/img/main/mark1gs@2x.png" width="71" height="36" alt="GoodSoftware 마크" /></span>
+								<span class="t3t1">GS인증 제품</span>
+							</span>
+							<b class="b1">자세히보기</b>
+						</div>
+					</a>
+				</li>
+              	<li class="mContC" id="solution1c5">
+					<a href="/02102.web" class="c a1">
+						<i class="ic1"><img src="/_res/portal/img/main/solution1/p1004@2x.png" alt="" /></i>
+						<div class="tg1">
+							<strong class="t1">SmartWA v1</strong>
+							<span class="t2">한국형 웹 컨텐츠 접근성 지침 2.1 따라 자동 검사하는<br />웹 접근성 자동검사 솔루션</span>
+							<!-- <span class="t3">
+								<span class="t3p1"><img src="/_res/portal/img/main/mark1gs@2x.png" width="71" height="36" alt="GoodSoftware 마크" /></span>
+								<span class="t3t1">GS인증 제품</span>
+							</span> -->
+							<b class="b1 mgt2em">자세히보기</b>
+						</div>
+					</a>
+				</li>
+				<li class="mContC" id="solution1c4">
+					<a href="/02100.web" class="c a1">
+						<i class="ic1"><img src="/_res/portal/img/main/solution1/p1006@2x.png" alt="" /></i>
+						<div class="tg1">
+							<strong class="t1">SmartTrend v1</strong>
+							<span class="t2">사용자의 관심사와 웹사이트 통계를 제공하는<br />웹 트렌드 리포트</span>
+							<span class="t3">
+								<span class="t3p1"><img src="/_res/portal/img/main/mark1gs@2x.png" width="71" height="36" alt="GoodSoftware 마크" /></span>
+								<span class="t3t1">GS인증 제품</span>
+							</span>
+							<b class="b1">자세히보기</b>
+						</div>
+					</a>
+				</li>
+             	 <li class="mContC" id="solution1c6">
+					<a href="/02099.web" class="c a1">
+						<i class="ic1"><img src="/_res/portal/img/main/solution1/p1005@2x.png" alt="" /></i>
+						<div class="tg1">
+							<strong class="t1">Smart한글 v1</strong>
+							<span class="t2">웹사이트의 편리한 한글 맞춤법, 문법 검사를 위한<br />한글 맞춤법·문법 검사기</span>
+							<!-- <span class="t3">
+								<span class="t3p1"><img src="/_res/portal/img/main/mark1gs@2x.png" width="71" height="36" alt="GoodSoftware 마크" /></span>
+								<span class="t3t1">GS인증 제품</span>
+							</span> -->
+							<b class="b1 mgt2em">자세히보기</b>
+						</div>
+					</a>
+				</li>				
+			</ul>
+		</div>
+		<!-- /mView -->
+
+	</div>
+	<!-- /w1 -->
+</div>
+</div>
+<!-- /solution1 -->
+<script>/*<![CDATA[*/
+$(function(){ // 20180323.
+	$('#solution1').jQmPR1({interval:60000, mTabindex:'-1',effect:'slide', gesture:true});
+});
+/*]]>*/</script>
+
+
+<a href="#mainbody3" class="mousewheel1 scroll1down1"><i class="ic1 bsContain"></i> <span class="t1">아래로 scroll</span></a>
+
+
+</div>
+<!-- /container -->
+</div>
+<!-- /mainbody2 -->
+<!-- ◇◆ mainbody3 ◇◆◇◆◇◆◇◆◇◆ -->
+<div id="mainbody3" class="mainbody3 bsCover">
+<!-- container -->
+<div class="container clearfix">
+
+
+<!-- portfolio1 [JS] -->
+<div id="portfolio1">
+<div class="wrap1">
+	<div class="hg1">
+		<!-- <h3 class="h1"><img src="/_res/portal/img/main/ct3portfolio1h1@2x.png" alt="Portfolio" style="width:67%;max-width:265px;height:auto;" /></h3> -->
+		<h3 class="h1 ffgdrR">Portfolio</h3>
+		<p class="ht1">웹 사이트에 담은 <span class="dpib">아이액츠의 기술과 노하우</span></p>
+	</div>
+	<!-- menu -->
+	<div class="menu">
+		<div class="mControl">
+			<!-- <button type="button" class="m stop"><i class="ic1 bsContain"></i><span class="blind">Portfolio. Pause</span></button> -->
+			<!-- <button type="button" class="m play"><i class="ic1 bsContain"></i><span class="blind">Portfolio. Play</span></button> -->
+			<button type="button" class="m prev dpn"><i class="ic1 bsContain"></i><span class="blind">Portfolio. Prev</span></button>
+			<button type="button" class="m next dpn"><i class="ic1 bsContain"></i><span class="blind">Portfolio. Next</span></button>
+		</div>
+		<div class="mPage">
+			<span class="text" title="현재페이지 / 전체페이지"><b class="on"></b><span class="sep">/</span><b class="total"></b></span>
+		</div>
+	</div>
+	<!-- /menu -->
+  
+	<!-- w1 -->
+	<div class="w1">
+		<i class="deco1"></i>
+		<i class="deco2"></i>
+
+		<div class="mControl2">
+			<button type="button" class="m prev" onclick="$('#portfolio1 .mControl .prev').triggerHandler('click');"><i class="ic1 bsContain"></i> <span class="blind">Solution. 이전 보기</span></button>
+			<button type="button" class="m next" onclick="$('#portfolio1 .mControl .next').triggerHandler('click');"><i class="ic1 bsContain"></i> <span class="blind">Solution. 다음 보기</span></button>
+		</div>
+
+		<!-- mView -->
+		<div class="mView" id="portfolio1s">
+			<ul class="mCont" id="portfolio1c">
+            
+			<li class="mContC" id="portfolio1c1">
+				<a href="/02067/02086/02087.web?amode=view&sno=21" class="c a1">
+					<span class="f1">
+						<span class="f1p1"><img src="/ImagePrint.do?key=portfolio&name=x8p0011.jpg" alt="" /></span>
+					</span>
+					<span class="tg1">
+						<span class="t1">진주시 홈페이지 전면 개편 용역</span>
+						<span class="t2">#진주시 #지자체대표 #반응형웹</span>
+					</span>
+				</a>
+			</li>
+			<li class="mContC" id="portfolio1c2">
+				<a href="/02067/02086/02087.web?amode=view&sno=20" class="c a1">
+					<span class="f1">
+						<span class="f1p1"><img src="/ImagePrint.do?key=portfolio&name=x7p001.jpg" alt="" /></span>
+					</span>
+					<span class="tg1">
+						<span class="t1">함안군 홈페이지 통합 개편 사업</span>
+						<span class="t2">#함안군 #지자체대표 #반응형웹</span>
+					</span>
+				</a>
+			</li>
+			<li class="mContC" id="portfolio1c3">
+				<a href="/02067/02086/02087.web?amode=view&sno=19" class="c a1">
+					<span class="f1">
+						<span class="f1p1"><img src="/ImagePrint.do?key=portfolio&name=x6p0011.jpg" alt="" /></span>
+					</span>
+					<span class="tg1">
+						<span class="t1">김해시 홈페이지 통합 개편 사업</span>
+						<span class="t2">#김해시 #지자체대표 #반응형웹</span>
+					</span>
+				</a>
+			</li>
+			<li class="mContC" id="portfolio1c4">
+				<a href="/02067/02086/02087.web?amode=view&sno=18" class="c a1">
+					<span class="f1">
+						<span class="f1p1"><img src="/ImagePrint.do?key=portfolio&name=x5p001.jpg" alt="" /></span>
+					</span>
+					<span class="tg1">
+						<span class="t1">거창군 홈페이지 디자인 개편 시행</span>
+						<span class="t2">#거창군 #지자체대표 #반응형웹</span>
+					</span>
+				</a>
+			</li>
+			<li class="mContC" id="portfolio1c5">
+				<a href="/02067/02086/02087.web?amode=view&sno=17" class="c a1">
+					<span class="f1">
+						<span class="f1p1"><img src="/ImagePrint.do?key=portfolio&name=x4p0011.jpg" alt="" /></span>
+					</span>
+					<span class="tg1">
+						<span class="t1">삼척시 홈페이지 전면 개편</span>
+						<span class="t2">#삼척시 #지자체대표 #반응형웹</span>
+					</span>
+				</a>
+			</li>
+			<li class="mContC" id="portfolio1c6">
+				<a href="/02067/02086/02087.web?amode=view&sno=16" class="c a1">
+					<span class="f1">
+						<span class="f1p1"><img src="/ImagePrint.do?key=portfolio&name=x3p0011.jpg" alt="" /></span>
+					</span>
+					<span class="tg1">
+						<span class="t1">청송군 문화관광홈페이지 개편</span>
+						<span class="t2">#청송군 #청송여행 #반응형웹</span>
+					</span>
+				</a>
+			</li>
+			<li class="mContC" id="portfolio1c7">
+				<a href="/02067/02086/02087.web?amode=view&sno=15" class="c a1">
+					<span class="f1">
+						<span class="f1p1"><img src="/ImagePrint.do?key=portfolio&name=x2p0011.jpg" alt="" /></span>
+					</span>
+					<span class="tg1">
+						<span class="t1">하동군 홈페이지 전면 개편</span>
+						<span class="t2">#하동군 #지자체대표 #반응형웹</span>
+					</span>
+				</a>
+			</li>
+			<li class="mContC" id="portfolio1c8">
+				<a href="/02067/02086/02087.web?amode=view&sno=14" class="c a1">
+					<span class="f1">
+						<span class="f1p1"><img src="/ImagePrint.do?key=portfolio&name=x1p0011.jpg" alt="" /></span>
+					</span>
+					<span class="tg1">
+						<span class="t1">영도구 홈페이지 전면 통합 개편사업</span>
+						<span class="t2">#영도구 #지자체대표 #반응형웹</span>
+					</span>
+				</a>
+			</li>
+			<li class="mContC" id="portfolio1c9">
+				<a href="/02067/02086/02087.web?amode=view&sno=22" class="c a1">
+					<span class="f1">
+						<span class="f1p1"><img src="/ImagePrint.do?key=portfolio&name=20190510_x1p001.jpg" alt="" /></span>
+					</span>
+					<span class="tg1">
+						<span class="t1">김해시 통합도서관홈페이지 개편사업</span>
+						<span class="t2">#김해통합도서관 #도서관 #반응형웹</span>
+					</span>
+				</a>
+			</li>
+			<li class="mContC" id="portfolio1c10">
+				<a href="/02067/02086/02087.web?amode=view&sno=23" class="c a1">
+					<span class="f1">
+						<span class="f1p1"><img src="/ImagePrint.do?key=portfolio&name=20190510_x2p001.jpg" alt="" /></span>
+					</span>
+					<span class="tg1">
+						<span class="t1">하동녹차 및 소규모 홈페이지 통합 개편</span>
+						<span class="t2">#하동군 #하동녹차 #녹차 #반응형웹</span>
+					</span>
+				</a>
+			</li>
+              
+			</ul>
+		</div>
+		<!-- /mView -->
+
+	</div>
+	<!-- /w1 -->
+</div>
+</div>
+<!-- /portfolio1 -->
+<script>/*<![CDATA[*/
+$(function(){ // 20180320.
+	$('#portfolio1').jQmPR1({ interval: 600000, mTabindex: '-1', gesture: true, swipe: false });
+});
+/*]]>*/</script>
+
+
+<a href="#mainbody4" class="mousewheel1 scroll1down1"><i class="ic1 bsContain"></i> <span class="t1">아래로 scroll</span></a>
+
+
+</div>
+<!-- /container -->
+</div>
+<!-- /mainbody3 -->
+<!-- ◇◆ mainbody4 ◇◆◇◆◇◆◇◆◇◆ -->
+<div id="mainbody4" class="mainbody4 bsCover">
+<!-- container -->
+<div class="container clearfix">
+
+
+<!-- menu1 -->
+<div id="menu1">
+<div class="wrap1">
+	<div class="hg1">
+		<!-- <h3 class="h1"><img src="/_res/portal/img/main/ct3about1h1@2x.png" alt="About" style="width:60%;max-width:186px;height:auto;" /></h3> -->
+		<h3 class="h1 ffgdrR">About</h3>
+		<p class="ht1">
+			<span class="dpib">끊임없는 기술력 증진으로 <span class="dpib">고객의 믿음에 보답하고,</span></span><br />
+			<span class="dpib">고객의 인터넷 정보 역량 강화를 위해 최선을 다하겠습니다.</span>
+		</p>
+	</div>
+	<ul>
+	<li class="m1"><a href="/02066/02072/02078.web"><i class="ic1 bsContain"></i> <span class="t1">아이액츠의 비전</span></a></li>
+	<li class="m2"><a href="/02066/02073/02084.web"><i class="ic1 bsContain"></i> <span class="t1">걸어온 길</span></a></li>
+	<li class="m3"><a href="/02066/02074.web"><i class="ic1 bsContain"></i> <span class="t1">주요고객</span></a></li>
+	<li class="m4"><a href="/02066/02076.web"><i class="ic1 bsContain"></i> <span class="t1">나눔과 섬김</span></a></li>
+	</ul>
+</div>
+</div>
+<!-- /menu1 -->
+
+
+<!-- menu2 -->
+<div id="menu2">
+<div class="wrap1">
+	<div class="hg1">
+		<!-- <h3 class="h1"><img src="/_res/portal/img/main/ct4recruit1h1@2x.png" alt="Recruit" style="width:124px;height:auto;" /></h3> -->
+		<h3 class="h1 ffgdrR">Recruit</h3>
+		<p class="ht1">
+			<span class="dpib">아이액츠와 함께 할 인재를</span>
+			<span class="dpib">모집합니다.</span>
+		</p>
+	</div>
+	<ul>
+	<li class="m1"><a href="/02069/02111.web"><i class="ic1 bsContain"></i> <span class="t1">함께해요!</span></a></li>
+	<li class="m2"><a href="/02069/02112.web"><i class="ic1 bsContain"></i> <span class="t1">채용소식</span></a></li>
+	<li class="m3"><a href="/02069/02114/02139.web"><i class="ic1 bsContain"></i> <span class="t1">인재상 및 직군</span></a></li>
+	<li class="m4"><a href="/02069/02116.web"><i class="ic1 bsContain"></i> <span class="t1">입사지원</span></a></li>
+	<li class="m5"><a href="/Download.do?key=application&amp;name=아이액츠_입사지원서.hwp"><i class="ic1 bsContain"></i> <span class="t1">입사지원서류</span></a></li>
+	</ul>
+</div>
+</div>
+<!-- /menu2 -->
+
+
+</div>
+<!-- /container -->
+</div>
+<!-- /mainbody4 -->
+<!-- ◇◆ mainbody5 ◇◆◇◆◇◆◇◆◇◆ -->
+<div id="mainbody5" class="mainbody5">
+<!-- container -->
+<div class="container clearfix">
+
+
+<!-- bbs1 -->
+<div id="bbs1">
+<div class="wrap1">
+	<h3 class="h1"><a href="/02066/02075/02125.web?gcode=1013">NOTICE</a></h3>
+	<div id="bbs1c1" class="cont">
+		<div class="w1">
+			<ul>
+			<li><a href="/02066/02075/02125.web?gcode=1013&idx=21&amode=view"><span class="t1">2019년 아이액츠 홈페이지 개편!</span> <span class="time">2019-05-08</span></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+</div>
+<!-- /bbs1 -->
+
+
+<!-- menu3 -->
+<div id="menu3">
+<div class="wrap1">
+	<ul>
+	<li class="m1"><a href="/02070/02117.web"><i class="ic1 bsContain"></i> <span class="t1">프로젝트의뢰</span></a></li>
+	<li class="m2"><a href="/02070/02118.web"><i class="ic1 bsContain"></i> <span class="t1">파트너 제안</span></a></li>
+	</ul>
+</div>
+</div>
+<!-- /menu3 -->
+
+
+</div>
+<!-- /container -->
+</div>
+<!-- /mainbody5 -->
+<!-- /◇◆ mainbody1~5 ◇◆◇◆◇◆◇◆◇◆ -->
+
+</div>
+</div>
+<!-- //#body -->
+
+</div>
+<!-- //#wrap -->
+
+<!-- #wing --><hr class="dpn">
+<div id="wing" class="init clearfix">
+<!-- container -->
+<div class="container">
+<!-- <a href="#container" title="현재 페이지 상단으로 이동" id="gotop1"><i class="ic1 bsContain"></i> <span class="t1">TOP</span></a> -->
+</div>
+<!-- /container -->
+</div>
+<!-- /#wing -->
+<!-- #foot --><hr class="dpn" />
+<div id="foot" class="init">
+<div class="bg bg2foot"><div></div></div>
+<h2 class="blind">하단 정보</h2>
+<!-- foot_s1 -->
+<div id="foot_s1">
+<!-- container -->
+<div class="container">
+<!-- foot_w1 -->
+<!-- <div class="foot_w1"> -->
+<!-- </div> -->
+<!-- /foot_w1 -->
+<p id="foot_logo"><a><img src="/_res/portal/img/inc/foot_logo@2x.png" alt="iACTS. internet ACTS" /></a></p>
+<!-- author1 -->
+<div id="author1">
+<strong class="h1 blind">작성자 (연락처/저작권)</strong>
+<address class="address">
+경남사무실 &nbsp; / &nbsp; <span class="dpib">경남 김해시 인제로 -39번길 35 201호</span> &nbsp; &nbsp; <span class="dpib ls0">TEL &nbsp;055-339-9610 &nbsp; &nbsp; FAX &nbsp;055-722-7290</span>
+</address>
+<address class="address">
+부산센텀사무실 &nbsp; / &nbsp; <span class="dpib">부산시 해운대구 센텀중앙로 48 1614호</span> &nbsp; &nbsp; <span class="dpib ls0">TEL &nbsp;051-583-9610 &nbsp; &nbsp; FAX &nbsp;051-583-9613</span>
+</address>
+<!-- <p class="nophishing"></p> -->
+<address class="copyright" lang="en">COYRIGHT Ⓒ IACTS.CO.KR. ALL RIGHT RESERVED.</address>
+</div>
+<!-- /author1 -->
+<!-- snslink1 -->
+<div id="snslink1">
+<ul>
+<li class="facebook"><a href="https://www.facebook.com/pages/%EC%A3%BC%EC%8B%9D%ED%9A%8C%EC%82%AC-%EC%95%84%EC%9D%B4%EC%95%A1%EC%B8%A0/405092709598762?ref=hl" target="_blank" title="새 창"><i class="ic1 bsContain"></i><span class="t1">페이스북</span></a></li>
+<li class="twitter"><a href="https://twitter.com/internetacts" target="_blank" title="새 창"><i class="ic1 bsContain"></i><span class="t1">트위터</span></a></li>
+<li class="blog"><a href="http://blog.iacts.co.kr/" target="_blank" title="새 창"><i class="ic1 bsContain"></i><span class="t1">블로그</span></a></li>
+</ul>
+</div>
+<!-- /snslink1 -->
+<a href="#container" title="현재 페이지 상단으로 이동" id="gotop1"><i class="ic1 bsContain"></i> <span class="t1">TOP</span></a>
+</div>
+<!-- /container -->
+</div>
+<!-- /foot_s1 -->
+</div>
+<!-- /#foot -->
+
+</div>
+<!-- //#container-->
+
+
+
+
+
+
+
+</body>
+</html>

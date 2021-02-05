@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* 이미지확대보기 */
+.img-zoom {position:relative;}
+.img-zoom a.zoomin {display:none;}
+.img-zoom a.zoomin span {font-size:1px;line-height:1px;text-indent:-1000em;visibility:hidden;width:1px;height:1px;overflow:hidden;}
+
+/* 유실물 추가 */
+.lost-guide .lost-cont {float:right;width:57%;}
+.lost-guide .lost-cont  dl {float:none;width:100%;overflow:hidden;margin-top:1 0px}
+.lost-guide .lost-cont  dl dt {float:left;width:18%;color:#444;font-weight:bold;background:url(/img/common/blt04.gif) no-repeat 0 9px;padding:2px 0 2px 11px;margin:4px 0 7px;}
+.lost-guide .lost-cont  dl dd {float:left;width:72%;padding:2px 0;background:url(../img/Common/li_vline.gif) no-repeat 0 6px;padding-left:2%;margin:4px 0 7px;}
+
+/* 긴급상황대피요령 */
+.emerg-wrap {border:1px solid #ddd;}
+.emerg-wrap .tit {background:#ececec;border-bottom:1px solid #ddd;text-align:center;font-size:14px;color:#444;padding:14px 0 13px;margin-bottom:35px;}
+.emerg-wrap .emerg-cont {margin:35px 30px 40px;overflow:hidden;}
+.emerg-wrap .emerg-vod {position:relative;width:56%;height:100%;float:left;background:#d3d3d3;} 
+.emerg-wrap .emerg-cap {float:right;width:40%;height:100%;background:#ececec;border:1px solid #ddd;}
+.emerg-wrap .emerg-cap .caption {height:100%;height:264px;overflow-y:auto;}
+.emerg-use {overflow:hidden;}
+.emerg-use .emerg-img {float:left;width:57%;}
+.emerg-use .emerg-img ul {overflow:hidden;}
+.emerg-use .emerg-img li {float:left;width:48%;margin-left:4%;position:relative;margin-bottom:25px;}
+.emerg-use .emerg-img li.first {margin-left:0;}
+.emerg-use .emerg-img li img {width:100% !important;height:100% !important;}
+.emerg-use .emerg-img li .tit {position:absolute;bottom:0;left:0;display:block;background:#8d95a0;color:#fff;text-align:center;width:100%;padding:8px 0;}
+.emerg-use .use-txt {float:right;width:37%;min-height:131px;background:#f4f4f4;border:1px solid #ddd;padding:2%;}
+.emerg-use .use-txt.full {min-height:325px;}
+
+/* 고객참여 - 고객모니터 */
+.monitor-wrap .mo-cont {background:#fafafa url(/homepage/default/img/Customer/monitor_bg.gif) no-repeat right bottom;border:1px solid #ddd;padding:45px;margin-bottom:40px;}
+.monitor-wrap .mo-cont .tit {font-size:21px;font-weight:bold;width:53%;letter-spacing:0;margin-bottom:20px;}
+.monitor-wrap .mo-cont .txt {font-size:15px;width:50%;}
+
+/* 열차시간표 */
+.timetable-title-box {border:1px solid #ddd;width:100%;background:#fafafa url(/homepage/default/img/Common/timetable_bg.gif) no-repeat right 0;}
+.timetable-title-1 {margin:45px 0 0 45px;font-size:21px;font-weight:800;color:#333;letter-spacing:-1px}
+.timetable-title-2 {margin:16px 0 35px 45px;max-width:280px;font-size:15px;color:#333;letter-spacing:-1px}
+
+@media all and (max-width:860px){	
+	.emerg-wrap .emerg-vod, .emerg-wrap .emerg-cap, .emerg-use .emerg-img {float:none;width:100%;}
+	.emerg-use {margin-top:25px;}
+	.emerg-use .use-txt, .emerg-use .use-txt.full {float:none;width:95%;min-height:auto;}
+}	
+
+@media all and (max-width:760px){
+/* 유실물추가 */
+.lost-guide .lost-cont  {float:none;width:100%;margin-left:10px;}	
+	
+/* 이미지 확대보기 */
+.img-zoom a.zoomin {position:absolute;top:0px;right:0px;display:block;padding:10px;text-align:center;background:url(../img/Common/ico_zoomin.png) no-repeat center center;background-color: rgba(7,34,64,0.5); background-size:15px; width:30px; height:30px;}
+
+}
+
+@media all and (max-width:680px){
+	.volu-step li {float:none;width:100%;margin:0;}
+	
+	.soffice-info .thum img, .power-wrap.sec .img img, .power-wrap .img img  {width:100% !important;}
+	
+}
+
+	
+@media all and (max-width:480px){
+	.emerg-use .emerg-img li {float:none;width:100%;margin-left:0;}
+	
+}

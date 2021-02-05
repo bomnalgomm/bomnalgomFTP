@@ -1,0 +1,391 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<title>웹접근성 준수 작업기준 가이드</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="_Css/acc.css" type="text/css" rel="stylesheet" />
+<link type="text/css" rel="stylesheet" href="_Css/shCoreDefault.css">
+<script type="text/javascript" src="_Js/shCore.js"></script>
+<script type="text/javascript" src="_Js/shAutoloader.js"></script>
+<script type="text/javascript" src="_Js/shBrushXml.js"></script>
+<script type="text/javascript" src="_Js/shBrushPlain.js"></script>
+<script type="text/javascript" src="_Js/shBrushJScript.js"></script>
+<script type="text/javascript" src="_Js/shBrushCss.js"></script>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body>
+<h1>센텀소프트 웹접근성 지침에 따른 검사항목별 작업 기준</h1>
+
+<!-- 상단 -->
+<div id="header">
+  <ul id="menu">
+    <li><a href="#c01">적절한 대체 텍스트 제공</a></li>
+    <li><a href="#c02">자막제공</a></li>
+    <li><a href="#c03">색에 무관한 콘텐츠 인식</a></li>
+    <li><a href="#c04">명확한 지시사항 제공</a></li>
+    <li><a href="#c05">텍스트 콘텐츠의 명도 대비</a></li>
+    <li><a href="#c06">배경음 사용 금지</a></li>
+  </ul>
+</div>
+<!-- 상단 //-->
+
+<!-- 본문 -->
+<div id="container">
+  <h2>센텀소프트 웹접근성 지침에 따른 검사항목별 작업 기준</h2>
+  <div class="contents">
+    <p>검사항목 중에 <mark>센텀소프트 내에서는 작업하지 않는 항목은 다루지 않았음</mark>
+    (모든 검사항목별 작업 기준이 필요한 분은 <mark>웹접근성 지침을 개인적으로 정독</mark> 해주세요)</p>
+  </div>
+
+<!-- c01 -->
+  <div id="c01" class="sec">
+    <h3>적절한 대체 텍스트 제공</h3>
+    <div  class="contents">
+      <h4>이미지에 대한 대체 텍스트</h4>
+	  <p>img 태그를 사용하는 경우 alt 속성을 이용하여 대체 텍스트를 제공한다.</p>
+	 	<pre class="brush: js">
+		<p class="ptxt"><img src="/img2/main2013/slogan.png" alt="매력적인 세계일류도시 해운대 - HAEUNDAE, an Attractive First-Class City"></p>	
+		</pre>
+    </div>
+
+    <div  class="contents">
+      <h4>버튼 이미지에 대한 대체 텍스트</h4>
+	  <p>이미지를 이용한 입력 버튼은 input 태그를 사용하여 구현하고 버튼에 사용된 이미지의 대체 텍스트는 alt 속성을 이용하여 제공한다.</p>
+	 	<pre class="brush: js">
+		<input type="image" class="search_btn" src="/image/img/btn_next.gif" alt="부산시설공단 사이트 바로가기" />
+		</pre>
+    </div>
+
+
+    <div  class="contents">
+      <h4>자바 애플릿 등에 대한 대체 텍스트 (applet, embed, object)</h4>
+      <p>동영상이나 플래시 object를 제공할 경우 title 속성을 이용하여 대체 텍스트를 제공한다.<br />
+	  applet, embed 는 html 버전에 따라 표준정의 되지 않은 요소로 object 태그를 권장함 (크로스 브라우징 포함)</p>
+ 		<pre class="brush: js">
+		<object class="m_visual_swf" type="application/x-shockwave-flash" data="../flash/m_visual.swf" title="SPORTS Center 
+		부산한마음 스포츠 센터에 오신 것을 환영합니다.">
+		<param name="movie" value="../flash/m_visual.swf">
+		<param name="quality" value="high">
+		<param name="wmode" value="transparent">
+		</object>			
+		</pre>
+    </div>
+
+    <div  class="contents">
+      <h4>이미지 맵에 대한 대체 텍스트</h4>
+	  <p>area 태그별로 alt속성을 이용하여 해당 영역의 용도나 목적을 대체 텍스트로 제공한다.</p>
+	  <div class="ex-cont">
+		<img src="http://www.haeundae.go.kr/img/07_about/org.jpg" alt="해운대구청 조직도" longdesc="/html/07_about/about_05.html" usemap="#Map_tel">
+		<map name="Map_tel" id="Map_tel">
+		<area shape="rect" coords="268,1,402,38" href="http://ceo.haeundae.go.kr/html/00_main/" target="_blank" title="새창열림" alt="구청장실
+		전화번호 안내 바로가기">
+		</map>
+	  </div>
+	 	<pre class="brush: js">
+		<div class="org">
+			<img src="/img/07_about/org.jpg" alt="해운대구청 조직도" longdesc="/html/07_about/about_05.html" usemap="#Map_tel">
+			<map name="Map_tel" id="Map_tel">
+			<area shape="rect" coords="268,1,402,38" href="http://ceo.haeundae.go.kr/html/00_main/" target="_blank" title="새창열림" alt="구청장실
+			전화번호 안내 바로가기">
+			</map>			
+		</div>
+		</pre>
+    </div>
+
+
+
+    <!-- div  class="contents">
+      <h4>플래시 콘텐츠에 대한 대체 텍스트</h4>
+	 		<pre class="brush: js">
+
+			</pre>
+    </div -->
+
+
+
+
+    <div  class="contents">
+      <h4>그래프등에 대한 설명문 제공</h4>
+	  <p>그래프나 사진과 같이 의미하는 바를 간단한 대체 텍스트로 충분한 설명이 불가능할 경우 추가적인 설명을 제공</p>
+
+	  <ul>
+	  	<li>longdesc 속성 제공 <a href="http://www.bisco.or.kr/about/about09/" target="_blank" title="새창열림">[예시 사이트 바로가기]</a></li>
+		<pre class="brush: js">
+		<img src="/image/about09_img01.gif" alt="웹 접근성 품질마크 인증서" longdesc="/about/about09/accessibility.html">
+		</pre>
+		</li>
+	  	<li>설명문 제공 <a href="http://www.haeundae.go.kr/html/06_data/data_0401.php" target="_blank" title="새창열림">[예시 사이트 바로가기]</a>
+		<pre class="brush: js">
+		<!-- 그래프 이미지 -->
+		<div class="center">
+		<img src="http://www.haeundae.go.kr/img/07_about/sub0204_1.gif" width="616" height="209" alt="1990~2011년까지 인구및 세대 변화 그래프
+		-2011년도 158세대, 인구 428천명(상세내용은 1990~2011년까지 구분에 따른 연도별 통계표를 참고)">
+		</div>
+		<!-- 그래프 이미지 //-->
+
+		<!-- 그래프 추가설명 테이블 -->
+		<table class="t2" summary="1990~2011년까지 구분에 따른 연도별 통계표로 구분, 2011~2005년, 2000년, 1995년, 1990년으로 구분되어 있습니다.">
+		<caption class="cap">1990~2011년 연도별 통계</caption>
+		<colgroup>
+		<col width="*" />
+		</colgroup>
+		<thead>
+		<tr>
+		<th scope="col"> ... 중략</th>
+		</tr>
+		</thead>
+		</table>
+		<!-- 그래프 추가설명 테이블 //-->
+		</pre>
+		</li>
+	  	<li>이미지 링크 제공 : 이미지 설명문으로 페이지 이동하는 방법
+ 		<pre class="brush: js">
+		<a href="/www/longdesc/1359613873_01.html">
+		<img src="/www/_Img/mn01/organization_01img01.gif" alt="경동대학교 대학기구표" />
+		</a>
+		</pre>
+		</li>
+		<!--
+	  	<li>링크 버튼 제공</li>
+		-->
+	  </ul>
+
+    </div>
+
+
+
+
+    <!-- div  class="contents">
+      <h4>캡차에 대한 대체 텍스트</h4>
+	 		<pre class="brush: js">
+
+		</pre>
+    </div> -->
+
+
+    <div  class="contents">
+      <h4>대체 텍스트를 빈 공간이나 생략해서 제공해야 하는 경우</h4>
+	  <p>alt값을 빈값으로 제공, <mark>특별한 경우를 제외한 일반적인 경우에는 background로 처리</mark></p>
+
+		<ul>
+			<li>장식용으로 사용하는 이미지</li>
+			<li>배경 이미지</li>
+		</ul>
+		<div class="ex-cont">
+		<div class="tit_rimg"><a href="http://www.bexco.co.kr/kor//EventSchedule/main.do?mCode=MN0015" target="_blank" title="새창이동"><img 
+		src="http://www.bexco.co.kr/kor/_Img/Schedule/Schedule_img01.gif" alt=""></a></div>
+		</div>
+	 	<pre class="brush: js">
+		<div class="tit_rimg"><img src="/kor/_Img/Schedule/Schedule_img01.gif" alt=""></div>			
+		</pre>
+    </div>
+
+
+    <div  class="contents">
+      <h4>지도와 같은 텍스트가 아닌 콘텐츠에 대한 설명 <a href="http://www.busanpa.com/Service.do?id=aboutbpa_mp_bp_01" target="_blank" title="새창열림">[예시 사이트 바로가기]</a></h4>
+	  <p>지도의 용도가 지하철 출구와 건물들과의 상관관계를 나타내고 있으므로 지도에 대한 설명은 지하철역의 출구 번호별로 각 건물까지의 도달 거리, 접근 방법 등에 대한 내용을 포함해야 한다.</p>
+		<div class="ex-cont">
+		<img src="http://www.busanpa.com/images/aboutbpa/aboutbpa_mp_bp_img01.gif" alt="지하철1호선부산역 2번출구를 기준으로, 대한통운 건물을 지나 건널목에서 좌회전 한 뒤 두번째 건널목에서 우회전하여 직진하면 마린센터 옆에 부산항만공사 위치입니다. 찾아오는 방법에 대한 상세한 설명은 교통수단을 참조하세요.">			
+		</div>
+	
+
+	 	<pre class="brush: js">
+		<img src="../images/aboutbpa/aboutbpa_mp_bp_img01.gif" alt="지하철1호선부산역 2번출구를 기준으로, 대한통운 건물을 지나 건널목에서 좌회전 한 뒤 
+		두번째 건널목에서 우회전하여 직진하면 마린센터 옆에 부산항만공사 위치입니다. 찾아오는 방법에 대한 상세한 설명은 교통수단을 참조하세요.">			
+
+		<dl>
+		<dt>교통수단</dt>
+		<dd>
+		  <ul class="jin_map_01">
+			<li><span>택시</span>- 요금은 15,000~18,000원 정도이며 시간은 경로에 따라 다르나 40분에서 50분정도 소요됩니다. (교통체증으로 더 소요될 수도 있습니다.) <br />
+			  - 시간적으로는 유료도로비가 다소 들더라도 [공항-백양터널(700원)-수정터널(700원)-부두로, 도로비는 승용차 기준] 코스를 이용하시면 가장 빨리 올 수 있습니다.</li>
+		  </ul>
+		</dd>
+        </dl>
+		</pre>
+    </div>
+
+
+    <div  class="contents">
+      <h4>중요한 정보에 대한 설명</h4>
+	  <p>대체 텍스트에는 색, 위치, 모양 등을 묘사하는 단어를 사용하지 않고 그 차이를 직접 문장으로 표시해야 한다.</p>
+	  <div class="ex-cont">
+		<img src="http://www.bcci.or.kr/_Data/Banner/meco_1384939117_ba8402567ffffdd38c6947ca83fe3f12.jpg" alt=alt="소매분야 RBSI전망 - 2012년도 4/4분기 : 77 , 2013년 1/4분기 : 78, 2/4분기 : 95, 3/4분기 : 118, 4/4분기 : 97로 2013년도 하반기에 하향세를 보임" />
+		</div>
+	 	<pre class="brush: js">
+		<img src="/_Data/Banner/meco_1384939117_ba8402567ffffdd38c6947ca83fe3f12.jpg" alt="소매분야 RBSI전망 - 2012년도 4/4분기 : 77, 
+		2013년 1/4분기 : 78, 2/4분기 : 95, 3/4분기 : 118, 4/4분기 : 97로 2013년도 하반기에 하향세를 보임 ">			
+		</pre>
+    </div>
+
+
+
+    <div  class="contents">
+      <h4>QR 코드 대체 텍스트</h4>
+	  <p>QR코드의 대체 텍스트는 <mark>접속할 수 있는 웹사이트 주소를 대체 텍스트로 제공</mark>해야 한다. (웹사이트 주소를 a태그로 링크 걸어줘도 좋음)</P>
+	  	<pre class="brush: js">
+		<a href="http://m.haeundae.go.kr" target="_blank" title="새창열림">
+		<img src="/img2/main/fw07.gif" alt="해운대구청 QR코드 - 스마트폰으로 qr코드를 스캔하면 해운대구청 모바일 홈페이지(http://m.haeundae.go.kr)로 이동">
+		</a>
+		</pre>
+    </div>
+
+  </div>
+<!-- c01 //-->
+
+
+<!-- c02 -->
+  <div id="c02" class="sec">
+    <h3>자막제공</h3>
+	<div class="contents">
+	<p>멀티미디어 콘텐츠를 동등하게 인식할 수 있도록 <mark>자막, 원고 또는 수화를 제공</mark>해야 한다.</p>
+
+	<h4>적용</h4>
+	<ul>
+		<li>동영상 제공되는 페이지에는 동영상 원고도 함께 텍스트로 제공하고 textarea 태그가 아닌 div 태그로 마크업 했을 경우 키보드 포커스가 원고 div 태그안에 이동될 수 있도록 tabindex="0"을 함께 마크업 <a href="http://www.haeundae.go.kr/html/07_about/about_07.php" target="_blank" title="새창이동">[바로가기]</a></li>
+		<li></li>
+	</ul>
+	<pre class="brush: js">
+	<!-- 동영상 영역 -->
+	<div id="vod_player">
+		<div class="gap"></div>
+		<object classid="clsid:22D6F312-B0F6-11D0-94AB-0080C74C7E95" id="MediaPlayer21" width="320" height="240">
+		<param name="AudioStream" value="-1">
+		<param name="AutoSize" value="0">
+		<param name="AutoStart" value="0">
+		<param name="Filename" value="/html/07_about/movie/2012_sand.wmv">
+		</object>		
+		<!--[if !IE]><-->
+		<object type="video/x-ms-wmv " data="/html/07_about/movie/2012_sand.wmv" width="320" height="240">
+		<param name="autostart" value="0">
+		<p> 이 콘텐츠는 Microsoft Media Player로 제작되었습니다.<br>
+      이 콘텐츠를 보려면 <a href="http://www.microsoft.com/downloads/Browse.aspx?displaylang=ko&amp;categoryid=4">Media Player</a>(무료)가 필요합니다. </p>
+		</object>
+		<!----><!--[endif]---->
+	</div>
+	<!-- 동영상 영역 //-->
+
+	<!-- 동영상 원고 영역 -->
+	<div class="text" tabindex="0"> 
+		동영상 원고 들어가 있는 영역입니다.
+   </div>
+	<!-- 동영상 원고 영역 //-->
+	</pre>
+	</div>
+  </div>
+<!-- c02 //-->
+
+
+
+<!-- c03 -->
+  <div id="c03" class="sec">
+    <h3>색에 무관한 콘텐츠 인식</h3>
+	<div class="contents">
+	<p>콘텐츠에서 제공하는 모든 정보는 색을 배제하여도 특정한 색을 구별할 수 없는 사용자나 흑백 디스플레이 사용자가 해당 콘텐츠를 인식할 수 있도록 제공해야 한다.</p>
+
+	<h4>적용</h4>
+	<h5>무늬 이용</h5>
+	<div class="ex-cont">
+	<img src="http://www.cjcity.net/fileDown/248083" alt="대기 배출업소에 대한 현황으로 하단 표 참조" />
+	</div>
+
+	<h5>모양 이용</h5>
+	<div class="ex-cont">
+	<img src="http://www.haeundae.go.kr/img/07_about/sub0204_1.gif" width="616" height="209" alt="1990~2011년까지 인구및 세대 변화 그래프-2011년도 158세대, 인구 428천명(상세내용은 아래 표를 참고하세요)">
+	</div>
+
+	<h5>링크임이 구분되도록 해야함 <a href="http://lotte.cs21.kr/html/?pcode=134" target="_blank" title="새창이동">[바로가기]</a></h5>
+
+	<h5>필수입력항목 <a href="http://www.bcci.or.kr/html/Mypage/editMyInfo.php" target="_blank" title="새창이동">[바로가기]</a></h5>
+
+	<h5>오류메시지 : 오류가 발생한 위치로 포커스 이동 및 오류메시지 제공 <a href="http://www.bcci.or.kr/html/Mypage/editMyInfo.php" target="_blank" title="새창이동">[바로가기]</a></h5>
+	</ul>
+	</div>
+  </div>
+<!-- c03 //-->
+
+
+
+<!-- c04 -->
+  <div id="c04" class="sec">
+    <h3>명확한 지시사항 제공</h3>
+	<div class="contents">
+	<p>특정 요소를 가리키거나 지시사항을 전달하는 콘텐츠에 적용하는 것으로 시각, 청각 등과 같은 특정 감각에만 의존하여 제공하면 안된다.</p>
+
+	<h4>적용</h4>
+	<p>작성한 서식을 제출하려면 파란색 확인버튼을 누르시오</p>
+	<div class="ex-cont">
+	<img src="http://www.bcci.or.kr/_Img/Board/default/btn_ok.gif" alt="확인">	<img src="http://www.bcci.or.kr/_Img/Board/default/btn_cancel.gif" alt="취소">
+	</div>
+
+	<h4>잘못된 적용</h4>
+	<p>작성한 서식을 취소하려면 흰색 버튼(오른쪽 버튼)을 누르시오</p>
+	<div class="ex-cont">
+	<img src="http://www.bcci.or.kr/_Img/Board/default/btn_ok.gif" alt="확인">	<img src="http://www.bcci.or.kr/_Img/Board/default/btn_cancel.gif" alt="취소">
+	</div>
+
+
+	</div>
+  </div>
+<!-- c04 //-->
+
+
+<!-- c05 -->
+  <div id="c05" class="sec">
+    <h3>텍스트 콘텐츠의 명도 대비</h3>
+    <div  class="contents">
+	<p>저시력자, 색각이상자, 고령자 등도 콘텐츠 인식할 수 있도록 핵심텍스트는 충분한 대비를 제공해야 한다.</p>
+	<ul>
+		<li>명도대비 4.5:1일 경우 (18pt 미만, 또는 굵은 14pt 미만)</li>
+		<li>명도대비 3:1일 경우 (18pt 이상, 또는 굵은 14pt 이상)</li>
+	</ul>
+
+	<p>명도대비 체크 프로그램 내려받기 <a href="http://blog.naver.com/yhs3723?Redirect=Log&logNo=80178125499" target="_blank" title="새창이동">[바로가기]</a></p>
+  </div>
+  </div>
+<!-- c05 //-->
+
+
+  <!-- c06 -->
+  <div id="c06" class="sec">
+    <h3>배경음 사용 금지</h3>
+    <div  class="contents">
+	<p>자동으로 재생되는 배경음을 사용하지 않아야 한다. (재생시간 3초 미만은 제외)</p>
+	<ul>
+	<li>동영상(플래시 영상 포함) 자동 플레이 금지</li>
+	<li>마우스오버 또는 키보드 초점을 받으면 자동 플레이되지 않도록 해야 함 (제어 버튼 필수적으로 포함)</li>
+	</ul>
+	<h4>적용</h4>
+	 <pre class="brush: js">
+     <object classid="clsid:22D6F312-B0F6-11D0-94AB-0080C74C7E95" id="movienfrdi" width="580" height="380" >
+     <param name="WindowlessVideo" value="1">
+     <param name="AudioStream" value="-1"/>
+     <param name="AutoSize" value="0"/>
+     <param name="AutoStart" value="0"/>
+     <param name="Filename" value="./_Img/04/exit.wmv"/>
+     <param name="wmode" value="transparent" />
+	 </object>
+     <!--[if !IE]><-->
+
+     <object type="video/x-ms-wmv" data="./_Img/04/exit.wmv" width="580" height="380">
+     <param name="WindowlessVideo" value="1">
+     <param name="wmode" value="transparent" />
+     <param name="autostart" value="0" />
+     <p> 이 콘텐츠는 Microsoft Media Player로 제작되었습니다.<br />
+     이 콘텐츠를 보려면 <a href="http://www.microsoft.com/downloads/Browse.aspx?displaylang=ko&categoryid=4">Media Player</a>(무료)가 필요합니다. </p>
+     </object>
+     <!--><![endif]-->		
+	</pre>
+
+	<h4>잘못된 적용</h4>
+	<p>부산진구청 <a href="http://www.busanjin.go.kr/index.do">http://www.busanjin.go.kr/index.do</a></p>
+	</div>
+  </div>
+  <!-- c06 //-->
+
+</div>
+<!-- 본문 //-->
+
+</body>
+</html>

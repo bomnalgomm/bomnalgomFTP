@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style type="text/css">
+* {margin:0;padding:0;}
+textarea {width:90%;height:200px;margin:30px 0 10px;}
+</style>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {//실행틀의 시작
+	// div 태그를 선택해 배경색을 변경하도록 명령
+	// 태그의 스타일을 변경시키는 명령은 css()입니다
+	// $("선택자").css("스타일속성이름","값"); (";"는 써도되고 안써도 됨)
+	$("div").css("background","#6C3");
+	//#d1태그의 아래쪽으로 여백이 10px 추가되어지도록 명령
+	$("#d1").css("margin-bottom","10px");
+	//.d2태그의 글자색상이 흰색으로 변경되어지도록 명령
+	$(".d2").css("color","#fff");
+	
+	
+});//실행틀 끝
+</script>
+</head>
+
+<body>
+<textarea>
+== 셀렉터 / 선택자 == (class명, id값)
+- 명령이 실행될 대상
+- jquery의 선택자는 $("선택자")의 형태로 만들어짐
+- jquery의 선택자를 만들때 기본적으로 css의 선택자와 동일한 형태로 만들어짐
+- 기본적인 선택자로 태그의 이름/아이디속성의 이름/클래스속성의 이름을 사용할 수 있음
+ $("태그이름") $("#아이디이름") $(".클래스이름")
+ 
+- 태그의 포함관계에 의해 선택자가 만들어지기도 함
+<div class="d1">
+	<ul>
+    	<li>List1</li>
+    	<li>List2</li>
+    	<li>List3</li>
+    	<li>List4</li>                        
+    </ul>
+</div>
+$(".d1 ul li") > 4쌍의 li태그 모두 선택
+$(".d1 ul li:first-child") > ul의 첫번째 자식으로 사용되고 있는 li태그만 선택
+$(".d1 ul li:last-child") > ul의 막내 자식으로 사용되고 있는 li태그만 선택
+$(".d1 ul li:nth-child(3)") > ul의 세번째 자식으로 사용되고 있는 li태그만 선택
+ 
+== 기본명령 형태 ==
+$("셀렉터").명령어() ;
+</textarea>
+
+<div id="d1">D1</div>
+<div class="d2">D2</div>
+
+<div id="header">
+	<h2>헤더</h2>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>                
+</div>
+</body>
+</html>

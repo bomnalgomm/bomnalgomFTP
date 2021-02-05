@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<title>웹접근성 준수 작업기준 가이드</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body {margin:0; padding:0; letter-spacing:-1px; font-family:돋움; color:#333; font-size:14px;}
+a {text-decoration:none;color:#333}
+a:hover, a:visited, a:focus {text-decoration:underline; font-weight:bold;}
+ul, li {margin:0; padding:0}
+li {list-style:none}
+body h1 {width:1px; height:1px; overflow:hidden; position:absolute;}
+.vdpn {width:1px; height:1px; overflow:hidden; position:absolute;}
+
+/* 레이아웃 */
+#header {position:relative; width:100%; border-bottom:2px solid #777; background:#f2f2f2}
+
+/* 스킵네비게이션 */
+#skipNavi {height:0}
+a.accessibility {display:block;  position:absolute; left:0; width:100%;  top:-10000px;text-align:center;font-size:1.2em; z-index:9999}
+a.accessibility:focus, a.accessibility:hover, a.accessibility:active {background:#666; padding:15px 0; color:#fff; position:absolute; top:0; font-weight:bold;}
+
+
+/* 메뉴 */
+#menu {width:980px; margin:0 auto; padding:20px 0;  text-align:center;}
+#menu li {display:inline-block; *display:inline; *zoom:1; margin-right:30px;}
+
+</style>
+</head>
+
+<body>
+<h1>센텀소프트 웹접근성 준수 작업기준 가이드</h1>
+
+<!-- 스킵네비게이션 -->
+<div id="skipNavi">
+	<h2 class="vdpn">스킵네비게이션</h2>
+	<ul>
+		<li><a href="#contain" class="accessibility">본문바로가기</a></li>
+		<li><a href="#menu" class="accessibility">주메뉴바로가기</a></li>
+	</ul>
+</div>
+<!-- 스킵네비게이션 //-->
+
+
+<!-- 상단 -->			
+<div id="header">
+	<h2 class="vdpn">주메뉴</h2>
+	<ul id="menu">
+		<li><a href="#">스킵네비게이션</a></li>
+		<li><a href="#">키보드 포커스</a></li>
+		<li><a href="#">주언어</a></li>
+		<li><a href="#">테이블</a></li>
+		<li><a href="#">레이블</a></li>
+		<li><a href="#">명도대비</a></li>
+		<li><a href="#">h 태그</a></li>
+		<li><a href="#">title 태그</a></li>
+		<li><a href="#">hidden 처리</a></li>		
+	</ul>
+</div>
+
+<div id="container">
+	<!-- 스킵네비게이션 -->	
+	<h3>스킵네비게이션</h3>
+	<div class="skip_wrap">
+		<p>숨김처리해도 되고 디자인요소로 보여도 됨</p>
+	</div>
+	<!-- 스킵네비게이션 //-->	
+	
+	<!-- 키보드 포커스 -->	
+	<h3>키보드 포커스</h3>
+	<div class="kfocus_wrap">
+		<p>키보드로 포커스 이동이 논리적으로 되는지 처음부터 끝까지 체크, 포커스 점선이 반드시 보여야함</p>
+	</div>
+	<!-- 키보드 포커스 //-->	
+	
+	<!-- 주언어 -->	
+	<h3>주언어</h3>
+	<div class="lang_wrap">
+		<h4>xhtml 주언어 표기</h4>
+	</div>
+	<!-- 주언어 //-->	
+	
+	<!-- 테이블 -->	
+	<h3>테이블</h3>
+	<div class="table_wrap">
+		<p>summary, caption, th scope, thead, tbody 항목 설명</p>
+	</div>
+	<!-- 테이블 //-->	
+	
+	<!-- 레이블 -->	
+	<h3>레이블</h3>
+	<div class="label_wrap">
+		<p>input(text), select 박스의 label</p>
+	</div>
+	<!-- 레이블 //-->	
+	
+	<!-- 명도대비 -->	
+	<h3>명도대비</h3>
+	<div class="color_wrap">
+		<p>4.5:1 (18.66미만 - 굵은14는 3:1)</p>
+		<p>3:1 (18이상, 굵은 14)</p>
+	</div>
+	<!-- 명도대비 //-->	
+	
+	<!-- h 태그 -->	
+	<h3>h 태그</h3>
+	<div class="h_wrap">
+		<p>약관, 취급방침, 규정 페이지에서 h 태그 사용하기 - 시멘틱 마크업</p>
+	</div>
+	<!-- h 태그 //-->	
+	
+	<!-- title -->	
+	<h3>title</h3>
+	<div class="title_wrap">
+		<p>alt 태그와 title 태그 사용용도 - 파일 내려받기 포함, 문구 규칙 정하기</p>
+	</div>
+	<!-- title //-->	
+	
+	<!-- hidden -->	
+	<h3>hidden</h3>
+	<div class="hidden_wrap">
+		<p>display:none 사용하면 안되는 이유 설명 및 대체 방안 - visibility:hidden;~ 과 스크린리더가 못읽어주는 css 요소 설명</p>
+	</div>
+	<!-- hidden //-->	
+	
+</div>
+
+
+<div id="footer">
+</div>
+</body>
+</html>

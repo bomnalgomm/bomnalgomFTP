@@ -1,0 +1,20 @@
+/* css 파일별 설명 */
+
+- base.css
+리셋
+
+- board.css
+게시판
+
+
+- layout.css
+레이아웃
+
+
+- style.css
+공통스타일
+
+
+
+
+

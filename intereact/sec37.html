@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title>section 37 .load()/.play()/.pause()</title>
+<link rel="stylesheet" href="./_Css/style.css" />
+<style type="text/css">
+.box {width:800px;}
+.box video {width:100%;}
+.btnSet {overflow:hidden;}
+.btnSet li {float:left;margin:0 20px;font-weight:bold;font-size:18px;font-family:arial;cursor:pointer;}
+</style>
+</head>
+<body>
+	<div class="box">
+		<video>
+			<source src="https://igcdn-videos-c-19-a.akamaihd.net/hphotos-ak-xaf1/t50.2886-16/11763728_1606672806279419_1495771235_n.mp4" type="video/mp4" />
+		</video>
+	</div>
+
+	<ul class="btnSet">
+		<li class="load">load</li>
+		<li class="play">play</li>
+		<li class="pause">pause</li>
+	</ul>
+
+	<pre>
+	<video> 태그 제어하기
+	$("video").get(); // 해당 동영상을 참조, 요소들이 집합에서 특정 순서에 해당하는 요소를 참조, 특정순서는 ()안에 삽입
+	.load(); // 불러오기
+	.play(); // 재생하기
+	.pause(); //일시정지하기, stop 구분은 없음
+	</pre>
+
+
+	<script type="text/javascript" src="./_Js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		var vid = $("video").get(0);
+		$(".load").on("click",function(){
+			vid.load();
+		});
+		$(".play").on("click",function(){
+			vid.play();
+		});
+		$(".pause").on("click",function(){
+			vid.pause();
+		});
+	});
+	</script>
+</body>
+</html>

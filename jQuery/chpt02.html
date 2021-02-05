@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title></title>
+<link rel="stylesheet" href="./_Css/style.css" />
+<style type="text/css">
+/* span {display:inline-block;} */
+div {background:pink;margin:0 0 10px;}
+.fadeIn {background:yellow;display:none;}
+.fadeout {background:green;}
+.ani-wrap {position:relative;width:100%;height:500px;}
+.animate {position:absolute;top:0;left:0;width:200px;height:200px;}
+.empty {background:#ccc;border:3px solid red;padding:10px;}
+</style>
+</head>
+<body>
+	<button type="button" class="btn-hide">숨기기</button>
+	<button type="button" class="btn-show">보이기</button>
+	<span>444</span>
+
+	<div id="div1">width</div>
+	<div id="div2">height</div>
+
+	<div class="fadeIn">fadein</div>
+	<div class="fadeout">fadeout</div>
+
+	<div class="ani-wrap">
+		<div class="animate">animate</div>
+	</div>
+
+	<div id="attr" class="empty">
+		배고프다, 집에 언제가나
+	</div>
+
+
+	<script type="text/javascript" src="./_Js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$("button.btn-hide").on("click",function(){
+			$("span").hide();
+		});
+		$("button.btn-show").on("click",function(){
+			$("span").show();
+		});
+		$("#div1").width(300);
+		$("#div2").height(500);
+
+		$(".fadeIn").fadeIn('fast');
+		$(".fadeout").fadeOut(300, function(){
+			//alert("완료");
+		});
+
+		$(".animate").animate({top:200,left:400}, 3500, function(){
+			//alert("완료");
+		});
+
+		// $(".empty").empty();
+		$("#attr").attr('class','fadeout');
+	});
+	</script>
+</body>
+</html>
+

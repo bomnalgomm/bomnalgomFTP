@@ -1,0 +1,11 @@
+@charset "utf-8"; 
+/* 2015-06-27 CSS CENTUMSOFT */
+
+@import url("/xe/contents/_Css/common.css");
+@import url("/xe/contents/_Css/style.default.css");
+
+body.guide {/* font-family:'dotum',돋움; */width:1000px;margin:0 auto;}
+body.guide h2 {font-size:17px;margin:5px 0;}
+body.guide h3 {font-size:14px;margin:5px 0;}
+body.guide ul.g-list {padding-bottom:10px;}
+body.guide ul.g-list li {padding-left:10px;background:url(/xe/contents/_Img/blt_g.gif) no-repeat 0 center;margin:5px 0;}

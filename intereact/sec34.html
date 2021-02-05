@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title>section 34 e.pageX/e.pageY</title>
+<link rel="stylesheet" href="./_Css/style.css" />
+<style type="text/css">
+
+</style>
+</head>
+<body>
+	<p>X축 좌표 : <span class="posX"></span></p>
+	<p>Y축 좌표 : <span class="posY"></span></p>
+ 
+	<pre>
+	e.pageX 
+	브라우저상 왼쪽 끝에서부터 마우스 커서의 x축 좌표
+
+	e.pageY
+	브라우저상 위쪽 끝에서부터 마우스 커서의 y축 좌표
+
+	e.pageX, e.pageY는 보통 mousemove 이벤트와 같이 사용됨
+	function()의 괄호 안에 'e'를 설정해야만 mousemove 이벤트가 발생할 때마다 e.pageX로부터 실시간의 마우스 좌표 값을 받을 수 있음
+	</pre>
+
+	<script type="text/javascript" src="./_Js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$(window).on("mousemove", function(e){ // 화면에 마우스 커서를 움직일때
+				var x = e.pageX; // 마우스 커서의 x축 좌표를 변수 x에 저장
+				var y = e.pageY; // 마우스 커서의 y축 좌표를 변수 y에 저장
+				$(".posX").text(x); // .posX에 변수 x 출력
+				$(".posY").text(y); // .posY에 변수 y 출력
+		});
+	});
+	</script>
+</body>
+</html>

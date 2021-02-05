@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>반응형 레이아웃</title>
+<style type="text/css">
+#page {width:90%;background:blue;} /* 960px */
+.blog {width:93.75%;margin:0 auto 53px;background:#ff2000;overflow:hidden;} /* 900px / 960px */
+.blog .main {float:left;width:62.8888889%;background:#ccc;} /* 533px / 900px */
+.blog .other {float:right;width:36.777778%;background:#666;} /* 331px / 900px */
+</style>
+</head>
+<body>
+<div id="page">
+	<div class="blog">
+		<div class="main">main</div>
+		<div class="other">other</div>
+	</div>
+</div>
+	
+</body>
+</html>

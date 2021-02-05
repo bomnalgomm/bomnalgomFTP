@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+* {margin:0;padding:0;}
+#wrap {width:1000px;margin:0 auto;overflow:hidden;}
+#box_a {height:400px;background:#f1779e;}
+#box_b{height:400px;background:#fcb354;width:50%;float:left;}
+#box_c{height:400px;background:#24bbaf;width:50%;float:right;}
+
+@media screen and (max-width:1024px) {
+#wrap {width:90%;}
+}
+
+@media screen and (max-width:800px) {
+#wrap {width:100%;}
+}
+
+@media screen and (max-width:480px) {
+#box_b{float:none;width:auto;}
+#box_c{float:none;width:auto;}
+}

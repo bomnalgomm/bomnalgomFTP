@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<script type="text/javascript" src="_Js/10.1.min.js"></script>
+<style type="text/css">
+body {font-size:12px;}
+</style>
+</head>
+<body>
+	<div class="article">
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('#zero').click(function(){
+			$('.article').css('letter-spacing','0');
+		});
+		$('#minus').click(function(){
+			$('.article').css('letter-spacing','-1px');
+		});
+		$('#gulim').click(function(){
+			$('.article, .article *').css('font-family','gulim');
+		});
+		$('#malgun').click(function(){
+			$('.article, .article *').css('font-family','malgun gothic');
+		});
+		$('#nanum').click(function(){
+			$('.article, .article *').css('font-family','나눔고딕');
+		});
+	}); 
+	</script>
+	<button id="zero">현재 페이지의 자간을 0px로 하기</button><button id="minus">현재 페이지의 자간을 -1px로 하기</button>
+	<button id="gulim">현재문서를 굴림으로 보기</button><button id="malgun">현재문서를 맑은고딕으로 보기</button><button id="nanum">현재문서를 나눔고딕으로 보기</button>
+	<div class="txt">
+자간의 차이를 확인하셨는가?
+
+사람마다 차이가 있겠지만 굴림이나 맑은고딕의 경우에는 개인적으로 자간이 -1px인게 정렬된 느낌이 더 든다.
+하지만 나눔고딕에 -1px를 적용할 경우에는 자간자체가 너무 좁아져 보이는 경향이 있다.
+
+문제는 그뿐만이 아니다.
+
+웹을 만드는 사람은 항상 고려해야할 점이 사용자의 웹환경에서 어떤 폰트가 지원되는가를 고려해야 하는데 굴림이나 맑은 고딕에 비해서 나눔고딕을 PC에 설치한 사람은 훨씬 적다는 것이다. 
+	</div>
+	</div>
+</body>
+</html>

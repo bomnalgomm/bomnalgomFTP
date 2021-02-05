@@ -1,0 +1,6 @@
+/**
+ * @author bomnalgomm
+ */
+$(function(){
+	
+});

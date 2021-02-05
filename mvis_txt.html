@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>슬라이드</title>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.js"></script>
+  <script type="text/javascript" src="http://kookje.icts21.com/_Js/jquery/owl.carousel.js"></script>
+  <link rel="stylesheet" href="/_Css/common.css" />
+  <link rel="stylesheet" href="http://kookje.icts21.com/_Js/jquery/owl.carousel.css" />
+  <style type="text/css">
+	.mvis-wr .mvis .item span {display:block;width:2000px;height:300px;border:1px solid red;box-sizing:border-box;}
+  </style>
+ </head>
+ <body>
+	<div class="mvis-wr">
+		<div class="mvis">
+			<div class="item">
+				<img src="http://kookje.icts21.com/kor/_Img/main_15034647040.jpg" alt="" />
+			</div>			
+			<div class="item">
+				<img src="http://kookje.icts21.com/kor/_Img/main_15034667500.jpg" alt="" />
+			</div>
+		</div>
+		<div class="mvis-txt">
+			<button>비쥬얼 1 컨트롤 버튼</button>
+			<button>비쥬얼 2 컨트롤 버튼</button>
+		</div>
+	</div>
+	<script type="text/javascript">
+	var mvisual;
+	mvisual  = $('.mvis-wr .mvis');	
+	if($(".item",mvisual).length>1){
+		mvisual.owlCarousel({
+			items:1,loop:true,
+			nav:false,
+			dots:true,dotsEach:true,dotsContainer:$(".mvis-wr .mvis-txt"),
+			autoplay:false,autoplayTimeout:4000
+			,autoplayHoverPause:false//재생/정지버튼 넣을때는 이 옵션 false로, 마우스 인/아웃 이벤트 충돌로 재생/정지 버튼 액션 꼬일수 있음, 
+			//,animateOut: 'fadeOut'
+		});
+		$('.mvis-wr .btn-play').hide();
+		$('.mvis-wr .btn-play').on('click',function(){
+			mvisual.trigger('play.owl.autoplay',[4000]);
+			$('.mvis-wr .btn-stop').show().focus();$(this).hide();
+		});
+		$('.mvis-wr .btn-stop').on('click',function(){
+			mvisual.trigger('stop.owl.autoplay');
+			$('.mvis-wr .btn-play').show().focus();$(this).hide();
+		});
+		$('.mvis-wr .btn-prev').on('click',function(){mvisual.trigger('prev.owl.carousel');	});
+		$('.mvis-wr .btn-next').on('click',function(){mvisual.trigger('next.owl.carousel');	});
+	}	
+
+	if($(".item",mvisual).length<2){
+		$(".mvis-wr .ctrl-btns").hide();
+	}		
+	</script>
+
+ </body>
+</html>

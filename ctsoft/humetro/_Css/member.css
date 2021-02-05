@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* 로그인 */
+.login-wrap {border:1px solid #ddd;padding:40px;overflow:hidden;color:#555;}
+.login-wrap .login-tit {width:45%;float:left;font-size:15px;color:#777;background:url(/ctsoft/humetro/_Img/member/login_bg.gif) no-repeat 0 bottom;padding-bottom:140px;}
+.login-wrap .login-tit p {margin-top:16px;width:89%;}
+.login-wrap .login-tit span {display:block;}
+.login-wrap .login-cont {width:55%;float:right;padding-top:5px;}
+.login-wrap .login-cont p {letter-spacing:-1px;}
+.login-wrap .login-cont label {padding-left:8px;}
+.login-wrap .login-cont .frm {position:relative;width:100%;border-bottom:1px solid #ddd;margin:23px 0 16px;}
+.login-wrap .login-cont .frm .login-frm {display:block;width:77%;border-top:1px solid #ddd;border-left:1px solid #ddd;}
+.login-wrap .login-cont .frm .login-frm input.text {border:0;width:100%;height:49px;line-height:49px;background:#fbfbfb;font-size:14px;color:#777;}
+.login-wrap .login-cont .frm .btn-login {position:absolute;top:0;right:0;width:110px;height:101px;font-size:16px;border:0;background:#0c7bc2;color:#fff;border-left:1px solid #ddd;cursor:pointer;}
+.login-wrap .login-cont .member-link {margin-top:25px;border:1px solid #ddd;width:99.9%;text-align:center;overflow:hidden;}
+.login-wrap .login-cont .member-link a {float:left;padding:13px 0;font-weight:bold;color:#777;width:55%;}
+.login-wrap .login-cont .member-link a:first-child {border-right:1px solid #ddd;width:44%;}
+.login-wrap .login-cont .member-link a span {background:url(/ctsoft/humetro/_Img/member/ico_idpw.gif) no-repeat 0 50%;padding:7px 0 7px 33px;}
+.login-wrap .login-cont .member-link a:first-child span {background:url(/ctsoft/humetro/_Img/member/ico_join.gif) no-repeat 0 50%;padding:7px 0 7px 42px;}
+
+/* 아이디비번찾기 */
+.find-wrap {margin-top:30px;border:1px solid #ddd;overflow:hidden;}
+.find-wrap .find-cont {padding:20px 3% 40px;position:relative;width:43.9%;height:auto;float:left;border-left:1px dashed #d9d9d9;}
+.find-wrap .find-cont:first-child {border-left:0;float:left;}
+.find-wrap .find-cont:first-child p {margin-bottom:71px;}
+.find-wrap .find-cont input.text {width:91.5%;border:1px solid #ddd;background:#fbfbfb;height:48px;line-height:46px;padding:0 4%;}
+.btn-cert {text-align:center;}
+.btn-cert button {border:0;background:#57616c;color:#fff;font-weight:bold;width:50%;padding:15px 0;cursor:pointer;}
+.btn-cert button span {padding-left:23px;background:url(/ctsoft/humetro/_Img/member/ico_cell.png) no-repeat 0 center;}
+.btn-cert button.ipin {background:#0c7bc2;}
+.btn-cert button.ipin span {background:url(/ctsoft/humetro/_Img/member/ico_ipin.png) no-repeat 0 center;}
+.mem-box {position:relative;padding:30px;background:#f4f4f4;clear:both;border-top:1px solid #ddd;}
+.mem-box p {width:72%;}
+.mem-box p:first-child {width:100%;}
+.mem-box .cw-btn {position:absolute;top:34px;right:31px;}
+
+/* 회원가입단계별이미지 */
+.join-step {margin-bottom:45px;}
+
+/* 회원정보동의 */
+.agree-wrap .box {border:1px solid #ddd;padding:20px 25px;}
+.agree-wrap .law-box {border:1px solid #ddd;border-top:0;overflow:hidden;padding:20px;margin-bottom:20px;}
+.agree-wrap .law-box .c-tit03 {float:left;width:25%;}
+.agree-wrap .law-box ul {float:left;width:60%;border-left:1px dashed #ddd;padding-left:3%;}
+
+/* 약관동의 */
+.acc-terms {overflow:hidden;}
+.acc-terms .terms-cont {float:right;width:48%;}
+.acc-terms .terms-cont:first-child {float:left;}
+.agree-box {background:#f8f8f8;border:1px solid #ddd;color:#000;padding:25px;height:138px;overflow-y:scroll}
+.mbtn-wrap {text-align:center;margin-top:40px;}
+.mbtn-wrap a {margin:0 2px 2px;}
+.mbtn-wrap a em {font-style:normal;display:block;font-weight:normal;margin-top:3px;}
+
+/* 본인인증 */
+.cert-wrap {border:1px solid #ddd;}
+.cert-wrap .cert-box {padding:20px 20px 30px;}
+.cert-wrap .cert-box .btn-cert {margin-top:30px;}
+.cert-wrap .cert-box .btn-cert button {max-width:198px;}
+.cert-wrap .mem-box {border-top:1px solid #ddd;}
+.cert-wrap .law-box {border-top:1px solid #ddd;border-bottom:1px solid #ddd;padding:20px;overflow:hidden;}
+.cert-wrap .law-box .c-tit03 {float:left;width:25%;}
+.cert-wrap .law-box ul {float:left;width:60%;border-left:1px dashed #ddd;padding-left:3%;}
+.cert-wrap .agree-wrap {text-align:center;background:#fbfbfb;padding:15px 0;}
+.cert-wrap .agree-wrap input[type=radio] {vertical-align:middle;margin-right:12px;}
+.cert-wrap .find-wrap {border:0;border-top:1px solid #ddd;margin:0;}
+
+/* 가입폼 */
+.prg-write-table {width:100%;border-collapse:collapse;border-bottom:1px solid #999;border-left:1px solid #d5d5d5;border-right:1px solid #d5d5d5;}
+.prg-write-table tr:first-child th {border-top:1px solid #707070;}
+.prg-write-table tr:first-child td {border-top:1px solid #999;}
+.prg-write-table th, .prg-write-table td {padding:7px 0;border-top:1px solid #ebebeb;}
+.prg-write-table th {background:#fafafa;border-right:1px solid #d5d5d5;padding-left:15px;}
+.prg-write-table td {padding-left:8px;}
+.prg-write-table th label {position:relative;padding-left:15px;}
+.prg-write-table th label .nec {text-indent:-9999px;display:block;position:absolute;top:0px;left:0px;width:9px;height:15px;}
+.prg-write-table input.text {background:#fbfbfb;border:1px solid #ddd;height:24px;line-height:24px;}
+
+/* 가입완료 */
+.mem-complete {background:url(/ctsoft/humetro/_Img/member/join_rbg.gif) no-repeat center 38px;border:1px solid #ddd;text-align:center;padding:190px 0 0;font-size:14px;color:#777;}
+.mem-complete .tit {font-size:20px;font-weight:bold;color:#333;line-height:100%;margin-bottom:20px;}
+.mem-complete .tit .stit {font-family:"open-sans";font-size:12px;color:#777;margin-bottom:15px;}
+.mem-complete .tit span {display:block;}
+.mem-complete .mem-box {text-align:center;margin-top:50px;}
+.mem-complete .mem-box .bw-btn {background:#fff;margin:3px 5px;}
+
+/* 회원탈퇴 */
+.login-wrap.m-leave .login-tit {width:45%;float:left;font-size:15px;color:#777;background:url(/ctsoft/humetro/_Img/member/leave_bg.gif) no-repeat 0 bottom;padding-bottom:95px;}
+.login-wrap.m-leave .login-tit .tit {font-size:20px;color:#444;}
+.login-wrap.m-leave .login-cont .bg-btn {width:100%;text-align:center;background:#57616c;}
+/* 고객모니터로그인 */
+.login-wrap.m-leave.monitor {position:relative;margin-top:30px;padding:0;}
+.login-wrap.m-leave.monitor .monitor-cont {padding:40px;}
+.login-wrap.m-leave.monitor .monitor-select {border:1px solid #ddd;border-bottom:0;text-align:center;padding:14px 0;}
+.login-wrap.m-leave.monitor .monitor-select * {vertical-align:middle;}
+.login-wrap.m-leave.monitor .monitor-select label {margin-right:20px;}
+.login-wrap.m-leave.monitor .btn-login {top:auto;bottom:-1px;}
+.login-wrap.m-leave.monitor .mem-box {overflow:hidden;}
+.login-wrap.m-leave.monitor .mem-box .m-tit {float:left;font-size:15px;font-weight:bold;width:auto;}
+.login-wrap.m-leave.monitor .mem-box .m-txt {float:left;margin-left:5%;}
+.login-wrap.m-leave.monitor .mem-box .cw-btn {top:45px;}
+
+
+/* 결과확인 */
+.result-wrap {border:1px solid #ddd;padding:50px 40px;background:url(/ctsoft/humetro/_Img/member/result_bg.gif) no-repeat 95% 50px;}
+.result-wrap .tit {font-size:20px;color:#444;}
+.result-wrap .txt {font-size:15px;color:#777;margin:20px 0 35px;}
+.result-wrap .txt span {display:block;}
+.result-wrap #prg-wrap {background:none;}
+.result-wrap .result-table {width:100%;border-collapse:collapse;font-size:14px;color:#333;}
+.result-wrap .result-table th, .result-wrap .result-table td {border:1px solid #ddd;}
+.result-wrap .result-table th {font-weight:normal;padding:15px 20px;}
+.result-wrap .result-table td {font-size:13px;color:#777;background:#fbfbfb;padding:15px 20px;}

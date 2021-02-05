@@ -1,0 +1,45 @@
+/* 메인 비쥬얼 */
+.m_visual_wrap {width:100%; clear:both; margin:0 auto;}
+.m_visual { text-align:center; width:100%; position:relative; clear:both; margin:0 auto;}
+
+.m_visual .pop-btns {width:100%; position:relative; clear:both; margin:0 auto; z-index:99999;}
+.m_visual .pop-btns span {visibility:hidden;display:block;width:20px;height:20px;cursor:pointer;}
+.m_visual .pop-btns .btn-prev {position:absolute; top:150px; left:0; width:65px;height:122px;background:url(http://sammi.biz/html/_Img/Main/arr_left.png)  no-repeat 0 0;z-index:99999;}
+.m_visual .pop-btns .btn-next {position:absolute; top:150px; right:0;width:65px;height:122px;background:url(http://sammi.biz/html/_Img/Main/arr_right.png)  no-repeat 0 0;z-index:99999;}
+
+.m_visual .pop-btns .btn_control {width:1000px; margin:0 auto; clear:both; position:relative; height:0; z-index:99999; clear:both;}
+.m_visual .pop-btns .btn_control .btn-pause {background:url(http://sammi.biz/html/_Img/Main/btn_pause.png) no-repeat 0 0; width:19px; position:absolute; left:438px; top:367px; z-index:99999;}
+.m_visual .pop-btns .btn_control .btn-play {background:url(http://sammi.biz/html/_Img/Main/btn_play.png) no-repeat 0 0; width:19px;position:absolute; left:438px;top:367px;  z-index:99999;}
+
+.m_visual ul {width:100%;height:400px;padding:0;margin:0 auto; position:relative;}
+.m_visual ul:after {clear:both;content:"";display:block;}
+.m_visual li {float:left;padding:0;margin:0;list-style-type:none;}
+.m_visual .pcont {width:100%;height:489px;overflow:hidden;}
+.m_visual .pcont img {width:100%;height:489px;}
+.m_visual .pcont span {display:none;}
+
+/*.m_visual #popupZone1 {background:url(/html/_Img/Main/m_visual01.jpg) no-repeat center top;}*/
+.m_visual #popupZone1 {background:url(http://new.sangji21c.co.kr/image/new_img/main/m_visual02.jpg) no-repeat center top;}
+.m_visual #popupZone2 {background:url(http://new.sangji21c.co.kr/image/new_img/main/m_visual01.jpg) no-repeat center top;}
+.m_visual #popupZone3 {background:url(http://new.sangji21c.co.kr/image/new_img/main/m_visual02.jpg) no-repeat center top;}
+.m_visual #popupZone4 {background:url(http://new.sangji21c.co.kr/image/new_img/main/m_visual01.jpg) no-repeat center top;}
+.m_visual #popupZone5 {background:url(http://new.sangji21c.co.kr/image/new_img/main/m_visual02.jpg) no-repeat center top;}
+.m_visual #popupZone6 {background:url(http://new.sangji21c.co.kr/image/new_img/main/m_visual01.jpg) no-repeat center top;}
+
+.m_visual .nicon {width:19px;height:20px;overflow:hidden;background:url(http://sammi.biz/html/_Img/Main/btn_icon.png) no-repeat 0px 0px;margin-top:0px;z-index:99999;text-decoration:none;}
+.m_visual .nicon span {cursor:pointer;visibility:hidden;}
+.m_visual .nicon:hover, .popup-btns a.over, .popup-btns .over a {background-position:right 0;}
+.m_visual .n1 a:hover, .m_visual .n1 a.over, .m_visual .n1 .over,
+.m_visual .n2 a:hover, .m_visual .n2 a.over, .m_visual .n2 .over,
+.m_visual .n3 a:hover, .m_visual .n3 a.over, .m_visual .n3 .over,
+.m_visual .n4 a:hover, .m_visual .n4 a.over, .m_visual .n4 .over,
+.m_visual .n5 a:hover, .m_visual .n5 a.over, .m_visual .n5 .over,
+.m_visual .n6 a:hover, .m_visual .n6 a.over, .m_visual .n6 .over,
+.m_visual .n7 a:hover, .m_visual .n7 a.over, .m_visual .n7 .over {background-position:right 0;}
+.m_visual .n1 .nicon {position:absolute;left:50%;bottom:15px; margin-left:-42px;}
+.m_visual .n2 .nicon {position:absolute;left:50%;bottom:15px; margin-left:-20px;}
+.m_visual .n3 .nicon {position:absolute;left:50%;bottom:15px; margin-left:0px;}
+.m_visual .n4 .nicon {position:absolute;left:50%;bottom:15px; margin-left:20px;}
+.m_visual .n5 .nicon {position:absolute;left:50%;bottom:15px; margin-left:40px;}
+.m_visual .n6 .nicon {position:absolute;left:50%;bottom:15px; margin-left:60px;}
+.m_visual .n7 .nicon {position:absolute;left:50%;bottom:15px; margin-left:80px;}

@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+/* 경기일정/결과 */
+@media all and (min-width:861px){
+	.tbl-result tbody tr:hover td {background:#f9f9f9;}
+}	
+
+@media all and (max-width:860px){
+	.board-search-full .sec.next {width:90%;margin-top:5px;}
+	.board-search-full .sec .text2 {width:350px;}
+	.tbl-result thead {position:absolute;top:0;left:0;width:1px;height:1px;overflow:hidden;}
+	.tbl-result tbody {ovreflow:hidden;}
+	.tbl-result tr {float:left;width:49.5%;min-height:143px;border-left:1px solid #ddd;border-bottom:1px solid #ddd;padding:20px 0;overflow:hidden;}	
+	.tbl-result tbody td {border-bottom:0;padding:0;}
+	.tbl-result td.league {width:30%;float:left;}
+	.tbl-result td.time {width:70%;float:left;text-align:left;}
+	.tbl-result td.match {float:inherit;width:100%;text-align:center;padding:10px 0 5px;}
+	.tbl-result td.match .r-win, .tbl-result td.match .r-lose, .tbl-result td.match .r-draw {bottom:8px;}	
+	.tbl-result td .r-team {width:36%;min-height:60px;}
+	.tbl-result td .r-ateam {width:35%;min-height:60px;}
+	.tbl-result td .r-score {width:16%;min-height:50px;margin:0 5px;}
+	.tbl-result td .r-score span {padding:0 1px;}	 	
+	.tbl-result td.entry {float:left;text-align:right;width:33%;}
+	.tbl-result td.preview {float:left;width:33%;}
+	.tbl-result td.highlight {float:left;text-align:left;width:33%;}					
+}
+
+@media all and (max-width:652px){
+	.board-search-full .search-wrap {position:relative;}	
+	.board-search-full .sec:first-child {margin-bottom:5px;}
+	
+	.tbl-result tr {;width:100%;}	
+	.tbl-result td.league {text-align:right;}
+	.tbl-result td.league img {margin-right:20px;}
+	.tbl-result td.time {font-size:13px;padding-top:10px;}
+	.tbl-result td .place {display:inline-block;padding-left:10px;}
+	.tbl-result td.entry {width:35%;}
+	.tbl-result td.preview {width:25%;}
+	.tbl-result td.highlight {width:35%;}			
+	
+	/* 스크롤안내문 */
+	.rspnsv-guide {clear:both;display:block;background:#e8e8e8;text-align:center;color:#777;min-height:54px;padding:7px 20px 0 20px;margin-bottom:10px;}
+	
+	/* table 리스트 스타일 */
+	#prg-wrap, .rspnsv-wrap {width:auto;overflow-y:auto;}
+	.prg-list-table, .rspnsv-wrap > table, .rspnsv-wrap .tbl-gym {width:652px;}
+	
+}
+
+@media all and (max-width:546px){
+	.board-search-full .search-wrap {position:relative;margin-left:12%;text-align:left;}
+	.board-search-full .sec {display:block;}
+	.board-search-full .sec .text2 {width:130px;}	
+	.board-search-full .sec label {display:inline-block;width:70px;margin:0;}
+}
+
+@media all and (max-width:480px){
+	.board-search-full .sec .text2 {width:122px;}
+	.tbl-result td.match {float:inherit;width:100%;text-align:center;padding:10px 0 15px;}
+	.tbl-result td .r-team {float:left;width:36%;}
+	.tbl-result td .r-ateam {float:right;width:35%;}
+	.tbl-result td .r-score {width:auto;margin-top:10px;}
+	.tbl-result td .r-score span {padding:0 1px;}
+	.tbl-result .r-ateam .team {background-position:0 top;}
+}
+
+@media all and (max-width:390px){
+	.board-search-full .search-wrap {margin-left:5%;}	
+}
+
+/* 순위표 */
+@media all and (max-width:652px){
+	#rank-wrap {width:auto;overflow-x:auto;}
+	.tbl-rank {width:652px;}	
+}
+
+/* 응원한마디 */
+@media all and (max-width:652px){
+	#support-wrap .support-top {background:url(../img/board/support/support_bg_s.gif) no-repeat 0 0;padding:0}
+	#support-wrap .support-top .tit {font-size:19px;padding-left:170px;}
+	#support-wrap .support-top .txt {padding-left:170px;}	
+	#support-wrap #view-del .view-del .del-wp {display:block;margin-top:10px;}	
+}
+	
+@media all and (max-width:480px){	
+	#support-wrap .support-top {padding-top:10px;}
+	#support-wrap .support-top .txt {padding:10px 0 0 10px}
+	#support-wrap .write-wrap .write-form .sec {display:block;margin-top:5px;}
+	#support-wrap .view-cont .view-date {display:block;padding:5px 0 0;}
+	#support-wrap .view-cont .view-btns {top:20px;}	
+	#support-wrap .write-wrap .write-btn {top:85px;}	
+}

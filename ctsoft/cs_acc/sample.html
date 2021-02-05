@@ -1,0 +1,14 @@
+<?
+$_group_path = '.';
+include_once ($_group_path.'/_common.php');
+
+
+$INC_GROUP ="vsource/";		//  _Inc/vsource/ 밑에 있는 head, tail 파일을 적용함
+$DESIGN_OPT="";						//  xxx_head.php 파일 연결할때 별도로 파일 만들어서 구분자 xxx 입력하여 적용가능
+
+$_VARS["page_title"] ="샘플";
+include_once ($_group_path.'/_head.php');
+?>
+
+
+<? include_once ($_group_path.'/_tail.php');?>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title>스크립트 탭</title>
+<script src="/xe/contents/_Js/all.js"></script>
+</head>
+<body class="guide">
+<ul class="g-list">
+	<li>클래스명 : c-tab01(id="multi-tab01" 과 셋트로 선언)</li>
+	<li>IE7까지 크로스브라우징</li>
+	<li>스크립트 우측 하단 로고삽입영역에 사용할 사이트 로고 삽입</li>
+	<li>한줄에 최대 4개의 탭 출력되는 기준(4개 이상을 원하면 css 및 스크립트 수정)</li>
+</ul>
+
+<div class="sgap"></div>
+
+
+<div class="c-tab01" id="multi-tab01">
+	<ul>
+		<li><a href="#" class="over">탭메뉴4-1</a></li>
+		<li><a href="#">탭메뉴4-2</a></li>
+		<li><a href="#">탭메뉴4-3</a></li>
+		<li><a href="#">탭메뉴4-4</a></li>
+		<li><a href="#">탭메뉴4-5</a></li>
+		<li><a href="#">탭메뉴4-6</a></li>
+		<li><a href="#">탭메뉴4-7</a></li>
+		<li><a href="#">탭메뉴4-8</a></li>
+		<li><a href="#">탭메뉴4-9</a></li>
+		<li><a href="#">탭메뉴4-10</a></li>
+	</ul>
+</div>
+
+<div class="sgap"></div>
+
+<h2>HTML</h2>
+<pre class="brush: js">
+<div class="c-tab01" id="multi-tab01">
+	<ul>
+		<li><a href="#" class="over">탭메뉴4-1</a></li>
+		<li><a href="#">탭메뉴4-2</a></li>
+		<li><a href="#">탭메뉴4-3</a></li>
+		<li><a href="#">탭메뉴4-4</a></li>
+		<li><a href="#">탭메뉴4-5</a></li>
+		<li><a href="#">탭메뉴4-6</a></li>
+		<li><a href="#">탭메뉴4-7</a></li>
+		<li><a href="#">탭메뉴4-8</a></li>
+		<li><a href="#">탭메뉴4-9</a></li>
+		<li><a href="#">탭메뉴4-10</a></li>
+	</ul>
+</div>
+</pre>
+
+<div class="sgap"></div>
+<h2>CSS</h2>
+<pre class="brush: js">
+/* 탭메뉴 스타일 */
+.c-tab01 {border-top:1px solid #555;background:url(/xe/contents/_Img/tab2_bg.gif) repeat 0 bottom;margin-bottom:20px;position: relative;/* font-family:'NanumBarunGothic,ng,'맑은 고딕','Malgun Gothic','돋움',Dotum,' */}
+.c-tab01 .this-wrap {background:url(/xe/contents/_Img/tab_logo.gif) no-repeat right bottom;}
+.c-tab01 ul{overflow:hidden;}
+.c-tab01 li {float:left;font-size:13px;text-align:center;}
+.c-tab01 li a {padding:10px 0 0 0;display:block;background:#fff;border-right:1px solid #d7d7d7;border-bottom:1px solid #d7d7d7;line-height:20px;height:28px;letter-spacing:-1px;}
+.c-tab01 li.first a {border-left:1px solid #d7d7d7;}
+.c-tab01 li.first a.over {border-left:1px solid #48525e;}
+.c-tab01 li a:hover, .c-tab01 li a:focus, .c-tab01 li a:active {background:#eceef0;text-decoration:underline;border-right:1px solid #d7d7d7;}
+.c-tab01 li a.over {background:#48525e;color:#fff;font-weight:700;text-decoration:underline;border-right:1px solid #48525e;}
+</pre>
+
+
+</body>
+</html>

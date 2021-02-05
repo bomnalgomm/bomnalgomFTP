@@ -1,0 +1,23 @@
+@charset "utf-8";
+/** skin dark color **/
+/* 로그인 */
+#login-wrap.c-dark .login-form {background:url(../../_Admin/_Img/Login/ico_login_d.png) no-repeat center 0;}
+
+/* 관리자화면 */
+/* 메뉴 */
+#cms-wrap.c-dark .menu-wrap {background:#384351;}
+
+/* 사이드메뉴 */
+#cms-wrap.c-dark #container-wrap .sidebar h2 {border-top:4px solid #384351;color:#384351;}
+#cms-wrap.c-dark #container-wrap .sidebar .depth2 li a.over {background:#f3f3f3 url(../../_Admin/_Img/Common/arr_dark.png) no-repeat 170px 12px;}
+#cms-wrap.c-dark #container-wrap .sidebar .depth2 li .depth3 li a {padding:5px 10px;line-height:18px;background:url(../../_Admin/_Img/Common/blt_depth3.gif) no-repeat 0 12px;}
+
+/* 검색영역 */
+#cms-wrap.c-dark .srh-wrap input.btn-srh {background:#384351;}
+
+/* 모달팝업 */
+#cms-wrap.c-dark #modal-wrap .modal-tit {background:#384351;}
+
+/* 사이트맵 */
+#cms-wrap.c-dark .sitemap-wrap .sitemap h2 a {display:block;background:#f5f5f5;border-top:2px solid #384351;font-size:16px;line-height:100%;text-align:center;padding-top:20px;height:30px;}
+#cms-wrap.c-dark .sitemap-wrap .sitemap h2 a:hover, #cms-wrap.c-dark .sitemap-wrap .sitemap h2 a:active, #cms-wrap.c-dark .sitemap-wrap .sitemap h2 a:focus, #cms-wrap.c-dark .sitemap-wrap .sitemap .sitemap-list h3 a:hover, #cms-wrap.c-dark .sitemap-wrap .sitemap .sitemap-list h3 a:focus, #cms-wrap.c-dark .sitemap-wrap .sitemap .sitemap-list h3 a:active, #cms-wrap.c-dark .sitemap-wrap .sitemap .sitemap-list li a:hover, #cms-wrap.c-dark .sitemap-wrap .sitemap .sitemap-list li a:focus, #cms-wrap.c-dark .sitemap-wrap .sitemap .sitemap-list li a:active  {color:#384351;text-decoration:underline;}

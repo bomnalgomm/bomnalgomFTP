@@ -1,0 +1,1165 @@
+@charset "utf-8";
+/**
+ * @File Name : all.css
+ * @Description : Base Adjust + Layout[main+sub] Mobile First!
+ * @Modification Information
+ * <pre>
+ * 수정일 | 수정자 | 수정내용
+ * 2019.08.23 | 문영신 | 최초 등록
+ * 2019.08.29 | 문영신 | 요구반영. 결함개선. 고도화.
+ * </pre>
+ * @author 웹표준화실 문영신
+ * @since 2019.08.22
+ *
+ * @Copyright (C) IACTS.CO.KR All rights reserved.
+ */
+
+/* Table of contents ))
+ | Base Adjust
+ | Layout[main+sub] Mobile First!
+ | clearfix
+ | #head, ..
+ | ETC
+ | @media print{} ))) sub.css
+ | RWD ◇◆
+ | @keyframes ◇◆
+ */
+
+/* ◇◆ Base Adjust ◇◆◇◆◇◆◇◆◇◆ */
+
+/* ☆@import url(base.css); */
+
+/* base.css )) Overwrite. 20190829 ◆◆◆ */
+
+body{
+	background:#fff;
+	color:#555;
+	font-weight:400;
+	font-size:1em; /* (((16px */
+	line-height:1.75; /* ☆ */
+	letter-spacing:-.03125em; /* (-.5px/16px) */
+	overflow:hidden; /* ★ */
+}
+
+[lang|='ko'],
+[lang|='ko']>*{
+	font-family:
+		'Apple SD Gothic Neo',
+		'Open Sans',
+		'Microsoft JhengHei',
+		'Meiryo',
+		'Noto Sans KR','본고딕',NotoSans,'Noto Sans',
+		/* '나눔고딕',NanumGothic,'Nanum Gothic', */
+		/*'맑은 고딕','Malgun Gothic',*/
+		'돋움',Dotum,
+		Helvetica,'Helvetica Neue',
+		Arial,sans-serif;
+}
+
+
+/* ◇◆ 공용 ◇◆ */
+
+
+/* ◇◆ Layout[main+sub] ◇◆◇◆◇◆◇◆◇◆ */
+
+
+/* 배치.전체 20190829. ☆ z-index 쌓임맥락 안만들고.. 개별 콘텐츠에서 z-index 지정 권장! */
+html,
+body,
+#container, #wrap, #body{min-height:100%;}
+.container{position:relative;
+	min-width:280px; /* ☆ */
+	margin:0 20px; /* ☆ */
+}
+#container{position:relative;}
+	div.bg2top{}
+		div.bg2top>div{}
+	div.bg2btm{}
+		div.bg2btm>div{}
+	#head{clear:both;
+		position:relative;
+	}
+		div.bg2head{}
+			div.bg2head>div{}
+		#head_s1{position:relative;}
+		#head_s2{position:relative;
+			clear:both; /* ☆ */
+		}
+		#head_s3{}
+			[id*='head_']>.container{
+				margin:auto;
+			}
+			#head_s1>.container{}
+			#head_s2>.container{}
+			#head_s3>.container{}
+	#wrap{
+		clear:both;
+		position:relative;
+		min-height:50px; /* ☆ 펼친 콘텐츠 높이 고려. */
+	}
+		#wrap>.container{} /* ))) sub.css, main.css */
+			#body{
+				position:relative;
+			}
+	#wing{display:block;z-index:10;position:relative;} /* ((( sub.css */
+	#foot{clear:both;position:relative;
+		background:#fff;
+	}
+		div.bg2foot{}
+			div.bg2foot>div{}
+		#foot_s1{
+			background:#2b2b2b;
+		}
+			[id*='foot_']>.container{}
+			#foot_s1>.container{padding:10px 0 30px 0;}
+
+
+
+/* 배치.유틸 20190829 */
+.width1expand1{
+	margin-left:-20px;
+	margin-right:-20px;
+}
+
+
+/* ☆ 모바일 감춤 20190829 */
+.gn,
+#anb1{display:none;}
+
+
+/* only Desktop BG image Preload 20190829 */
+/* none */
+
+
+/* #head */
+
+
+/* 글로벌내비.분리 20190829 */
+
+
+/* 로고 20190829 */
+h1#logo{
+	float:left;
+	position:relative;
+	margin:0 80px 0 10px; /* (화면확인) (우요소) (화면확인) (좌요소) */
+	font-size:0;line-height:0;
+	text-align:left;
+}
+h1#logo>a{display:block;
+	z-index:30; /* z > #tnb1c */
+	position:relative;
+}
+h1#logo>a>img{display:block;
+	width:auto;
+	max-width:100%;
+	height:35px;
+	padding:20px 0; /* (주메뉴 덮는다) */
+}
+
+
+
+
+
+/* #tnb1 ))) 미디어쿼리 max-width:1259px 안으로 보냄 */
+
+
+/* #wing */
+
+
+/* 위로 20190829 */
+#gotop1{display:inline-block;
+	float:right;
+	z-index:50;
+	position:relative;
+	text-align:center;
+}
+#gotop1 .ic1{display:inline-block;
+	width:32px;height:32px;
+	margin:0 0 -6px;
+	background:url(../../img/inc/ic32a2c0up1.png) no-repeat center center;
+	background-size:contain;text-indent:-9999px;overflow:hidden;
+	vertical-align:middle;
+}
+#gotop1 .t1{display:block;
+	color:#fff;
+	font-weight:400;
+	font-size:13px;
+	letter-spacing:0;
+}
+
+
+/* #foot */
+
+
+/* 배너(이미지) 20190829. 글자형. [JS] jQmTicker1(); */
+#banner1{display:block;clear:both;position:relative;
+	height:24px;
+	margin:8px 0;
+}
+#banner1 .h1{float:left;
+	position:absolute;left:-9999px;
+	padding:0 10px 0 0;
+	color:#333;
+	font-weight:600;
+	font-size:16px;
+	line-height:24px;
+}
+#banner1 .mControl{float:left;
+	padding:0 10px 0 0;
+}
+#banner1 .mControl .b1{display:inline-block;
+	position:relative;
+	width:20px;height:24px;
+	box-sizing:border-box; /* for a and button */
+	margin:0;padding:0;
+	border-radius:50%;
+	border:0;
+	background:transparent;
+	font-size:0;line-height:0;
+	vertical-align:middle;
+	text-indent:-9999px;
+	/* overflow:hidden; */ /* ☆[IE8]fix) button 자손 position 위치 결함 있으니 overflow:visible; 유지한다! */
+}
+#banner1 .mControl .b1>.ic1{float:left;position:absolute;left:50%;top:50%;
+	width:10px;height:10px;margin:-5px;
+	background:url() no-repeat center center;background-size:contain;
+}
+#banner1 .mControl .b1.stop>.ic1{background-image:url(../../img/inc/ic20a2c1pause1@2x.png);}
+#banner1 .mControl .b1.prev>.ic1{background-image:url(../../img/inc/ic20a2c1left1@2x.png);}
+#banner1 .mControl .b1.next>.ic1{background-image:url(../../img/inc/ic20a2c1right1@2x.png);}
+#banner1 .mControl .b1.more>.ic1{background-image:url(../../img/inc/ic20a2c1bars1@2x.png);}
+/* ☆ */
+#banner1 .mView{position:relative;
+	height:24px;
+	overflow:hidden;
+}
+#banner1 .mCont{position:absolute;left:0;top:0;
+	width:100%;
+	margin:0 0 0 -1px;
+	overflow:hidden;
+	transition:.2s ease-out;
+}
+#banner1 .mContC{display:table;
+	float:left;
+}
+#banner1 .mContC>a{display:table-cell;
+	height:24px;
+	text-align:center;
+	vertical-align:middle;
+	white-space:nowrap;
+}
+#banner1 .mContC>a .t1{display:block;
+	position:relative;
+	padding:0 20px;
+	color:#000;
+	font-size:14px;
+	line-height:24px;
+	vertical-align:middle;
+}
+#banner1 .mContC>a .t1:after{content:'';display:inline-block;
+	position:absolute;left:0;top:50%;
+	width:0;height:10px;
+	margin:-5px 0;
+	border-left:1px solid #000;
+}
+
+
+/* 하단로고 */
+#foot_logo{display:block;margin:0 0 10px;}
+#foot_logo img{width:auto;height:45px;}
+
+
+/* 푸터내비 20190829 */
+#fn1{
+	position:relative;
+	margin:20px 0;
+	overflow:hidden;
+}
+#fn1 ul{
+	position:relative;
+	margin:0 -16px;
+	font-size:0;
+	text-align:left;
+	overflow:hidden;
+}
+#fn1 li{display:inline-block;
+	margin:0 0 0 -1px;
+	padding:0 0 1px;
+	background:url(../../img/inc/fn1s.png) no-repeat 0 50%;
+	vertical-align:top;
+}
+#fn1 li:first-child{background:none;}
+#fn1 li>a{display:block;
+	padding:.375em 16px;
+	color:#fff;
+	font-size:14px;
+	white-space:nowrap;
+	opacity:.6;
+}
+#fn1 li>a b{font-weight:600;color:#fff;}
+
+
+/* 소셜링크. 20190829 */
+#snslink1{
+	position:relative;
+	margin:20px 0;
+}
+#snslink1 ul{font-size:0;text-align:center;}
+#snslink1 li{display:inline-block;position:relative;
+	vertical-align:top;
+}
+#snslink1 a{display:block;
+	position:relative;
+	box-sizing:border-box; /* ☆ */
+	width:24px;height:24px;
+	margin:8px;
+}
+#snslink1 .share1 ul{display:none;}
+#snslink1 .share1 li a{
+	background:none;
+	border:0;
+}
+#snslink1 .share1>a.on{}
+#snslink1 a>.ic1{float:left;
+	position:absolute;left:50%;top:50%;
+	width:24px;height:24px;margin:-12px;
+	background:url() no-repeat center center;background-size:contain;
+	overflow:hidden;text-indent:-9999px;cursor:pointer;
+}
+#snslink1 .blog>a>.ic1{background-image:url(../../img/inc/snslink1blog.png);}
+#snslink1 .twitter>a>.ic1{background-image:url(../../img/inc/snslink1twitter.png);}
+#snslink1 .facebook>a>.ic1{background-image:url(../../img/inc/snslink1facebook.png);}
+#snslink1 .kakaostory>a>.ic1{background-image:url(../../img/inc/snslink1kakaostory.png);}
+#snslink1 .instagram>a>.ic1{background-image:url(../../img/inc/snslink1instagram.png);}
+#snslink1 .youtube>a>.ic1{background-image:url(../../img/inc/snslink1youtube.png);}
+
+
+/* 작성자(연락처/저작권) 20190829 */
+#author1{
+	position:relative;
+	min-width:280px;
+	font-size:14px;
+	line-height:1.5;
+	overflow:hidden;
+}
+#author1 a{ /* iOS 는 000-000 를 자동으로 <a href="tel:" /> 로 마크업되니 주의! */
+	color:#fff;
+}
+#author1 .address{
+	color:#fff;
+	margin:0;
+	opacity:.8;
+}
+#author1 .nophishing{
+	margin:0 0 1em;
+	color:#fff;
+	font-size:13px;
+	opacity:.8;
+}
+#author1 .copyright{display:block;
+	margin:0 0 1em;
+	color:#fff;
+	font-size:13px;
+	letter-spacing:0;
+	/* text-transform:uppercase; */
+	opacity:.8;
+}
+/* #author1 br{display:none;} */
+#author1 .a1{display:inline-block;
+	margin:0 .25em 0 0;
+}
+#author1 .b1{display:inline-block;
+	color:#ff991d;
+}
+
+
+/* ETC */
+
+
+/* ◇◆ StyleName. YYYYMMDD. @Who	 ◇◆ */
+
+
+/* RWD ◇◆◇◆◇◆◇◆◇◆◇◆ */
+@media all and (max-width:1259px){/* small medium large ◇◆◇◆◇◆◇◆◇◆ */
+
+
+/* 주메뉴 20190829. makeActive2ClickHover('#tnb1'); */
+	#tnb1{
+		position:absolute;left:0;right:0;top:0;
+		width:100%;
+		margin:auto;
+		line-height:1.375;
+	}
+	#tnb1 .b1.toggle{float:left;
+		z-index:10;
+		position:absolute;
+		right:20px;
+		top:-57px; /* (화면확인) */
+		box-sizing:border-box; /* ☆ */
+		width:40px;height:40px;
+		border:1px solid #ccc;
+		border-radius:2px;
+		background:none;
+		overflow:hidden;text-indent:-9999px;
+	}
+	#tnb1 .b1.toggle .ic1{float:left;position:absolute;left:50%;top:50%;
+		width:40px;height:40px;margin:-20px;
+		background:url(../../img/inc/ic80a1c1bars2@2x.png) no-repeat;background-size:contain;
+	}
+	#tnb1 .b1.toggle.on{}
+	#tnb1 .b1.toggle.on .ic1{
+		width:40px;height:40px;margin:-20px;
+		background-image:url(../../img/inc/ic80a1c1close1@2x.png);
+	}
+	#tnb1c{display:block !important; /* ☆ */
+		visibility:hidden; /* ☆ */
+		z-index:100; /* ☆ */
+		position:fixed; /* ☆ */
+		left:auto;right:-280px;top:0;bottom:0;
+		width:280px;
+		/* margin:100px 0 0; */ /* (#height 높이) */
+		overflow-y:visible; /* ☆ */
+		transition:.0s;
+	}
+	#tnb1c.on{display:block;visibility:visible;
+		right:0;
+		transition:.2s .2s;
+	}
+	#tnb1c>.bg{visibility:hidden;
+		position:fixed;left:0;right:0;top:0;bottom:0;
+		/* margin:100px 0 0; */ /* (#height 높이) */
+		background:#000;
+		background-color:rgba(0,0,0, .5);
+		opacity:0;
+		transition:.0s;
+	}
+	#tnb1c.on>.bg{visibility:visible;
+		opacity:1;
+		transition:.2s;
+	}
+	#tnb1c .b2{display:inline-block;
+		z-index:110;
+		position:absolute;
+		right:280px;top:0;
+		width:40px;height:40px;
+		margin:10px;
+	}
+	#tnb1c .b2>.ic1{float:left;position:absolute;left:50%;top:50%;
+		width:40px;height:40px;margin:-20px;
+		background:url() no-repeat;background-size:contain;
+	}
+	#tnb1c .b2.close{}
+	#tnb1c .b2.close>.ic1{background-image:url(../../img/inc/ic80a1c0close1@2x.png);}
+	#tnb1c>div.cont{
+		position:relative;
+		right:-200%;
+		width:280px;
+		height:100%;
+		background:#162036;
+		overflow-y:auto; /* ☆ */
+	}
+	#tnb1c.on>div.cont{
+		right:0;
+	}
+	#tnb1c #tnb1head{display:block;
+		text-align:center;
+		background:#223150;
+		padding:30px 0;
+		border-bottom:1px solid #253250;
+	}
+	#tnb1c #tnb1head ul>li{display:inline;}
+	#tnb1c #tnb1head ul>li>a{display:inline-block;
+		color:#fff;
+		font-size:14px;
+		margin:0 5px
+	}
+	/* depth1~depth4 */
+	#tnb1 .smain{display:block;}
+	/* depth1 */
+	#tnb1 div.d1{clear:both;position:relative;min-height:100%;}
+	#tnb1 div.d1>ul{position:relative;overflow:hidden;}
+	#tnb1 div.d1>ul>li{display:inline;position:relative;} /* ☆ */
+	#tnb1 div.d1>ul>li>a{display:table;
+		table-layout:fixed; /* ☆ */
+		z-index:20; /* .d2 보다 높여준다 */
+		position:relative;
+		box-sizing:border-box; /* ☆ */
+		width:100%;
+		border-bottom:1px solid #333;
+		border-color:rgba(255,255,255, .05);
+		background:url() no-repeat 95% 50%;
+		color:#fff;
+		font-size:18px;
+		word-break:keep-all;
+		word-wrap:break-word;
+	}
+	#tnb1 div.d1>ul>li>a>.t1{display:block; /* ☆ */
+		padding:.833em 20px; /* ☆ */
+		vertical-align:middle;
+	}
+	#tnb1 div.d1>ul>li.hasSub>a{
+		background-image:url(../../img/inc/tnb1d1bg1has.png);
+	}
+	#tnb1 div.d1>ul>li>a:hover,
+	#tnb1 div.d1>ul>li>a:focus{}
+	/* depth1 활성 */
+	#tnb1 div.d1>ul>li.on>a{
+		background-image:url(../../img/inc/tnb1d1bg1on.png);
+		/* font-weight:600; */
+	}
+	/* depth2~3 */
+	#tnb1 li>div[class^='d']{
+		display:none;visibility:hidden;
+		height:0;opacity:0;
+		/* transition:.2s; */
+	}
+	#tnb1 li.on>div[class^='d']{
+		display:block;visibility:visible;
+		height:auto;opacity:1;
+	}
+	/* depth2 */
+	#tnb1 li>div.d2{
+		background:#080f1b;
+	}
+	#tnb1 div.d2>.bg{display:none;} /* ☆ */
+	#tnb1 div.d2>.hg1{display:none;} /* ☆ */
+	#tnb1 div.d2>a.smain{display:block; /* 서브메인링크 */
+		position:relative;
+		padding:.75em 35px .75em 20px;
+		border-bottom:1px solid #eee;
+		background-color:#f7f7f7;
+		color:#333;
+		font-size:15px;
+	}
+	/*#tnb1 div.d2>a.smain>.ic1{
+		position:absolute;right:0;top:50%;
+		width:20px;height:20px;
+		margin:-10px 10px;
+		background:url(../../img/inc/ic40fa1c1home1.png) no-repeat center center;
+		background-size:contain;
+	}*/
+	#tnb1 div.d2>ul{margin:-1px 0 0;}
+	#tnb1 div.d2>ul>li{position:relative;}
+	#tnb1 div.d2>ul>li>a{display:block;
+		z-index:10;
+		position:relative;
+		padding:.583em 42px;
+		border-top:1px solid #444;
+		border-color:rgba(255,255,255, .05);
+		background:url(../../img/inc/tnb1d2bg1.png) no-repeat 20px 50%;
+		color:#fff;
+		font-size:16px;
+	}
+	#tnb1 div.d2>ul>li.hasSub>a{
+		background-image:url(../../img/inc/tnb1d2bg1has.png);
+	}
+	#tnb1 li.on>div.d2>ul>li.on>a{
+		background-image:url(../../img/inc/tnb1d2bg1on.png);
+		color:#fff;
+		/* font-weight:600; */
+	}
+	/* depth3 */
+	#tnb1 li>div.d3{
+		background:#444;
+	}
+	#tnb1 div.d3>.bg{display:none;} /* ☆ */
+	#tnb1 div.d3>ul{margin:-1px 0 0;}
+	#tnb1 div.d3>ul>li{position:relative;}
+	#tnb1 div.d3>ul>li>a{display:block;
+		z-index:10;
+		position:relative;min-height:0;
+		padding:.583em 54px;
+		border-top:1px solid #555;
+		border-color:rgba(255,255,255, .05);
+		background:url(../../img/inc/tnb1d3bg1.png) no-repeat 42px 50%;
+		color:#fff;
+		font-size:14px;
+	}
+	#tnb1 div.d3>ul>li.hasSub>a{
+		/* background-image:url(../../img/inc/tnb1d3g1has.png); */
+	}
+	#tnb1 li.on>div.d3>ul>li.on>a{
+		/* background-image:url(../../img/inc/tnb1d3bg1on.png); */
+		color:#fff;
+		/* font-weight:600; */
+	}
+	/* depth4 */
+	#tnb1 li>div.d4{
+		padding:.5em 0;
+		background:#555;
+	}
+	#tnb1 div.d4>.bg{display:none;} /* ☆ */
+	#tnb1 div.d4>ul{margin:-1px 0 0;}
+	#tnb1 div.d4>ul>li{position:relative;}
+	#tnb1 div.d4>ul>li>a{display:block;
+		z-index:10;
+		position:relative;min-height:0;
+		padding:.333em 54px;
+		border-top:0 solid #666;
+		background:url(../../img/inc/tnb1d4bg1.png) no-repeat 42px 50%;
+		color:#fff;
+		font-size:13px;
+	}
+	#tnb1 div.d4>ul>li.hasSub>a{
+		/* background-image:url(../../img/inc/tnb1d4g1has.png); */
+	}
+	#tnb1 li.on>div.d4>ul>li.on>a{
+		/* background-image:url(../../img/inc/tnb1d4bg1on.png); */
+		color:#fff;
+		/* font-weight:600; */
+	}
+
+#tnb1 div.d2>ul>li>a[target='_blank']:after,
+#tnb1 div.d3>ul>li>a[target='_blank']:after,
+#tnb1 div.d4>ul>li>a[target='_blank']:after{ /* [IE8+] */
+	content:'';
+	display:inline-block;
+	width:12px;height:12px;
+	margin:0 0 4px 4px;
+	background:url(../../img/inc/ic24a1c0newwindow2.png) no-repeat;
+	background-size:contain;
+	vertical-align:middle;
+}
+
+
+} /* /(max-width:1259px) */
+@media all and (min-width:768px){/* medium ◇◆◇◆◇◆◇◆◇◆ */
+
+
+	#head{}
+		#head_s1{}
+		#head_s2{}
+		#head_s3{}
+			#head_s1>.container{}
+			#head_s2>.container{}
+			#head_s3>.container{}
+
+
+
+
+
+
+} /* /(min-width:768px) */
+@media all and (min-width:1000px) and (max-width:1259px){/* large ◇◆◇◆◇◆◇◆◇◆ */
+
+
+.container{position:relative;
+	max-width:940px; /* ☆ */
+	margin:auto; /* ☆ */
+}
+
+.width1expand1{
+	margin-left:-160px; /* (1260-940)/2 */
+	margin-right:-160px;
+}
+
+
+#gn2{
+	right:0;
+}
+
+h1#logo{
+	margin-left:0;
+}
+
+#tnb1{
+	max-width:940px;
+}
+#tnb1 .b1.toggle{
+	right:0;
+}
+
+
+} /* /(min-width:1000px) and (max-width:1259px) */
+@media all and (min-width:1260px){/* xlarge (1200+20*2+16+2*2) ◇◆◇◆◇◆◇◆◇◆ */
+
+
+.container{
+	max-width:none; /* ☆ */
+	width:1200px; /* ☆ */
+	margin:auto;
+}
+	#head{}
+		#head_s1{height:79px;border-bottom:1px solid #e6e6e6;}
+		#head_s2{height:65px;border-bottom:1px solid #e6e6e6;}
+		#head_s3{}
+			#head_s1>.container{}
+			#head_s2>.container{}
+			#head_s3>.container{}
+	
+
+.width1expand1{
+	margin-left:-360px; /* (1200-1920)/2 */
+	margin-right:-360px;
+}
+
+
+
+/* 로고 20190829 */
+h1#logo{
+	float:none;
+	position:relative;
+	width:160px;
+	margin:0 auto;
+}
+h1#logo>a{display:block;
+	z-index:30; /* z > #tnb1c */
+	position:relative;
+}
+h1#logo>a>img{
+	height:45px;
+	padding:15px 0; 
+}
+
+
+.gn{display:block;
+	position:absolute;top:20px;
+}
+.gn ul>li{display:inline-block;}
+.gn ul>li>a{display:block;
+	border:1px solid #ddd;
+	border-radius:20px;
+	color:#333;
+	font-size:15px;
+	padding:5px 20px 5px 18px;
+	margin:0 5px;
+}
+.gn ul>li>a .ic1{display:inline-block;
+	width:17px;height:17px;
+	margin:2px 0 0;
+	background:url() no-repeat;
+	vertical-align:top;
+}
+.gn ul>li>a .ic1.home{background:url(/img/inc/ic17home1.png)}
+.gn ul>li>a .ic1.login{background:url(/img/inc/ic17lock1.png)}
+.gn ul>li>a .ic1.logout{background:url(/img/inc/ic17lock1.png)}
+.gn ul>li>a .ic1.join{background:url(/img/inc/ic17person1.png)}
+.gn ul>li>a .ic1.mypage{background:url(/img/inc/ic17person1.png)}
+.gn ul>li>a .ic1.sitemap{background:url(/img/inc/ic17flow1.png)}
+
+#gn1{left:-5px;}
+#gn2{right:-5px;}
+
+
+#foot_logo{display:block;
+	position:absolute;left:0;top:50px;
+}
+#fn1{margin:30px 0 20px 200px;}
+#author1{margin:0 0 0 200px;}
+
+/* 주메뉴 20190826. makeActive2ClickHover('#tnb1'); ))) 모바일과 많이 다르니 미디어쿼리별 따로 정의 (분리 사용 가능)
+ * 1차 가로배치. 2차 block배치.
+ */
+#tnb1{ /* z-index:20; ☆쌓임맥락만들지마요! */
+	position:absolute;
+	left:-1000px;right:-1000px;
+	top:0px;
+	width:auto;
+	max-width:none; /* ☆ */
+	height:66px;
+}
+/* 데스크탑 감춤 */
+#tnb1 .b1.toggle,
+#tnb1c .b2,
+#tnb1head,
+#tnb1logo,
+#tnb1head_s1,
+#tnb1head_s2,
+#tnb1c>div.cont>.bg,
+#tnb1c>div.cont:before{display:none;}
+
+#tnb1c{
+	display:block !important; /* ☆ */
+	visibility:visible; /* ☆ */
+	z-index:20; /* z > #location1 */
+	position:relative; /* ☆ */
+	height:66px;
+	overflow:visible; /* ☆ */
+}
+#tnb1c.on{
+	display:block;visibility:visible;
+}
+#tnb1c>.bg{}
+#tnb1c.on>.bg{}
+#tnb1c>div.cont{
+	position:relative;
+	width:2000px; /* ☆ */
+	height:100%;
+	margin:auto;
+	box-shadow:none;
+}
+#tnb1c.on>div.cont{
+	box-sizing:border-box; /* ☆[IE8+] */
+}
+
+/* depth1~depth4 */
+/* depth1 */
+#tnb1 div.d1{
+	position:relative;
+	width:1200px;
+	height:66px;
+	margin:auto;
+	padding:0; /* ☆ */
+	overflow:hidden; /* ☆ visible; 하면 >.bg 좌우 넘친거 보임 */
+	/* transition:.4s ease height, 4s ease margin, 4s ease padding; */
+		/* [CR.72.0.3626.96]bug))) 나중버전 재확인 필요! */
+}
+#tnb1 div.d1:before, /* 미리 선언해두면 개발자모드 요소 확인 가능 */
+#tnb1 div.d1:after{content:'';}
+#tnb1 div.d1>.bg{position:absolute;
+	left:0;right:0;
+	top:66px;bottom:0;
+	/* height:0; 두고 오버일 때 height:auto; 하면 transition 효과 안되니 주의 */
+	margin:0 -360px; /* ((1920-1200)/2) */
+	/* border-top:1px solid #ddd; */
+	/* border-bottom 은 div.d1.over 에 만들자! */
+	background:#fff url(../../img/inc/tnb1bg2.png) no-repeat 78% bottom;
+}
+#tnb1 div.d1>ul{
+	margin:0 0 0 0; /* ☆ */
+	overflow:hidden; /* ☆ 하위 넘친거 감춤 */
+}
+#tnb1 div.d1>ul>li{display:inline;
+	float:left;
+	position:static; /* ☆ */
+	width:190px;
+}
+/* ☆1차메뉴노출제외 )) /_res/사이트키/share/css/style.css */
+/* #tnb1 div.d1>ul>li.m6 ~ li{display:none;} */
+#tnb1 div.d1>ul>li>a{display:block;
+	position:relative;
+	width:auto;
+	padding:0; /* 조금 여유 둠 */
+	color:#000;
+	font-size:0;
+	text-align:center;
+	transition:.2s;
+}
+#tnb1 div.d1>ul>li:first-child>a{}
+#tnb1 div.d1>ul>li>a>.ic1{display:inline-block;width:0;height:100%;vertical-align:middle;}
+#tnb1 div.d1>ul>li>a>.t1{display:inline-block;
+	position:relative;
+	height:30px;
+	padding:18px 0;
+	font-weight:400;
+	font-size:19px;
+	vertical-align:middle;
+}
+#tnb1 div.d1>ul>li>a>.t1:before{content:'';
+	display:block;
+	z-index:30;
+	position:absolute;left:0;right:0;bottom:0;
+	height:0;
+	background:#0d6ba3;
+	transition:.2s;
+}
+#tnb1 div.d1>ul>li.hasSub>a{}
+#tnb1 div.d1>ul>li.on>a{
+	background:none;
+	/* color:#000; */
+	/* font-weight:600; */
+}
+body[data-layout*='main'] #tnb1 div.d1>ul>li.on>a{ /* 메인페이지만 */
+	/* color:#000; */
+	/* font-weight:400; */ /* 모바일에서 허전함 달래기 위해 메뉴 활성한거 비활성 모양으로 바꿔준다. */
+}
+/* ☆ */
+
+/* ★ 주메뉴 전체 오버(포커스) */
+#tnb1 div.d1.over{
+	height:320px;
+	margin:auto; /* ☆ */
+	padding:0 360px; /* ☆ */
+	border-bottom:1px solid #e7e7e7;
+	/* box-shadow:0 2px 2px 0 rgba(0, 0, 0, .05); */
+	/* transition:.4s ease height, 0s ease margin, 0s ease padding; */
+		/* [CR.72.0.3626.96]bug))) 나중버전 재확인 필요! */
+}
+#tnb1 div.d1.over:before{}
+#tnb1 div.d1.over>.bg{}
+#tnb1 div.d1.over div.d2{
+	display:block;visibility:visible;
+	opacity:1;
+}
+
+/* ★ 1차 메뉴별 오버(포커스) + 온추가? */
+/* .over 우선순위는 body[data-layout*='main'] #tnb1 div.d1>ul>li.on>a{} 보다 높아야한다. */
+#tnb1 div.d1>ul>li.on[class][class]>a{
+	color:#2a71c1;
+}
+#tnb1 div.d1>ul>li.over[class][class]>a{
+	color:#5962a9;
+}
+#tnb1 div.d1>ul>li.on[class][class]>a:before{}
+#tnb1 div.d1>ul>li.over[class][class]>a:before,
+#tnb1 div.d1>ul>li.over[class][class]>a:after{
+	visibility:visible;
+	opacity:1;
+}
+#tnb1 div.d1>ul>li>a:hover,
+#tnb1 div.d1>ul>li>a:focus{
+	/* color:#000; */
+}
+#tnb1 div.d1>ul>li.over[class][class]>a + div.d2>.bg{display:block;
+	position:absolute;left:0;right:0;
+	height:1000px;
+}
+
+/* depth2~3 (활성 동작만 먼저 정의) */
+#tnb1 li>div[class^='d']{
+	display:block;visibility:hidden;
+	height:0;
+	opacity:0;
+	/* overflow:hidden; */
+}
+#tnb1 li>div[class^='d']:after{content:'';display:table;clear:both;}
+#tnb1 li.on>div[class^='d']{ /* ☆감춤 */
+	display:block;visibility:hidden;
+	height:0;
+	opacity:1;
+}
+#tnb1 li>div.d3, /* ☆3차다보임추가 */
+#tnb1 li.on>div.d3,
+#tnb1 li.over>div[class^='d']{ /* ☆보임 */
+	z-index:10; /* ☆오버한거 맨위로 */
+	display:block;visibility:visible;
+	height:auto;
+	opacity:1;
+}
+
+/* depth2 */
+#tnb1 li>div.d2[class]{ /* 우선순위값 #tnb1 li>div[class^='d'] 와 동일 */
+	display:block;visibility:visible;
+	z-index:10;
+	position:relative;
+	height:1000px; /* ☆ */
+	margin:1px 0 0;
+	padding:24px 16px; /* ☆ */
+	border-right:1px solid #e7e7e7;
+	opacity:1; /* ☆ */
+	width:157px;
+}
+#tnb1 li:first-child>div.d2[class]{border-left:1px solid #e7e7e7;}
+#tnb1 div.d2>.bg{}
+/* 데스크탑 only 1차제목.. */
+#tnb1 div.d2>.hg1{display:none;}
+#tnb1 div.d2>ul{}
+#tnb1 div.d2>ul>li{}
+#tnb1 div.d2>ul>li>a{
+	display:block;
+	/* box-sizing:border-box; */ /* ☆ */
+	z-index:10;
+	position:relative;
+	padding:8px 10px;
+	border:0;
+	background:url(../../img/inc/tnb1d2bg2.png) no-repeat 0 18px;
+	color:#555;
+	font-weight:400;
+	font-size:16px;
+	text-align:left;
+	/* transition:.2s; */
+}
+#tnb1 div.d2>ul>li.hasSub>a{
+	/* background-image:url(../../img/inc/tnb1d2bg1has.png); */
+}
+#tnb1 div.d2>ul>li.on>a{
+	color:#000;
+}
+#tnb1 div.d2>ul>li.hasSub.on>a{
+	/* background-image:url(../../img/inc/tnb1d2bg1hason.png); */
+}
+/* ☆ */
+/* #tnb1 .m1>div.d2>ul>li{
+	float:left;
+	width:50%;
+} */
+
+/* ★ 오버(포커스) */
+#tnb1 li.over>div.d2{
+	z-index:20;
+	/* background:#fff; */
+	/* height:auto; */
+		background:#f5f6fa;
+}
+#tnb1 div.d2>ul>li.over>a{}
+#tnb1 div.d2>ul>li.hasSub.over>a{}
+#tnb1 div.d2>ul>li.on.over>a{}
+#tnb1 div.d2>ul>li.hasSub.on.over>a{}
+#tnb1 div.d2>ul>li>a:hover,
+#tnb1 div.d2>ul>li>a:focus{}
+#tnb1 div.d2>ul>li>a:hover:before,
+#tnb1 div.d2>ul>li>a:focus:before{}
+#tnb1 div.d2>ul>li.on>a:hover,
+#tnb1 div.d2>ul>li.on>a:focus{}
+#tnb1 div.d2>ul>li>a:hover .t1,
+#tnb1 div.d2>ul>li>a:focus .t1{}
+
+/* ☆ */
+#tnb1 div.d2>ul>li>a .t1{display:inline-block;
+	position:relative;
+}
+#tnb1 div.d2>ul>li>a .t1:after{content:''; /* ─ */
+	display:block;
+	position:absolute;right:0;top:0;
+}
+#tnb1 div.d2>ul>li.on>a .t1:after{}
+#tnb1 div.d2>ul>li>a:hover .t1:after,
+#tnb1 div.d2>ul>li>a:focus .t1:after{}
+
+/* depth3 */
+#tnb1 li>div.d3{display:none !important;}
+
+/* depth4 */
+#tnb1 div.d4{display:none !important;}
+
+/* 20190826 새 창 */
+#tnb1 div.d2>ul>li>a[target='_blank']:after,
+#tnb1 div.d3>ul>li>a[target='_blank']:after{ /* [IE8+] */
+	content:'';
+	display:inline-block;
+	width:12px;height:12px;
+	margin:0 0 4px 4px;
+	background:url(../../img/inc/ic11newwindow.png) no-repeat;
+	vertical-align:middle;
+}
+
+/* 작업확인용.★☆ToEdit) */
+/* #tnb1 li.m6>div.d2{
+	display:block;
+	visibility:visible;height:auto;opacity:1;
+} */
+/* ☆#tnb1 div.d1>ul>li.on>div.d2{
+	display:block;
+	visibility:visible;height:auto;opacity:1;
+} */
+
+
+/* ◇◆◇◆ only Desktop Contents ◇◆◇◆ */
+
+
+/* 전체메뉴 20190829 */
+#anb1{display:block;
+	position:absolute;left:0;right:0;top:0;
+}
+#anb1 .b1{float:left;
+	z-index:30;
+	position:absolute;right:0;top:0;
+	box-sizing:border-box; /* ☆ */
+	width:60px;height:66px;
+	overflow:hidden;
+	text-indent:-9999px;
+}
+#anb1 .b1 .ic1{display:block;
+	position:absolute;left:50%;top:50%;
+	width:40px;height:40px;margin:-20px;
+	background:url(../../img/inc/ic80a1c1menus@2x.png) no-repeat;background-size:contain;
+}
+#anb1 .b1.toggle.on{background:#333}
+#anb1 .b1.toggle.on .ic1{background-image:url(../../img/inc/ic80a1c0close@2x.png);}
+#anb1 .b1.close,
+#anb1 .b1.close .ic1{
+	margin:-66px -1px 0;
+	background:none;
+}
+#anb1 .b1:focus{
+	outline:1px dotted #000;
+}
+/* ☆ */
+#anb1c{display:none;
+	z-index:30;
+	position:absolute;left:0;right:0;top:66px;
+}
+#anb1c.on{display:block;}
+#anb1c>.bg{}
+#anb1c>div.cont{position:relative;
+	padding:1px;
+	border:1px solid #333;
+	background:#fff;
+	box-shadow:0 0 8px 0 rgba(0,0,0, .1);
+}
+#anb1c.on>.bg{}
+#anb1c.on>div.cont{}
+/* depth1 */
+#anb1 div.d1{}
+#anb1 div.d1>ul{overflow:hidden;}
+#anb1 div.d1>ul>li{float:left;position:relative;
+	box-sizing:border-box; /* ☆ */
+	width:14.285%; /* (100/7) */
+}
+#anb1 div.d1>ul>li:before{content:'';float:left;
+	position:absolute;left:0;top:0;
+	width:0;
+	height:9999px;
+	border-left:1px solid #eee;
+}
+#anb1 div.d1>ul>li:first-child:before{display:none;}
+/*#anb1 div.d1>ul>li:last-child{display:none;}*/
+#anb1 div.d1>ul>li>a{display:block;
+	position:relative;
+	padding:12px 18px;
+	border-bottom:1px solid #eee;
+	font-weight:600;
+	color:#333;
+	font-size:18px;
+	text-align:center;
+	word-break:keep-all;
+	word-wrap:break-word;
+}
+#anb1 div.d1>ul>li>a>.t1{}
+/* depth2 */
+#anb1 div.d2{}
+#anb1 div.d2>ul{padding:16px 20px;}
+#anb1 div.d2>ul>li{display:inline;}
+#anb1 div.d2>ul>li>a{display:block;
+	padding:.25em 0 .25em 8px;
+	color:#555;
+	font-size:14px;
+	background:url(../../img/inc/bu02.png) no-repeat 0 12px;
+}
+#anb1 div.d2>ul>li>a:hover,
+#anb1 div.d2>ul>li>a:focus{text-decoration:underline;}
+/* depth3 */
+#anb1 div.d3>ul{
+	margin:2px 0;
+	padding:6px;
+	border-top:1px solid #eee;
+	border-bottom:1px solid #eee;
+	background:#fcfcfc;
+}
+#anb1 div.d3>ul>li{display:inline;}
+#anb1 div.d3>ul>li>a{display:block;
+	padding:.25em 0 .25em 8px;
+	background:url(../../img/inc/bu02.png) no-repeat 0 10px;
+	color:#666;font-weight:normal;font-size:13px;
+}
+#anb1 div.d3>ul>li>a:hover,
+#anb1 div.d3>ul>li>a:focus{text-decoration:underline;}
+
+
+} /* /(min-width:1260px) */
+/* /RWD ◇◆◇◆◇◆◇◆◇◆◇◆ */
+
+
+/* ◇◆ @keyframes [IE10+] ◇◆ */
+/* @-webkit-keyframes 는 CSS3 유효성 오류 발생 */
+
+
+@keyframes kfx1move1vertic1{
+	0%{margin-bottom:40px;}
+	50%{margin-bottom:60px;}
+	100%{margin-bottom:40px;}
+}
+.kfx1move1vertic1{animation: kfx1move1vertic1 1.6s ease-in-out infinite;}
+
+@keyframes kfx1move1vertic2{
+	0%{transform: translateY(0);}
+	50%{transform: translateY(2px);}
+	100%{transform: translateY(0);}
+}
+.kfx1move1vertic2{animation:kfx1move1vertic2 .6s ease-in-out infinite;}
+
+@keyframes kf1scale1rotate1{
+	/* 50%{transform:scale(1.2) rotate(-6deg);} */
+	50%{transform:scale(1.2) rotate(-1deg);}
+}
+.kf1scale1rotate1{animation: kf1scale1rotate1 12s ease-in-out infinite;}

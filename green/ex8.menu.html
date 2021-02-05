@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>메뉴</title>
+<link href="css/base.css" rel="stylesheet" />
+<style type="text/css">
+#header {width:100%;height:50px;background:#ccc;}
+#headerin {width:960px;margin:0 auto;position:relative;}
+h1 {padding:9px 0;}
+.gnb {position:absolute;top:0;right:0;}
+.gnb li {float:left;}
+.gnb li .m {display:block;padding:14.5px 30px;}
+.gnb li .m:hover, .gnb li .m:focus, .gnb li.on .m {color:#f06;}
+.gnb li.on .sub {display:block}
+.gnb li .sub {position:absolute;top:50px;left:0;height:40px;background:#39c;display:none;}
+.gnb .g1 .sub {left:-125px;}
+.gnb .g2 .sub {left:-85px;width:500px;}
+.gnb .g3 .sub {left:185px;}
+.gnb .g4 .sub {left:245px;width:290px;}
+.gnb .sub li {margin:0 15px;}
+.gnb .sub li a {display:block;padding:9.5px 0;}
+.gnb .sub li a:hover {color:#fff;}
+</style>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+$(function(){ // 실행문 시작
+	
+	var menu = $(".gnb > ul > li"); // menu 변수에 메인메뉴를 나타내는 li태그를 저장함
+	
+	menu.on({ // menu 변수에 이벤트를 활성화 시킴
+		mouseover : function(){
+			var tg = $(this);
+			tg.addClass("on");
+		}, 
+		mouseout : function(){
+			var tg = $(this);
+			tg.removeClass("on");			
+		}
+	})
+	
+}); // 실행문 끝
+</script>
+</head>
+
+<body>
+<header id="header">
+	<div id="headerin">
+        <h1>Logo</h1>
+        <nav class="gnb">
+            <ul>
+                <li class="g1">
+                	<a href="#" class="m">Menu1</a>
+                    <div class="sub">
+                    	<ul>
+                        	<li><a href="#">Menu1-1</a></li>
+                        	<li><a href="#">Menu1-2</a></li>
+                        	<li><a href="#">Menu1-3</a></li>
+                        	<li><a href="#">Menu1-4</a></li>                                                                                    
+                        </ul>
+                    </div>
+                </li>
+                <li class="g2">
+                	<a href="#" class="m">Menu2</a>
+                    <div class="sub">
+                    	<ul>
+                        	<li><a href="#">Menu2-1</a></li>
+                        	<li><a href="#">Menu2-2</a></li>
+                        	<li><a href="#">Menu2-3</a></li>
+                        	<li><a href="#">Menu2-4</a></li>    
+                        	<li><a href="#">Menu2-5</a></li>                                                                                                               
+                        </ul>
+                    </div>                    
+                </li>
+                <li class="g3">
+                	<a href="#" class="m">Menu3</a>
+                    <div class="sub">
+                    	<ul>
+                        	<li><a href="#">Menu3-1</a></li>
+                        	<li><a href="#">Menu3-2</a></li>                                                                                                       
+                        </ul>
+                    </div>                    
+                </li>
+                <li class="g4">
+                	<a href="#" class="m">Menu4</a>
+                    <div class="sub">
+                    	<ul>
+                        	<li><a href="#">Menu4-1</a></li>
+                        	<li><a href="#">Menu4-2</a></li>
+                        	<li><a href="#">Menu4-3</a></li>                                                                                                       
+                        </ul>
+                    </div>                    
+                </li>                                    
+            </ul>
+        </nav>
+	</div>
+</header>
+</body>
+</html>
+

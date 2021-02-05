@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ko" xml:lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>최근게시물 탭형식</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="_Css/base.css" />
+<link rel="stylesheet" type="text/css" href="_Css/tab.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>		
+</head>
+
+<body>
+<!-- 공지/새소식/묻고답하기 -->								
+<div class="sec2_1">
+	<script src="_Js/mtab-board.js"></script>																
+	<div class="mtabboard" id="mboardTab1">
+		<!-- 공지사항 -->			
+		<h3 class="hidden">공지사항</h3>
+		<dl class="first isOn">
+			<dt class="first">
+			<a href="#mBoard1"  onclick="setBoardTab('mboardTab1',1,'c');return false;" onmouseover="setBoardTab('mboardTab1',1,'');return false;" onfocus="setBoardTab('mboardTab1',1,'');return false;"  onblur="return false;"><span>공지사항</span></a>
+			</dt>
+			<dd class="datalist">
+			<ul id="mBoard1">														
+				<li><a href="#"><span class="subject">2013년 서울국제도서전 참가 <img src="./_Img/Common/ico_new.gif" alt="새글" /></span><span class="date">12-01-01</span></a></li>
+				<li><a href="#"><span class="subject ">출판도서「문화체육관광부 우수 학술도서」에 선정 </span><span class="date">12-01-01</span></a></li>
+				<li><a href="#"><span class="subject ">출판도서「문화체육관광부 우수 학술도서」에 선정 </span><span class="date">12-01-01</span></a></li>
+				<li><a href="#"><span class="subject "> 제목이 길어질 경우,제목이 길어질 경우,제목이 길어질 경우 .. </span><span class="date">12-01-01</span></a></li>
+				<li><a href="#"><span class="subject "> 제목이 길어질 경우,제목이 길어질 경우,제목이 길어질 경우 .. </span><span class="date">12-01-01</span></a></li>
+			</ul>
+			</dd>
+			<dd class="btnmore">
+			<a href="#" title="공지사항"><span>+ 전체보기</span></a>
+			</dd>
+		</dl>
+		<!-- 공지사항 //-->																										
+		
+		<!-- 새소식 -->			
+		<h3 class="hidden">새소식</h3>						
+		<dl>
+			<dt>
+			<a href="#mBoard2" onclick="setBoardTab('mboardTab1',2,'c');return false;" onmouseover="setBoardTab('mboardTab1',2,'');return false;" onfocus="setBoardTab('mboardTab1',2,'');return false;"  onblur="return false;"><span>새소식</span></a>
+			</dt>
+			<dd class="datalist">
+			<ul id="mBoard2">
+				<li><a href="#"  title=""><span class="subject"> 제목 .. </span><span class="date">12-01-01</span></a></li>
+				<li><a href="#"  title=""><span class="subject"> 게시물이 조금 적게 나올 경우</span><span class="date">12-01-01</span></a></li>
+			</ul>
+			</dd>
+			<dd class="btnmore">
+			<a href="#" title="새소식"><span>+ 전체보기</span></a>
+			</dd>
+		</dl>
+		<!-- 새소식 -->																				
+		
+		<!-- 묻고답하기 -->		
+		<h3 class="hidden">묻고답하기</h3>						
+		<dl>
+			<dt>
+			<a href="#mBoard3" onclick="setBoardTab('mboardTab1',3,'c');return false;" onmouseover="setBoardTab('mboardTab1',3,'');return false;" onfocus="setBoardTab('mboardTab1',3,'');return false;"  onblur="return false;"><span>묻고답하기</span></a>
+			</dt>
+			<dd class="datalist">
+			<ul id="mBoard3">
+				<li><a href="#"  title=""><span class="subject"> 제목 11.. </span><span class="date">12-01-01</span></a></li>
+				<li><a href="#"  title=""><span class="subject"> 게시물이 조금 적게 나올 경우</span><span class="date">12-01-01</span></a></li>
+			</ul>
+			</dd>
+			<dd class="btnmore">
+			<a href="#" title="묻고답하기"><span>+ 전체보기</span></a>
+			</dd>
+		</dl>
+		<!-- 묻고답하기 //-->																				
+	</div> 
+</div>
+<!-- 공지/새소식/묻고답하기 //-->								
+
+
+</body>
+</html>

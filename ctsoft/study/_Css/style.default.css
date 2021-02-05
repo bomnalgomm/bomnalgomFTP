@@ -1,0 +1,15 @@
+@charset "utf-8"; 
+/* 테이블01 */
+.tbl-type01 {width:100%;border-collapse:collapse;table-layout:fixed;clear:both;text-align:center;word-wrap:break-word;font-size:13px;}
+.tbl-type01 thead th {border:1px solid #d5d5d5;border-bottom:1px solid #979797;border-top:2px solid #999;background:#f8f8f8;padding:13px 5px 12px;}
+.tbl-type01 thead tr:first-child th:first-child, .tbl-type01 tbody tr.first th {border-top:2px solid #01a88c;}
+.tbl-type01 tbody th {background:#fafafa;border:1px solid #d5d5d5;border-bottom:1px solid #9a9a9a;}
+.tbl-type01 tbody td {border:1px solid #d5d5d5;border-bottom:1px solid #9a9a9a;padding:13px 5px;}
+.tbl-type01 tbody tr.first td {border-top:2px solid #999}
+
+
+/* 테이블02 */
+.tbl-type02 {width:100%;border-collapse:collapse;font-size:12px;table-layout:fixed;clear:both;text-align:center;color:#555;word-wrap:break-word;border-top:1px solid #a4a4a4;}
+.tbl-type02 th {background:#f6f6f6;border:1px solid #ccc;color:#524245;padding:11px 5px 10px;border-top:0}
+.tbl-type02 tbody th {background:#fff;font-weight:normal;}
+.tbl-type02 tbody td {background:#fff;border:1px solid #ccc;padding:10px 5px 9px;border-top:0}

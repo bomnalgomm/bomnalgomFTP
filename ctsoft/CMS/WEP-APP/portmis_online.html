@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>부산항만공사 실적증명서 발급 신청</title>
+<link rel="stylesheet" href="../_Css/common.css" />
+<style type="text/css">
+.content-wrap {width:760px;margin:0 auto;}
+.content-wrap h1 {font-size:30px;font-weight:bold;color:#222;line-height:100%;margin:20px 0;}
+
+</style>
+</head>
+<body>
+<div class="content-wrap">
+	<h1> 실적증명서 발급 신청</h1>
+	<h3 class="c-tit01 fl">신청서 작성</h3>
+	<p class="fr"><span class="nec">필수</span>입력사항은 반드시 기입해 주세요.</p>
+	<form method="" name="" action="">
+	<table class="tbl-form">
+	<caption></caption>
+	<colgroup>
+	<col style="width:20%" />
+	<col style="width:80%" />
+	</colgroup>
+	<tbody>
+	<tr>
+		<th scope="row"><label for="chrg_name"><span class="nec">필수입력사항</span>담당자 이름</label></th>
+		<td><input type="text" class="text" id="chrg_name" /></td>
+	</tr>
+	<tr>
+		<th scope="row"><label for="chrg_tel"><span class="nec">필수입력사항</span>담당자 연락처</label></th>
+		<td><input type="text" class="text" id="chrg_tel" /></td>
+	</tr>
+	<tr>
+		<th scope="row"><label for="comp_mobile"><span class="nec">필수입력사항</span>SMS 수신번호</label></th>
+		<td><input type="checkbox" name="comp_sms" id="comp_sms" class="vcen2"><label for="comp_sms" class="mg5 mg10r">SMS 수신여부</label><input type="text" class="text vcen2" id="comp_mobile" /> <span class="fhelp">* 진행 상황을 문자 서비스 받으실 수 있습니다.</span></td>
+	</tr>
+	<tr>
+		<th scope="row"><label for="chrg_email"><span class="nec">필수입력사항</span>담당자 E-mail</label></th>
+		<td><input type="text" name="chrg_email" class="text" id="chrg_email" /></td>
+	</tr>
+	<tr>
+		<th scope="row"><label for="act_cont"><span class="nec">필수입력사항</span>설명글</label></th>
+		<td>
+			<p class="fhelp pad10f">* 1000자 이상은 입력하실 수 없습니다.</p>
+			<textarea name="act_cont" class="textarea w90p" id="act_cont" cols="50" rows="5"></textarea>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row"><label for="att_file"><span class="nec">필수입력사항</span>첨부파일</label></th>
+		<td><input type="file" name="att_file" id="att_file" /> <span class="fhelp">* 증명서를 작성 후 첨부하여 주세요.</span></td>
+	</tr>
+	<tr>
+		<th scope="row"><label for="cert_type_x"><span class="nec">필수입력사항</span>증명서 작성</label></th>
+		<td>
+			<select class="select vtop2" onchange="javascript:setCertType();" id="cert_type_x" name="cert_type_x">
+              <option value="">-- 선택하세요. --</option>
+              <option value="CD0106">감리용역수행현황확인서</option><option value="CD0101">건설공사기성실적증명(신청)서</option><option value="CD0105">건설폐기물수집·운반및중간처리용역이행실적증명서</option><option value="CD0110">과업수행참여자명단</option><option value="CD0112">납품실적증명서</option><option value="CD0108">보증이행완료확인(원)</option><option value="CD0107">설계등 용역 수행실적 확인서</option><option value="CD0109">설계용역수행사실확인서</option><option value="CD0104">소방시설공사 실적증명서</option><option value="CD0103">시설공사준공실적증명서</option><option value="CD0113">용역이행 실적증명서</option><option value="CD0102">전기공사실적증명서</option><option value="CD0111">참여기술자명단</option>
+			</select>
+			<a href="#none" onclick="openCertDoc();" title="새창열림" class="sw-btn"><span>증명서 작성</span></a>
+		</td>
+	</tr>
+	</tbody>
+	</table>
+	<div class="btn-wrap r">
+		<input type="submit" value="확인" class="p-btn" /><a href="#" class="w-btn"><span>목록</span></a>
+	</div>
+	</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>관리자 로그인</title>
+<link rel="stylesheet" type="text/css" href="../../_Admin/_Css/base.css" />
+</head>
+
+<body style="overflow-y:hidden"><!-- 모달 팝업 / 모달팝업이 떴을때 body에 overflow-y:hidden 넣고 모달팝업이 닫혔을때 body에 overflow-y:auto //-->
+<!-- cms-wrap -->
+<div id="cms-wrap" class="c-sky">
+	<!-- skin-modal -->	
+	<div id="modal-wrap">
+		<!-- modal -->
+		<div class="modal">
+			<!-- modal-tit -->
+			<div class="modal-tit">
+				<h2>스킨설정</h2>
+				<a href="#" class="btn-close"><span>스킨설정창 닫기</span></a>
+			</div>
+			<!-- modal-tit //-->
+
+			<!-- modal-cont -->
+			<div class="modal-cont">
+				<p>상단 서비스 메뉴, 왼쪽 메뉴의 스킨 색상이 변경됩니다.</p>
+				
+				<div class="sgap"></div>
+
+				<!-- skin-list -->
+				<div class="skin-list">
+					<!-- 색상선택시 button에 select class 추가 -->					
+					<ul>
+						<li class="s-sky"><button class="select"><span>스카이</span></button></li>
+						<li class="s-green"><button><span>그린</span></button></li>
+						<li class="s-org"><button><span>오렌지</span></button></li>
+						<li class="s-red"><button><span>레드</span></button></li>
+						<li class="s-dark"><button><span>다크</span></button></li>
+					</ul>
+				</div>
+				<!-- skin-list //-->
+				
+				<!-- 버튼 -->
+				<div class="btn-wrap c">
+					<input type="submit" name="" value="적용" class="g-btn"/> 
+					<a href="#" class="b-btn"><span>취소</span></a>
+				</div>
+				<!-- 버튼 //-->
+			</div>
+			<!-- modal-cont //-->
+		</div>
+		<!-- modal //-->
+	</div>
+	<!-- skin-modal //-->	
+	
+	<!-- header-wrap -->	
+	<div id="header-wrap">
+		<h1><img src="../../_Admin/_Img/Common/logo.gif" alt="사이트명" /><span>사이트매니저</span></h1>
+		<!-- btn-wrap -->		
+		<div class="top-wrap">
+			<a href="#"><span>비밀번호 변경</span></a>
+			<a href="#" class="logout"><span>로그아웃</span></a>
+			<a href="#" class="allmenu"><span>전체메뉴</span></a>
+		</div>
+		<!-- btn-wrap //-->		
+		
+		<!-- menu-wrap -->		
+		<div class="menu-wrap">
+			<ul class="topmenu">
+				<li><a href="#" class="mn01 first">관리자관리</a></li>
+				<li><a href="#" class="mn02">메뉴관리</a></li>
+				<li><a href="#" class="mn03">컨텐츠관리</a></li>
+				<li><a href="#" class="mn04">게시판관리</a></li>
+				<li><a href="#" class="mn05">통계</a></li>
+				<li><a href="#" class="mn06">공통모듈관리</a></li>
+				<li><a href="#" class="mn07">프로그램관리</a></li>
+				<li><a href="#" class="mn08 last">회원관리</a></li>
+			</ul>
+		</div>
+		<!-- menu-wrap //-->		
+	</div>
+	<!-- header-wrap //-->	
+	
+	<!-- container-wrap -->	
+	<div id="container-wrap">
+		<!-- sidebar -->		
+		<div class="sidebar">
+			<h2>기본설정</h2>
+			<ul class="depth2">
+				<li>
+				<a href="#" class="over"><span>2차 메뉴명 1-1</span></a>
+				<ul class="depth3">
+					<li><a href="#" class="over">3차 메뉴명 1</a></li>
+					<li><a href="#">3차 메뉴명 2이 길어지는 경우 이렇게 출력됨</a></li>
+					<li><a href="#">3차 메뉴명 3</a></li>
+					<li><a href="#">3차 메뉴명 4</a></li>
+				</ul>
+				</li>
+				<li><a href="#"><span>2차 메뉴명 1-2이 길어지는 경우 이렇게 출력</span></a></li>
+				<li><a href="#"><span>2차 메뉴명 1-3</span></a></li>
+				<li><a href="#"><span>2차 메뉴명 1-4</span></a></li>
+			</ul>			
+		</div>
+		<!-- sidebar //-->		
+		
+		<!-- contain -->		
+		<div class="contain">
+			<div class="cont-tit">
+				<h3>타이틀이 나오는 곳</h3>
+				<div class="cms-site-wrap">
+					<div class="cms-site">
+						<button><span>관리사이트 선택</span></button>
+						<div class="cms-site-list on">
+							<!-- class명 on 활성화 -->							
+							<ul>
+								<li><a href="#">관리사이트명 1</a></li>
+								<li><a href="#">관리사이트명 2</a></li>
+								<li><a href="#">관리사이트명 3</a></li>
+								<li><a href="#">관리사이트명 4</a></li>
+								<li><a href="#">관리사이트명 5</a></li>
+							</ul>
+						</div>
+					</div>
+					<input type="submit" value="이동" />
+				</div>
+			</div>
+			<!-- content -->			
+			<div class="content">
+				
+			</div>
+			<!-- content //-->			
+		</div>
+		<!-- contain //-->		
+	</div>
+	<!-- container-wrap //-->	
+	
+	<!-- footer-wrap -->		
+	<div id="footer-wrap">
+		<!-- footer -->				
+		<div class="footer">
+			<ul>
+				<li><a href="#none">스킨설정</a></li>
+				<li><a href="#none">버전확인</a></li>
+				<li><a href="#none">문의하기</a></li>
+			</ul>
+			<span>copyright(c) centumsoft. all rights reserved.</span>
+		</div>
+		<!-- footer //-->				
+	</div>
+	<!-- footer-wrap //-->		
+</div>
+<!-- cms-wrap //-->
+</body>
+</html>
+
